@@ -4,7 +4,7 @@ import random
 import os
 import numpy as np
 
-def adapt_dataset(input_file, output_file, column_mapping, dataset_name="External", limit=None):
+def adapt_dataset(input_file, output_file, column_mapping, dataset_name="External", limit=None, query=None, custom_preprocess_func=None):
     """
     Generalized generic adapter to map external datasets (JSON or CSV) to the Supply Chain Project schema.
     If columns are missing from the mapping, it generates sensible standard structural defaults/distributions.
@@ -22,11 +22,34 @@ def adapt_dataset(input_file, output_file, column_mapping, dataset_name="Externa
             df = pd.DataFrame(records)
         else:
             df = pd.read_json(input_file, lines=True)
+    elif input_file.endswith('.db') or input_file.endswith('.sqlite') or input_file.endswith('.sql'):
+        import sqlite3
+        conn = sqlite3.connect(input_file)
+        if query:
+            if limit and "limit" not in query.lower():
+                query += f" LIMIT {limit}"
+            df = pd.read_sql_query(query, conn)
+        else:
+            # Fetch the first table available
+            tables = pd.read_sql_query("SELECT name FROM sqlite_master WHERE type='table';", conn)
+            if not tables.empty:
+                table_name = tables.iloc[0]['name']
+                auto_query = f"SELECT * FROM {table_name}"
+                if limit:
+                    auto_query += f" LIMIT {limit}"
+                df = pd.read_sql_query(auto_query, conn)
+            else:
+                df = pd.DataFrame()
+        conn.close()
     else:
         df = pd.read_csv(input_file, nrows=limit)
         
     print(f"Loaded {len(df)} rows. Mapping columns...")
     
+    if custom_preprocess_func:
+        print("Applying custom preprocessing function...")
+        df = custom_preprocess_func(df)
+        
     # 2. Map existing columns
     df_mapped = pd.DataFrame()
     for ext_col, std_col in column_mapping.items():
@@ -162,25 +185,30 @@ def adapt_dataset(input_file, output_file, column_mapping, dataset_name="Externa
 
 
 if __name__ == '__main__':
-    # Usage Example: Map the Amazon Fashion JSON
-    amazon_mapping = {
-        'reviewerID': 'customer_id',
-        'asin': 'product_id',
-        'reviewText': 'review_text',
-        'overall': 'review_rating',
-        'unixReviewTime': 'order_date'
-    }
+    import argparse
+    import json
     
-    input_path = '../data/AMAZON_FASHION.json'
-    output_path = '../data/external_amazon_fashion_mapped.csv'
+    parser = argparse.ArgumentParser(description="Generic Dataset Adapter for mapping external data to a standard schema.")
+    parser.add_argument('--input', type=str, required=True, help="Path to input raw data (CSV, JSON, or SQLite DB via query)")
+    parser.add_argument('--output', type=str, required=True, help="Path to save the mapped output CSV")
+    parser.add_argument('--mapping', type=str, required=False, help="Path to a JSON file containing the column mapping dictionary")
+    parser.add_argument('--name', type=str, default='Unknown_Dataset', help="Dataset name for metadata")
+    parser.add_argument('--limit', type=int, default=10000, help="Row limit to process")
     
-    if os.path.exists(input_path):
+    args = parser.parse_args()
+    
+    mapping_dict = {}
+    if args.mapping and os.path.exists(args.mapping):
+        with open(args.mapping, 'r') as f:
+            mapping_dict = json.load(f)
+            
+    if os.path.exists(args.input):
         adapt_dataset(
-            input_file=input_path,
-            output_file=output_path,
-            column_mapping=amazon_mapping,
-            dataset_name='Amazon_Fashion',
-            limit=10000
+            input_file=args.input,
+            output_file=args.output,
+            column_mapping=mapping_dict,
+            dataset_name=args.name,
+            limit=args.limit
         )
     else:
-        print(f"Skipped Amazon Fashion generic adapt - File not found at {input_path}")
+        print(f"Skipped {args.name} generic adapt - File not found at {args.input}")

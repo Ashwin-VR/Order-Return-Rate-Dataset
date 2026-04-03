@@ -22,18 +22,14 @@ def test_olist_dataset():
         report_content = f"""# 🇧🇷 External Dataset Test Report: Olist (Real Mode)
 
 ## 🎯 Overview
-This report validates the robustness of our data pipeline by running the Brazilian e-commerce public dataset (`olist.sqlite`) through our custom `olist_dataset_adapter.py` and the core `preprocess.py` pipeline utilizing the **Dual-Pipeline Architecture (Mode A: Real)**.
+This report validates the robustness of our data pipeline by running the Brazilian e-commerce public dataset (`olist.sqlite`) through our universal `sql_dataset_adapter.py` and the core `preprocess.py` pipeline utilizing the **Dual-Pipeline Architecture (Mode A: Real)**.
 
 ---
 
 ## 📋 Data Transformation Journey
 
-1. **Raw External Source**: `{input_path.split('/')[-1]}` (10,000 rows mapped via SQL JOIN across 6 tables)  
-2. **Schema Adapter**: `scripts/olist_dataset_adapter.py` mapped existing review features (`review_score`, `review_comment_message`, `order_purchase_timestamp`) and generated synthetic logistics defaults just to support Phase 0 validation.
-3. **Pipeline Target**: `{output_path.split('/')[-1]}` (Real Mode)
-
----
-
+1. **Raw External Source**: `{input_path.split('/')[-1]}` (10,000 rows mapped via SQL JOIN across 6 tables)
+2. **Schema Adapter**: `scripts/sql_dataset_adapter.py` mapped existing review features (`review_score`, `review_comment_message`, `order_purchase_timestamp`) and generated synthetic logistics defaults just to support Phase 0 validation. 
 ## 📉 Preprocessing Metrics
 
 * **Original Rows**: 10,000
