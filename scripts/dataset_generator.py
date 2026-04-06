@@ -13,7 +13,7 @@ random.seed(42)
 # CONFIG
 # -----------------------------
 NUM_CUSTOMERS = 1000
-NUM_ORDERS = 10000
+NUM_ORDERS = 3000
 
 # -----------------------------
 # CITIES
