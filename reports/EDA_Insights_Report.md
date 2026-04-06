@@ -15,8 +15,8 @@ Columns: ['order_id', 'customer_id', 'product_id', 'order_date', 'order_day_of_w
 2. TARGET VARIABLE DISTRIBUTION (is_returned)
 -----------------------------------------
 is_returned
-0    61.25
-1    38.75
+0    66.49
+1    33.51
 Name: proportion, dtype: float64
 
 -----------------------------------------
@@ -24,43 +24,43 @@ Name: proportion, dtype: float64
 -----------------------------------------
 --- Average Return Rate by Delivery Delay (Days) ---
 delivery_delay
-(-1, 0]     37.473513
-(0, 2]      39.252591
-(2, 5]      68.527919
-(5, 20]    100.000000
+(-1, 0]    25.157817
+(0, 2]     38.266222
+(2, 5]     66.034156
+(5, 20]    82.978723
 
 --- Average Return Rate by Payment Method ---
 payment_method
-COD     0.454035
-Card    0.348471
-UPI     0.358284
+COD     0.400245
+Card    0.276255
+UPI     0.297094
 
 --- Average Return Rate by Category ---
 category
-Apparel            0.477781
-Electronics        0.328054
-Footwear           0.371765
-Home Appliances    0.338942
+Apparel            0.410959
+Electronics        0.261042
+Footwear           0.329677
+Home Appliances    0.333527
 
 -----------------------------------------
 4. PREDICTIVE MODELING (MACHINE LEARNING VALUE)
 -----------------------------------------
 Training RandomForest to showcase predictability & feature correlation.
-R-Squared (Variance Explained): 0.3157  <-- POSITIVE R-SQUARE ACHIEVED
-Classification Accuracy       : 0.7705
-ROC-AUC Score                 : 0.8412
+R-Squared (Variance Explained): 0.3207  <-- POSITIVE R-SQUARE ACHIEVED
+Classification Accuracy       : 0.7895
+ROC-AUC Score                 : 0.8460
 
 --- Top 10 Feature Importances ---
-overall_return_rate          0.219494
-total_returns                0.107115
-frequent_return_flag         0.098328
-distance_km                  0.052527
-warehouse_processing_time    0.038517
-avg_days_between_orders      0.036696
-avg_order_value              0.035878
-customer_tenure_days         0.034303
-courier_delay_rate           0.032837
-last_order_days_ago          0.031559
+overall_return_rate     0.116165
+discount_percentage     0.078657
+delivery_delay          0.066460
+total_returns           0.061409
+distance_km             0.060486
+discount_amount         0.048423
+actual_delivery_days    0.040765
+final_price             0.040247
+avg_order_value         0.039220
+courier_delay_rate      0.038505
 
 ============================================================
                       CONCLUSION
