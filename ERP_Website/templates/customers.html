@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block page_title %}Customer Profiles{% endblock %}
+{% block active_customers %}active{% endblock %}
+{% block topbar_title %}Customer Risk Profiles{% endblock %}
+{% block breadcrumb %}Home / <strong>Customer Profiles</strong>{% endblock %}
+
+{% block content %}
+<!-- Filters -->
+<div class="filters-bar" style="margin-bottom:16px;">
+    <div class="filter-group" style="flex:1;min-width:180px;">
+        <label class="filter-label">Search Customer / City</label>
+        <input type="text" class="filter-control" id="custSearch" placeholder="e.g. C12 or Mumbai">
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">Segment</label>
+        <div class="pill-group" id="segPillGroup">
+            <div class="pill active" data-value="">All</div>
+            <div class="pill" data-value="zero">Zero</div>
+            <div class="pill" data-value="low">Low</div>
+            <div class="pill" data-value="medium">Medium</div>
+            <div class="pill" data-value="high">High</div>
+        </div>
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">City</label>
+        <select class="filter-control" id="custCity">
+            <option value="">All Cities</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">Sort By</label>
+        <select class="filter-control" id="custSort">
+            <option value="customer_id">Customer ID</option>
+            <option value="overall_return_rate">Return Rate</option>
+            <option value="total_orders">Total Orders</option>
+            <option value="avg_order_value">Avg Order Value</option>
+        </select>
+    </div>
+</div>
+
+<!-- Summary -->
+<div style="font-size:12px;color:var(--text-muted);margin-bottom:12px;" id="custSummary">Loading customers...</div>
+
+<!-- Customer Cards Grid -->
+<div class="customer-grid" id="customerGrid"></div>
+
+<!-- Pagination -->
+<div class="pagination" id="custPagination" style="margin-top:16px;"></div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="customerModal" style="display:none;">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title" id="modalTitle">Customer Profile</div>
+            <button class="modal-close" onclick="closeModal()">✕</button>
+        </div>
+        <div class="modal-body">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="orders">Order History</button>
+                <button class="tab-btn" data-tab="analysis">Return Analysis</button>
+                <button class="tab-btn" data-tab="predictions">Predictions</button>
+            </div>
+            <div id="tab-overview" class="tab-panel active">
+                <div id="overviewContent">
+                    <div style="padding:20px;color:var(--text-muted);">Loading...</div>
+                </div>
+            </div>
+            <div id="tab-orders" class="tab-panel">
+                <div id="ordersContent">
+                    <div style="padding:20px;color:var(--text-muted);">Loading...</div>
+                </div>
+            </div>
+            <div id="tab-analysis" class="tab-panel">
+                <div id="analysisContent">
+                    <div style="padding:20px;color:var(--text-muted);">Loading...</div>
+                </div>
+            </div>
+            <div id="tab-predictions" class="tab-panel">
+                <div id="predictionsContent">
+                    <div style="padding:20px;color:var(--text-muted);">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/customers.js') }}"></script>
+{% endblock %}

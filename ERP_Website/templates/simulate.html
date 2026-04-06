@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block page_title %}Order Simulation{% endblock %}
+{% block active_simulate %}active{% endblock %}
+{% block topbar_title %}Order Simulation & Risk Scoring{% endblock %}
+{% block breadcrumb %}Home / <strong>Order Simulation</strong>{% endblock %}
+
+{% block content %}
+<div class="simulate-layout">
+    <!-- LEFT: Form Panel -->
+    <div class="simulate-form-panel">
+        <div class="card">
+            <div class="card-title">Order Details</div>
+
+            <div class="form-group">
+                <label class="form-label">Customer ID</label>
+                <input type="text" class="form-control" id="customerId" placeholder="C1 to C100" pattern="^C([1-9]|[1-9][0-9]|100)$">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Product ID</label>
+                <select class="form-control" id="productId">
+                    <option value="">Select product...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="quantity" value="1" min="1" max="3">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Discount %</label>
+                <select class="form-control" id="discountPct">
+                    <option value="0">0%</option>
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                    <option value="30">30%</option>
+                    <option value="40">40%</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Payment Method</label>
+                <select class="form-control" id="paymentMethod">
+                    <option value="COD">COD</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Card">Card</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Shipping Mode</label>
+                <select class="form-control" id="shippingMode">
+                    <option value="Standard">Standard</option>
+                    <option value="Express">Express</option>
+                    <option value="Same-Day">Same-Day</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Courier Partner</label>
+                <select class="form-control" id="courierPartner">
+                    <option value="Delhivery">Delhivery</option>
+                    <option value="BlueDart">BlueDart</option>
+                    <option value="Ecom Express">Ecom Express</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Warehouse City</label>
+                <select class="form-control" id="warehouseCity">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Source Pincode (Warehouse)</label>
+                <input type="text" class="form-control" id="sourcePincode" value="400001">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Destination City</label>
+                <select class="form-control" id="deliveryCity">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Destination Pincode (Customer)</label>
+                <input type="text" class="form-control" id="destPincode" value="110001">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Order Hour — <span id="orderHourLabel">12 (Afternoon)</span></label>
+                <input type="range" id="orderHour" min="0" max="23" value="12">
+            </div>
+
+            <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;" id="simulateBtn">
+                <span id="simulateBtnText">Run Simulation →</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- RIGHT: Result Panel -->
+    <div class="simulate-result-panel" id="resultPanel">
+        <div class="card" style="text-align:center;padding:60px 24px;color:var(--text-muted);">
+            <div style="font-size:40px;margin-bottom:12px;"></div>
+            <div style="font-size:15px;font-weight:600;margin-bottom:6px;">No Simulation Run Yet</div>
+            <div style="font-size:13px;">Fill in the order form and click "Run Simulation" to get a full risk report.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/simulate.js') }}"></script>
+{% endblock %}

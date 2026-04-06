@@ -1,0 +1,3001 @@
+order_id,shipping_mode,courier_partner,warehouse_city,delivery_city,expected_delivery_days,actual_delivery_days,delivery_delay,distance_km,is_remote_area,delivery_attempts,courier_delay_rate,warehouse_processing_time
+O1,Same-Day,Ecom Express,Chennai,Mumbai,1,2,1,904,1,3,0.15,1.54
+O2,Express,Delhivery,Mumbai,Jaipur,3,3,0,665,0,1,0.29,2.67
+O3,Standard,BlueDart,Chennai,Jaipur,4,4,0,968,1,1,0.3,1.87
+O4,Express,Delhivery,Kolkata,Chennai,2,2,0,1377,1,2,0.22,1.58
+O5,Express,BlueDart,Bangalore,Delhi,2,2,0,242,0,3,0.27,1.92
+O6,Express,Delhivery,Chennai,Mumbai,3,3,0,910,1,3,0.08,1.58
+O7,Same-Day,Ecom Express,Bangalore,Bangalore,0,3,3,1458,1,3,0.15,1.45
+O8,Same-Day,BlueDart,Lucknow,Kolkata,1,2,1,1047,1,2,0.11,2.1
+O9,Standard,BlueDart,Kolkata,Jaipur,3,3,0,570,0,3,0.12,1.01
+O10,Express,Ecom Express,Jaipur,Jaipur,3,4,1,996,1,2,0.28,2.74
+O11,Express,BlueDart,Jaipur,Jaipur,3,3,0,973,1,3,0.25,2.3
+O12,Same-Day,Delhivery,Lucknow,Hyderabad,1,3,2,1786,1,1,0.23,1.82
+O13,Same-Day,BlueDart,Jaipur,Lucknow,1,1,0,1335,1,2,0.21,2.77
+O14,Standard,BlueDart,Mumbai,Lucknow,5,7,2,470,0,3,0.23,1.2
+O15,Express,BlueDart,Delhi,Jaipur,1,1,0,605,0,1,0.18,2.13
+O16,Same-Day,Delhivery,Hyderabad,Hyderabad,0,2,2,1024,1,2,0.21,1.92
+O17,Same-Day,BlueDart,Chennai,Mumbai,0,2,2,156,0,3,0.29,2.38
+O18,Standard,Ecom Express,Chennai,Lucknow,4,6,2,786,0,3,0.12,2.96
+O19,Same-Day,BlueDart,Chennai,Lucknow,0,1,1,1869,1,1,0.2,1.7
+O20,Same-Day,Ecom Express,Bangalore,Kolkata,0,1,1,1291,1,2,0.25,1.07
+O21,Express,Delhivery,Kolkata,Kolkata,3,3,0,855,1,3,0.18,1.55
+O22,Express,Delhivery,Hyderabad,Lucknow,1,1,0,964,1,3,0.23,2.96
+O23,Express,Ecom Express,Chennai,Hyderabad,3,5,2,258,0,3,0.15,2.28
+O24,Standard,Ecom Express,Mumbai,Hyderabad,5,6,1,1879,1,3,0.26,2.82
+O25,Standard,Delhivery,Mumbai,Jaipur,3,4,1,628,0,1,0.27,1.27
+O26,Same-Day,Delhivery,Lucknow,Delhi,0,0,0,1818,1,3,0.15,2.9
+O27,Express,Ecom Express,Kolkata,Mumbai,1,3,2,1756,1,3,0.28,2.29
+O28,Express,Ecom Express,Bangalore,Jaipur,1,2,1,1362,1,1,0.25,1.49
+O29,Standard,BlueDart,Delhi,Mumbai,4,4,0,1670,1,3,0.05,2.72
+O30,Standard,Delhivery,Kolkata,Jaipur,3,3,0,274,0,1,0.09,1.1
+O31,Express,BlueDart,Hyderabad,Jaipur,2,2,0,1056,1,3,0.06,2.57
+O32,Standard,BlueDart,Mumbai,Kolkata,3,3,0,985,1,2,0.23,1.89
+O33,Standard,Ecom Express,Kolkata,Mumbai,5,6,1,1283,1,2,0.3,2.06
+O34,Same-Day,Ecom Express,Hyderabad,Chennai,0,0,0,1751,1,2,0.16,1.46
+O35,Standard,BlueDart,Kolkata,Jaipur,5,5,0,879,1,1,0.22,1.95
+O36,Same-Day,Delhivery,Kolkata,Mumbai,1,1,0,1667,1,3,0.08,1.71
+O37,Standard,Delhivery,Mumbai,Jaipur,4,4,0,321,0,2,0.26,1.74
+O38,Same-Day,Ecom Express,Chennai,Jaipur,0,3,3,1252,1,1,0.1,2.41
+O39,Standard,Ecom Express,Bangalore,Bangalore,6,7,1,147,0,1,0.24,1.43
+O40,Express,Ecom Express,Mumbai,Mumbai,3,3,0,669,0,1,0.09,2.51
+O41,Same-Day,BlueDart,Chennai,Jaipur,1,1,0,999,1,1,0.24,1.23
+O42,Same-Day,Ecom Express,Bangalore,Jaipur,1,1,0,98,0,1,0.1,2.89
+O43,Standard,Delhivery,Jaipur,Hyderabad,6,6,0,1534,1,3,0.23,2.0
+O44,Standard,Delhivery,Kolkata,Kolkata,6,6,0,43,0,3,0.16,1.81
+O45,Standard,Ecom Express,Lucknow,Jaipur,5,7,2,356,0,3,0.28,1.18
+O46,Same-Day,Ecom Express,Kolkata,Chennai,0,1,1,815,1,1,0.13,1.34
+O47,Standard,Ecom Express,Delhi,Jaipur,5,5,0,724,0,1,0.08,1.51
+O48,Same-Day,Ecom Express,Lucknow,Kolkata,1,1,0,955,1,3,0.28,2.13
+O49,Express,BlueDart,Chennai,Mumbai,1,1,0,965,1,3,0.06,2.01
+O50,Express,Delhivery,Jaipur,Lucknow,2,4,2,162,0,2,0.2,2.91
+O51,Same-Day,Delhivery,Lucknow,Chennai,1,2,1,1031,1,1,0.25,2.67
+O52,Standard,Ecom Express,Delhi,Kolkata,6,7,1,904,1,2,0.14,1.57
+O53,Same-Day,Ecom Express,Jaipur,Hyderabad,1,1,0,139,0,2,0.11,2.7
+O54,Same-Day,Ecom Express,Jaipur,Lucknow,0,1,1,1882,1,1,0.2,2.88
+O55,Same-Day,Ecom Express,Kolkata,Hyderabad,0,0,0,1328,1,1,0.14,1.36
+O56,Standard,Delhivery,Bangalore,Hyderabad,4,5,1,163,0,3,0.13,2.53
+O57,Same-Day,BlueDart,Kolkata,Mumbai,0,2,2,1481,1,3,0.23,2.94
+O58,Standard,BlueDart,Hyderabad,Jaipur,5,5,0,1982,1,2,0.22,2.14
+O59,Same-Day,Delhivery,Delhi,Bangalore,1,2,1,1983,1,2,0.06,1.96
+O60,Express,BlueDart,Delhi,Kolkata,1,1,0,1567,1,2,0.07,2.82
+O61,Same-Day,Delhivery,Kolkata,Chennai,1,2,1,487,0,1,0.06,2.86
+O62,Express,Ecom Express,Lucknow,Kolkata,2,3,1,1430,1,2,0.2,2.81
+O63,Same-Day,Delhivery,Chennai,Chennai,1,1,0,232,0,1,0.06,1.84
+O64,Same-Day,Delhivery,Delhi,Jaipur,0,1,1,1299,1,2,0.16,2.23
+O65,Same-Day,Delhivery,Bangalore,Chennai,0,1,1,1077,1,2,0.27,1.09
+O66,Standard,Ecom Express,Mumbai,Hyderabad,5,5,0,498,0,3,0.23,1.67
+O67,Standard,Delhivery,Delhi,Chennai,6,7,1,1429,1,1,0.23,2.89
+O68,Standard,BlueDart,Lucknow,Bangalore,5,5,0,1916,1,2,0.06,2.29
+O69,Standard,Ecom Express,Lucknow,Kolkata,5,6,1,899,1,2,0.13,1.37
+O70,Standard,Delhivery,Chennai,Jaipur,6,8,2,166,0,2,0.08,1.66
+O71,Express,BlueDart,Bangalore,Jaipur,1,2,1,1417,1,3,0.27,1.71
+O72,Same-Day,Ecom Express,Delhi,Mumbai,1,3,2,749,0,1,0.09,2.22
+O73,Same-Day,Ecom Express,Bangalore,Kolkata,1,2,1,746,0,3,0.09,1.9
+O74,Same-Day,BlueDart,Hyderabad,Kolkata,1,2,1,820,1,1,0.06,1.37
+O75,Same-Day,BlueDart,Lucknow,Chennai,1,2,1,444,0,1,0.08,2.71
+O76,Same-Day,Delhivery,Chennai,Hyderabad,1,2,1,1372,1,2,0.26,2.42
+O77,Standard,Delhivery,Lucknow,Chennai,3,4,1,416,0,1,0.14,2.14
+O78,Standard,Ecom Express,Lucknow,Mumbai,5,5,0,820,1,3,0.15,1.82
+O79,Standard,BlueDart,Delhi,Chennai,6,6,0,959,1,3,0.21,1.36
+O80,Same-Day,BlueDart,Hyderabad,Chennai,0,3,3,627,0,2,0.29,2.04
+O81,Standard,Ecom Express,Delhi,Bangalore,5,7,2,1263,1,3,0.29,1.31
+O82,Standard,Ecom Express,Chennai,Jaipur,3,3,0,1947,1,3,0.1,2.14
+O83,Same-Day,BlueDart,Hyderabad,Lucknow,1,2,1,1319,1,3,0.15,1.91
+O84,Express,Delhivery,Kolkata,Hyderabad,2,3,1,422,0,3,0.13,2.98
+O85,Same-Day,Delhivery,Chennai,Kolkata,0,0,0,658,0,2,0.11,1.19
+O86,Standard,BlueDart,Hyderabad,Kolkata,5,5,0,1917,1,1,0.17,2.03
+O87,Express,Delhivery,Kolkata,Bangalore,3,4,1,941,1,1,0.06,1.99
+O88,Standard,BlueDart,Kolkata,Delhi,3,4,1,887,1,2,0.14,1.8
+O89,Express,Ecom Express,Chennai,Mumbai,1,1,0,796,0,3,0.22,1.24
+O90,Express,BlueDart,Bangalore,Mumbai,1,2,1,412,0,1,0.06,2.43
+O91,Same-Day,BlueDart,Delhi,Delhi,0,0,0,676,0,2,0.3,2.48
+O92,Same-Day,BlueDart,Bangalore,Mumbai,1,1,0,1456,1,2,0.13,1.22
+O93,Express,Ecom Express,Hyderabad,Jaipur,2,3,1,1985,1,3,0.06,1.96
+O94,Standard,Ecom Express,Mumbai,Mumbai,4,5,1,69,0,1,0.05,1.63
+O95,Same-Day,Ecom Express,Bangalore,Bangalore,1,3,2,1792,1,3,0.08,1.41
+O96,Express,BlueDart,Kolkata,Chennai,1,2,1,946,1,3,0.24,2.44
+O97,Standard,Delhivery,Chennai,Jaipur,4,4,0,576,0,2,0.23,2.38
+O98,Same-Day,Ecom Express,Jaipur,Jaipur,1,1,0,594,0,2,0.25,2.91
+O99,Standard,BlueDart,Lucknow,Lucknow,5,5,0,1897,1,1,0.1,2.08
+O100,Same-Day,Ecom Express,Hyderabad,Chennai,0,0,0,501,0,3,0.11,1.2
+O101,Same-Day,BlueDart,Lucknow,Chennai,0,3,3,838,1,3,0.1,2.93
+O102,Same-Day,Delhivery,Delhi,Mumbai,0,2,2,1100,1,2,0.27,1.35
+O103,Express,Ecom Express,Mumbai,Chennai,1,4,3,23,0,2,0.12,2.98
+O104,Express,Delhivery,Lucknow,Kolkata,1,1,0,1661,1,3,0.11,1.37
+O105,Same-Day,BlueDart,Mumbai,Jaipur,1,1,0,1698,1,2,0.22,1.37
+O106,Express,BlueDart,Kolkata,Jaipur,2,5,3,487,0,2,0.2,2.15
+O107,Same-Day,BlueDart,Chennai,Kolkata,0,0,0,958,1,3,0.08,2.83
+O108,Express,Ecom Express,Kolkata,Kolkata,1,3,2,936,1,2,0.23,2.83
+O109,Same-Day,Ecom Express,Kolkata,Jaipur,0,0,0,1081,1,1,0.28,1.22
+O110,Standard,BlueDart,Mumbai,Lucknow,4,6,2,676,0,3,0.1,2.17
+O111,Standard,Ecom Express,Lucknow,Jaipur,6,8,2,940,1,3,0.25,2.45
+O112,Standard,Delhivery,Bangalore,Jaipur,3,3,0,872,1,1,0.3,1.94
+O113,Same-Day,BlueDart,Lucknow,Jaipur,1,3,2,771,0,2,0.14,2.37
+O114,Standard,Delhivery,Bangalore,Delhi,6,6,0,1088,1,1,0.29,1.93
+O115,Standard,Delhivery,Mumbai,Bangalore,6,6,0,713,0,1,0.25,1.84
+O116,Standard,Delhivery,Hyderabad,Chennai,6,6,0,1229,1,3,0.06,1.88
+O117,Express,Ecom Express,Kolkata,Bangalore,1,1,0,1675,1,3,0.2,2.35
+O118,Same-Day,Delhivery,Delhi,Kolkata,0,0,0,851,1,3,0.22,2.11
+O119,Express,BlueDart,Jaipur,Mumbai,3,5,2,857,1,1,0.24,1.95
+O120,Same-Day,Ecom Express,Delhi,Delhi,1,2,1,1987,1,2,0.11,1.41
+O121,Same-Day,Ecom Express,Bangalore,Lucknow,0,2,2,110,0,1,0.1,2.52
+O122,Express,Delhivery,Hyderabad,Mumbai,2,4,2,1964,1,3,0.08,3.0
+O123,Standard,BlueDart,Chennai,Lucknow,6,6,0,1879,1,2,0.17,2.3
+O124,Standard,Delhivery,Kolkata,Lucknow,6,9,3,1564,1,2,0.15,2.13
+O125,Same-Day,BlueDart,Hyderabad,Chennai,1,1,0,609,0,2,0.19,1.49
+O126,Express,BlueDart,Delhi,Jaipur,3,3,0,1319,1,3,0.25,1.34
+O127,Standard,Ecom Express,Bangalore,Kolkata,3,4,1,1723,1,1,0.15,2.69
+O128,Standard,Ecom Express,Lucknow,Delhi,6,6,0,769,0,3,0.17,1.01
+O129,Express,Ecom Express,Jaipur,Jaipur,3,6,3,592,0,1,0.08,1.19
+O130,Express,BlueDart,Jaipur,Hyderabad,2,4,2,1633,1,2,0.19,2.98
+O131,Express,Delhivery,Bangalore,Chennai,2,2,0,777,0,3,0.09,2.0
+O132,Same-Day,Ecom Express,Lucknow,Kolkata,0,0,0,475,0,2,0.06,1.15
+O133,Express,Delhivery,Jaipur,Chennai,1,3,2,1974,1,1,0.12,2.13
+O134,Express,Ecom Express,Mumbai,Chennai,3,5,2,291,0,3,0.24,1.69
+O135,Same-Day,Delhivery,Chennai,Hyderabad,1,4,3,1989,1,2,0.17,1.71
+O136,Express,Delhivery,Mumbai,Bangalore,1,3,2,1586,1,1,0.12,1.76
+O137,Express,BlueDart,Kolkata,Bangalore,1,1,0,192,0,2,0.08,1.17
+O138,Standard,Delhivery,Kolkata,Mumbai,3,4,1,188,0,2,0.05,1.83
+O139,Same-Day,Delhivery,Chennai,Mumbai,0,1,1,1408,1,2,0.12,1.29
+O140,Express,Delhivery,Lucknow,Chennai,1,4,3,744,0,3,0.2,1.92
+O141,Express,Ecom Express,Delhi,Chennai,2,2,0,906,1,2,0.13,2.89
+O142,Express,BlueDart,Hyderabad,Jaipur,2,2,0,1510,1,2,0.14,2.63
+O143,Same-Day,Delhivery,Lucknow,Mumbai,0,0,0,1401,1,3,0.1,2.6
+O144,Same-Day,Delhivery,Jaipur,Jaipur,1,2,1,500,0,2,0.07,2.98
+O145,Same-Day,BlueDart,Mumbai,Mumbai,1,1,0,1118,1,1,0.24,2.32
+O146,Same-Day,BlueDart,Mumbai,Jaipur,1,3,2,1985,1,1,0.07,1.44
+O147,Express,Ecom Express,Delhi,Hyderabad,2,2,0,806,1,2,0.3,1.97
+O148,Standard,Delhivery,Lucknow,Lucknow,5,5,0,643,0,2,0.17,1.88
+O149,Standard,Ecom Express,Mumbai,Delhi,3,3,0,51,0,3,0.25,2.86
+O150,Express,Delhivery,Jaipur,Delhi,3,6,3,878,1,3,0.1,2.28
+O151,Express,Delhivery,Chennai,Chennai,3,5,2,884,1,3,0.25,1.13
+O152,Express,BlueDart,Kolkata,Hyderabad,1,1,0,542,0,3,0.15,1.79
+O153,Standard,Delhivery,Delhi,Hyderabad,5,8,3,1886,1,2,0.08,1.61
+O154,Express,BlueDart,Jaipur,Mumbai,2,5,3,1226,1,1,0.17,2.07
+O155,Standard,Delhivery,Kolkata,Lucknow,5,5,0,1729,1,1,0.17,1.39
+O156,Same-Day,BlueDart,Lucknow,Kolkata,1,1,0,856,1,1,0.07,1.06
+O157,Same-Day,Ecom Express,Lucknow,Jaipur,1,2,1,349,0,3,0.18,2.15
+O158,Same-Day,BlueDart,Mumbai,Hyderabad,1,3,2,1123,1,3,0.26,2.5
+O159,Express,Delhivery,Kolkata,Hyderabad,1,3,2,1593,1,3,0.2,1.86
+O160,Same-Day,Ecom Express,Delhi,Kolkata,1,2,1,1095,1,2,0.29,1.59
+O161,Express,Delhivery,Delhi,Hyderabad,1,1,0,572,0,1,0.09,1.64
+O162,Same-Day,BlueDart,Mumbai,Hyderabad,1,1,0,1290,1,3,0.25,2.54
+O163,Express,Ecom Express,Bangalore,Bangalore,2,3,1,1951,1,3,0.07,2.94
+O164,Same-Day,Delhivery,Lucknow,Hyderabad,1,1,0,451,0,2,0.13,1.57
+O165,Express,Delhivery,Lucknow,Hyderabad,3,3,0,1566,1,1,0.08,2.72
+O166,Standard,BlueDart,Mumbai,Jaipur,5,8,3,330,0,3,0.14,1.16
+O167,Same-Day,Delhivery,Jaipur,Mumbai,1,1,0,1491,1,3,0.07,1.19
+O168,Standard,BlueDart,Mumbai,Chennai,6,6,0,24,0,2,0.22,1.96
+O169,Express,Delhivery,Delhi,Mumbai,2,3,1,1809,1,1,0.18,1.02
+O170,Same-Day,Ecom Express,Lucknow,Lucknow,0,0,0,1888,1,1,0.07,1.2
+O171,Express,BlueDart,Mumbai,Hyderabad,2,2,0,1625,1,1,0.19,2.2
+O172,Express,Delhivery,Jaipur,Jaipur,1,1,0,1065,1,2,0.21,2.57
+O173,Express,Delhivery,Kolkata,Chennai,3,3,0,1221,1,2,0.08,2.72
+O174,Standard,BlueDart,Hyderabad,Chennai,3,4,1,1207,1,1,0.28,2.9
+O175,Express,BlueDart,Mumbai,Bangalore,3,3,0,828,1,2,0.07,2.84
+O176,Same-Day,Ecom Express,Hyderabad,Kolkata,0,1,1,640,0,1,0.11,2.85
+O177,Express,Delhivery,Mumbai,Chennai,3,5,2,1523,1,1,0.23,2.4
+O178,Same-Day,Ecom Express,Chennai,Chennai,1,3,2,346,0,3,0.27,2.54
+O179,Standard,Ecom Express,Mumbai,Lucknow,5,6,1,1463,1,2,0.16,1.72
+O180,Express,Ecom Express,Mumbai,Chennai,1,4,3,1836,1,1,0.24,1.01
+O181,Express,Delhivery,Jaipur,Chennai,1,4,3,371,0,1,0.13,1.83
+O182,Standard,Ecom Express,Bangalore,Chennai,3,6,3,372,0,2,0.07,1.93
+O183,Standard,BlueDart,Hyderabad,Delhi,5,5,0,415,0,2,0.14,2.94
+O184,Standard,BlueDart,Bangalore,Delhi,6,6,0,53,0,2,0.05,2.31
+O185,Express,Delhivery,Chennai,Chennai,2,2,0,1973,1,1,0.06,1.46
+O186,Standard,BlueDart,Mumbai,Hyderabad,3,3,0,1040,1,3,0.19,1.87
+O187,Same-Day,Delhivery,Mumbai,Chennai,1,2,1,656,0,1,0.08,2.54
+O188,Express,BlueDart,Hyderabad,Hyderabad,2,2,0,837,1,2,0.13,1.53
+O189,Same-Day,BlueDart,Delhi,Chennai,0,2,2,445,0,1,0.23,2.94
+O190,Standard,BlueDart,Hyderabad,Delhi,3,4,1,1954,1,1,0.17,2.61
+O191,Standard,Ecom Express,Mumbai,Lucknow,4,5,1,1691,1,3,0.2,2.83
+O192,Express,BlueDart,Mumbai,Mumbai,1,3,2,193,0,1,0.29,1.1
+O193,Standard,BlueDart,Hyderabad,Delhi,6,9,3,1404,1,1,0.12,1.89
+O194,Standard,Ecom Express,Lucknow,Jaipur,5,5,0,1026,1,1,0.07,1.77
+O195,Same-Day,BlueDart,Lucknow,Chennai,0,2,2,788,0,3,0.25,1.69
+O196,Standard,BlueDart,Bangalore,Mumbai,5,5,0,1227,1,2,0.18,2.53
+O197,Same-Day,Delhivery,Jaipur,Chennai,0,0,0,1569,1,2,0.28,2.98
+O198,Same-Day,Ecom Express,Kolkata,Jaipur,1,3,2,1876,1,3,0.19,2.13
+O199,Express,Ecom Express,Hyderabad,Delhi,1,2,1,189,0,1,0.18,1.0
+O200,Standard,Delhivery,Mumbai,Lucknow,3,3,0,307,0,3,0.27,2.92
+O201,Standard,Delhivery,Jaipur,Lucknow,5,5,0,623,0,3,0.29,2.3
+O202,Standard,Ecom Express,Chennai,Hyderabad,4,5,1,779,0,1,0.09,1.0
+O203,Standard,Ecom Express,Hyderabad,Hyderabad,5,5,0,1891,1,3,0.19,2.87
+O204,Express,Delhivery,Kolkata,Mumbai,2,5,3,348,0,2,0.05,1.42
+O205,Express,Delhivery,Jaipur,Bangalore,2,2,0,1505,1,2,0.27,1.7
+O206,Same-Day,Delhivery,Chennai,Hyderabad,0,0,0,338,0,1,0.13,2.9
+O207,Same-Day,Delhivery,Kolkata,Bangalore,0,0,0,1125,1,3,0.3,2.79
+O208,Express,Delhivery,Hyderabad,Bangalore,1,2,1,114,0,2,0.22,2.44
+O209,Standard,BlueDart,Delhi,Chennai,3,3,0,809,1,1,0.14,1.86
+O210,Standard,Ecom Express,Chennai,Chennai,3,5,2,57,0,1,0.17,1.23
+O211,Same-Day,BlueDart,Kolkata,Bangalore,1,1,0,383,0,1,0.16,1.53
+O212,Standard,Delhivery,Mumbai,Jaipur,4,4,0,1545,1,3,0.14,2.08
+O213,Same-Day,BlueDart,Hyderabad,Lucknow,1,2,1,1982,1,2,0.12,1.79
+O214,Same-Day,BlueDart,Delhi,Chennai,0,2,2,251,0,1,0.29,2.62
+O215,Express,Ecom Express,Chennai,Kolkata,1,1,0,1689,1,2,0.28,2.83
+O216,Same-Day,BlueDart,Bangalore,Chennai,1,1,0,1759,1,3,0.21,2.05
+O217,Same-Day,Delhivery,Chennai,Bangalore,0,1,1,1899,1,3,0.27,2.76
+O218,Express,Delhivery,Jaipur,Jaipur,1,4,3,357,0,1,0.15,2.76
+O219,Standard,BlueDart,Chennai,Mumbai,5,5,0,1679,1,2,0.26,2.37
+O220,Express,Delhivery,Hyderabad,Lucknow,3,6,3,858,1,2,0.1,2.65
+O221,Standard,BlueDart,Delhi,Kolkata,3,4,1,642,0,3,0.27,1.06
+O222,Express,Delhivery,Chennai,Mumbai,1,1,0,1885,1,2,0.26,2.01
+O223,Express,BlueDart,Kolkata,Lucknow,2,2,0,1221,1,2,0.09,2.79
+O224,Standard,Delhivery,Hyderabad,Hyderabad,4,5,1,1753,1,3,0.11,1.41
+O225,Standard,Delhivery,Bangalore,Lucknow,6,8,2,1871,1,1,0.11,2.61
+O226,Express,BlueDart,Jaipur,Mumbai,2,4,2,521,0,3,0.08,2.02
+O227,Express,BlueDart,Chennai,Lucknow,3,3,0,226,0,3,0.13,1.55
+O228,Standard,Ecom Express,Jaipur,Hyderabad,4,4,0,1847,1,3,0.13,1.28
+O229,Express,Ecom Express,Hyderabad,Jaipur,2,3,1,1513,1,2,0.23,1.44
+O230,Express,Ecom Express,Delhi,Bangalore,1,1,0,1726,1,2,0.07,1.26
+O231,Express,Delhivery,Chennai,Mumbai,3,3,0,187,0,2,0.25,1.66
+O232,Express,Ecom Express,Mumbai,Kolkata,1,3,2,1779,1,2,0.27,2.0
+O233,Standard,BlueDart,Jaipur,Jaipur,4,6,2,286,0,3,0.27,2.97
+O234,Express,BlueDart,Bangalore,Chennai,2,4,2,1297,1,1,0.16,1.42
+O235,Standard,BlueDart,Jaipur,Chennai,6,6,0,1302,1,1,0.06,1.4
+O236,Same-Day,Delhivery,Kolkata,Bangalore,0,1,1,1288,1,2,0.08,1.77
+O237,Express,Ecom Express,Kolkata,Bangalore,2,2,0,938,1,2,0.27,2.99
+O238,Express,Delhivery,Hyderabad,Jaipur,1,2,1,472,0,3,0.06,2.01
+O239,Same-Day,Delhivery,Bangalore,Jaipur,1,3,2,1584,1,3,0.08,2.67
+O240,Express,Ecom Express,Delhi,Chennai,1,1,0,1125,1,1,0.22,2.26
+O241,Same-Day,Delhivery,Jaipur,Mumbai,1,1,0,1280,1,1,0.18,2.24
+O242,Same-Day,Ecom Express,Hyderabad,Chennai,0,1,1,1598,1,2,0.23,1.59
+O243,Express,Ecom Express,Mumbai,Delhi,2,4,2,485,0,1,0.26,2.34
+O244,Same-Day,BlueDart,Chennai,Jaipur,0,0,0,940,1,2,0.06,2.63
+O245,Same-Day,Delhivery,Bangalore,Chennai,0,0,0,199,0,1,0.22,1.34
+O246,Standard,Delhivery,Jaipur,Chennai,5,5,0,1674,1,2,0.29,1.54
+O247,Standard,Delhivery,Delhi,Chennai,3,5,2,276,0,1,0.15,2.18
+O248,Express,Ecom Express,Delhi,Delhi,2,3,1,1257,1,2,0.28,1.23
+O249,Express,Ecom Express,Hyderabad,Delhi,1,1,0,1447,1,3,0.27,2.04
+O250,Same-Day,Ecom Express,Jaipur,Lucknow,0,1,1,991,1,1,0.26,2.12
+O251,Express,BlueDart,Kolkata,Kolkata,2,2,0,1785,1,1,0.13,1.56
+O252,Standard,Ecom Express,Lucknow,Chennai,3,4,1,945,1,1,0.26,1.89
+O253,Express,Delhivery,Mumbai,Bangalore,2,3,1,78,0,3,0.29,2.28
+O254,Express,BlueDart,Kolkata,Chennai,1,4,3,1677,1,3,0.24,2.2
+O255,Express,BlueDart,Kolkata,Mumbai,2,2,0,1704,1,3,0.08,2.79
+O256,Express,BlueDart,Hyderabad,Lucknow,3,5,2,406,0,2,0.26,1.38
+O257,Express,Ecom Express,Delhi,Delhi,2,4,2,1353,1,2,0.05,2.47
+O258,Standard,Delhivery,Jaipur,Mumbai,4,4,0,1501,1,3,0.2,2.77
+O259,Standard,BlueDart,Lucknow,Chennai,5,6,1,819,1,1,0.08,2.21
+O260,Same-Day,Ecom Express,Chennai,Bangalore,0,0,0,416,0,3,0.14,2.34
+O261,Same-Day,BlueDart,Lucknow,Kolkata,1,1,0,1459,1,3,0.19,2.33
+O262,Standard,Delhivery,Bangalore,Lucknow,3,4,1,56,0,1,0.12,2.57
+O263,Same-Day,Delhivery,Kolkata,Kolkata,1,2,1,422,0,2,0.08,2.74
+O264,Standard,BlueDart,Jaipur,Kolkata,5,5,0,1424,1,2,0.29,2.95
+O265,Express,BlueDart,Hyderabad,Delhi,1,2,1,1275,1,3,0.23,2.3
+O266,Same-Day,Ecom Express,Mumbai,Mumbai,0,1,1,607,0,1,0.29,2.47
+O267,Same-Day,BlueDart,Bangalore,Mumbai,1,1,0,271,0,2,0.17,2.87
+O268,Same-Day,Ecom Express,Kolkata,Chennai,1,3,2,1009,1,1,0.25,1.64
+O269,Standard,Delhivery,Kolkata,Lucknow,6,6,0,1117,1,1,0.27,2.33
+O270,Same-Day,Ecom Express,Bangalore,Kolkata,1,3,2,1154,1,1,0.22,1.89
+O271,Same-Day,Delhivery,Jaipur,Kolkata,1,3,2,786,0,2,0.19,1.57
+O272,Express,Delhivery,Kolkata,Kolkata,1,1,0,612,0,3,0.07,1.19
+O273,Same-Day,Delhivery,Hyderabad,Jaipur,0,1,1,1776,1,3,0.26,2.76
+O274,Express,Delhivery,Bangalore,Chennai,3,3,0,684,0,1,0.25,2.12
+O275,Same-Day,BlueDart,Mumbai,Chennai,1,1,0,891,1,3,0.05,2.44
+O276,Standard,BlueDart,Chennai,Kolkata,5,5,0,1905,1,3,0.07,2.53
+O277,Standard,Ecom Express,Chennai,Delhi,4,4,0,284,0,3,0.09,2.35
+O278,Standard,Ecom Express,Jaipur,Kolkata,3,3,0,90,0,3,0.19,1.17
+O279,Standard,BlueDart,Hyderabad,Lucknow,4,6,2,457,0,1,0.1,2.6
+O280,Express,Delhivery,Lucknow,Mumbai,3,3,0,142,0,2,0.14,2.34
+O281,Standard,Ecom Express,Chennai,Mumbai,5,5,0,1000,1,3,0.2,2.13
+O282,Express,Ecom Express,Jaipur,Hyderabad,1,3,2,1614,1,2,0.26,1.27
+O283,Express,Ecom Express,Mumbai,Chennai,3,3,0,227,0,2,0.26,1.28
+O284,Standard,Delhivery,Jaipur,Jaipur,3,3,0,1744,1,3,0.1,1.07
+O285,Standard,Ecom Express,Chennai,Hyderabad,5,7,2,808,1,1,0.17,2.02
+O286,Same-Day,BlueDart,Delhi,Mumbai,0,0,0,1555,1,1,0.19,2.13
+O287,Standard,Delhivery,Chennai,Hyderabad,4,4,0,1564,1,2,0.11,2.34
+O288,Standard,Ecom Express,Chennai,Mumbai,3,5,2,1333,1,3,0.12,2.09
+O289,Same-Day,Delhivery,Jaipur,Bangalore,0,2,2,1063,1,2,0.25,1.69
+O290,Express,Ecom Express,Chennai,Lucknow,1,1,0,476,0,1,0.09,1.31
+O291,Same-Day,BlueDart,Hyderabad,Hyderabad,0,1,1,991,1,3,0.09,2.67
+O292,Standard,Ecom Express,Delhi,Lucknow,4,5,1,1294,1,1,0.09,2.84
+O293,Standard,BlueDart,Lucknow,Bangalore,5,6,1,1944,1,2,0.09,2.66
+O294,Same-Day,BlueDart,Lucknow,Mumbai,1,1,0,348,0,3,0.2,1.46
+O295,Same-Day,Delhivery,Delhi,Jaipur,1,2,1,1697,1,2,0.28,2.2
+O296,Standard,Ecom Express,Jaipur,Mumbai,3,5,2,1841,1,3,0.16,2.75
+O297,Express,Ecom Express,Mumbai,Bangalore,2,3,1,1211,1,2,0.08,1.95
+O298,Express,Ecom Express,Bangalore,Hyderabad,2,2,0,392,0,3,0.18,2.04
+O299,Express,Ecom Express,Chennai,Bangalore,1,2,1,321,0,2,0.26,1.85
+O300,Express,Delhivery,Kolkata,Chennai,3,6,3,1610,1,3,0.19,1.51
+O301,Standard,Ecom Express,Delhi,Jaipur,3,5,2,1536,1,1,0.1,1.8
+O302,Express,Delhivery,Lucknow,Lucknow,3,6,3,15,0,3,0.16,1.13
+O303,Same-Day,Ecom Express,Chennai,Chennai,1,1,0,1911,1,3,0.29,1.11
+O304,Standard,Ecom Express,Hyderabad,Jaipur,5,5,0,403,0,3,0.09,1.07
+O305,Express,Ecom Express,Hyderabad,Mumbai,2,2,0,1376,1,3,0.05,2.41
+O306,Express,Delhivery,Hyderabad,Lucknow,2,2,0,1977,1,2,0.28,2.15
+O307,Same-Day,Delhivery,Chennai,Mumbai,0,1,1,1035,1,3,0.25,2.15
+O308,Standard,Ecom Express,Lucknow,Jaipur,5,7,2,1973,1,3,0.27,1.96
+O309,Same-Day,BlueDart,Bangalore,Mumbai,0,0,0,1643,1,3,0.26,1.5
+O310,Same-Day,Delhivery,Chennai,Jaipur,0,0,0,980,1,1,0.29,2.37
+O311,Same-Day,Delhivery,Hyderabad,Hyderabad,0,1,1,1792,1,1,0.26,1.71
+O312,Standard,Ecom Express,Kolkata,Bangalore,3,6,3,1741,1,2,0.27,2.76
+O313,Express,Delhivery,Jaipur,Hyderabad,1,2,1,1541,1,2,0.28,1.07
+O314,Standard,Delhivery,Hyderabad,Hyderabad,6,7,1,651,0,2,0.2,1.65
+O315,Standard,BlueDart,Kolkata,Hyderabad,5,5,0,970,1,1,0.17,1.42
+O316,Express,Ecom Express,Hyderabad,Mumbai,1,1,0,1175,1,1,0.23,2.61
+O317,Standard,BlueDart,Lucknow,Chennai,6,8,2,1655,1,1,0.3,2.7
+O318,Express,BlueDart,Mumbai,Kolkata,3,3,0,1763,1,3,0.09,1.43
+O319,Same-Day,Ecom Express,Chennai,Chennai,1,3,2,537,0,2,0.05,1.24
+O320,Same-Day,BlueDart,Lucknow,Jaipur,0,0,0,1603,1,3,0.16,1.16
+O321,Same-Day,Ecom Express,Jaipur,Lucknow,1,4,3,868,1,1,0.07,1.69
+O322,Express,BlueDart,Kolkata,Hyderabad,3,3,0,1325,1,3,0.2,2.93
+O323,Same-Day,Ecom Express,Mumbai,Kolkata,0,2,2,1360,1,1,0.09,1.21
+O324,Same-Day,Delhivery,Mumbai,Mumbai,0,0,0,217,0,3,0.28,1.78
+O325,Same-Day,Delhivery,Bangalore,Bangalore,0,3,3,273,0,1,0.22,2.72
+O326,Same-Day,Ecom Express,Delhi,Chennai,1,1,0,281,0,3,0.2,2.26
+O327,Same-Day,Ecom Express,Hyderabad,Chennai,1,1,0,1866,1,1,0.16,1.73
+O328,Same-Day,Ecom Express,Bangalore,Jaipur,0,3,3,709,0,3,0.28,2.89
+O329,Standard,BlueDart,Jaipur,Jaipur,3,5,2,1127,1,2,0.11,2.43
+O330,Standard,Ecom Express,Chennai,Kolkata,6,6,0,1285,1,2,0.21,2.06
+O331,Standard,Ecom Express,Lucknow,Kolkata,5,6,1,231,0,2,0.23,1.98
+O332,Standard,BlueDart,Delhi,Hyderabad,4,5,1,1996,1,3,0.16,1.02
+O333,Express,BlueDart,Lucknow,Mumbai,2,5,3,1614,1,3,0.25,1.66
+O334,Same-Day,BlueDart,Jaipur,Bangalore,1,3,2,376,0,1,0.08,2.54
+O335,Express,Ecom Express,Hyderabad,Delhi,3,6,3,1583,1,2,0.15,2.92
+O336,Same-Day,BlueDart,Hyderabad,Lucknow,0,1,1,523,0,2,0.27,2.73
+O337,Standard,Delhivery,Jaipur,Lucknow,4,5,1,1631,1,1,0.05,1.08
+O338,Express,Delhivery,Kolkata,Kolkata,1,1,0,514,0,3,0.07,1.71
+O339,Standard,BlueDart,Lucknow,Mumbai,5,5,0,1148,1,3,0.1,2.38
+O340,Express,Ecom Express,Lucknow,Chennai,3,3,0,901,1,1,0.19,2.09
+O341,Same-Day,BlueDart,Chennai,Jaipur,0,2,2,146,0,2,0.19,1.91
+O342,Same-Day,BlueDart,Mumbai,Hyderabad,1,1,0,1594,1,3,0.29,2.64
+O343,Standard,BlueDart,Mumbai,Kolkata,5,5,0,665,0,1,0.18,1.13
+O344,Express,Ecom Express,Jaipur,Kolkata,1,2,1,207,0,3,0.17,2.25
+O345,Same-Day,Delhivery,Lucknow,Lucknow,0,2,2,31,0,1,0.17,2.28
+O346,Same-Day,Ecom Express,Bangalore,Jaipur,0,1,1,1691,1,3,0.07,1.61
+O347,Standard,Ecom Express,Hyderabad,Chennai,6,6,0,393,0,3,0.21,1.36
+O348,Same-Day,Delhivery,Delhi,Hyderabad,1,1,0,1443,1,1,0.19,2.01
+O349,Express,BlueDart,Kolkata,Lucknow,2,4,2,1131,1,2,0.24,1.86
+O350,Standard,Ecom Express,Chennai,Delhi,6,6,0,1573,1,2,0.29,1.89
+O351,Same-Day,BlueDart,Bangalore,Chennai,0,0,0,1065,1,2,0.3,1.43
+O352,Same-Day,BlueDart,Delhi,Hyderabad,0,1,1,198,0,1,0.12,2.78
+O353,Express,Delhivery,Kolkata,Jaipur,3,4,1,1884,1,2,0.09,2.65
+O354,Same-Day,BlueDart,Kolkata,Bangalore,1,1,0,165,0,2,0.15,2.74
+O355,Same-Day,Delhivery,Kolkata,Lucknow,1,1,0,115,0,3,0.19,1.65
+O356,Same-Day,BlueDart,Delhi,Jaipur,0,0,0,459,0,1,0.13,1.95
+O357,Express,Delhivery,Delhi,Bangalore,3,3,0,894,1,2,0.19,1.98
+O358,Same-Day,BlueDart,Kolkata,Jaipur,0,3,3,501,0,3,0.28,1.18
+O359,Express,BlueDart,Delhi,Jaipur,3,5,2,1347,1,2,0.2,2.98
+O360,Standard,Delhivery,Mumbai,Hyderabad,5,8,3,324,0,3,0.06,2.9
+O361,Standard,BlueDart,Hyderabad,Mumbai,5,5,0,926,1,3,0.18,1.41
+O362,Same-Day,Delhivery,Jaipur,Delhi,0,2,2,1428,1,3,0.28,2.05
+O363,Same-Day,Delhivery,Mumbai,Lucknow,1,2,1,113,0,2,0.22,2.33
+O364,Same-Day,Ecom Express,Mumbai,Mumbai,1,1,0,478,0,2,0.17,2.19
+O365,Same-Day,Ecom Express,Chennai,Bangalore,0,3,3,86,0,2,0.17,2.49
+O366,Express,Delhivery,Chennai,Hyderabad,1,3,2,1031,1,2,0.27,2.63
+O367,Express,Ecom Express,Jaipur,Delhi,2,3,1,1350,1,3,0.29,2.22
+O368,Express,Delhivery,Hyderabad,Bangalore,3,4,1,679,0,3,0.08,2.08
+O369,Express,Delhivery,Kolkata,Lucknow,1,4,3,1348,1,1,0.19,2.9
+O370,Express,Ecom Express,Chennai,Bangalore,2,3,1,626,0,1,0.24,1.21
+O371,Same-Day,Ecom Express,Bangalore,Jaipur,0,1,1,1226,1,2,0.07,2.56
+O372,Express,Delhivery,Hyderabad,Mumbai,2,3,1,975,1,1,0.15,2.94
+O373,Standard,BlueDart,Lucknow,Jaipur,4,6,2,1903,1,3,0.13,1.92
+O374,Same-Day,Ecom Express,Bangalore,Chennai,1,1,0,1479,1,3,0.08,1.91
+O375,Same-Day,Ecom Express,Bangalore,Kolkata,0,0,0,1147,1,1,0.12,1.8
+O376,Express,Ecom Express,Delhi,Delhi,3,3,0,1887,1,2,0.26,1.9
+O377,Express,Delhivery,Lucknow,Lucknow,2,4,2,667,0,3,0.27,2.79
+O378,Same-Day,BlueDart,Kolkata,Lucknow,0,2,2,191,0,1,0.18,1.77
+O379,Standard,Ecom Express,Delhi,Jaipur,4,4,0,1873,1,1,0.27,1.36
+O380,Express,Delhivery,Hyderabad,Mumbai,2,5,3,1287,1,1,0.21,1.51
+O381,Express,BlueDart,Lucknow,Kolkata,1,1,0,449,0,2,0.16,2.2
+O382,Same-Day,Delhivery,Kolkata,Chennai,0,2,2,105,0,1,0.09,1.06
+O383,Standard,Delhivery,Chennai,Kolkata,3,6,3,858,1,3,0.22,2.4
+O384,Same-Day,BlueDart,Kolkata,Hyderabad,1,4,3,1912,1,2,0.27,2.64
+O385,Standard,Ecom Express,Hyderabad,Kolkata,5,6,1,679,0,3,0.1,1.12
+O386,Express,Ecom Express,Chennai,Chennai,3,3,0,1415,1,2,0.2,1.63
+O387,Same-Day,BlueDart,Lucknow,Bangalore,1,1,0,1069,1,1,0.27,1.47
+O388,Express,Delhivery,Jaipur,Chennai,3,6,3,1636,1,2,0.06,1.7
+O389,Standard,BlueDart,Bangalore,Bangalore,5,6,1,619,0,1,0.22,1.68
+O390,Express,BlueDart,Bangalore,Hyderabad,2,2,0,1893,1,3,0.08,1.31
+O391,Same-Day,Ecom Express,Kolkata,Bangalore,0,2,2,1715,1,3,0.18,1.42
+O392,Express,Ecom Express,Delhi,Jaipur,1,1,0,699,0,3,0.2,1.37
+O393,Standard,Delhivery,Kolkata,Bangalore,5,5,0,852,1,2,0.26,1.61
+O394,Standard,BlueDart,Delhi,Delhi,3,3,0,913,1,1,0.14,1.97
+O395,Same-Day,BlueDart,Jaipur,Mumbai,0,0,0,425,0,3,0.27,1.23
+O396,Express,Ecom Express,Chennai,Delhi,2,2,0,1826,1,1,0.19,1.62
+O397,Same-Day,Delhivery,Chennai,Mumbai,1,2,1,1587,1,1,0.09,1.23
+O398,Same-Day,Delhivery,Chennai,Mumbai,1,3,2,1130,1,3,0.11,1.14
+O399,Standard,Delhivery,Mumbai,Delhi,3,3,0,969,1,2,0.06,1.85
+O400,Same-Day,BlueDart,Hyderabad,Lucknow,1,3,2,1267,1,3,0.24,2.62
+O401,Express,Ecom Express,Lucknow,Chennai,1,1,0,938,1,2,0.11,1.45
+O402,Same-Day,BlueDart,Lucknow,Bangalore,1,3,2,1620,1,2,0.06,1.95
+O403,Express,Delhivery,Jaipur,Chennai,3,5,2,1181,1,3,0.25,1.65
+O404,Express,Delhivery,Delhi,Lucknow,3,5,2,851,1,2,0.15,1.68
+O405,Same-Day,Delhivery,Lucknow,Jaipur,0,0,0,359,0,1,0.2,1.93
+O406,Express,Ecom Express,Jaipur,Kolkata,1,1,0,1230,1,2,0.17,2.32
+O407,Same-Day,BlueDart,Lucknow,Mumbai,0,0,0,932,1,1,0.1,2.75
+O408,Same-Day,Ecom Express,Jaipur,Lucknow,1,3,2,187,0,1,0.26,1.12
+O409,Standard,BlueDart,Jaipur,Mumbai,5,7,2,1777,1,3,0.13,1.77
+O410,Standard,BlueDart,Jaipur,Kolkata,4,6,2,1142,1,1,0.12,2.75
+O411,Standard,Ecom Express,Jaipur,Lucknow,4,4,0,1482,1,1,0.07,2.28
+O412,Same-Day,Ecom Express,Lucknow,Chennai,0,1,1,935,1,2,0.14,1.37
+O413,Standard,Ecom Express,Kolkata,Hyderabad,5,5,0,846,1,1,0.29,2.14
+O414,Same-Day,Ecom Express,Chennai,Jaipur,0,0,0,295,0,2,0.18,2.05
+O415,Same-Day,Ecom Express,Chennai,Jaipur,0,0,0,1405,1,3,0.06,1.69
+O416,Same-Day,BlueDart,Chennai,Delhi,1,1,0,867,1,1,0.06,2.85
+O417,Same-Day,Delhivery,Chennai,Jaipur,1,2,1,1189,1,3,0.21,1.57
+O418,Standard,Delhivery,Mumbai,Delhi,5,6,1,568,0,3,0.09,2.18
+O419,Express,Ecom Express,Bangalore,Lucknow,3,3,0,488,0,2,0.3,2.93
+O420,Standard,Delhivery,Kolkata,Bangalore,6,7,1,1491,1,1,0.21,2.51
+O421,Express,Ecom Express,Hyderabad,Mumbai,2,2,0,980,1,2,0.22,1.78
+O422,Express,Ecom Express,Bangalore,Kolkata,2,2,0,787,0,1,0.28,2.27
+O423,Express,Ecom Express,Jaipur,Mumbai,2,2,0,1648,1,2,0.24,2.5
+O424,Same-Day,Delhivery,Bangalore,Hyderabad,0,1,1,1382,1,2,0.07,1.21
+O425,Standard,Delhivery,Hyderabad,Lucknow,3,3,0,53,0,3,0.21,2.42
+O426,Same-Day,Delhivery,Chennai,Lucknow,0,1,1,1840,1,2,0.17,2.87
+O427,Standard,BlueDart,Jaipur,Mumbai,3,3,0,572,0,2,0.3,1.52
+O428,Standard,Delhivery,Delhi,Hyderabad,6,8,2,370,0,3,0.24,1.44
+O429,Standard,BlueDart,Lucknow,Delhi,3,4,1,149,0,1,0.27,1.3
+O430,Standard,Delhivery,Lucknow,Chennai,5,6,1,1857,1,2,0.16,2.69
+O431,Same-Day,BlueDart,Kolkata,Bangalore,1,3,2,253,0,3,0.13,1.11
+O432,Standard,Ecom Express,Hyderabad,Kolkata,6,6,0,1562,1,1,0.19,2.94
+O433,Same-Day,Ecom Express,Hyderabad,Chennai,1,1,0,1001,1,1,0.06,1.05
+O434,Same-Day,BlueDart,Bangalore,Jaipur,1,3,2,1028,1,1,0.13,1.68
+O435,Same-Day,Ecom Express,Delhi,Kolkata,1,3,2,1930,1,3,0.19,2.85
+O436,Standard,Delhivery,Hyderabad,Kolkata,6,6,0,1862,1,3,0.21,1.03
+O437,Same-Day,Delhivery,Mumbai,Bangalore,0,0,0,1715,1,2,0.2,2.23
+O438,Same-Day,Ecom Express,Delhi,Jaipur,1,3,2,669,0,2,0.26,2.59
+O439,Express,Ecom Express,Kolkata,Jaipur,1,4,3,1556,1,3,0.09,1.49
+O440,Standard,Delhivery,Bangalore,Jaipur,3,3,0,1806,1,1,0.28,2.41
+O441,Standard,Ecom Express,Lucknow,Chennai,4,4,0,298,0,2,0.11,1.35
+O442,Express,BlueDart,Kolkata,Lucknow,3,6,3,1951,1,2,0.05,1.47
+O443,Same-Day,Ecom Express,Hyderabad,Bangalore,0,0,0,955,1,2,0.06,1.23
+O444,Standard,BlueDart,Hyderabad,Jaipur,3,3,0,115,0,2,0.11,2.23
+O445,Standard,Ecom Express,Mumbai,Jaipur,4,4,0,1613,1,1,0.27,2.44
+O446,Same-Day,BlueDart,Hyderabad,Jaipur,1,1,0,476,0,1,0.11,1.83
+O447,Same-Day,Delhivery,Hyderabad,Kolkata,1,2,1,116,0,3,0.16,1.77
+O448,Express,Delhivery,Bangalore,Lucknow,2,2,0,419,0,2,0.08,2.7
+O449,Same-Day,Ecom Express,Delhi,Lucknow,0,2,2,1621,1,3,0.29,2.71
+O450,Same-Day,Delhivery,Jaipur,Jaipur,1,2,1,1719,1,3,0.27,1.5
+O451,Same-Day,Delhivery,Lucknow,Delhi,0,1,1,860,1,3,0.24,1.07
+O452,Express,Delhivery,Jaipur,Bangalore,1,2,1,175,0,1,0.08,1.59
+O453,Express,Ecom Express,Bangalore,Lucknow,1,1,0,1445,1,2,0.17,1.28
+O454,Express,Ecom Express,Mumbai,Mumbai,3,3,0,1302,1,2,0.27,1.67
+O455,Same-Day,Ecom Express,Kolkata,Jaipur,0,0,0,1618,1,3,0.28,2.03
+O456,Express,BlueDart,Delhi,Chennai,2,3,1,1272,1,3,0.19,1.13
+O457,Same-Day,Ecom Express,Hyderabad,Lucknow,1,3,2,1515,1,3,0.24,1.64
+O458,Standard,BlueDart,Mumbai,Mumbai,3,4,1,768,0,2,0.23,2.36
+O459,Same-Day,BlueDart,Mumbai,Lucknow,0,1,1,390,0,1,0.15,1.36
+O460,Same-Day,Delhivery,Bangalore,Jaipur,0,0,0,1021,1,2,0.15,2.36
+O461,Same-Day,Delhivery,Hyderabad,Kolkata,0,3,3,602,0,3,0.21,1.82
+O462,Same-Day,Delhivery,Chennai,Delhi,1,1,0,942,1,1,0.25,1.45
+O463,Express,Delhivery,Chennai,Hyderabad,2,3,1,1963,1,1,0.29,2.68
+O464,Same-Day,Delhivery,Hyderabad,Jaipur,0,0,0,907,1,3,0.23,2.33
+O465,Standard,BlueDart,Lucknow,Mumbai,5,5,0,253,0,1,0.29,2.86
+O466,Express,BlueDart,Delhi,Jaipur,3,4,1,1449,1,3,0.23,2.84
+O467,Standard,Ecom Express,Hyderabad,Mumbai,3,4,1,635,0,2,0.14,1.65
+O468,Express,BlueDart,Mumbai,Delhi,1,1,0,51,0,3,0.15,1.98
+O469,Standard,Delhivery,Chennai,Chennai,6,7,1,762,0,2,0.14,2.96
+O470,Express,Ecom Express,Jaipur,Lucknow,2,2,0,596,0,3,0.27,1.28
+O471,Express,Ecom Express,Jaipur,Jaipur,3,6,3,691,0,1,0.05,2.28
+O472,Same-Day,BlueDart,Chennai,Jaipur,0,2,2,413,0,3,0.17,2.65
+O473,Express,Delhivery,Chennai,Bangalore,1,1,0,59,0,2,0.29,2.67
+O474,Standard,Delhivery,Bangalore,Jaipur,6,6,0,1862,1,1,0.24,1.99
+O475,Express,Ecom Express,Lucknow,Hyderabad,3,3,0,898,1,3,0.25,1.75
+O476,Standard,Ecom Express,Delhi,Jaipur,4,5,1,659,0,2,0.09,1.55
+O477,Express,Ecom Express,Hyderabad,Hyderabad,3,4,1,1313,1,3,0.1,1.19
+O478,Express,BlueDart,Mumbai,Jaipur,2,5,3,1408,1,3,0.2,2.65
+O479,Express,Delhivery,Mumbai,Mumbai,2,4,2,701,0,1,0.09,1.44
+O480,Same-Day,Delhivery,Mumbai,Kolkata,0,1,1,859,1,1,0.28,1.96
+O481,Same-Day,Delhivery,Mumbai,Hyderabad,1,3,2,357,0,1,0.08,2.39
+O482,Standard,Delhivery,Mumbai,Hyderabad,3,4,1,875,1,1,0.24,2.51
+O483,Same-Day,BlueDart,Bangalore,Chennai,0,0,0,965,1,1,0.13,1.02
+O484,Standard,Delhivery,Delhi,Hyderabad,4,4,0,1378,1,3,0.29,2.9
+O485,Same-Day,Delhivery,Bangalore,Jaipur,0,0,0,1039,1,3,0.1,1.38
+O486,Standard,Ecom Express,Lucknow,Jaipur,4,6,2,1890,1,2,0.22,1.37
+O487,Same-Day,Delhivery,Lucknow,Kolkata,0,2,2,839,1,1,0.18,1.99
+O488,Express,BlueDart,Chennai,Chennai,2,4,2,241,0,3,0.29,1.89
+O489,Standard,Delhivery,Bangalore,Delhi,6,7,1,1928,1,3,0.17,1.21
+O490,Standard,Delhivery,Delhi,Lucknow,6,7,1,825,1,1,0.14,1.4
+O491,Express,Ecom Express,Chennai,Lucknow,3,4,1,1027,1,3,0.29,1.71
+O492,Express,Delhivery,Chennai,Kolkata,1,1,0,1577,1,2,0.17,2.26
+O493,Express,BlueDart,Kolkata,Hyderabad,3,6,3,59,0,1,0.13,2.25
+O494,Standard,Ecom Express,Chennai,Mumbai,5,6,1,1360,1,3,0.14,2.72
+O495,Express,BlueDart,Lucknow,Jaipur,2,2,0,649,0,1,0.06,2.11
+O496,Standard,Delhivery,Lucknow,Kolkata,5,6,1,1470,1,3,0.19,2.08
+O497,Standard,BlueDart,Kolkata,Jaipur,6,6,0,544,0,2,0.13,1.06
+O498,Same-Day,BlueDart,Jaipur,Lucknow,0,0,0,1572,1,1,0.16,2.98
+O499,Standard,Ecom Express,Mumbai,Bangalore,5,7,2,1218,1,2,0.08,1.34
+O500,Same-Day,BlueDart,Bangalore,Mumbai,1,2,1,551,0,2,0.14,1.78
+O501,Express,BlueDart,Delhi,Kolkata,3,4,1,1666,1,3,0.12,2.94
+O502,Standard,Ecom Express,Jaipur,Mumbai,5,6,1,548,0,1,0.21,2.92
+O503,Same-Day,Delhivery,Chennai,Bangalore,1,4,3,879,1,3,0.25,1.87
+O504,Same-Day,Delhivery,Bangalore,Lucknow,1,1,0,1380,1,3,0.23,2.73
+O505,Same-Day,Ecom Express,Bangalore,Bangalore,1,1,0,1919,1,3,0.1,1.92
+O506,Express,Delhivery,Hyderabad,Hyderabad,2,2,0,1766,1,2,0.12,1.57
+O507,Express,Delhivery,Hyderabad,Kolkata,1,2,1,237,0,2,0.17,2.12
+O508,Express,BlueDart,Delhi,Bangalore,1,1,0,64,0,3,0.26,2.93
+O509,Same-Day,BlueDart,Mumbai,Jaipur,1,2,1,1780,1,2,0.29,2.45
+O510,Same-Day,Delhivery,Mumbai,Lucknow,1,1,0,1021,1,2,0.13,2.17
+O511,Standard,BlueDart,Lucknow,Chennai,4,4,0,223,0,2,0.11,2.18
+O512,Same-Day,BlueDart,Delhi,Lucknow,1,1,0,977,1,2,0.17,1.74
+O513,Same-Day,Ecom Express,Hyderabad,Lucknow,0,2,2,1419,1,2,0.19,1.62
+O514,Standard,BlueDart,Chennai,Chennai,6,6,0,800,0,2,0.07,2.65
+O515,Express,BlueDart,Mumbai,Lucknow,3,3,0,837,1,2,0.17,1.83
+O516,Same-Day,BlueDart,Kolkata,Hyderabad,1,1,0,1041,1,2,0.22,2.52
+O517,Express,Delhivery,Delhi,Bangalore,1,1,0,1291,1,1,0.18,2.94
+O518,Express,Ecom Express,Kolkata,Jaipur,3,3,0,278,0,2,0.1,1.83
+O519,Standard,BlueDart,Hyderabad,Delhi,4,4,0,1862,1,2,0.23,1.34
+O520,Standard,Delhivery,Bangalore,Lucknow,5,5,0,353,0,3,0.18,2.55
+O521,Same-Day,BlueDart,Chennai,Lucknow,0,0,0,395,0,3,0.17,1.26
+O522,Same-Day,Delhivery,Chennai,Jaipur,0,0,0,861,1,2,0.11,1.9
+O523,Standard,Ecom Express,Jaipur,Hyderabad,6,6,0,277,0,3,0.1,1.77
+O524,Standard,Delhivery,Lucknow,Jaipur,3,5,2,111,0,2,0.3,2.88
+O525,Same-Day,Ecom Express,Kolkata,Chennai,1,1,0,624,0,1,0.29,2.12
+O526,Express,Delhivery,Kolkata,Mumbai,2,4,2,1802,1,3,0.18,1.28
+O527,Express,BlueDart,Chennai,Chennai,3,3,0,743,0,3,0.26,2.85
+O528,Same-Day,Ecom Express,Lucknow,Lucknow,1,2,1,1569,1,1,0.1,1.11
+O529,Same-Day,Delhivery,Lucknow,Jaipur,1,3,2,898,1,2,0.3,2.12
+O530,Express,Delhivery,Delhi,Jaipur,1,1,0,422,0,3,0.18,1.55
+O531,Same-Day,Delhivery,Lucknow,Kolkata,0,0,0,857,1,3,0.07,1.66
+O532,Express,BlueDart,Delhi,Jaipur,3,3,0,1907,1,1,0.07,2.66
+O533,Same-Day,Ecom Express,Lucknow,Kolkata,0,1,1,679,0,2,0.29,3.0
+O534,Express,Delhivery,Jaipur,Delhi,2,2,0,1639,1,1,0.15,1.36
+O535,Express,Ecom Express,Delhi,Lucknow,2,2,0,588,0,1,0.12,2.6
+O536,Same-Day,Delhivery,Lucknow,Chennai,0,2,2,1709,1,2,0.27,1.95
+O537,Express,BlueDart,Mumbai,Mumbai,3,3,0,386,0,1,0.18,2.95
+O538,Same-Day,Delhivery,Lucknow,Lucknow,0,0,0,600,0,2,0.09,1.26
+O539,Same-Day,Delhivery,Mumbai,Delhi,0,3,3,1133,1,3,0.16,1.19
+O540,Same-Day,BlueDart,Delhi,Jaipur,0,0,0,238,0,1,0.26,1.09
+O541,Same-Day,Ecom Express,Chennai,Mumbai,1,2,1,1556,1,2,0.29,2.74
+O542,Same-Day,BlueDart,Bangalore,Kolkata,1,4,3,1790,1,1,0.15,1.03
+O543,Same-Day,Ecom Express,Kolkata,Jaipur,1,1,0,625,0,3,0.22,2.38
+O544,Standard,Ecom Express,Hyderabad,Kolkata,4,5,1,234,0,1,0.1,2.3
+O545,Standard,BlueDart,Jaipur,Kolkata,5,5,0,1581,1,1,0.08,2.8
+O546,Express,Ecom Express,Jaipur,Mumbai,3,5,2,501,0,1,0.13,1.21
+O547,Same-Day,BlueDart,Lucknow,Bangalore,1,1,0,80,0,1,0.23,2.06
+O548,Same-Day,BlueDart,Kolkata,Kolkata,1,1,0,1825,1,2,0.22,1.04
+O549,Express,Ecom Express,Kolkata,Delhi,1,2,1,1044,1,3,0.26,2.43
+O550,Same-Day,Delhivery,Hyderabad,Jaipur,1,1,0,1635,1,2,0.22,1.17
+O551,Same-Day,BlueDart,Chennai,Jaipur,1,1,0,211,0,1,0.1,1.09
+O552,Standard,Ecom Express,Bangalore,Jaipur,4,4,0,1700,1,1,0.13,1.23
+O553,Express,Delhivery,Chennai,Hyderabad,2,3,1,1612,1,1,0.26,2.75
+O554,Express,Ecom Express,Mumbai,Jaipur,1,1,0,221,0,3,0.06,1.21
+O555,Same-Day,Ecom Express,Lucknow,Mumbai,1,2,1,1455,1,3,0.27,1.31
+O556,Express,Delhivery,Lucknow,Mumbai,2,4,2,1580,1,2,0.12,1.34
+O557,Same-Day,Ecom Express,Jaipur,Chennai,0,0,0,315,0,1,0.08,1.86
+O558,Express,Ecom Express,Mumbai,Delhi,1,2,1,1582,1,1,0.13,1.8
+O559,Same-Day,Ecom Express,Chennai,Kolkata,0,1,1,1853,1,2,0.15,2.36
+O560,Standard,Delhivery,Jaipur,Kolkata,5,5,0,1848,1,2,0.21,2.78
+O561,Express,BlueDart,Mumbai,Lucknow,3,3,0,833,1,1,0.18,1.78
+O562,Standard,Ecom Express,Delhi,Mumbai,5,6,1,1072,1,1,0.06,2.59
+O563,Express,BlueDart,Chennai,Chennai,3,3,0,231,0,3,0.18,1.25
+O564,Same-Day,Delhivery,Hyderabad,Bangalore,0,0,0,933,1,2,0.12,2.33
+O565,Same-Day,Ecom Express,Hyderabad,Bangalore,0,0,0,220,0,2,0.16,1.29
+O566,Standard,BlueDart,Jaipur,Chennai,6,6,0,444,0,3,0.19,2.56
+O567,Same-Day,Delhivery,Delhi,Hyderabad,1,1,0,1503,1,3,0.08,2.42
+O568,Same-Day,Ecom Express,Delhi,Hyderabad,0,1,1,937,1,3,0.14,2.9
+O569,Express,BlueDart,Chennai,Jaipur,1,3,2,1075,1,2,0.13,1.97
+O570,Express,Ecom Express,Lucknow,Bangalore,2,3,1,446,0,1,0.08,1.7
+O571,Express,Ecom Express,Delhi,Hyderabad,2,3,1,1605,1,1,0.18,1.92
+O572,Same-Day,BlueDart,Kolkata,Chennai,1,2,1,798,0,3,0.06,2.34
+O573,Standard,Ecom Express,Mumbai,Jaipur,5,5,0,1154,1,1,0.29,2.08
+O574,Same-Day,Ecom Express,Delhi,Kolkata,0,0,0,251,0,1,0.12,1.41
+O575,Same-Day,BlueDart,Bangalore,Jaipur,1,2,1,827,1,2,0.16,1.83
+O576,Standard,Delhivery,Delhi,Mumbai,3,3,0,1114,1,2,0.24,1.31
+O577,Express,BlueDart,Jaipur,Hyderabad,1,2,1,60,0,1,0.13,1.83
+O578,Standard,Delhivery,Lucknow,Lucknow,4,5,1,1545,1,3,0.24,1.77
+O579,Same-Day,BlueDart,Hyderabad,Mumbai,1,4,3,139,0,1,0.12,2.93
+O580,Standard,Delhivery,Hyderabad,Jaipur,5,7,2,1168,1,1,0.14,2.97
+O581,Standard,Ecom Express,Chennai,Hyderabad,3,3,0,1669,1,3,0.29,1.0
+O582,Express,Ecom Express,Chennai,Chennai,2,3,1,1730,1,1,0.09,2.07
+O583,Standard,BlueDart,Jaipur,Kolkata,4,6,2,1489,1,1,0.2,2.91
+O584,Express,BlueDart,Kolkata,Kolkata,2,5,3,508,0,1,0.16,2.2
+O585,Express,Delhivery,Jaipur,Jaipur,1,1,0,1851,1,3,0.27,2.41
+O586,Standard,BlueDart,Kolkata,Mumbai,6,7,1,1381,1,2,0.09,2.54
+O587,Standard,BlueDart,Kolkata,Jaipur,4,4,0,1526,1,1,0.07,2.23
+O588,Express,Ecom Express,Hyderabad,Chennai,2,5,3,1857,1,1,0.1,2.64
+O589,Express,Ecom Express,Delhi,Hyderabad,1,1,0,1135,1,1,0.2,2.49
+O590,Same-Day,Delhivery,Chennai,Lucknow,1,2,1,397,0,3,0.19,1.91
+O591,Express,Ecom Express,Lucknow,Bangalore,2,2,0,566,0,2,0.14,2.52
+O592,Express,Delhivery,Bangalore,Hyderabad,1,2,1,807,1,3,0.11,2.38
+O593,Express,Delhivery,Lucknow,Bangalore,1,2,1,1287,1,2,0.25,2.19
+O594,Express,Delhivery,Kolkata,Mumbai,1,3,2,1968,1,3,0.25,2.89
+O595,Express,Delhivery,Bangalore,Jaipur,3,4,1,260,0,2,0.13,2.7
+O596,Same-Day,Delhivery,Bangalore,Jaipur,1,2,1,139,0,2,0.26,1.8
+O597,Same-Day,BlueDart,Mumbai,Jaipur,0,2,2,933,1,2,0.21,2.35
+O598,Standard,Ecom Express,Mumbai,Bangalore,3,3,0,215,0,3,0.25,1.39
+O599,Express,Delhivery,Hyderabad,Mumbai,2,3,1,1489,1,1,0.25,1.12
+O600,Express,Delhivery,Delhi,Kolkata,2,2,0,1200,1,2,0.13,1.69
+O601,Same-Day,Ecom Express,Bangalore,Hyderabad,0,0,0,122,0,2,0.14,2.95
+O602,Same-Day,BlueDart,Kolkata,Jaipur,1,1,0,1427,1,3,0.19,1.67
+O603,Express,Delhivery,Hyderabad,Chennai,1,1,0,1020,1,3,0.11,2.25
+O604,Express,BlueDart,Bangalore,Lucknow,1,2,1,1696,1,1,0.14,2.11
+O605,Same-Day,Delhivery,Hyderabad,Bangalore,1,4,3,94,0,2,0.09,2.77
+O606,Standard,Delhivery,Bangalore,Bangalore,3,3,0,365,0,3,0.08,2.31
+O607,Standard,Delhivery,Jaipur,Chennai,5,6,1,1662,1,3,0.07,1.29
+O608,Express,Ecom Express,Hyderabad,Hyderabad,2,2,0,1232,1,1,0.24,2.17
+O609,Standard,Ecom Express,Lucknow,Chennai,5,5,0,1792,1,1,0.23,2.57
+O610,Same-Day,Delhivery,Kolkata,Chennai,1,4,3,1026,1,3,0.14,2.39
+O611,Same-Day,Delhivery,Lucknow,Chennai,0,1,1,429,0,1,0.15,1.61
+O612,Same-Day,BlueDart,Lucknow,Lucknow,0,1,1,280,0,3,0.14,2.17
+O613,Express,BlueDart,Kolkata,Delhi,2,2,0,890,1,2,0.15,1.36
+O614,Standard,Ecom Express,Mumbai,Mumbai,5,6,1,1730,1,2,0.28,1.2
+O615,Express,BlueDart,Chennai,Delhi,1,4,3,1387,1,1,0.23,3.0
+O616,Express,Ecom Express,Bangalore,Lucknow,2,2,0,1688,1,2,0.21,2.98
+O617,Same-Day,Ecom Express,Lucknow,Mumbai,0,1,1,976,1,3,0.25,1.68
+O618,Express,Ecom Express,Bangalore,Jaipur,1,2,1,903,1,2,0.08,2.75
+O619,Express,Ecom Express,Jaipur,Jaipur,2,5,3,466,0,3,0.18,1.65
+O620,Express,Ecom Express,Jaipur,Hyderabad,3,3,0,1294,1,2,0.1,1.78
+O621,Express,BlueDart,Mumbai,Bangalore,3,3,0,1975,1,1,0.08,2.11
+O622,Standard,BlueDart,Chennai,Delhi,4,4,0,147,0,1,0.11,2.32
+O623,Standard,BlueDart,Jaipur,Hyderabad,4,4,0,674,0,1,0.3,1.26
+O624,Standard,BlueDart,Lucknow,Chennai,4,7,3,1787,1,1,0.2,2.88
+O625,Standard,BlueDart,Hyderabad,Lucknow,3,4,1,297,0,3,0.13,2.14
+O626,Same-Day,BlueDart,Kolkata,Bangalore,0,1,1,594,0,3,0.26,2.58
+O627,Standard,Ecom Express,Delhi,Jaipur,6,8,2,942,1,3,0.19,1.79
+O628,Same-Day,Delhivery,Lucknow,Jaipur,0,0,0,1434,1,2,0.3,2.11
+O629,Express,Ecom Express,Bangalore,Chennai,2,2,0,342,0,2,0.06,2.28
+O630,Same-Day,Delhivery,Bangalore,Kolkata,1,3,2,1757,1,2,0.08,2.83
+O631,Express,Delhivery,Lucknow,Jaipur,1,1,0,174,0,1,0.17,1.56
+O632,Standard,BlueDart,Delhi,Lucknow,5,5,0,259,0,1,0.22,1.02
+O633,Standard,Delhivery,Lucknow,Bangalore,3,4,1,1833,1,3,0.06,2.27
+O634,Same-Day,Delhivery,Bangalore,Kolkata,1,2,1,914,1,2,0.24,2.86
+O635,Express,Delhivery,Mumbai,Mumbai,1,3,2,34,0,1,0.29,1.19
+O636,Express,Ecom Express,Hyderabad,Mumbai,2,3,1,1156,1,3,0.15,1.86
+O637,Standard,Delhivery,Jaipur,Kolkata,3,3,0,828,1,1,0.16,1.13
+O638,Standard,Ecom Express,Lucknow,Chennai,4,5,1,846,1,1,0.23,2.58
+O639,Express,Ecom Express,Delhi,Mumbai,3,3,0,1431,1,2,0.09,2.52
+O640,Same-Day,Ecom Express,Hyderabad,Bangalore,1,1,0,788,0,3,0.2,2.98
+O641,Standard,Delhivery,Bangalore,Lucknow,6,7,1,1555,1,1,0.14,1.59
+O642,Same-Day,Delhivery,Chennai,Mumbai,1,2,1,1518,1,2,0.21,2.52
+O643,Standard,Ecom Express,Bangalore,Delhi,5,6,1,706,0,3,0.3,2.6
+O644,Same-Day,Delhivery,Mumbai,Mumbai,1,2,1,380,0,2,0.07,1.38
+O645,Standard,BlueDart,Lucknow,Mumbai,4,4,0,488,0,2,0.09,1.4
+O646,Same-Day,BlueDart,Lucknow,Mumbai,1,4,3,1986,1,1,0.29,1.72
+O647,Same-Day,BlueDart,Bangalore,Kolkata,1,1,0,1562,1,2,0.16,1.17
+O648,Standard,BlueDart,Chennai,Hyderabad,5,8,3,784,0,2,0.19,1.96
+O649,Standard,Ecom Express,Kolkata,Mumbai,4,6,2,13,0,2,0.15,1.83
+O650,Same-Day,Delhivery,Jaipur,Bangalore,0,2,2,842,1,3,0.09,2.53
+O651,Express,Delhivery,Jaipur,Hyderabad,3,4,1,1415,1,2,0.23,1.48
+O652,Same-Day,Ecom Express,Delhi,Lucknow,0,2,2,540,0,2,0.11,2.16
+O653,Same-Day,Delhivery,Hyderabad,Jaipur,1,2,1,819,1,2,0.09,1.85
+O654,Express,Ecom Express,Mumbai,Kolkata,3,5,2,635,0,1,0.21,2.55
+O655,Express,Delhivery,Lucknow,Hyderabad,3,4,1,635,0,1,0.07,2.55
+O656,Express,Ecom Express,Delhi,Delhi,1,1,0,366,0,1,0.17,2.01
+O657,Standard,Delhivery,Chennai,Mumbai,3,3,0,1540,1,2,0.16,2.83
+O658,Express,Delhivery,Hyderabad,Mumbai,1,2,1,571,0,2,0.17,2.52
+O659,Standard,BlueDart,Chennai,Kolkata,4,4,0,1074,1,2,0.17,1.67
+O660,Standard,Ecom Express,Bangalore,Jaipur,5,6,1,1367,1,2,0.27,2.61
+O661,Standard,Ecom Express,Chennai,Mumbai,3,3,0,1237,1,3,0.24,1.5
+O662,Express,Ecom Express,Kolkata,Mumbai,3,4,1,389,0,1,0.21,2.75
+O663,Express,BlueDart,Jaipur,Hyderabad,3,3,0,1259,1,2,0.3,2.71
+O664,Standard,Ecom Express,Bangalore,Kolkata,4,4,0,1786,1,1,0.17,1.17
+O665,Same-Day,Ecom Express,Mumbai,Kolkata,0,0,0,503,0,1,0.16,2.43
+O666,Same-Day,Ecom Express,Mumbai,Hyderabad,1,2,1,1368,1,3,0.08,2.07
+O667,Same-Day,Ecom Express,Jaipur,Hyderabad,0,0,0,1323,1,3,0.21,2.12
+O668,Standard,Ecom Express,Hyderabad,Kolkata,3,5,2,187,0,3,0.29,2.15
+O669,Standard,Delhivery,Jaipur,Bangalore,5,5,0,131,0,2,0.13,1.73
+O670,Standard,BlueDart,Kolkata,Mumbai,3,3,0,814,1,1,0.25,1.59
+O671,Express,Ecom Express,Bangalore,Hyderabad,1,2,1,1534,1,3,0.13,2.0
+O672,Same-Day,BlueDart,Bangalore,Lucknow,0,2,2,1018,1,2,0.09,2.43
+O673,Same-Day,Ecom Express,Delhi,Mumbai,1,1,0,617,0,1,0.19,1.67
+O674,Standard,Delhivery,Jaipur,Mumbai,5,5,0,583,0,1,0.08,2.5
+O675,Same-Day,Ecom Express,Lucknow,Chennai,0,1,1,1187,1,2,0.27,1.42
+O676,Same-Day,BlueDart,Delhi,Jaipur,0,1,1,776,0,1,0.07,2.95
+O677,Express,Ecom Express,Jaipur,Delhi,3,5,2,893,1,1,0.06,1.48
+O678,Same-Day,Ecom Express,Mumbai,Mumbai,1,1,0,1593,1,2,0.27,2.3
+O679,Standard,BlueDart,Hyderabad,Lucknow,3,4,1,243,0,1,0.2,2.97
+O680,Standard,Ecom Express,Jaipur,Chennai,6,7,1,996,1,2,0.19,1.2
+O681,Same-Day,Ecom Express,Lucknow,Lucknow,0,1,1,811,1,1,0.18,2.17
+O682,Same-Day,BlueDart,Mumbai,Lucknow,0,0,0,15,0,1,0.08,1.41
+O683,Standard,Ecom Express,Delhi,Hyderabad,3,3,0,1041,1,2,0.29,2.32
+O684,Same-Day,Ecom Express,Kolkata,Lucknow,1,1,0,291,0,3,0.28,2.99
+O685,Standard,Delhivery,Chennai,Delhi,3,3,0,490,0,1,0.29,2.2
+O686,Same-Day,BlueDart,Jaipur,Mumbai,1,3,2,157,0,3,0.28,1.8
+O687,Standard,BlueDart,Hyderabad,Hyderabad,4,6,2,149,0,3,0.14,2.31
+O688,Express,Ecom Express,Hyderabad,Mumbai,2,5,3,781,0,1,0.12,2.06
+O689,Express,Delhivery,Chennai,Bangalore,2,2,0,304,0,1,0.07,2.96
+O690,Same-Day,BlueDart,Mumbai,Lucknow,1,1,0,1210,1,3,0.14,2.14
+O691,Standard,BlueDart,Delhi,Chennai,4,4,0,656,0,2,0.25,2.36
+O692,Same-Day,Ecom Express,Delhi,Hyderabad,0,0,0,535,0,3,0.08,1.76
+O693,Standard,BlueDart,Kolkata,Jaipur,6,6,0,1452,1,2,0.18,1.55
+O694,Same-Day,BlueDart,Mumbai,Hyderabad,0,1,1,1945,1,3,0.07,2.46
+O695,Same-Day,Delhivery,Jaipur,Jaipur,1,2,1,1139,1,3,0.18,2.46
+O696,Standard,Ecom Express,Bangalore,Jaipur,6,6,0,33,0,3,0.16,2.07
+O697,Same-Day,Delhivery,Hyderabad,Lucknow,0,0,0,1248,1,1,0.07,2.68
+O698,Standard,Ecom Express,Hyderabad,Kolkata,5,5,0,1991,1,3,0.26,2.72
+O699,Standard,Ecom Express,Bangalore,Chennai,6,6,0,450,0,2,0.27,2.7
+O700,Express,BlueDart,Delhi,Hyderabad,2,3,1,729,0,2,0.14,1.2
+O701,Express,Delhivery,Chennai,Bangalore,1,1,0,1875,1,1,0.17,1.75
+O702,Standard,Delhivery,Delhi,Hyderabad,6,6,0,1349,1,2,0.24,1.01
+O703,Standard,BlueDart,Bangalore,Lucknow,4,5,1,813,1,1,0.22,2.9
+O704,Same-Day,Delhivery,Kolkata,Delhi,1,1,0,1643,1,2,0.18,2.85
+O705,Standard,Ecom Express,Hyderabad,Lucknow,4,5,1,709,0,1,0.22,1.68
+O706,Express,Delhivery,Delhi,Kolkata,2,2,0,1000,1,3,0.18,1.5
+O707,Express,Ecom Express,Delhi,Lucknow,3,4,1,1608,1,1,0.3,2.18
+O708,Express,Delhivery,Jaipur,Lucknow,1,1,0,565,0,1,0.2,1.18
+O709,Same-Day,BlueDart,Bangalore,Jaipur,0,3,3,459,0,3,0.16,1.1
+O710,Express,Delhivery,Bangalore,Chennai,1,2,1,660,0,1,0.06,2.49
+O711,Standard,BlueDart,Kolkata,Mumbai,6,6,0,383,0,2,0.13,1.19
+O712,Same-Day,Ecom Express,Kolkata,Bangalore,1,1,0,1526,1,1,0.21,1.42
+O713,Same-Day,Ecom Express,Hyderabad,Hyderabad,0,1,1,89,0,1,0.23,2.85
+O714,Same-Day,Ecom Express,Delhi,Jaipur,1,3,2,1563,1,1,0.08,1.84
+O715,Same-Day,BlueDart,Jaipur,Delhi,0,2,2,1870,1,3,0.28,2.01
+O716,Standard,Delhivery,Hyderabad,Chennai,5,6,1,98,0,3,0.25,1.99
+O717,Same-Day,BlueDart,Chennai,Chennai,1,1,0,1156,1,1,0.1,1.32
+O718,Express,BlueDart,Chennai,Hyderabad,3,4,1,1454,1,1,0.12,1.54
+O719,Standard,BlueDart,Delhi,Mumbai,5,5,0,85,0,2,0.27,1.1
+O720,Same-Day,BlueDart,Kolkata,Bangalore,1,1,0,1300,1,1,0.29,2.77
+O721,Express,Delhivery,Kolkata,Delhi,2,5,3,122,0,1,0.23,1.56
+O722,Same-Day,Ecom Express,Hyderabad,Mumbai,1,4,3,1941,1,2,0.11,1.54
+O723,Standard,BlueDart,Mumbai,Lucknow,6,6,0,759,0,2,0.1,1.37
+O724,Express,Delhivery,Jaipur,Delhi,1,1,0,640,0,3,0.2,1.14
+O725,Express,Ecom Express,Bangalore,Hyderabad,1,3,2,1488,1,3,0.07,1.77
+O726,Standard,Ecom Express,Bangalore,Bangalore,5,8,3,297,0,1,0.29,1.21
+O727,Express,Delhivery,Chennai,Kolkata,3,4,1,1832,1,2,0.17,1.49
+O728,Standard,Delhivery,Jaipur,Jaipur,3,3,0,215,0,1,0.05,1.45
+O729,Same-Day,Ecom Express,Jaipur,Mumbai,1,3,2,467,0,3,0.27,2.65
+O730,Standard,BlueDart,Mumbai,Kolkata,5,5,0,736,0,2,0.28,2.84
+O731,Same-Day,BlueDart,Delhi,Mumbai,1,1,0,1233,1,3,0.22,2.25
+O732,Express,Delhivery,Bangalore,Lucknow,2,2,0,1665,1,1,0.24,1.29
+O733,Standard,Delhivery,Mumbai,Hyderabad,6,7,1,1970,1,2,0.3,1.36
+O734,Express,Ecom Express,Kolkata,Delhi,3,4,1,1997,1,1,0.25,2.31
+O735,Same-Day,Delhivery,Jaipur,Chennai,1,1,0,1095,1,1,0.2,1.84
+O736,Standard,Delhivery,Kolkata,Hyderabad,4,5,1,745,0,3,0.17,1.27
+O737,Express,BlueDart,Hyderabad,Bangalore,1,1,0,1715,1,1,0.26,1.11
+O738,Same-Day,BlueDart,Bangalore,Chennai,0,2,2,1430,1,3,0.08,2.16
+O739,Express,Delhivery,Jaipur,Bangalore,1,1,0,166,0,1,0.24,1.94
+O740,Express,Ecom Express,Bangalore,Bangalore,3,6,3,695,0,2,0.08,1.12
+O741,Express,BlueDart,Chennai,Jaipur,2,2,0,1397,1,3,0.18,2.42
+O742,Express,Ecom Express,Bangalore,Hyderabad,1,1,0,1526,1,1,0.15,2.65
+O743,Express,BlueDart,Delhi,Delhi,3,3,0,1319,1,1,0.25,2.29
+O744,Express,Delhivery,Hyderabad,Jaipur,3,5,2,1599,1,2,0.09,1.21
+O745,Same-Day,Delhivery,Chennai,Mumbai,0,3,3,1312,1,1,0.29,2.13
+O746,Standard,BlueDart,Jaipur,Bangalore,5,7,2,22,0,3,0.1,2.5
+O747,Express,Delhivery,Bangalore,Lucknow,3,3,0,1036,1,3,0.25,1.95
+O748,Express,Ecom Express,Hyderabad,Kolkata,1,1,0,1817,1,1,0.25,2.31
+O749,Same-Day,BlueDart,Chennai,Lucknow,1,1,0,921,1,2,0.21,2.88
+O750,Standard,Ecom Express,Lucknow,Mumbai,3,3,0,1967,1,1,0.25,1.29
+O751,Express,BlueDart,Kolkata,Jaipur,1,1,0,1917,1,2,0.07,1.36
+O752,Standard,Delhivery,Kolkata,Mumbai,3,4,1,1995,1,2,0.15,2.71
+O753,Same-Day,BlueDart,Lucknow,Delhi,1,1,0,770,0,2,0.27,2.98
+O754,Same-Day,BlueDart,Jaipur,Delhi,0,1,1,321,0,1,0.19,2.71
+O755,Express,BlueDart,Mumbai,Chennai,2,2,0,1320,1,1,0.1,1.22
+O756,Standard,BlueDart,Hyderabad,Kolkata,5,6,1,706,0,3,0.24,1.23
+O757,Standard,Ecom Express,Jaipur,Hyderabad,4,4,0,660,0,1,0.28,1.72
+O758,Standard,Delhivery,Mumbai,Mumbai,6,8,2,557,0,1,0.07,1.81
+O759,Express,BlueDart,Kolkata,Chennai,1,1,0,1705,1,2,0.09,1.7
+O760,Standard,Ecom Express,Jaipur,Lucknow,6,6,0,731,0,1,0.19,2.79
+O761,Standard,Ecom Express,Kolkata,Kolkata,5,5,0,1365,1,1,0.09,1.92
+O762,Express,BlueDart,Delhi,Jaipur,2,5,3,1071,1,3,0.16,2.94
+O763,Same-Day,BlueDart,Hyderabad,Jaipur,0,1,1,1235,1,1,0.29,2.15
+O764,Express,Ecom Express,Lucknow,Jaipur,3,5,2,1682,1,3,0.3,1.83
+O765,Express,BlueDart,Kolkata,Chennai,1,2,1,1902,1,1,0.19,1.33
+O766,Express,Delhivery,Mumbai,Delhi,3,3,0,1275,1,1,0.07,1.03
+O767,Standard,Delhivery,Chennai,Jaipur,6,6,0,1035,1,2,0.1,2.55
+O768,Standard,BlueDart,Jaipur,Lucknow,5,8,3,1986,1,3,0.23,2.48
+O769,Express,BlueDart,Hyderabad,Kolkata,3,6,3,546,0,1,0.28,1.83
+O770,Same-Day,Ecom Express,Jaipur,Jaipur,1,1,0,691,0,1,0.19,1.78
+O771,Standard,BlueDart,Delhi,Kolkata,6,7,1,1496,1,2,0.11,2.42
+O772,Same-Day,BlueDart,Hyderabad,Hyderabad,1,1,0,1719,1,1,0.07,1.87
+O773,Same-Day,Ecom Express,Delhi,Kolkata,0,0,0,1176,1,2,0.21,2.56
+O774,Standard,BlueDart,Chennai,Lucknow,4,5,1,1492,1,3,0.06,1.17
+O775,Standard,Delhivery,Delhi,Hyderabad,6,6,0,1903,1,2,0.12,1.36
+O776,Express,Delhivery,Jaipur,Bangalore,1,1,0,852,1,2,0.27,2.27
+O777,Same-Day,BlueDart,Lucknow,Mumbai,0,1,1,245,0,3,0.2,1.01
+O778,Same-Day,Ecom Express,Delhi,Kolkata,0,2,2,1102,1,1,0.27,1.23
+O779,Same-Day,Delhivery,Mumbai,Jaipur,0,1,1,553,0,2,0.23,2.3
+O780,Express,Ecom Express,Chennai,Bangalore,1,3,2,517,0,2,0.08,2.59
+O781,Express,BlueDart,Mumbai,Chennai,2,4,2,1226,1,3,0.15,1.4
+O782,Standard,Ecom Express,Jaipur,Chennai,3,3,0,1967,1,2,0.2,2.75
+O783,Standard,BlueDart,Hyderabad,Chennai,5,5,0,884,1,1,0.1,1.74
+O784,Same-Day,BlueDart,Kolkata,Chennai,0,2,2,1473,1,1,0.19,1.77
+O785,Same-Day,Ecom Express,Mumbai,Jaipur,1,1,0,1471,1,3,0.27,1.84
+O786,Standard,BlueDart,Jaipur,Chennai,6,7,1,1026,1,1,0.08,1.34
+O787,Express,Ecom Express,Bangalore,Delhi,1,4,3,1323,1,2,0.12,2.68
+O788,Express,Delhivery,Jaipur,Hyderabad,3,5,2,38,0,3,0.13,1.63
+O789,Same-Day,BlueDart,Lucknow,Bangalore,0,1,1,810,1,3,0.29,1.24
+O790,Standard,BlueDart,Jaipur,Delhi,3,4,1,289,0,1,0.09,1.38
+O791,Standard,Delhivery,Chennai,Jaipur,3,4,1,103,0,2,0.22,2.58
+O792,Same-Day,Delhivery,Jaipur,Mumbai,1,1,0,250,0,3,0.16,1.24
+O793,Express,BlueDart,Chennai,Jaipur,3,5,2,993,1,3,0.07,2.12
+O794,Standard,Delhivery,Bangalore,Mumbai,3,5,2,1995,1,3,0.1,2.64
+O795,Same-Day,Ecom Express,Lucknow,Lucknow,1,1,0,1562,1,3,0.09,2.01
+O796,Same-Day,Delhivery,Chennai,Delhi,0,0,0,1602,1,2,0.09,1.61
+O797,Standard,BlueDart,Delhi,Lucknow,3,3,0,497,0,2,0.06,2.32
+O798,Express,Ecom Express,Jaipur,Delhi,2,2,0,439,0,3,0.13,1.88
+O799,Express,Ecom Express,Chennai,Chennai,1,2,1,607,0,3,0.2,2.04
+O800,Standard,Ecom Express,Chennai,Bangalore,3,6,3,113,0,1,0.07,1.2
+O801,Express,Ecom Express,Chennai,Jaipur,1,2,1,455,0,2,0.1,2.57
+O802,Same-Day,Ecom Express,Lucknow,Lucknow,0,1,1,198,0,3,0.13,2.81
+O803,Standard,Delhivery,Lucknow,Hyderabad,5,5,0,1847,1,2,0.13,1.36
+O804,Express,Delhivery,Lucknow,Hyderabad,2,3,1,1199,1,1,0.06,1.03
+O805,Standard,BlueDart,Lucknow,Mumbai,3,3,0,628,0,2,0.23,2.98
+O806,Express,Ecom Express,Kolkata,Hyderabad,1,3,2,1700,1,3,0.24,2.71
+O807,Same-Day,Delhivery,Delhi,Mumbai,0,0,0,307,0,2,0.17,1.49
+O808,Standard,Ecom Express,Mumbai,Lucknow,4,4,0,1890,1,2,0.27,2.36
+O809,Express,BlueDart,Chennai,Hyderabad,2,2,0,805,1,1,0.06,2.04
+O810,Same-Day,Delhivery,Lucknow,Kolkata,1,3,2,595,0,3,0.09,2.36
+O811,Standard,BlueDart,Bangalore,Mumbai,5,7,2,1002,1,2,0.06,1.57
+O812,Express,Delhivery,Chennai,Mumbai,2,3,1,1357,1,1,0.14,1.57
+O813,Same-Day,Delhivery,Jaipur,Hyderabad,1,1,0,297,0,3,0.28,1.58
+O814,Same-Day,Delhivery,Chennai,Kolkata,1,1,0,870,1,2,0.2,1.35
+O815,Same-Day,Ecom Express,Hyderabad,Mumbai,0,1,1,517,0,2,0.13,1.59
+O816,Standard,Ecom Express,Kolkata,Bangalore,6,7,1,1426,1,2,0.14,1.93
+O817,Express,BlueDart,Hyderabad,Hyderabad,1,1,0,1552,1,3,0.18,1.25
+O818,Express,Ecom Express,Lucknow,Mumbai,3,3,0,17,0,1,0.07,1.54
+O819,Express,Delhivery,Mumbai,Delhi,3,3,0,991,1,3,0.2,2.02
+O820,Same-Day,Ecom Express,Delhi,Chennai,1,1,0,284,0,2,0.21,2.44
+O821,Standard,Delhivery,Mumbai,Kolkata,3,3,0,318,0,1,0.1,1.95
+O822,Express,Delhivery,Chennai,Hyderabad,2,2,0,995,1,3,0.22,2.72
+O823,Standard,Ecom Express,Hyderabad,Bangalore,4,5,1,295,0,1,0.18,2.4
+O824,Same-Day,BlueDart,Chennai,Chennai,0,0,0,1969,1,2,0.15,2.6
+O825,Express,Delhivery,Chennai,Chennai,2,3,1,251,0,1,0.21,2.79
+O826,Express,Delhivery,Kolkata,Jaipur,3,3,0,943,1,3,0.26,2.01
+O827,Standard,Ecom Express,Kolkata,Chennai,4,4,0,1348,1,2,0.23,2.57
+O828,Express,Ecom Express,Delhi,Jaipur,2,2,0,1976,1,3,0.23,2.01
+O829,Express,Ecom Express,Jaipur,Hyderabad,3,3,0,1961,1,1,0.06,2.7
+O830,Same-Day,Ecom Express,Hyderabad,Lucknow,1,1,0,667,0,1,0.27,1.35
+O831,Express,Delhivery,Lucknow,Jaipur,1,3,2,81,0,2,0.2,2.68
+O832,Standard,BlueDart,Chennai,Jaipur,4,5,1,405,0,1,0.1,1.32
+O833,Same-Day,Delhivery,Bangalore,Mumbai,0,2,2,421,0,2,0.24,2.14
+O834,Standard,Ecom Express,Kolkata,Hyderabad,4,7,3,1173,1,2,0.2,2.12
+O835,Express,Ecom Express,Chennai,Mumbai,1,2,1,1170,1,1,0.08,1.46
+O836,Express,Delhivery,Chennai,Kolkata,2,2,0,1445,1,1,0.18,1.48
+O837,Standard,BlueDart,Bangalore,Chennai,3,3,0,1198,1,1,0.13,1.52
+O838,Same-Day,Delhivery,Hyderabad,Lucknow,1,2,1,1897,1,2,0.07,2.9
+O839,Express,Delhivery,Lucknow,Mumbai,3,3,0,1519,1,1,0.12,1.08
+O840,Express,Delhivery,Bangalore,Kolkata,2,2,0,983,1,1,0.06,2.56
+O841,Same-Day,BlueDart,Jaipur,Hyderabad,0,0,0,1136,1,3,0.08,2.4
+O842,Same-Day,BlueDart,Bangalore,Kolkata,1,4,3,725,0,1,0.11,2.18
+O843,Standard,Delhivery,Delhi,Lucknow,4,4,0,1669,1,2,0.1,1.09
+O844,Same-Day,Ecom Express,Mumbai,Jaipur,1,1,0,985,1,1,0.11,2.09
+O845,Express,Ecom Express,Chennai,Chennai,3,3,0,624,0,3,0.11,2.79
+O846,Standard,Ecom Express,Lucknow,Delhi,5,5,0,1849,1,2,0.07,2.82
+O847,Standard,Delhivery,Bangalore,Lucknow,5,5,0,1489,1,1,0.22,2.3
+O848,Express,Delhivery,Bangalore,Bangalore,2,4,2,1209,1,2,0.26,1.77
+O849,Standard,BlueDart,Bangalore,Lucknow,4,6,2,781,0,3,0.13,2.08
+O850,Standard,Ecom Express,Jaipur,Bangalore,3,3,0,703,0,2,0.25,2.86
+O851,Same-Day,Ecom Express,Lucknow,Delhi,1,3,2,1763,1,2,0.19,2.14
+O852,Same-Day,BlueDart,Chennai,Lucknow,0,0,0,275,0,1,0.3,2.54
+O853,Same-Day,BlueDart,Bangalore,Kolkata,1,1,0,745,0,1,0.13,2.32
+O854,Standard,BlueDart,Hyderabad,Hyderabad,6,6,0,80,0,2,0.06,2.88
+O855,Express,BlueDart,Chennai,Jaipur,1,2,1,533,0,2,0.08,2.26
+O856,Standard,BlueDart,Kolkata,Lucknow,3,3,0,382,0,1,0.19,1.46
+O857,Same-Day,Delhivery,Mumbai,Chennai,0,3,3,1234,1,3,0.16,2.02
+O858,Same-Day,BlueDart,Delhi,Chennai,1,2,1,151,0,1,0.13,2.58
+O859,Express,Delhivery,Chennai,Chennai,3,3,0,68,0,1,0.28,1.05
+O860,Same-Day,Ecom Express,Bangalore,Bangalore,1,3,2,1929,1,3,0.23,1.76
+O861,Same-Day,Ecom Express,Bangalore,Lucknow,1,4,3,1108,1,3,0.17,2.05
+O862,Standard,BlueDart,Hyderabad,Mumbai,5,5,0,502,0,2,0.13,2.94
+O863,Standard,BlueDart,Lucknow,Delhi,5,6,1,1152,1,3,0.11,2.57
+O864,Express,Ecom Express,Chennai,Mumbai,3,3,0,1202,1,2,0.14,1.24
+O865,Express,Delhivery,Lucknow,Jaipur,3,4,1,1810,1,1,0.09,1.84
+O866,Standard,Delhivery,Delhi,Mumbai,6,6,0,54,0,3,0.27,2.84
+O867,Same-Day,BlueDart,Mumbai,Mumbai,0,2,2,1463,1,3,0.06,2.48
+O868,Express,Delhivery,Delhi,Hyderabad,2,4,2,1556,1,3,0.24,2.83
+O869,Same-Day,BlueDart,Kolkata,Jaipur,1,2,1,1385,1,2,0.09,2.45
+O870,Express,Ecom Express,Jaipur,Lucknow,1,2,1,1160,1,2,0.13,1.64
+O871,Same-Day,BlueDart,Mumbai,Lucknow,1,1,0,1182,1,2,0.12,1.24
+O872,Express,Delhivery,Chennai,Mumbai,2,3,1,1246,1,1,0.07,2.1
+O873,Same-Day,Delhivery,Kolkata,Jaipur,0,3,3,18,0,1,0.12,2.9
+O874,Standard,BlueDart,Chennai,Chennai,3,4,1,915,1,1,0.27,2.99
+O875,Standard,BlueDart,Chennai,Hyderabad,3,3,0,674,0,2,0.21,2.03
+O876,Express,Ecom Express,Kolkata,Bangalore,1,1,0,1914,1,1,0.26,2.32
+O877,Standard,Ecom Express,Hyderabad,Lucknow,6,6,0,1791,1,2,0.17,1.97
+O878,Standard,Ecom Express,Hyderabad,Kolkata,3,3,0,1952,1,1,0.16,1.98
+O879,Same-Day,Ecom Express,Hyderabad,Mumbai,1,2,1,1261,1,3,0.14,2.06
+O880,Express,Ecom Express,Kolkata,Hyderabad,2,4,2,1636,1,3,0.17,1.19
+O881,Standard,BlueDart,Mumbai,Kolkata,6,6,0,242,0,2,0.22,2.41
+O882,Standard,Delhivery,Jaipur,Kolkata,3,4,1,600,0,1,0.19,1.65
+O883,Express,Delhivery,Kolkata,Jaipur,1,3,2,554,0,3,0.25,1.62
+O884,Standard,Ecom Express,Kolkata,Chennai,3,5,2,1946,1,1,0.2,1.04
+O885,Same-Day,Delhivery,Kolkata,Bangalore,0,0,0,1346,1,3,0.1,1.31
+O886,Express,Ecom Express,Hyderabad,Chennai,2,4,2,851,1,1,0.06,1.04
+O887,Standard,Ecom Express,Hyderabad,Hyderabad,5,5,0,622,0,1,0.12,1.25
+O888,Standard,Ecom Express,Jaipur,Jaipur,3,5,2,1038,1,1,0.05,2.66
+O889,Standard,Ecom Express,Bangalore,Delhi,5,5,0,1612,1,2,0.12,1.41
+O890,Express,BlueDart,Chennai,Lucknow,2,5,3,195,0,2,0.12,2.41
+O891,Express,Delhivery,Lucknow,Chennai,2,2,0,1567,1,1,0.19,1.05
+O892,Standard,Ecom Express,Mumbai,Kolkata,5,5,0,685,0,1,0.19,1.42
+O893,Express,Ecom Express,Hyderabad,Kolkata,3,3,0,1721,1,1,0.24,1.5
+O894,Express,Delhivery,Chennai,Bangalore,3,3,0,1162,1,3,0.1,2.12
+O895,Standard,Ecom Express,Mumbai,Bangalore,5,5,0,949,1,1,0.16,1.16
+O896,Standard,Delhivery,Bangalore,Delhi,4,5,1,409,0,2,0.17,2.25
+O897,Express,BlueDart,Chennai,Lucknow,1,1,0,612,0,3,0.13,2.78
+O898,Same-Day,Ecom Express,Kolkata,Delhi,0,1,1,1649,1,3,0.2,1.94
+O899,Same-Day,Delhivery,Delhi,Hyderabad,1,3,2,25,0,2,0.07,2.95
+O900,Express,BlueDart,Delhi,Mumbai,2,2,0,198,0,1,0.14,2.12
+O901,Express,BlueDart,Jaipur,Jaipur,2,5,3,1201,1,2,0.19,2.28
+O902,Same-Day,Ecom Express,Mumbai,Jaipur,0,2,2,578,0,1,0.25,2.17
+O903,Express,BlueDart,Hyderabad,Bangalore,3,4,1,1789,1,1,0.05,1.46
+O904,Standard,Delhivery,Bangalore,Jaipur,6,9,3,1796,1,1,0.18,1.88
+O905,Same-Day,Ecom Express,Lucknow,Bangalore,1,1,0,777,0,2,0.13,2.04
+O906,Same-Day,BlueDart,Lucknow,Lucknow,1,2,1,1461,1,2,0.22,1.5
+O907,Standard,Ecom Express,Kolkata,Chennai,5,5,0,1756,1,3,0.16,2.23
+O908,Standard,Delhivery,Bangalore,Lucknow,4,4,0,910,1,3,0.13,1.19
+O909,Standard,Delhivery,Chennai,Chennai,5,6,1,1319,1,2,0.21,2.94
+O910,Express,Ecom Express,Mumbai,Kolkata,2,2,0,360,0,1,0.14,2.23
+O911,Standard,Delhivery,Lucknow,Mumbai,6,8,2,1713,1,3,0.23,1.63
+O912,Standard,BlueDart,Delhi,Chennai,5,6,1,1719,1,3,0.23,1.73
+O913,Same-Day,Ecom Express,Delhi,Kolkata,0,3,3,138,0,3,0.12,1.35
+O914,Standard,BlueDart,Mumbai,Jaipur,3,4,1,642,0,2,0.17,2.67
+O915,Standard,BlueDart,Bangalore,Mumbai,4,4,0,1499,1,1,0.25,1.44
+O916,Same-Day,Delhivery,Chennai,Chennai,0,0,0,1535,1,1,0.14,1.57
+O917,Standard,Delhivery,Chennai,Delhi,4,4,0,563,0,2,0.22,1.53
+O918,Same-Day,Delhivery,Bangalore,Mumbai,1,2,1,1703,1,3,0.15,2.08
+O919,Same-Day,Ecom Express,Chennai,Hyderabad,1,1,0,429,0,1,0.18,1.42
+O920,Same-Day,Ecom Express,Kolkata,Lucknow,0,3,3,978,1,2,0.19,2.32
+O921,Standard,Ecom Express,Mumbai,Bangalore,6,6,0,978,1,1,0.28,1.61
+O922,Express,Ecom Express,Jaipur,Jaipur,3,4,1,1184,1,2,0.26,1.51
+O923,Express,Delhivery,Mumbai,Jaipur,2,2,0,87,0,2,0.16,1.54
+O924,Same-Day,Ecom Express,Hyderabad,Bangalore,0,0,0,1893,1,3,0.24,1.26
+O925,Express,Ecom Express,Delhi,Kolkata,2,4,2,343,0,1,0.27,1.6
+O926,Standard,BlueDart,Bangalore,Jaipur,4,4,0,320,0,2,0.09,1.2
+O927,Same-Day,Delhivery,Mumbai,Kolkata,1,1,0,1707,1,2,0.08,2.53
+O928,Same-Day,Delhivery,Kolkata,Hyderabad,1,3,2,1227,1,2,0.22,2.94
+O929,Express,Delhivery,Jaipur,Chennai,2,2,0,701,0,1,0.21,1.28
+O930,Express,Delhivery,Chennai,Mumbai,2,4,2,1344,1,2,0.15,2.64
+O931,Same-Day,BlueDart,Mumbai,Jaipur,0,0,0,957,1,3,0.27,2.61
+O932,Same-Day,BlueDart,Jaipur,Kolkata,1,1,0,1410,1,2,0.24,1.61
+O933,Express,Ecom Express,Kolkata,Hyderabad,3,3,0,768,0,3,0.29,1.22
+O934,Standard,Ecom Express,Chennai,Bangalore,4,4,0,19,0,1,0.18,2.23
+O935,Standard,BlueDart,Bangalore,Lucknow,3,3,0,1782,1,3,0.22,1.5
+O936,Express,Delhivery,Lucknow,Jaipur,1,1,0,605,0,2,0.12,1.07
+O937,Same-Day,Ecom Express,Mumbai,Delhi,1,1,0,514,0,1,0.23,2.27
+O938,Same-Day,Ecom Express,Lucknow,Delhi,0,0,0,1886,1,1,0.07,1.75
+O939,Same-Day,Ecom Express,Chennai,Delhi,0,0,0,696,0,2,0.15,1.37
+O940,Standard,BlueDart,Hyderabad,Lucknow,4,4,0,1174,1,3,0.25,1.75
+O941,Same-Day,Delhivery,Jaipur,Chennai,0,1,1,571,0,1,0.22,1.55
+O942,Standard,Ecom Express,Kolkata,Hyderabad,5,7,2,551,0,1,0.11,1.04
+O943,Same-Day,Ecom Express,Kolkata,Chennai,1,2,1,1209,1,3,0.15,2.86
+O944,Express,BlueDart,Hyderabad,Bangalore,1,4,3,951,1,3,0.22,2.35
+O945,Same-Day,Delhivery,Hyderabad,Mumbai,1,1,0,1154,1,3,0.3,1.74
+O946,Standard,BlueDart,Jaipur,Chennai,4,5,1,1283,1,1,0.24,1.57
+O947,Same-Day,Delhivery,Mumbai,Hyderabad,0,1,1,203,0,3,0.12,2.73
+O948,Express,BlueDart,Mumbai,Delhi,3,3,0,576,0,3,0.27,2.92
+O949,Express,BlueDart,Chennai,Jaipur,1,4,3,1764,1,2,0.09,2.75
+O950,Same-Day,BlueDart,Jaipur,Kolkata,0,0,0,1404,1,2,0.15,2.27
+O951,Same-Day,BlueDart,Bangalore,Chennai,0,3,3,1232,1,2,0.2,1.33
+O952,Standard,Delhivery,Delhi,Lucknow,6,7,1,1135,1,2,0.14,2.75
+O953,Standard,Delhivery,Lucknow,Mumbai,5,7,2,137,0,2,0.11,2.21
+O954,Standard,Delhivery,Hyderabad,Mumbai,5,5,0,1791,1,2,0.23,1.14
+O955,Express,BlueDart,Mumbai,Jaipur,2,2,0,149,0,3,0.24,2.29
+O956,Same-Day,Ecom Express,Bangalore,Delhi,0,0,0,604,0,2,0.15,2.85
+O957,Standard,Ecom Express,Mumbai,Lucknow,4,6,2,1739,1,3,0.09,1.83
+O958,Standard,BlueDart,Lucknow,Mumbai,5,6,1,1319,1,1,0.24,1.68
+O959,Express,Delhivery,Delhi,Mumbai,3,3,0,568,0,3,0.12,1.44
+O960,Same-Day,BlueDart,Lucknow,Jaipur,0,0,0,1167,1,3,0.12,2.49
+O961,Express,Delhivery,Chennai,Mumbai,2,2,0,1309,1,1,0.2,1.52
+O962,Same-Day,Delhivery,Kolkata,Bangalore,0,0,0,1996,1,3,0.14,2.73
+O963,Express,Delhivery,Kolkata,Jaipur,2,4,2,34,0,1,0.13,1.45
+O964,Standard,Ecom Express,Bangalore,Mumbai,5,6,1,1026,1,3,0.26,2.57
+O965,Same-Day,BlueDart,Mumbai,Jaipur,0,3,3,821,1,2,0.19,2.07
+O966,Same-Day,Ecom Express,Delhi,Kolkata,0,0,0,506,0,3,0.28,2.72
+O967,Same-Day,Ecom Express,Hyderabad,Kolkata,1,4,3,1135,1,3,0.26,1.13
+O968,Standard,Delhivery,Kolkata,Jaipur,6,6,0,955,1,3,0.07,1.96
+O969,Same-Day,Ecom Express,Bangalore,Hyderabad,0,0,0,1230,1,3,0.16,2.81
+O970,Same-Day,BlueDart,Chennai,Lucknow,1,1,0,6,0,2,0.21,1.66
+O971,Same-Day,Ecom Express,Chennai,Hyderabad,0,1,1,703,0,3,0.16,2.95
+O972,Express,BlueDart,Chennai,Lucknow,2,5,3,339,0,1,0.28,1.89
+O973,Express,Ecom Express,Lucknow,Hyderabad,3,3,0,630,0,1,0.22,2.86
+O974,Standard,Delhivery,Delhi,Lucknow,4,4,0,1574,1,3,0.22,1.65
+O975,Same-Day,BlueDart,Chennai,Bangalore,1,1,0,473,0,2,0.09,1.67
+O976,Express,Delhivery,Jaipur,Mumbai,3,4,1,810,1,1,0.29,1.71
+O977,Standard,BlueDart,Kolkata,Mumbai,4,6,2,1360,1,1,0.13,2.58
+O978,Same-Day,Delhivery,Hyderabad,Hyderabad,1,3,2,1758,1,1,0.13,1.96
+O979,Same-Day,Ecom Express,Jaipur,Bangalore,1,4,3,516,0,1,0.08,2.28
+O980,Express,BlueDart,Jaipur,Mumbai,1,2,1,1808,1,1,0.27,2.18
+O981,Standard,Ecom Express,Chennai,Jaipur,5,8,3,1177,1,3,0.18,1.58
+O982,Express,BlueDart,Lucknow,Mumbai,3,3,0,1816,1,1,0.17,1.67
+O983,Standard,BlueDart,Bangalore,Bangalore,6,6,0,880,1,3,0.07,2.98
+O984,Same-Day,BlueDart,Kolkata,Jaipur,1,1,0,1623,1,3,0.07,1.15
+O985,Same-Day,Ecom Express,Hyderabad,Lucknow,0,0,0,1180,1,1,0.24,1.86
+O986,Express,BlueDart,Lucknow,Lucknow,1,3,2,377,0,3,0.25,2.48
+O987,Standard,BlueDart,Jaipur,Mumbai,6,7,1,43,0,1,0.11,1.45
+O988,Express,Delhivery,Delhi,Lucknow,3,3,0,1781,1,1,0.13,1.2
+O989,Express,Delhivery,Hyderabad,Bangalore,1,2,1,675,0,1,0.13,1.85
+O990,Standard,BlueDart,Bangalore,Lucknow,6,6,0,257,0,2,0.27,2.71
+O991,Express,Ecom Express,Mumbai,Hyderabad,1,2,1,426,0,1,0.29,2.01
+O992,Standard,Ecom Express,Kolkata,Lucknow,3,4,1,1931,1,3,0.3,1.83
+O993,Express,Delhivery,Bangalore,Lucknow,3,3,0,234,0,2,0.25,1.8
+O994,Express,Ecom Express,Mumbai,Lucknow,3,6,3,620,0,3,0.21,1.78
+O995,Standard,Delhivery,Delhi,Bangalore,4,5,1,368,0,1,0.22,2.52
+O996,Same-Day,Delhivery,Delhi,Kolkata,1,3,2,1691,1,3,0.29,2.48
+O997,Standard,Ecom Express,Kolkata,Lucknow,6,9,3,422,0,2,0.21,1.06
+O998,Standard,Ecom Express,Delhi,Delhi,6,9,3,100,0,1,0.08,1.7
+O999,Express,Ecom Express,Lucknow,Jaipur,2,2,0,855,1,1,0.26,2.62
+O1000,Standard,Ecom Express,Mumbai,Kolkata,5,6,1,1349,1,2,0.17,2.66
+O1001,Standard,Delhivery,Jaipur,Bangalore,4,4,0,1355,1,2,0.27,1.21
+O1002,Same-Day,Ecom Express,Chennai,Mumbai,1,4,3,1373,1,1,0.13,1.75
+O1003,Express,Delhivery,Bangalore,Jaipur,3,6,3,103,0,1,0.21,2.67
+O1004,Same-Day,Delhivery,Jaipur,Lucknow,1,2,1,995,1,2,0.3,1.91
+O1005,Express,BlueDart,Kolkata,Hyderabad,3,5,2,1578,1,1,0.11,2.61
+O1006,Express,BlueDart,Jaipur,Jaipur,3,4,1,543,0,3,0.06,2.09
+O1007,Same-Day,BlueDart,Lucknow,Kolkata,1,1,0,263,0,2,0.19,2.88
+O1008,Standard,Ecom Express,Kolkata,Hyderabad,4,4,0,1594,1,3,0.2,1.3
+O1009,Standard,Ecom Express,Delhi,Hyderabad,4,4,0,771,0,3,0.21,2.24
+O1010,Standard,Ecom Express,Jaipur,Jaipur,6,6,0,612,0,2,0.17,1.27
+O1011,Same-Day,Ecom Express,Mumbai,Hyderabad,1,1,0,432,0,1,0.24,1.28
+O1012,Same-Day,Delhivery,Kolkata,Delhi,1,1,0,805,1,1,0.11,2.9
+O1013,Standard,BlueDart,Kolkata,Mumbai,4,4,0,913,1,1,0.21,2.04
+O1014,Standard,Ecom Express,Lucknow,Delhi,6,9,3,616,0,1,0.07,2.96
+O1015,Standard,Ecom Express,Lucknow,Bangalore,6,6,0,877,1,2,0.11,1.21
+O1016,Express,Delhivery,Mumbai,Lucknow,3,3,0,1977,1,2,0.26,2.46
+O1017,Same-Day,Delhivery,Lucknow,Delhi,1,4,3,735,0,1,0.2,1.44
+O1018,Same-Day,Ecom Express,Jaipur,Jaipur,1,4,3,1247,1,1,0.2,2.18
+O1019,Standard,Ecom Express,Jaipur,Hyderabad,5,6,1,1193,1,2,0.23,1.08
+O1020,Standard,Ecom Express,Jaipur,Chennai,6,8,2,1670,1,3,0.28,1.43
+O1021,Express,BlueDart,Chennai,Delhi,2,2,0,1647,1,2,0.25,1.69
+O1022,Same-Day,Delhivery,Kolkata,Lucknow,1,2,1,1579,1,3,0.15,1.7
+O1023,Same-Day,Delhivery,Mumbai,Mumbai,0,0,0,653,0,3,0.15,2.24
+O1024,Same-Day,BlueDart,Kolkata,Lucknow,1,2,1,723,0,1,0.29,1.65
+O1025,Same-Day,Delhivery,Jaipur,Lucknow,1,1,0,1554,1,3,0.22,1.4
+O1026,Standard,Delhivery,Jaipur,Jaipur,5,5,0,1096,1,1,0.26,2.47
+O1027,Express,Ecom Express,Chennai,Jaipur,1,4,3,508,0,1,0.17,2.67
+O1028,Standard,Delhivery,Lucknow,Chennai,4,5,1,30,0,2,0.15,2.1
+O1029,Express,BlueDart,Chennai,Lucknow,3,3,0,1183,1,3,0.25,1.73
+O1030,Express,BlueDart,Hyderabad,Hyderabad,3,4,1,736,0,3,0.19,1.19
+O1031,Same-Day,Ecom Express,Hyderabad,Mumbai,0,1,1,1479,1,2,0.12,2.67
+O1032,Standard,Ecom Express,Bangalore,Bangalore,4,4,0,50,0,2,0.17,2.41
+O1033,Express,Ecom Express,Bangalore,Bangalore,3,4,1,521,0,3,0.2,1.86
+O1034,Same-Day,Delhivery,Kolkata,Kolkata,1,1,0,681,0,1,0.29,1.11
+O1035,Same-Day,Delhivery,Hyderabad,Chennai,1,1,0,1500,1,3,0.24,2.98
+O1036,Standard,Ecom Express,Jaipur,Jaipur,3,5,2,1942,1,2,0.15,1.95
+O1037,Standard,Delhivery,Delhi,Lucknow,6,6,0,1805,1,2,0.15,1.45
+O1038,Standard,Delhivery,Bangalore,Bangalore,5,5,0,46,0,3,0.14,1.34
+O1039,Express,Ecom Express,Kolkata,Jaipur,1,1,0,1643,1,1,0.29,1.38
+O1040,Express,Delhivery,Kolkata,Hyderabad,1,2,1,1791,1,3,0.09,1.88
+O1041,Same-Day,Delhivery,Chennai,Chennai,0,0,0,1920,1,2,0.08,2.37
+O1042,Standard,BlueDart,Jaipur,Hyderabad,4,5,1,1260,1,2,0.29,2.34
+O1043,Standard,Delhivery,Kolkata,Hyderabad,6,6,0,390,0,1,0.28,2.84
+O1044,Standard,Ecom Express,Jaipur,Jaipur,5,6,1,1872,1,3,0.21,1.57
+O1045,Express,BlueDart,Bangalore,Jaipur,2,3,1,896,1,2,0.08,2.12
+O1046,Same-Day,Delhivery,Mumbai,Chennai,0,0,0,1085,1,2,0.27,2.5
+O1047,Standard,BlueDart,Hyderabad,Hyderabad,3,4,1,101,0,2,0.29,1.1
+O1048,Standard,Delhivery,Mumbai,Jaipur,5,6,1,1399,1,2,0.29,2.78
+O1049,Standard,Delhivery,Mumbai,Bangalore,3,3,0,97,0,2,0.05,1.48
+O1050,Express,Delhivery,Chennai,Chennai,1,4,3,324,0,2,0.22,2.42
+O1051,Same-Day,BlueDart,Chennai,Hyderabad,0,0,0,856,1,1,0.25,1.98
+O1052,Same-Day,Delhivery,Mumbai,Bangalore,1,2,1,268,0,3,0.08,1.32
+O1053,Standard,Ecom Express,Jaipur,Delhi,5,5,0,1961,1,2,0.18,1.57
+O1054,Standard,Delhivery,Delhi,Bangalore,3,6,3,1141,1,3,0.3,1.94
+O1055,Standard,Delhivery,Hyderabad,Mumbai,3,3,0,1566,1,2,0.2,1.88
+O1056,Same-Day,BlueDart,Bangalore,Mumbai,0,0,0,1578,1,3,0.05,1.31
+O1057,Same-Day,BlueDart,Mumbai,Lucknow,0,0,0,806,1,1,0.1,1.39
+O1058,Standard,Ecom Express,Delhi,Delhi,4,6,2,1237,1,1,0.19,1.64
+O1059,Same-Day,Ecom Express,Kolkata,Lucknow,0,0,0,1271,1,2,0.06,2.8
+O1060,Same-Day,Ecom Express,Mumbai,Lucknow,0,2,2,1671,1,1,0.24,1.07
+O1061,Same-Day,BlueDart,Lucknow,Jaipur,1,1,0,583,0,3,0.11,1.98
+O1062,Standard,Delhivery,Delhi,Chennai,6,6,0,1103,1,2,0.21,1.35
+O1063,Standard,Delhivery,Lucknow,Delhi,6,6,0,1654,1,2,0.23,2.08
+O1064,Express,Ecom Express,Lucknow,Hyderabad,2,5,3,1814,1,2,0.29,1.93
+O1065,Same-Day,Delhivery,Hyderabad,Mumbai,0,1,1,508,0,3,0.21,2.24
+O1066,Express,Delhivery,Lucknow,Lucknow,1,1,0,809,1,2,0.28,2.91
+O1067,Same-Day,Ecom Express,Jaipur,Mumbai,0,1,1,1355,1,1,0.29,1.05
+O1068,Same-Day,Delhivery,Delhi,Delhi,0,0,0,1318,1,2,0.13,1.49
+O1069,Same-Day,Delhivery,Mumbai,Kolkata,0,1,1,1389,1,1,0.05,2.72
+O1070,Same-Day,Delhivery,Kolkata,Kolkata,0,1,1,1966,1,3,0.28,2.17
+O1071,Express,Delhivery,Delhi,Delhi,1,1,0,1648,1,2,0.08,2.82
+O1072,Express,Delhivery,Mumbai,Lucknow,3,5,2,580,0,3,0.29,2.82
+O1073,Express,Ecom Express,Kolkata,Chennai,2,4,2,354,0,2,0.2,1.36
+O1074,Express,Delhivery,Delhi,Chennai,1,2,1,1820,1,3,0.13,1.79
+O1075,Express,Delhivery,Kolkata,Delhi,2,5,3,1461,1,3,0.3,1.99
+O1076,Express,Ecom Express,Bangalore,Bangalore,1,1,0,1056,1,2,0.13,1.33
+O1077,Express,Ecom Express,Lucknow,Chennai,2,5,3,696,0,3,0.07,2.1
+O1078,Express,BlueDart,Jaipur,Bangalore,2,4,2,413,0,1,0.22,1.54
+O1079,Express,BlueDart,Chennai,Delhi,3,3,0,705,0,3,0.1,1.56
+O1080,Standard,Delhivery,Hyderabad,Mumbai,3,3,0,1665,1,1,0.09,1.13
+O1081,Same-Day,Ecom Express,Mumbai,Jaipur,0,0,0,1513,1,1,0.2,2.93
+O1082,Standard,Ecom Express,Mumbai,Kolkata,3,3,0,1447,1,1,0.07,2.9
+O1083,Standard,Ecom Express,Hyderabad,Jaipur,3,4,1,797,0,2,0.25,2.42
+O1084,Same-Day,Delhivery,Mumbai,Bangalore,0,3,3,911,1,1,0.29,1.53
+O1085,Standard,Delhivery,Delhi,Kolkata,4,4,0,388,0,2,0.21,2.18
+O1086,Express,Delhivery,Bangalore,Lucknow,2,2,0,1693,1,3,0.27,2.37
+O1087,Express,Ecom Express,Jaipur,Hyderabad,2,3,1,1853,1,1,0.22,2.8
+O1088,Same-Day,Ecom Express,Mumbai,Kolkata,1,1,0,1434,1,3,0.12,2.68
+O1089,Express,Ecom Express,Hyderabad,Chennai,2,2,0,1568,1,1,0.2,1.09
+O1090,Express,BlueDart,Delhi,Jaipur,2,2,0,1784,1,1,0.23,1.77
+O1091,Standard,Ecom Express,Delhi,Mumbai,6,7,1,753,0,1,0.2,1.37
+O1092,Express,Delhivery,Chennai,Chennai,1,2,1,49,0,3,0.12,1.38
+O1093,Standard,BlueDart,Mumbai,Mumbai,6,6,0,1989,1,1,0.29,2.41
+O1094,Express,BlueDart,Delhi,Bangalore,1,1,0,857,1,2,0.21,2.37
+O1095,Same-Day,Ecom Express,Delhi,Kolkata,1,3,2,703,0,2,0.19,1.95
+O1096,Standard,BlueDart,Lucknow,Jaipur,5,8,3,1414,1,2,0.19,2.15
+O1097,Same-Day,Delhivery,Hyderabad,Kolkata,0,0,0,1455,1,2,0.19,2.78
+O1098,Same-Day,BlueDart,Chennai,Jaipur,1,1,0,171,0,1,0.16,2.55
+O1099,Standard,Ecom Express,Lucknow,Chennai,3,3,0,675,0,3,0.09,1.55
+O1100,Same-Day,Ecom Express,Mumbai,Jaipur,0,2,2,1966,1,2,0.23,2.47
+O1101,Express,Delhivery,Chennai,Chennai,2,2,0,1439,1,2,0.1,1.59
+O1102,Express,Delhivery,Lucknow,Delhi,2,3,1,1593,1,3,0.15,1.31
+O1103,Express,BlueDart,Delhi,Kolkata,1,4,3,1451,1,3,0.08,2.91
+O1104,Express,BlueDart,Bangalore,Mumbai,1,2,1,650,0,3,0.16,1.65
+O1105,Express,Delhivery,Bangalore,Kolkata,2,3,1,1163,1,3,0.23,1.26
+O1106,Same-Day,Delhivery,Kolkata,Lucknow,0,3,3,1930,1,2,0.13,1.83
+O1107,Same-Day,Ecom Express,Delhi,Chennai,1,1,0,1319,1,3,0.26,2.63
+O1108,Standard,Delhivery,Bangalore,Delhi,3,3,0,1325,1,3,0.26,1.45
+O1109,Standard,Ecom Express,Jaipur,Chennai,5,5,0,666,0,1,0.18,1.58
+O1110,Standard,Delhivery,Hyderabad,Hyderabad,3,3,0,414,0,3,0.17,1.7
+O1111,Express,Ecom Express,Chennai,Bangalore,1,3,2,316,0,2,0.19,2.02
+O1112,Standard,Delhivery,Chennai,Hyderabad,5,8,3,1843,1,2,0.06,2.21
+O1113,Standard,Delhivery,Hyderabad,Bangalore,3,3,0,90,0,1,0.24,2.47
+O1114,Express,Delhivery,Chennai,Jaipur,2,2,0,116,0,1,0.18,1.62
+O1115,Same-Day,BlueDart,Delhi,Hyderabad,1,1,0,1479,1,2,0.17,2.19
+O1116,Standard,Delhivery,Chennai,Kolkata,3,3,0,1273,1,1,0.13,1.76
+O1117,Same-Day,BlueDart,Mumbai,Lucknow,0,1,1,1993,1,2,0.15,1.04
+O1118,Express,Ecom Express,Bangalore,Kolkata,1,1,0,251,0,2,0.09,1.23
+O1119,Express,Delhivery,Delhi,Kolkata,1,1,0,1444,1,1,0.07,2.36
+O1120,Express,Delhivery,Mumbai,Mumbai,1,2,1,1997,1,2,0.23,2.44
+O1121,Standard,Ecom Express,Bangalore,Chennai,6,6,0,1664,1,3,0.26,1.87
+O1122,Express,BlueDart,Delhi,Mumbai,1,1,0,1229,1,2,0.21,1.74
+O1123,Same-Day,BlueDart,Kolkata,Delhi,1,3,2,838,1,2,0.3,2.53
+O1124,Express,Delhivery,Kolkata,Lucknow,2,4,2,182,0,2,0.21,1.9
+O1125,Same-Day,Ecom Express,Delhi,Mumbai,0,3,3,1231,1,3,0.08,2.63
+O1126,Standard,Delhivery,Chennai,Kolkata,3,3,0,1069,1,3,0.22,1.33
+O1127,Express,Ecom Express,Jaipur,Chennai,3,3,0,1718,1,3,0.21,1.79
+O1128,Standard,Delhivery,Hyderabad,Chennai,4,4,0,1316,1,3,0.05,2.59
+O1129,Express,Delhivery,Mumbai,Mumbai,1,1,0,1552,1,1,0.06,1.06
+O1130,Express,BlueDart,Jaipur,Jaipur,2,3,1,1952,1,1,0.22,1.6
+O1131,Same-Day,Delhivery,Lucknow,Kolkata,1,1,0,1305,1,1,0.17,1.7
+O1132,Standard,BlueDart,Lucknow,Kolkata,6,6,0,1415,1,1,0.14,2.93
+O1133,Standard,Ecom Express,Mumbai,Hyderabad,4,4,0,1488,1,2,0.14,1.67
+O1134,Same-Day,Delhivery,Bangalore,Kolkata,1,3,2,448,0,3,0.08,2.73
+O1135,Standard,BlueDart,Bangalore,Hyderabad,6,6,0,567,0,2,0.2,2.4
+O1136,Standard,Delhivery,Delhi,Bangalore,5,5,0,1236,1,1,0.1,1.97
+O1137,Standard,Ecom Express,Lucknow,Hyderabad,5,7,2,379,0,1,0.23,2.62
+O1138,Same-Day,Ecom Express,Jaipur,Mumbai,0,1,1,902,1,1,0.23,2.8
+O1139,Standard,BlueDart,Mumbai,Delhi,5,6,1,898,1,1,0.07,2.76
+O1140,Standard,Delhivery,Delhi,Chennai,4,5,1,252,0,3,0.1,2.32
+O1141,Same-Day,Ecom Express,Bangalore,Bangalore,0,0,0,1197,1,1,0.1,1.6
+O1142,Same-Day,BlueDart,Bangalore,Lucknow,0,0,0,235,0,2,0.27,1.27
+O1143,Express,Delhivery,Jaipur,Jaipur,2,2,0,985,1,3,0.21,2.08
+O1144,Standard,Delhivery,Delhi,Lucknow,3,6,3,983,1,1,0.21,1.83
+O1145,Standard,BlueDart,Bangalore,Hyderabad,6,8,2,92,0,1,0.22,2.86
+O1146,Standard,Ecom Express,Jaipur,Jaipur,6,6,0,1264,1,3,0.27,2.27
+O1147,Standard,Delhivery,Mumbai,Jaipur,6,7,1,1233,1,3,0.27,1.29
+O1148,Same-Day,Ecom Express,Kolkata,Mumbai,1,1,0,626,0,2,0.26,1.94
+O1149,Same-Day,Ecom Express,Lucknow,Delhi,0,0,0,966,1,2,0.18,2.23
+O1150,Express,BlueDart,Hyderabad,Lucknow,3,5,2,1056,1,3,0.1,2.94
+O1151,Express,Delhivery,Delhi,Delhi,3,3,0,873,1,3,0.12,2.37
+O1152,Standard,Delhivery,Chennai,Mumbai,6,8,2,1196,1,3,0.11,2.2
+O1153,Standard,Ecom Express,Lucknow,Jaipur,6,7,1,996,1,3,0.14,1.51
+O1154,Express,BlueDart,Lucknow,Hyderabad,1,1,0,141,0,2,0.28,2.1
+O1155,Express,BlueDart,Mumbai,Mumbai,1,1,0,880,1,2,0.16,1.63
+O1156,Standard,Ecom Express,Chennai,Mumbai,3,3,0,573,0,1,0.25,2.85
+O1157,Same-Day,Ecom Express,Chennai,Mumbai,0,1,1,25,0,2,0.16,1.46
+O1158,Express,Ecom Express,Kolkata,Lucknow,1,1,0,315,0,1,0.09,2.93
+O1159,Standard,Delhivery,Hyderabad,Jaipur,5,5,0,1662,1,2,0.11,1.92
+O1160,Standard,Ecom Express,Jaipur,Hyderabad,4,4,0,1379,1,2,0.1,1.2
+O1161,Same-Day,BlueDart,Bangalore,Bangalore,1,1,0,1747,1,3,0.24,1.41
+O1162,Express,BlueDart,Lucknow,Chennai,1,1,0,1027,1,3,0.1,1.29
+O1163,Express,BlueDart,Chennai,Mumbai,1,2,1,451,0,1,0.23,2.8
+O1164,Same-Day,Delhivery,Jaipur,Mumbai,0,2,2,931,1,3,0.14,1.76
+O1165,Standard,BlueDart,Kolkata,Jaipur,6,7,1,527,0,2,0.17,1.34
+O1166,Standard,Delhivery,Mumbai,Hyderabad,3,4,1,786,0,3,0.28,1.18
+O1167,Same-Day,Delhivery,Jaipur,Mumbai,1,2,1,932,1,2,0.27,1.37
+O1168,Standard,BlueDart,Lucknow,Jaipur,3,3,0,1276,1,2,0.27,1.47
+O1169,Express,BlueDart,Kolkata,Jaipur,1,3,2,1098,1,3,0.09,2.07
+O1170,Same-Day,Delhivery,Jaipur,Lucknow,0,1,1,1030,1,1,0.09,1.94
+O1171,Express,Ecom Express,Mumbai,Chennai,2,3,1,508,0,3,0.11,2.28
+O1172,Express,Ecom Express,Jaipur,Mumbai,2,2,0,1088,1,3,0.19,1.81
+O1173,Same-Day,BlueDart,Delhi,Jaipur,1,1,0,1544,1,3,0.26,1.25
+O1174,Standard,BlueDart,Bangalore,Jaipur,6,7,1,788,0,2,0.17,2.5
+O1175,Same-Day,BlueDart,Hyderabad,Lucknow,0,3,3,1334,1,1,0.05,1.45
+O1176,Same-Day,BlueDart,Delhi,Delhi,1,2,1,765,0,2,0.29,1.49
+O1177,Standard,Ecom Express,Jaipur,Kolkata,5,5,0,957,1,1,0.2,1.71
+O1178,Standard,Ecom Express,Delhi,Mumbai,5,6,1,683,0,1,0.3,1.29
+O1179,Standard,BlueDart,Lucknow,Bangalore,5,5,0,54,0,2,0.21,1.57
+O1180,Express,Ecom Express,Mumbai,Hyderabad,3,4,1,79,0,1,0.28,1.76
+O1181,Standard,BlueDart,Jaipur,Jaipur,4,4,0,195,0,1,0.06,1.61
+O1182,Express,BlueDart,Hyderabad,Mumbai,1,1,0,879,1,1,0.3,1.33
+O1183,Standard,Ecom Express,Lucknow,Jaipur,6,7,1,1879,1,1,0.07,1.92
+O1184,Express,Ecom Express,Kolkata,Delhi,3,5,2,1148,1,3,0.22,2.05
+O1185,Same-Day,Delhivery,Hyderabad,Mumbai,1,2,1,1656,1,1,0.16,1.54
+O1186,Same-Day,Delhivery,Delhi,Mumbai,1,1,0,1646,1,3,0.11,2.57
+O1187,Same-Day,BlueDart,Kolkata,Mumbai,1,2,1,850,1,2,0.07,1.32
+O1188,Express,BlueDart,Lucknow,Chennai,2,3,1,1674,1,1,0.13,1.74
+O1189,Same-Day,Delhivery,Chennai,Mumbai,0,0,0,835,1,1,0.2,1.33
+O1190,Standard,Delhivery,Delhi,Jaipur,3,3,0,173,0,3,0.16,2.79
+O1191,Express,BlueDart,Kolkata,Jaipur,1,4,3,71,0,3,0.19,1.08
+O1192,Standard,Delhivery,Jaipur,Chennai,3,6,3,1687,1,2,0.08,2.19
+O1193,Standard,BlueDart,Delhi,Chennai,3,3,0,951,1,3,0.24,2.03
+O1194,Express,BlueDart,Lucknow,Bangalore,2,2,0,1366,1,2,0.29,1.61
+O1195,Standard,Delhivery,Mumbai,Jaipur,6,6,0,309,0,1,0.2,1.24
+O1196,Standard,BlueDart,Hyderabad,Hyderabad,5,6,1,1582,1,3,0.17,1.82
+O1197,Same-Day,Delhivery,Kolkata,Chennai,0,1,1,750,0,1,0.06,2.68
+O1198,Express,BlueDart,Jaipur,Mumbai,3,3,0,1771,1,3,0.13,2.83
+O1199,Express,BlueDart,Delhi,Jaipur,1,1,0,1002,1,1,0.27,1.48
+O1200,Standard,Ecom Express,Kolkata,Lucknow,6,6,0,83,0,3,0.14,2.23
+O1201,Standard,Ecom Express,Chennai,Kolkata,4,5,1,307,0,3,0.15,2.06
+O1202,Same-Day,Ecom Express,Chennai,Bangalore,0,0,0,936,1,3,0.3,1.91
+O1203,Same-Day,BlueDart,Lucknow,Chennai,0,1,1,976,1,3,0.19,2.85
+O1204,Same-Day,Ecom Express,Chennai,Chennai,0,0,0,1677,1,2,0.12,2.06
+O1205,Express,BlueDart,Jaipur,Jaipur,1,3,2,1968,1,1,0.18,2.91
+O1206,Standard,Delhivery,Jaipur,Kolkata,5,6,1,1601,1,3,0.23,1.35
+O1207,Same-Day,Delhivery,Delhi,Mumbai,0,1,1,1943,1,3,0.23,1.34
+O1208,Express,Delhivery,Chennai,Lucknow,1,4,3,1498,1,2,0.3,2.38
+O1209,Standard,BlueDart,Kolkata,Mumbai,5,6,1,1981,1,1,0.18,2.67
+O1210,Same-Day,Delhivery,Kolkata,Lucknow,1,3,2,1613,1,1,0.15,1.38
+O1211,Standard,BlueDart,Kolkata,Kolkata,4,5,1,303,0,1,0.14,1.78
+O1212,Standard,Ecom Express,Mumbai,Lucknow,6,6,0,1589,1,3,0.11,2.31
+O1213,Same-Day,Delhivery,Lucknow,Delhi,1,1,0,412,0,1,0.05,1.71
+O1214,Same-Day,BlueDart,Mumbai,Jaipur,0,0,0,1990,1,1,0.26,2.19
+O1215,Express,BlueDart,Mumbai,Chennai,3,6,3,1134,1,3,0.25,2.57
+O1216,Express,Delhivery,Chennai,Hyderabad,2,2,0,84,0,3,0.29,1.27
+O1217,Express,BlueDart,Chennai,Bangalore,1,1,0,1092,1,3,0.12,1.05
+O1218,Same-Day,BlueDart,Kolkata,Jaipur,0,0,0,747,0,2,0.27,1.37
+O1219,Express,Delhivery,Chennai,Bangalore,3,3,0,1550,1,3,0.21,1.2
+O1220,Same-Day,Delhivery,Mumbai,Delhi,1,1,0,556,0,1,0.29,2.18
+O1221,Express,Ecom Express,Hyderabad,Lucknow,3,3,0,223,0,1,0.13,1.37
+O1222,Standard,Ecom Express,Hyderabad,Kolkata,4,6,2,351,0,2,0.05,2.05
+O1223,Same-Day,Ecom Express,Jaipur,Lucknow,0,2,2,126,0,1,0.26,1.59
+O1224,Express,Delhivery,Jaipur,Hyderabad,2,2,0,515,0,2,0.21,2.0
+O1225,Express,Ecom Express,Mumbai,Hyderabad,3,3,0,267,0,3,0.11,2.42
+O1226,Standard,BlueDart,Mumbai,Mumbai,6,7,1,277,0,3,0.05,1.42
+O1227,Express,Ecom Express,Mumbai,Mumbai,1,4,3,920,1,2,0.13,1.82
+O1228,Standard,Ecom Express,Hyderabad,Mumbai,4,5,1,802,1,2,0.17,1.55
+O1229,Standard,Delhivery,Lucknow,Hyderabad,3,4,1,1605,1,3,0.12,1.83
+O1230,Express,Ecom Express,Mumbai,Hyderabad,1,1,0,974,1,3,0.16,1.61
+O1231,Express,BlueDart,Delhi,Chennai,2,5,3,333,0,1,0.25,2.29
+O1232,Standard,Ecom Express,Chennai,Hyderabad,3,5,2,553,0,3,0.07,2.72
+O1233,Standard,BlueDart,Hyderabad,Jaipur,3,3,0,499,0,3,0.28,2.71
+O1234,Standard,Ecom Express,Jaipur,Kolkata,4,6,2,1968,1,3,0.14,1.96
+O1235,Same-Day,BlueDart,Kolkata,Hyderabad,1,2,1,1205,1,1,0.14,2.25
+O1236,Standard,Ecom Express,Bangalore,Jaipur,5,7,2,1014,1,3,0.07,2.13
+O1237,Express,Delhivery,Mumbai,Kolkata,2,5,3,1100,1,3,0.3,2.1
+O1238,Express,Ecom Express,Jaipur,Bangalore,1,2,1,79,0,1,0.3,2.29
+O1239,Standard,Ecom Express,Hyderabad,Chennai,3,4,1,1654,1,1,0.17,1.55
+O1240,Standard,Delhivery,Hyderabad,Bangalore,6,7,1,1822,1,3,0.12,1.85
+O1241,Standard,Ecom Express,Bangalore,Hyderabad,3,3,0,1518,1,3,0.12,1.34
+O1242,Standard,Delhivery,Chennai,Jaipur,4,5,1,1699,1,2,0.07,1.9
+O1243,Same-Day,Delhivery,Mumbai,Bangalore,1,3,2,1714,1,1,0.17,1.02
+O1244,Express,Delhivery,Mumbai,Mumbai,1,2,1,178,0,1,0.15,1.87
+O1245,Same-Day,Ecom Express,Hyderabad,Mumbai,1,1,0,1820,1,2,0.16,2.22
+O1246,Standard,BlueDart,Lucknow,Hyderabad,3,3,0,406,0,1,0.27,1.23
+O1247,Same-Day,Ecom Express,Delhi,Hyderabad,1,3,2,813,1,1,0.18,2.08
+O1248,Same-Day,Delhivery,Kolkata,Jaipur,0,3,3,499,0,3,0.18,1.52
+O1249,Express,Delhivery,Hyderabad,Bangalore,2,3,1,1746,1,3,0.21,2.04
+O1250,Same-Day,BlueDart,Delhi,Jaipur,0,0,0,1515,1,3,0.12,2.69
+O1251,Same-Day,Delhivery,Mumbai,Lucknow,0,0,0,1772,1,2,0.09,2.48
+O1252,Standard,BlueDart,Kolkata,Hyderabad,6,6,0,1956,1,1,0.25,2.5
+O1253,Express,Ecom Express,Chennai,Mumbai,2,2,0,1381,1,2,0.12,1.17
+O1254,Express,Delhivery,Delhi,Jaipur,2,3,1,1010,1,1,0.26,1.58
+O1255,Standard,Ecom Express,Bangalore,Jaipur,6,6,0,962,1,1,0.22,2.77
+O1256,Same-Day,BlueDart,Mumbai,Lucknow,1,1,0,1090,1,1,0.15,2.6
+O1257,Standard,Ecom Express,Jaipur,Jaipur,5,6,1,640,0,3,0.06,2.43
+O1258,Standard,Ecom Express,Lucknow,Hyderabad,6,6,0,1238,1,3,0.14,3.0
+O1259,Standard,Delhivery,Jaipur,Jaipur,3,3,0,553,0,2,0.26,1.25
+O1260,Same-Day,Delhivery,Lucknow,Chennai,1,1,0,1975,1,2,0.27,1.5
+O1261,Same-Day,Delhivery,Mumbai,Jaipur,0,0,0,823,1,1,0.22,2.24
+O1262,Express,BlueDart,Delhi,Hyderabad,1,2,1,47,0,2,0.23,2.69
+O1263,Express,Ecom Express,Jaipur,Lucknow,1,2,1,1688,1,1,0.14,2.5
+O1264,Same-Day,Delhivery,Chennai,Bangalore,1,1,0,701,0,1,0.29,2.82
+O1265,Express,BlueDart,Bangalore,Chennai,2,2,0,1627,1,1,0.23,1.74
+O1266,Express,BlueDart,Bangalore,Jaipur,2,3,1,1490,1,3,0.22,1.08
+O1267,Standard,BlueDart,Hyderabad,Jaipur,4,4,0,432,0,3,0.11,1.63
+O1268,Standard,BlueDart,Lucknow,Mumbai,3,4,1,198,0,3,0.27,1.25
+O1269,Standard,BlueDart,Kolkata,Mumbai,4,4,0,1013,1,1,0.06,1.81
+O1270,Express,Ecom Express,Jaipur,Mumbai,2,4,2,200,0,3,0.23,2.05
+O1271,Standard,Delhivery,Delhi,Lucknow,3,3,0,690,0,3,0.18,1.03
+O1272,Same-Day,Ecom Express,Mumbai,Hyderabad,1,2,1,545,0,3,0.28,2.83
+O1273,Same-Day,Delhivery,Chennai,Kolkata,1,1,0,279,0,3,0.07,1.25
+O1274,Same-Day,Ecom Express,Lucknow,Mumbai,1,1,0,467,0,2,0.26,2.17
+O1275,Same-Day,BlueDart,Kolkata,Mumbai,0,1,1,155,0,2,0.15,1.18
+O1276,Same-Day,BlueDart,Bangalore,Bangalore,1,2,1,1931,1,2,0.11,2.87
+O1277,Same-Day,BlueDart,Bangalore,Bangalore,0,0,0,243,0,1,0.29,2.75
+O1278,Express,Delhivery,Jaipur,Chennai,3,3,0,186,0,1,0.22,1.15
+O1279,Express,Ecom Express,Delhi,Hyderabad,2,2,0,111,0,2,0.19,1.97
+O1280,Standard,Delhivery,Mumbai,Chennai,5,6,1,599,0,1,0.13,2.11
+O1281,Standard,Ecom Express,Delhi,Delhi,6,8,2,1772,1,2,0.06,1.47
+O1282,Standard,Delhivery,Bangalore,Jaipur,5,7,2,929,1,3,0.14,2.13
+O1283,Standard,BlueDart,Delhi,Delhi,3,3,0,1468,1,2,0.24,2.41
+O1284,Express,Ecom Express,Lucknow,Jaipur,3,5,2,612,0,1,0.27,1.59
+O1285,Same-Day,Delhivery,Chennai,Lucknow,0,2,2,305,0,1,0.24,2.77
+O1286,Standard,BlueDart,Jaipur,Jaipur,4,5,1,607,0,3,0.19,2.88
+O1287,Express,BlueDart,Jaipur,Lucknow,1,1,0,820,1,1,0.21,1.35
+O1288,Same-Day,Ecom Express,Kolkata,Bangalore,0,3,3,672,0,3,0.11,2.9
+O1289,Express,Delhivery,Jaipur,Bangalore,2,2,0,1822,1,2,0.06,2.61
+O1290,Same-Day,Delhivery,Jaipur,Bangalore,0,2,2,894,1,3,0.14,1.81
+O1291,Express,Delhivery,Hyderabad,Kolkata,1,4,3,1381,1,3,0.13,1.67
+O1292,Same-Day,BlueDart,Chennai,Chennai,0,2,2,497,0,3,0.27,2.71
+O1293,Same-Day,BlueDart,Mumbai,Lucknow,1,1,0,1234,1,1,0.08,2.96
+O1294,Same-Day,Delhivery,Bangalore,Bangalore,0,1,1,1672,1,1,0.14,1.11
+O1295,Same-Day,Delhivery,Lucknow,Chennai,0,2,2,1761,1,2,0.24,2.73
+O1296,Express,BlueDart,Hyderabad,Delhi,3,3,0,299,0,3,0.12,1.03
+O1297,Standard,Delhivery,Jaipur,Jaipur,3,4,1,1467,1,2,0.22,2.19
+O1298,Express,BlueDart,Bangalore,Chennai,3,4,1,1285,1,1,0.19,2.86
+O1299,Same-Day,Delhivery,Hyderabad,Hyderabad,1,3,2,142,0,2,0.11,2.87
+O1300,Express,Delhivery,Lucknow,Lucknow,2,2,0,227,0,1,0.1,2.99
+O1301,Standard,Delhivery,Kolkata,Jaipur,3,3,0,782,0,1,0.17,2.09
+O1302,Standard,Delhivery,Delhi,Kolkata,5,8,3,633,0,3,0.13,1.28
+O1303,Express,Delhivery,Chennai,Delhi,2,2,0,113,0,1,0.15,2.07
+O1304,Same-Day,Delhivery,Delhi,Chennai,0,3,3,1879,1,3,0.07,1.98
+O1305,Same-Day,BlueDart,Lucknow,Jaipur,1,2,1,356,0,3,0.22,1.88
+O1306,Same-Day,BlueDart,Jaipur,Lucknow,0,1,1,1118,1,1,0.13,2.14
+O1307,Same-Day,Delhivery,Lucknow,Kolkata,1,1,0,829,1,2,0.23,1.81
+O1308,Standard,Ecom Express,Delhi,Chennai,5,5,0,1570,1,1,0.21,1.34
+O1309,Express,Delhivery,Kolkata,Hyderabad,3,4,1,1793,1,3,0.3,2.87
+O1310,Same-Day,Delhivery,Mumbai,Chennai,0,0,0,1075,1,3,0.08,2.14
+O1311,Same-Day,Ecom Express,Chennai,Kolkata,1,3,2,486,0,3,0.27,2.91
+O1312,Same-Day,BlueDart,Chennai,Mumbai,0,3,3,1361,1,3,0.29,2.3
+O1313,Same-Day,BlueDart,Lucknow,Delhi,0,2,2,1330,1,3,0.19,1.92
+O1314,Standard,BlueDart,Jaipur,Delhi,4,4,0,1838,1,2,0.1,2.54
+O1315,Express,Ecom Express,Mumbai,Mumbai,2,2,0,1602,1,3,0.21,2.95
+O1316,Standard,Delhivery,Delhi,Hyderabad,6,9,3,1040,1,2,0.18,1.39
+O1317,Express,Delhivery,Kolkata,Mumbai,3,4,1,386,0,1,0.22,2.77
+O1318,Same-Day,Ecom Express,Mumbai,Lucknow,1,1,0,1170,1,1,0.12,2.08
+O1319,Express,Delhivery,Kolkata,Jaipur,2,3,1,1220,1,3,0.12,2.28
+O1320,Same-Day,Delhivery,Hyderabad,Lucknow,1,2,1,1621,1,3,0.29,2.85
+O1321,Standard,BlueDart,Lucknow,Jaipur,5,6,1,387,0,1,0.28,1.69
+O1322,Standard,Ecom Express,Kolkata,Hyderabad,4,6,2,708,0,1,0.11,2.98
+O1323,Express,Ecom Express,Chennai,Hyderabad,1,4,3,1953,1,2,0.29,2.12
+O1324,Express,BlueDart,Mumbai,Jaipur,2,3,1,464,0,3,0.27,2.65
+O1325,Standard,BlueDart,Hyderabad,Delhi,4,4,0,1073,1,2,0.25,1.17
+O1326,Express,BlueDart,Hyderabad,Delhi,2,2,0,934,1,1,0.1,1.35
+O1327,Standard,Delhivery,Bangalore,Chennai,6,6,0,921,1,3,0.12,2.69
+O1328,Standard,Ecom Express,Mumbai,Jaipur,5,5,0,368,0,3,0.2,1.95
+O1329,Standard,Ecom Express,Kolkata,Hyderabad,5,5,0,744,0,2,0.09,1.27
+O1330,Express,BlueDart,Lucknow,Jaipur,3,4,1,1042,1,2,0.12,1.34
+O1331,Same-Day,Ecom Express,Jaipur,Jaipur,1,1,0,1113,1,2,0.25,1.63
+O1332,Express,Delhivery,Jaipur,Delhi,3,6,3,1869,1,2,0.06,2.87
+O1333,Same-Day,Delhivery,Mumbai,Kolkata,0,2,2,1205,1,1,0.08,2.75
+O1334,Standard,Ecom Express,Hyderabad,Lucknow,5,7,2,701,0,3,0.21,2.11
+O1335,Express,BlueDart,Lucknow,Chennai,3,3,0,1079,1,1,0.17,2.7
+O1336,Express,Delhivery,Delhi,Chennai,3,3,0,851,1,2,0.26,2.97
+O1337,Standard,Delhivery,Delhi,Jaipur,4,4,0,1454,1,1,0.26,1.25
+O1338,Express,Ecom Express,Bangalore,Kolkata,3,3,0,194,0,1,0.18,1.83
+O1339,Express,BlueDart,Jaipur,Lucknow,1,1,0,1095,1,3,0.23,2.33
+O1340,Express,Ecom Express,Chennai,Delhi,3,5,2,1998,1,2,0.08,1.31
+O1341,Standard,Ecom Express,Hyderabad,Delhi,6,7,1,788,0,3,0.08,1.11
+O1342,Express,Delhivery,Hyderabad,Kolkata,1,1,0,134,0,2,0.25,2.46
+O1343,Express,Ecom Express,Hyderabad,Mumbai,1,3,2,358,0,3,0.15,1.34
+O1344,Same-Day,Delhivery,Hyderabad,Jaipur,1,2,1,488,0,1,0.13,1.73
+O1345,Same-Day,BlueDart,Lucknow,Mumbai,1,1,0,551,0,3,0.24,1.99
+O1346,Same-Day,Ecom Express,Lucknow,Kolkata,1,1,0,539,0,3,0.23,1.23
+O1347,Standard,Delhivery,Kolkata,Bangalore,4,6,2,906,1,1,0.22,2.19
+O1348,Same-Day,Ecom Express,Hyderabad,Hyderabad,1,1,0,288,0,1,0.09,2.62
+O1349,Same-Day,Delhivery,Bangalore,Kolkata,0,1,1,1127,1,2,0.24,1.98
+O1350,Express,Ecom Express,Kolkata,Delhi,3,4,1,436,0,3,0.18,1.37
+O1351,Standard,Delhivery,Jaipur,Lucknow,3,3,0,574,0,3,0.07,2.15
+O1352,Express,Ecom Express,Mumbai,Jaipur,1,1,0,1958,1,1,0.24,2.29
+O1353,Express,Ecom Express,Hyderabad,Hyderabad,1,1,0,983,1,1,0.2,1.39
+O1354,Standard,Delhivery,Delhi,Delhi,6,6,0,195,0,2,0.06,1.3
+O1355,Same-Day,Ecom Express,Delhi,Hyderabad,1,1,0,844,1,1,0.08,2.54
+O1356,Express,Delhivery,Mumbai,Delhi,1,1,0,270,0,3,0.23,1.89
+O1357,Standard,Ecom Express,Hyderabad,Delhi,4,7,3,1900,1,1,0.12,1.38
+O1358,Same-Day,Ecom Express,Chennai,Mumbai,0,2,2,937,1,3,0.08,2.53
+O1359,Standard,BlueDart,Bangalore,Kolkata,6,6,0,1285,1,3,0.22,2.96
+O1360,Standard,BlueDart,Jaipur,Bangalore,4,4,0,1439,1,1,0.25,2.47
+O1361,Express,BlueDart,Bangalore,Bangalore,1,1,0,1600,1,1,0.11,1.91
+O1362,Same-Day,BlueDart,Delhi,Chennai,1,1,0,1110,1,1,0.26,1.52
+O1363,Express,Ecom Express,Delhi,Mumbai,1,2,1,870,1,2,0.11,1.99
+O1364,Same-Day,Ecom Express,Bangalore,Kolkata,0,0,0,888,1,2,0.11,1.25
+O1365,Express,Ecom Express,Bangalore,Mumbai,2,2,0,1956,1,1,0.23,2.73
+O1366,Same-Day,BlueDart,Lucknow,Chennai,1,1,0,1864,1,2,0.16,2.57
+O1367,Same-Day,Delhivery,Hyderabad,Delhi,1,1,0,766,0,2,0.17,1.21
+O1368,Standard,Ecom Express,Mumbai,Delhi,3,3,0,1580,1,1,0.1,2.61
+O1369,Express,BlueDart,Delhi,Jaipur,2,5,3,1568,1,2,0.18,2.09
+O1370,Standard,Ecom Express,Mumbai,Bangalore,4,7,3,1218,1,2,0.23,1.93
+O1371,Standard,BlueDart,Mumbai,Lucknow,3,6,3,951,1,1,0.25,1.58
+O1372,Express,Delhivery,Bangalore,Hyderabad,1,3,2,238,0,3,0.16,1.7
+O1373,Same-Day,Delhivery,Mumbai,Jaipur,1,1,0,1225,1,3,0.05,1.4
+O1374,Express,Delhivery,Kolkata,Kolkata,2,3,1,899,1,3,0.07,1.48
+O1375,Standard,Delhivery,Chennai,Delhi,5,6,1,830,1,2,0.21,1.05
+O1376,Express,BlueDart,Bangalore,Hyderabad,3,5,2,962,1,1,0.24,1.53
+O1377,Same-Day,Delhivery,Mumbai,Bangalore,1,3,2,1180,1,2,0.25,1.08
+O1378,Same-Day,Ecom Express,Lucknow,Bangalore,1,2,1,1908,1,3,0.11,1.13
+O1379,Express,Delhivery,Jaipur,Bangalore,3,3,0,1144,1,2,0.29,1.3
+O1380,Same-Day,Delhivery,Kolkata,Hyderabad,1,1,0,513,0,2,0.1,2.47
+O1381,Same-Day,Delhivery,Mumbai,Lucknow,0,1,1,1255,1,3,0.26,1.53
+O1382,Express,Ecom Express,Delhi,Chennai,1,2,1,1060,1,1,0.07,1.11
+O1383,Same-Day,Ecom Express,Mumbai,Lucknow,1,4,3,199,0,1,0.14,2.4
+O1384,Same-Day,Delhivery,Mumbai,Mumbai,1,2,1,1849,1,2,0.29,2.46
+O1385,Same-Day,Delhivery,Jaipur,Bangalore,0,3,3,1674,1,2,0.13,1.28
+O1386,Same-Day,Ecom Express,Kolkata,Chennai,0,1,1,1174,1,2,0.28,2.08
+O1387,Express,Delhivery,Delhi,Jaipur,2,3,1,660,0,1,0.15,1.17
+O1388,Same-Day,BlueDart,Delhi,Mumbai,1,1,0,1386,1,3,0.22,2.12
+O1389,Same-Day,BlueDart,Bangalore,Mumbai,1,1,0,1366,1,3,0.14,2.43
+O1390,Express,Ecom Express,Hyderabad,Chennai,2,5,3,95,0,1,0.17,2.35
+O1391,Same-Day,BlueDart,Jaipur,Mumbai,1,1,0,730,0,1,0.12,1.09
+O1392,Express,BlueDart,Jaipur,Chennai,2,3,1,1124,1,1,0.12,2.02
+O1393,Same-Day,Delhivery,Kolkata,Bangalore,1,1,0,214,0,3,0.24,2.65
+O1394,Standard,Ecom Express,Hyderabad,Hyderabad,4,4,0,549,0,3,0.06,1.87
+O1395,Express,Delhivery,Mumbai,Jaipur,3,5,2,1184,1,1,0.12,1.43
+O1396,Same-Day,Ecom Express,Jaipur,Jaipur,0,2,2,1685,1,1,0.11,1.95
+O1397,Standard,Delhivery,Jaipur,Jaipur,5,6,1,662,0,2,0.24,2.4
+O1398,Standard,BlueDart,Kolkata,Hyderabad,5,7,2,260,0,3,0.06,1.39
+O1399,Express,BlueDart,Mumbai,Delhi,1,1,0,967,1,3,0.08,1.52
+O1400,Same-Day,Ecom Express,Delhi,Kolkata,0,1,1,1779,1,1,0.12,1.89
+O1401,Same-Day,BlueDart,Chennai,Delhi,0,0,0,1887,1,3,0.16,2.33
+O1402,Same-Day,BlueDart,Chennai,Jaipur,1,3,2,643,0,3,0.27,1.18
+O1403,Standard,Ecom Express,Delhi,Kolkata,3,3,0,259,0,1,0.26,2.56
+O1404,Standard,Delhivery,Jaipur,Kolkata,5,6,1,237,0,3,0.23,1.45
+O1405,Express,Ecom Express,Delhi,Jaipur,1,1,0,846,1,1,0.18,1.52
+O1406,Standard,Ecom Express,Chennai,Mumbai,3,3,0,55,0,1,0.12,2.94
+O1407,Express,Ecom Express,Jaipur,Delhi,3,3,0,1776,1,2,0.17,1.1
+O1408,Express,BlueDart,Kolkata,Jaipur,2,3,1,1776,1,3,0.27,2.14
+O1409,Same-Day,BlueDart,Chennai,Delhi,0,0,0,875,1,2,0.27,2.57
+O1410,Express,BlueDart,Kolkata,Kolkata,1,1,0,227,0,1,0.28,1.02
+O1411,Express,BlueDart,Jaipur,Mumbai,1,4,3,1977,1,2,0.22,1.95
+O1412,Express,BlueDart,Mumbai,Kolkata,1,4,3,217,0,1,0.14,2.94
+O1413,Standard,Ecom Express,Jaipur,Kolkata,3,6,3,226,0,2,0.23,2.98
+O1414,Same-Day,Delhivery,Chennai,Hyderabad,1,4,3,914,1,2,0.08,2.44
+O1415,Standard,Delhivery,Chennai,Lucknow,3,3,0,1888,1,1,0.23,2.77
+O1416,Express,BlueDart,Delhi,Hyderabad,3,3,0,103,0,2,0.3,2.9
+O1417,Same-Day,BlueDart,Kolkata,Kolkata,0,3,3,1036,1,2,0.06,2.35
+O1418,Same-Day,Delhivery,Mumbai,Lucknow,1,1,0,698,0,1,0.08,1.39
+O1419,Same-Day,Ecom Express,Mumbai,Lucknow,1,1,0,1402,1,2,0.16,2.55
+O1420,Same-Day,Delhivery,Jaipur,Mumbai,0,0,0,1007,1,3,0.09,1.15
+O1421,Same-Day,Ecom Express,Jaipur,Mumbai,0,0,0,1645,1,1,0.26,1.51
+O1422,Standard,Delhivery,Chennai,Jaipur,5,5,0,1477,1,3,0.27,1.66
+O1423,Same-Day,BlueDart,Lucknow,Hyderabad,0,0,0,1059,1,2,0.18,2.03
+O1424,Express,BlueDart,Jaipur,Mumbai,3,3,0,1961,1,1,0.26,1.42
+O1425,Same-Day,Ecom Express,Mumbai,Kolkata,0,1,1,927,1,1,0.21,2.3
+O1426,Standard,Ecom Express,Chennai,Bangalore,6,6,0,1971,1,3,0.23,2.61
+O1427,Same-Day,Ecom Express,Bangalore,Bangalore,0,2,2,1817,1,2,0.3,1.63
+O1428,Express,BlueDart,Hyderabad,Kolkata,2,2,0,1399,1,1,0.25,2.72
+O1429,Express,Ecom Express,Hyderabad,Jaipur,1,3,2,1857,1,3,0.16,2.04
+O1430,Same-Day,Delhivery,Hyderabad,Mumbai,1,1,0,66,0,1,0.18,2.03
+O1431,Standard,Delhivery,Delhi,Jaipur,4,4,0,253,0,1,0.09,1.0
+O1432,Express,Ecom Express,Lucknow,Mumbai,1,4,3,97,0,3,0.15,1.02
+O1433,Standard,Delhivery,Chennai,Mumbai,5,6,1,131,0,2,0.21,2.28
+O1434,Express,Ecom Express,Delhi,Chennai,2,3,1,1608,1,1,0.13,1.82
+O1435,Standard,Delhivery,Lucknow,Jaipur,4,4,0,1506,1,2,0.28,1.01
+O1436,Express,Ecom Express,Bangalore,Hyderabad,1,4,3,683,0,2,0.16,2.79
+O1437,Same-Day,Delhivery,Mumbai,Jaipur,1,3,2,1881,1,3,0.26,2.99
+O1438,Express,Ecom Express,Chennai,Mumbai,1,2,1,821,1,3,0.17,2.05
+O1439,Express,Delhivery,Jaipur,Mumbai,3,5,2,419,0,3,0.23,2.13
+O1440,Standard,Ecom Express,Mumbai,Mumbai,4,4,0,1110,1,2,0.18,2.36
+O1441,Standard,Delhivery,Kolkata,Bangalore,5,5,0,1649,1,2,0.26,2.14
+O1442,Standard,BlueDart,Kolkata,Mumbai,3,3,0,1936,1,2,0.26,2.26
+O1443,Standard,Ecom Express,Kolkata,Delhi,3,6,3,1563,1,1,0.29,2.57
+O1444,Express,Delhivery,Delhi,Chennai,2,3,1,940,1,2,0.12,2.2
+O1445,Express,BlueDart,Delhi,Chennai,1,1,0,1251,1,2,0.12,1.33
+O1446,Standard,BlueDart,Kolkata,Lucknow,6,7,1,114,0,2,0.28,1.21
+O1447,Express,Ecom Express,Delhi,Delhi,1,3,2,658,0,1,0.26,1.28
+O1448,Same-Day,Delhivery,Kolkata,Lucknow,0,2,2,134,0,2,0.12,1.11
+O1449,Standard,BlueDart,Chennai,Kolkata,4,6,2,1888,1,1,0.06,1.97
+O1450,Express,Delhivery,Jaipur,Jaipur,3,3,0,931,1,1,0.15,2.87
+O1451,Same-Day,BlueDart,Bangalore,Hyderabad,0,0,0,192,0,3,0.09,1.93
+O1452,Standard,BlueDart,Bangalore,Lucknow,3,5,2,1528,1,3,0.08,1.09
+O1453,Same-Day,BlueDart,Mumbai,Lucknow,0,0,0,14,0,3,0.19,1.62
+O1454,Standard,Ecom Express,Hyderabad,Bangalore,6,7,1,851,1,2,0.14,2.19
+O1455,Standard,BlueDart,Mumbai,Kolkata,4,4,0,976,1,1,0.28,2.45
+O1456,Express,Delhivery,Delhi,Kolkata,3,5,2,1364,1,1,0.17,1.59
+O1457,Express,BlueDart,Chennai,Jaipur,1,2,1,866,1,3,0.16,2.49
+O1458,Same-Day,Ecom Express,Hyderabad,Mumbai,1,1,0,1829,1,3,0.13,1.35
+O1459,Standard,BlueDart,Lucknow,Bangalore,3,3,0,682,0,2,0.23,1.79
+O1460,Express,Delhivery,Bangalore,Delhi,2,2,0,331,0,3,0.06,2.87
+O1461,Standard,Delhivery,Mumbai,Delhi,3,3,0,1826,1,2,0.24,2.88
+O1462,Express,Ecom Express,Jaipur,Lucknow,2,2,0,1447,1,1,0.22,1.35
+O1463,Standard,BlueDart,Mumbai,Jaipur,5,5,0,1679,1,3,0.09,1.0
+O1464,Express,Delhivery,Bangalore,Jaipur,3,3,0,736,0,1,0.26,2.52
+O1465,Express,Delhivery,Kolkata,Bangalore,1,2,1,1772,1,3,0.22,2.18
+O1466,Express,BlueDart,Mumbai,Hyderabad,2,2,0,94,0,2,0.23,2.69
+O1467,Same-Day,Delhivery,Mumbai,Mumbai,1,1,0,1323,1,1,0.05,1.79
+O1468,Same-Day,Delhivery,Bangalore,Bangalore,0,0,0,11,0,1,0.16,2.01
+O1469,Same-Day,Ecom Express,Kolkata,Kolkata,0,0,0,1961,1,3,0.2,1.35
+O1470,Same-Day,BlueDart,Mumbai,Hyderabad,1,1,0,305,0,1,0.06,2.93
+O1471,Same-Day,Ecom Express,Bangalore,Lucknow,1,1,0,1936,1,1,0.19,2.43
+O1472,Same-Day,Ecom Express,Hyderabad,Hyderabad,1,1,0,1427,1,3,0.1,2.7
+O1473,Standard,BlueDart,Delhi,Lucknow,3,3,0,809,1,2,0.13,1.44
+O1474,Standard,BlueDart,Delhi,Kolkata,6,8,2,646,0,2,0.08,2.07
+O1475,Same-Day,BlueDart,Kolkata,Hyderabad,0,1,1,453,0,1,0.07,2.47
+O1476,Standard,Ecom Express,Jaipur,Hyderabad,5,5,0,505,0,3,0.11,1.03
+O1477,Standard,BlueDart,Lucknow,Bangalore,3,3,0,581,0,2,0.24,2.99
+O1478,Standard,Ecom Express,Jaipur,Hyderabad,3,4,1,355,0,2,0.09,1.09
+O1479,Same-Day,Ecom Express,Delhi,Bangalore,0,0,0,942,1,1,0.11,2.97
+O1480,Express,Delhivery,Hyderabad,Kolkata,1,2,1,191,0,3,0.24,1.01
+O1481,Same-Day,Ecom Express,Mumbai,Bangalore,0,0,0,143,0,3,0.19,1.98
+O1482,Express,BlueDart,Hyderabad,Lucknow,1,2,1,1587,1,3,0.14,2.1
+O1483,Express,BlueDart,Bangalore,Chennai,1,1,0,1446,1,3,0.06,2.98
+O1484,Same-Day,BlueDart,Delhi,Hyderabad,0,1,1,142,0,3,0.28,1.96
+O1485,Standard,Ecom Express,Lucknow,Lucknow,3,6,3,1057,1,1,0.05,1.36
+O1486,Standard,Delhivery,Chennai,Jaipur,4,4,0,1361,1,1,0.12,1.97
+O1487,Same-Day,BlueDart,Hyderabad,Bangalore,0,1,1,140,0,3,0.05,1.25
+O1488,Same-Day,Ecom Express,Delhi,Bangalore,0,0,0,108,0,1,0.26,1.26
+O1489,Standard,Delhivery,Delhi,Chennai,4,4,0,768,0,3,0.07,1.67
+O1490,Standard,Ecom Express,Hyderabad,Jaipur,3,6,3,710,0,2,0.16,1.71
+O1491,Standard,Delhivery,Mumbai,Jaipur,3,3,0,1405,1,2,0.22,2.63
+O1492,Standard,Delhivery,Chennai,Jaipur,4,5,1,249,0,1,0.26,2.48
+O1493,Standard,Delhivery,Mumbai,Lucknow,4,7,3,1167,1,2,0.17,2.0
+O1494,Express,BlueDart,Delhi,Delhi,1,4,3,789,0,1,0.19,2.61
+O1495,Express,BlueDart,Jaipur,Hyderabad,2,4,2,1348,1,1,0.22,2.21
+O1496,Express,BlueDart,Hyderabad,Lucknow,3,3,0,1243,1,1,0.26,1.77
+O1497,Express,Delhivery,Kolkata,Hyderabad,1,1,0,1614,1,3,0.19,1.64
+O1498,Same-Day,Ecom Express,Mumbai,Hyderabad,0,0,0,1098,1,3,0.21,1.82
+O1499,Standard,Ecom Express,Kolkata,Jaipur,6,9,3,544,0,1,0.27,2.44
+O1500,Same-Day,Delhivery,Bangalore,Jaipur,0,0,0,465,0,3,0.11,1.16
+O1501,Standard,BlueDart,Jaipur,Chennai,5,8,3,1477,1,3,0.19,1.54
+O1502,Same-Day,Delhivery,Jaipur,Mumbai,1,1,0,1944,1,2,0.19,2.98
+O1503,Express,BlueDart,Delhi,Jaipur,1,2,1,887,1,1,0.09,1.57
+O1504,Express,Ecom Express,Mumbai,Chennai,3,4,1,1883,1,2,0.1,1.8
+O1505,Express,Delhivery,Hyderabad,Jaipur,2,2,0,1734,1,1,0.16,2.96
+O1506,Express,BlueDart,Bangalore,Hyderabad,1,3,2,793,0,3,0.29,2.3
+O1507,Express,Ecom Express,Bangalore,Kolkata,2,3,1,1819,1,2,0.19,1.44
+O1508,Same-Day,BlueDart,Delhi,Hyderabad,0,0,0,1020,1,1,0.28,1.16
+O1509,Express,Ecom Express,Chennai,Hyderabad,1,1,0,433,0,3,0.27,1.87
+O1510,Same-Day,Delhivery,Delhi,Mumbai,1,4,3,104,0,3,0.28,2.35
+O1511,Express,BlueDart,Jaipur,Hyderabad,2,3,1,932,1,3,0.13,1.38
+O1512,Standard,BlueDart,Mumbai,Mumbai,5,5,0,1674,1,1,0.28,1.73
+O1513,Standard,Delhivery,Delhi,Lucknow,4,5,1,995,1,1,0.13,1.64
+O1514,Same-Day,Ecom Express,Mumbai,Hyderabad,1,1,0,469,0,1,0.24,2.06
+O1515,Standard,Ecom Express,Kolkata,Bangalore,4,6,2,254,0,2,0.23,2.04
+O1516,Standard,Delhivery,Kolkata,Lucknow,6,9,3,1610,1,3,0.14,2.79
+O1517,Same-Day,Delhivery,Delhi,Chennai,1,1,0,469,0,1,0.12,2.71
+O1518,Standard,Ecom Express,Kolkata,Lucknow,4,4,0,871,1,1,0.17,1.18
+O1519,Standard,Delhivery,Delhi,Mumbai,6,6,0,1248,1,1,0.15,1.2
+O1520,Express,Ecom Express,Hyderabad,Mumbai,3,5,2,1736,1,3,0.22,2.26
+O1521,Same-Day,BlueDart,Chennai,Lucknow,1,1,0,1895,1,2,0.17,1.65
+O1522,Same-Day,Ecom Express,Bangalore,Jaipur,0,3,3,295,0,3,0.08,2.21
+O1523,Same-Day,Ecom Express,Delhi,Bangalore,0,1,1,1474,1,1,0.23,1.71
+O1524,Standard,BlueDart,Hyderabad,Jaipur,5,5,0,1348,1,3,0.25,1.96
+O1525,Express,BlueDart,Mumbai,Hyderabad,2,2,0,1405,1,1,0.05,2.34
+O1526,Same-Day,Ecom Express,Mumbai,Bangalore,1,1,0,309,0,1,0.24,1.35
+O1527,Same-Day,Delhivery,Kolkata,Hyderabad,1,1,0,1350,1,3,0.12,1.95
+O1528,Standard,Ecom Express,Chennai,Kolkata,3,5,2,759,0,1,0.07,2.53
+O1529,Same-Day,Ecom Express,Hyderabad,Delhi,0,0,0,1185,1,3,0.13,2.09
+O1530,Standard,Delhivery,Bangalore,Lucknow,3,3,0,524,0,1,0.21,2.3
+O1531,Express,Delhivery,Jaipur,Kolkata,1,2,1,1931,1,3,0.15,2.06
+O1532,Same-Day,BlueDart,Lucknow,Chennai,1,1,0,446,0,2,0.11,2.6
+O1533,Standard,Ecom Express,Lucknow,Jaipur,6,6,0,1969,1,3,0.19,1.7
+O1534,Same-Day,Delhivery,Jaipur,Lucknow,1,3,2,420,0,2,0.13,1.06
+O1535,Express,Delhivery,Delhi,Chennai,1,1,0,482,0,1,0.2,1.7
+O1536,Same-Day,BlueDart,Bangalore,Jaipur,1,2,1,1642,1,3,0.06,1.28
+O1537,Same-Day,Ecom Express,Lucknow,Mumbai,1,1,0,1021,1,3,0.16,1.62
+O1538,Same-Day,Delhivery,Bangalore,Lucknow,0,0,0,531,0,2,0.11,1.63
+O1539,Same-Day,Ecom Express,Delhi,Kolkata,1,4,3,562,0,2,0.16,1.22
+O1540,Same-Day,Delhivery,Kolkata,Mumbai,1,4,3,461,0,3,0.17,1.02
+O1541,Express,Delhivery,Mumbai,Mumbai,2,2,0,1386,1,2,0.2,2.83
+O1542,Express,Delhivery,Chennai,Lucknow,2,2,0,852,1,2,0.24,2.75
+O1543,Express,Ecom Express,Mumbai,Bangalore,1,2,1,1626,1,2,0.19,2.21
+O1544,Same-Day,BlueDart,Jaipur,Chennai,1,4,3,588,0,2,0.05,2.52
+O1545,Express,Ecom Express,Lucknow,Mumbai,3,3,0,865,1,3,0.28,2.98
+O1546,Express,Delhivery,Lucknow,Lucknow,1,2,1,515,0,1,0.07,1.35
+O1547,Express,BlueDart,Kolkata,Bangalore,1,3,2,592,0,2,0.17,2.17
+O1548,Express,BlueDart,Jaipur,Lucknow,2,3,1,1165,1,1,0.09,2.22
+O1549,Express,Delhivery,Lucknow,Jaipur,1,3,2,284,0,2,0.26,2.73
+O1550,Express,BlueDart,Bangalore,Mumbai,3,4,1,695,0,3,0.28,2.94
+O1551,Express,Delhivery,Chennai,Delhi,3,6,3,743,0,3,0.13,1.78
+O1552,Express,Delhivery,Hyderabad,Delhi,1,4,3,1817,1,2,0.09,2.34
+O1553,Express,Ecom Express,Mumbai,Chennai,1,1,0,547,0,1,0.13,2.33
+O1554,Standard,Ecom Express,Kolkata,Jaipur,3,4,1,1135,1,3,0.23,1.28
+O1555,Same-Day,BlueDart,Lucknow,Mumbai,0,0,0,1329,1,2,0.07,1.53
+O1556,Standard,BlueDart,Bangalore,Lucknow,4,4,0,1103,1,1,0.09,2.12
+O1557,Express,Delhivery,Hyderabad,Jaipur,2,5,3,1499,1,1,0.08,2.99
+O1558,Standard,Delhivery,Hyderabad,Jaipur,5,5,0,826,1,1,0.27,1.46
+O1559,Express,Ecom Express,Jaipur,Delhi,1,4,3,1508,1,2,0.14,2.63
+O1560,Same-Day,Delhivery,Bangalore,Lucknow,1,4,3,1542,1,1,0.12,1.74
+O1561,Same-Day,Delhivery,Bangalore,Hyderabad,1,2,1,1676,1,1,0.12,2.84
+O1562,Express,Ecom Express,Bangalore,Jaipur,1,2,1,1943,1,1,0.16,1.33
+O1563,Express,Ecom Express,Jaipur,Kolkata,1,1,0,904,1,2,0.22,2.09
+O1564,Express,Ecom Express,Delhi,Lucknow,2,3,1,221,0,2,0.06,1.72
+O1565,Same-Day,Delhivery,Delhi,Bangalore,1,2,1,1293,1,2,0.2,2.61
+O1566,Express,Ecom Express,Delhi,Chennai,3,3,0,526,0,1,0.17,2.25
+O1567,Standard,Delhivery,Lucknow,Jaipur,3,5,2,181,0,3,0.06,2.39
+O1568,Same-Day,BlueDart,Chennai,Jaipur,0,2,2,935,1,3,0.06,2.26
+O1569,Same-Day,Ecom Express,Kolkata,Hyderabad,1,2,1,1427,1,3,0.27,2.53
+O1570,Express,Delhivery,Lucknow,Chennai,2,4,2,1537,1,1,0.09,1.72
+O1571,Express,BlueDart,Jaipur,Lucknow,3,5,2,661,0,1,0.28,2.48
+O1572,Express,Delhivery,Chennai,Chennai,2,2,0,623,0,3,0.26,2.0
+O1573,Standard,Ecom Express,Jaipur,Kolkata,4,4,0,26,0,3,0.22,1.14
+O1574,Express,BlueDart,Jaipur,Delhi,3,3,0,1442,1,3,0.21,1.32
+O1575,Express,BlueDart,Kolkata,Lucknow,1,2,1,931,1,1,0.09,1.72
+O1576,Express,Ecom Express,Delhi,Chennai,3,5,2,176,0,1,0.21,2.15
+O1577,Standard,BlueDart,Hyderabad,Lucknow,5,5,0,1897,1,1,0.09,1.64
+O1578,Express,Delhivery,Jaipur,Lucknow,1,1,0,953,1,1,0.26,2.45
+O1579,Standard,Ecom Express,Bangalore,Jaipur,5,8,3,1363,1,3,0.22,1.68
+O1580,Same-Day,Ecom Express,Hyderabad,Kolkata,0,0,0,94,0,3,0.26,1.13
+O1581,Standard,Ecom Express,Mumbai,Kolkata,3,3,0,767,0,3,0.14,1.31
+O1582,Express,Ecom Express,Mumbai,Delhi,2,3,1,1835,1,3,0.13,2.11
+O1583,Standard,Ecom Express,Lucknow,Bangalore,3,3,0,1632,1,2,0.21,1.96
+O1584,Express,Ecom Express,Chennai,Lucknow,2,4,2,1941,1,3,0.08,1.87
+O1585,Same-Day,Delhivery,Delhi,Hyderabad,0,0,0,1469,1,1,0.1,1.03
+O1586,Same-Day,Delhivery,Chennai,Mumbai,1,3,2,1094,1,3,0.17,2.02
+O1587,Express,Ecom Express,Chennai,Bangalore,1,1,0,1695,1,3,0.22,1.19
+O1588,Same-Day,BlueDart,Jaipur,Kolkata,0,0,0,121,0,2,0.06,2.38
+O1589,Express,BlueDart,Hyderabad,Bangalore,1,1,0,1536,1,3,0.15,2.75
+O1590,Express,Delhivery,Bangalore,Delhi,1,2,1,1820,1,2,0.19,1.32
+O1591,Standard,Ecom Express,Jaipur,Chennai,3,6,3,928,1,1,0.26,2.51
+O1592,Same-Day,Delhivery,Hyderabad,Hyderabad,1,2,1,1383,1,2,0.15,2.49
+O1593,Same-Day,Delhivery,Hyderabad,Mumbai,1,2,1,367,0,2,0.19,2.93
+O1594,Same-Day,Ecom Express,Delhi,Mumbai,0,1,1,416,0,1,0.22,2.7
+O1595,Same-Day,Ecom Express,Bangalore,Mumbai,0,0,0,1087,1,2,0.29,1.96
+O1596,Same-Day,Delhivery,Mumbai,Lucknow,1,3,2,1695,1,3,0.25,1.49
+O1597,Express,Ecom Express,Mumbai,Chennai,2,4,2,244,0,2,0.29,1.84
+O1598,Express,Ecom Express,Bangalore,Jaipur,2,4,2,1358,1,3,0.26,1.3
+O1599,Express,Ecom Express,Mumbai,Lucknow,1,1,0,1257,1,1,0.13,1.41
+O1600,Express,Ecom Express,Jaipur,Kolkata,2,3,1,462,0,3,0.21,2.53
+O1601,Express,Ecom Express,Jaipur,Mumbai,3,4,1,978,1,2,0.2,2.99
+O1602,Standard,BlueDart,Chennai,Kolkata,3,3,0,1138,1,3,0.22,1.51
+O1603,Express,Delhivery,Chennai,Chennai,2,2,0,159,0,1,0.15,1.49
+O1604,Express,Ecom Express,Mumbai,Delhi,3,5,2,1195,1,2,0.12,2.17
+O1605,Same-Day,BlueDart,Bangalore,Lucknow,0,1,1,1362,1,2,0.29,1.24
+O1606,Standard,Ecom Express,Bangalore,Mumbai,6,7,1,824,1,1,0.26,1.36
+O1607,Standard,Ecom Express,Hyderabad,Jaipur,3,3,0,1144,1,3,0.25,1.66
+O1608,Same-Day,Ecom Express,Mumbai,Jaipur,1,1,0,541,0,3,0.14,2.97
+O1609,Standard,Ecom Express,Kolkata,Chennai,3,3,0,6,0,3,0.15,2.36
+O1610,Express,BlueDart,Hyderabad,Jaipur,2,3,1,604,0,2,0.29,2.33
+O1611,Express,Delhivery,Lucknow,Jaipur,3,6,3,1873,1,1,0.15,2.29
+O1612,Express,BlueDart,Chennai,Mumbai,3,4,1,256,0,2,0.29,1.5
+O1613,Same-Day,BlueDart,Kolkata,Bangalore,1,1,0,1960,1,1,0.13,1.08
+O1614,Same-Day,BlueDart,Jaipur,Lucknow,1,2,1,1791,1,1,0.1,2.71
+O1615,Standard,BlueDart,Lucknow,Chennai,5,5,0,905,1,2,0.17,1.78
+O1616,Same-Day,Delhivery,Mumbai,Delhi,0,0,0,1235,1,1,0.18,1.63
+O1617,Same-Day,Ecom Express,Bangalore,Jaipur,1,3,2,451,0,1,0.24,1.79
+O1618,Same-Day,BlueDart,Delhi,Chennai,0,3,3,1302,1,2,0.24,2.07
+O1619,Same-Day,Ecom Express,Kolkata,Hyderabad,1,2,1,1463,1,1,0.1,2.34
+O1620,Express,Ecom Express,Kolkata,Chennai,1,3,2,836,1,2,0.14,1.17
+O1621,Standard,BlueDart,Lucknow,Lucknow,5,8,3,636,0,2,0.13,1.94
+O1622,Express,Ecom Express,Chennai,Mumbai,2,3,1,1794,1,1,0.26,2.69
+O1623,Same-Day,Ecom Express,Hyderabad,Mumbai,1,1,0,413,0,1,0.13,1.98
+O1624,Same-Day,Delhivery,Hyderabad,Hyderabad,0,0,0,867,1,1,0.26,2.04
+O1625,Same-Day,Delhivery,Kolkata,Kolkata,0,1,1,1668,1,1,0.17,1.95
+O1626,Express,Delhivery,Lucknow,Delhi,3,4,1,133,0,3,0.13,1.65
+O1627,Same-Day,Delhivery,Kolkata,Chennai,0,3,3,212,0,2,0.22,1.38
+O1628,Express,Delhivery,Jaipur,Kolkata,2,3,1,1525,1,3,0.28,2.97
+O1629,Same-Day,BlueDart,Chennai,Jaipur,1,1,0,1824,1,2,0.06,2.18
+O1630,Standard,Delhivery,Hyderabad,Mumbai,5,6,1,987,1,3,0.23,1.33
+O1631,Express,BlueDart,Chennai,Lucknow,1,2,1,1337,1,3,0.24,2.8
+O1632,Express,BlueDart,Lucknow,Jaipur,2,4,2,354,0,2,0.21,2.14
+O1633,Standard,Ecom Express,Lucknow,Jaipur,4,6,2,298,0,3,0.18,2.32
+O1634,Same-Day,BlueDart,Mumbai,Chennai,0,0,0,1314,1,2,0.05,1.66
+O1635,Standard,BlueDart,Lucknow,Hyderabad,5,5,0,1632,1,1,0.18,1.78
+O1636,Standard,BlueDart,Jaipur,Mumbai,3,3,0,434,0,3,0.08,1.16
+O1637,Express,Delhivery,Delhi,Jaipur,2,5,3,1185,1,1,0.16,2.15
+O1638,Same-Day,BlueDart,Mumbai,Hyderabad,0,0,0,457,0,3,0.26,1.63
+O1639,Standard,BlueDart,Bangalore,Lucknow,5,7,2,404,0,3,0.24,1.24
+O1640,Standard,BlueDart,Kolkata,Jaipur,6,6,0,634,0,1,0.11,1.85
+O1641,Same-Day,Delhivery,Bangalore,Lucknow,0,1,1,1757,1,2,0.13,2.76
+O1642,Express,Ecom Express,Lucknow,Hyderabad,1,1,0,1860,1,1,0.14,1.8
+O1643,Same-Day,BlueDart,Hyderabad,Jaipur,1,2,1,1168,1,3,0.07,1.01
+O1644,Express,Ecom Express,Hyderabad,Mumbai,3,3,0,1962,1,1,0.21,2.72
+O1645,Express,Delhivery,Jaipur,Mumbai,2,2,0,1622,1,2,0.11,2.91
+O1646,Standard,Delhivery,Jaipur,Jaipur,6,6,0,1000,1,3,0.14,1.01
+O1647,Express,Ecom Express,Jaipur,Chennai,2,3,1,145,0,1,0.06,1.21
+O1648,Same-Day,Delhivery,Kolkata,Mumbai,1,1,0,843,1,1,0.06,2.34
+O1649,Standard,Delhivery,Jaipur,Hyderabad,5,5,0,297,0,1,0.28,2.02
+O1650,Standard,Delhivery,Bangalore,Kolkata,4,4,0,1217,1,3,0.15,2.59
+O1651,Same-Day,Ecom Express,Chennai,Lucknow,0,1,1,1171,1,3,0.18,2.53
+O1652,Same-Day,Delhivery,Lucknow,Chennai,1,4,3,283,0,2,0.27,1.04
+O1653,Express,Delhivery,Hyderabad,Hyderabad,2,2,0,1593,1,2,0.29,2.18
+O1654,Same-Day,BlueDart,Hyderabad,Jaipur,1,4,3,912,1,3,0.11,1.81
+O1655,Same-Day,BlueDart,Hyderabad,Bangalore,0,1,1,1244,1,3,0.26,2.75
+O1656,Express,Delhivery,Chennai,Jaipur,2,5,3,1617,1,1,0.21,1.34
+O1657,Express,BlueDart,Mumbai,Bangalore,1,2,1,19,0,1,0.06,2.38
+O1658,Same-Day,Delhivery,Mumbai,Mumbai,0,1,1,331,0,1,0.21,2.43
+O1659,Same-Day,Ecom Express,Lucknow,Lucknow,1,1,0,62,0,1,0.24,2.97
+O1660,Express,Delhivery,Delhi,Kolkata,1,1,0,1020,1,2,0.05,2.66
+O1661,Express,Ecom Express,Bangalore,Mumbai,1,1,0,225,0,1,0.1,1.77
+O1662,Standard,BlueDart,Lucknow,Hyderabad,6,7,1,29,0,3,0.21,1.11
+O1663,Express,Ecom Express,Kolkata,Kolkata,2,3,1,1482,1,1,0.15,2.09
+O1664,Express,Delhivery,Delhi,Chennai,1,1,0,127,0,2,0.29,2.13
+O1665,Standard,Ecom Express,Lucknow,Lucknow,4,4,0,1546,1,1,0.09,1.22
+O1666,Same-Day,BlueDart,Lucknow,Bangalore,1,3,2,1816,1,1,0.1,1.05
+O1667,Express,Delhivery,Mumbai,Mumbai,1,1,0,1020,1,2,0.26,1.91
+O1668,Express,Delhivery,Delhi,Lucknow,2,2,0,1759,1,2,0.09,2.3
+O1669,Same-Day,Ecom Express,Bangalore,Hyderabad,1,1,0,1551,1,3,0.12,2.48
+O1670,Standard,BlueDart,Kolkata,Hyderabad,4,4,0,866,1,1,0.11,1.26
+O1671,Express,Ecom Express,Delhi,Hyderabad,3,6,3,1146,1,2,0.29,2.65
+O1672,Standard,Ecom Express,Mumbai,Jaipur,4,4,0,221,0,2,0.29,2.07
+O1673,Same-Day,Ecom Express,Jaipur,Hyderabad,1,1,0,1505,1,2,0.17,1.86
+O1674,Express,Ecom Express,Chennai,Lucknow,2,3,1,125,0,2,0.16,1.05
+O1675,Same-Day,BlueDart,Delhi,Mumbai,0,1,1,1176,1,1,0.16,1.09
+O1676,Express,Delhivery,Hyderabad,Delhi,3,3,0,1975,1,2,0.29,1.56
+O1677,Standard,Ecom Express,Jaipur,Jaipur,4,6,2,245,0,2,0.12,1.37
+O1678,Same-Day,Delhivery,Bangalore,Lucknow,1,1,0,1410,1,2,0.28,1.0
+O1679,Standard,Ecom Express,Jaipur,Jaipur,6,9,3,514,0,2,0.11,1.22
+O1680,Standard,Delhivery,Bangalore,Hyderabad,3,5,2,521,0,3,0.29,2.7
+O1681,Standard,Ecom Express,Lucknow,Kolkata,6,7,1,417,0,3,0.23,1.09
+O1682,Same-Day,Ecom Express,Jaipur,Lucknow,0,0,0,1935,1,2,0.3,1.78
+O1683,Same-Day,BlueDart,Mumbai,Hyderabad,1,1,0,1406,1,1,0.23,1.49
+O1684,Express,Ecom Express,Kolkata,Hyderabad,1,1,0,1361,1,3,0.11,2.0
+O1685,Same-Day,Delhivery,Mumbai,Hyderabad,1,1,0,1653,1,2,0.1,2.53
+O1686,Express,Ecom Express,Chennai,Bangalore,2,2,0,1937,1,2,0.2,2.41
+O1687,Standard,BlueDart,Bangalore,Kolkata,3,6,3,124,0,1,0.23,2.08
+O1688,Same-Day,BlueDart,Bangalore,Mumbai,0,1,1,1056,1,1,0.29,1.78
+O1689,Express,Delhivery,Lucknow,Jaipur,2,5,3,1415,1,1,0.25,1.72
+O1690,Express,Delhivery,Mumbai,Hyderabad,1,1,0,22,0,3,0.29,2.1
+O1691,Express,Ecom Express,Kolkata,Mumbai,1,1,0,1291,1,2,0.19,1.57
+O1692,Standard,BlueDart,Bangalore,Jaipur,4,6,2,118,0,1,0.07,2.12
+O1693,Standard,Delhivery,Jaipur,Kolkata,4,4,0,415,0,1,0.14,1.25
+O1694,Express,BlueDart,Hyderabad,Hyderabad,3,6,3,884,1,3,0.28,2.51
+O1695,Same-Day,BlueDart,Jaipur,Hyderabad,0,1,1,1835,1,1,0.26,1.6
+O1696,Standard,Ecom Express,Hyderabad,Lucknow,5,5,0,1027,1,3,0.13,2.69
+O1697,Standard,Delhivery,Kolkata,Lucknow,6,6,0,844,1,1,0.24,1.25
+O1698,Standard,BlueDart,Kolkata,Mumbai,6,6,0,1740,1,3,0.25,2.91
+O1699,Express,BlueDart,Chennai,Jaipur,3,5,2,910,1,2,0.17,1.16
+O1700,Standard,Delhivery,Chennai,Bangalore,3,3,0,850,1,3,0.19,2.99
+O1701,Standard,BlueDart,Jaipur,Delhi,5,8,3,114,0,3,0.09,1.22
+O1702,Same-Day,Ecom Express,Delhi,Mumbai,1,2,1,340,0,1,0.29,2.32
+O1703,Same-Day,Ecom Express,Mumbai,Kolkata,1,4,3,1590,1,3,0.09,1.5
+O1704,Same-Day,Ecom Express,Delhi,Delhi,1,2,1,1029,1,3,0.07,2.03
+O1705,Express,BlueDart,Mumbai,Lucknow,2,5,3,1778,1,1,0.3,1.36
+O1706,Same-Day,Delhivery,Hyderabad,Hyderabad,1,2,1,173,0,1,0.08,1.8
+O1707,Standard,Ecom Express,Jaipur,Chennai,4,4,0,1022,1,1,0.3,1.41
+O1708,Same-Day,BlueDart,Bangalore,Delhi,0,1,1,169,0,1,0.1,2.84
+O1709,Standard,BlueDart,Bangalore,Mumbai,6,8,2,1565,1,3,0.08,2.26
+O1710,Same-Day,BlueDart,Lucknow,Jaipur,1,1,0,206,0,3,0.13,1.73
+O1711,Express,Delhivery,Mumbai,Hyderabad,2,2,0,462,0,1,0.17,1.33
+O1712,Standard,Ecom Express,Bangalore,Hyderabad,6,9,3,286,0,3,0.11,1.22
+O1713,Same-Day,Delhivery,Delhi,Hyderabad,0,0,0,1600,1,1,0.22,2.76
+O1714,Express,BlueDart,Hyderabad,Mumbai,1,1,0,1101,1,1,0.16,1.84
+O1715,Standard,Ecom Express,Bangalore,Hyderabad,5,5,0,1611,1,1,0.09,1.51
+O1716,Standard,BlueDart,Bangalore,Lucknow,4,4,0,1992,1,2,0.2,2.53
+O1717,Same-Day,BlueDart,Kolkata,Bangalore,1,1,0,45,0,1,0.16,2.38
+O1718,Express,BlueDart,Chennai,Jaipur,1,2,1,1511,1,1,0.15,1.01
+O1719,Same-Day,BlueDart,Hyderabad,Jaipur,1,1,0,1833,1,3,0.24,1.23
+O1720,Same-Day,Delhivery,Bangalore,Chennai,1,2,1,1035,1,2,0.28,2.48
+O1721,Standard,BlueDart,Lucknow,Mumbai,3,3,0,759,0,3,0.14,2.62
+O1722,Same-Day,Ecom Express,Kolkata,Lucknow,0,0,0,478,0,1,0.13,1.18
+O1723,Express,Delhivery,Lucknow,Jaipur,2,2,0,536,0,3,0.26,2.17
+O1724,Same-Day,Delhivery,Delhi,Bangalore,1,1,0,662,0,3,0.24,2.81
+O1725,Same-Day,Ecom Express,Mumbai,Lucknow,1,2,1,1571,1,2,0.14,1.31
+O1726,Standard,Delhivery,Chennai,Lucknow,4,5,1,1508,1,2,0.16,2.48
+O1727,Standard,Delhivery,Bangalore,Jaipur,3,4,1,738,0,2,0.1,2.65
+O1728,Express,BlueDart,Bangalore,Hyderabad,3,3,0,1318,1,1,0.07,1.64
+O1729,Express,BlueDart,Lucknow,Kolkata,1,1,0,1726,1,3,0.1,1.1
+O1730,Same-Day,Delhivery,Chennai,Jaipur,1,4,3,307,0,1,0.16,1.86
+O1731,Standard,Ecom Express,Hyderabad,Lucknow,4,5,1,984,1,2,0.1,2.1
+O1732,Same-Day,BlueDart,Lucknow,Delhi,0,0,0,451,0,3,0.06,2.79
+O1733,Express,Delhivery,Kolkata,Lucknow,3,3,0,1396,1,2,0.24,1.52
+O1734,Express,Delhivery,Kolkata,Bangalore,1,1,0,1188,1,3,0.26,1.86
+O1735,Same-Day,Ecom Express,Lucknow,Bangalore,1,1,0,847,1,3,0.2,1.93
+O1736,Express,Delhivery,Hyderabad,Mumbai,1,2,1,1206,1,3,0.11,2.69
+O1737,Same-Day,Delhivery,Delhi,Delhi,0,0,0,374,0,3,0.09,1.21
+O1738,Same-Day,BlueDart,Delhi,Hyderabad,0,0,0,1988,1,1,0.24,1.32
+O1739,Same-Day,Delhivery,Kolkata,Kolkata,1,2,1,1186,1,1,0.28,2.67
+O1740,Standard,Ecom Express,Bangalore,Lucknow,4,7,3,1534,1,1,0.3,2.78
+O1741,Standard,Delhivery,Lucknow,Hyderabad,6,7,1,1123,1,2,0.27,2.52
+O1742,Express,BlueDart,Hyderabad,Kolkata,3,3,0,27,0,1,0.1,2.67
+O1743,Standard,Delhivery,Chennai,Bangalore,3,3,0,1772,1,2,0.16,1.48
+O1744,Standard,BlueDart,Bangalore,Delhi,6,6,0,1553,1,1,0.27,2.23
+O1745,Same-Day,Delhivery,Lucknow,Lucknow,0,0,0,1516,1,3,0.09,2.52
+O1746,Standard,Delhivery,Chennai,Bangalore,6,6,0,460,0,3,0.25,1.12
+O1747,Express,BlueDart,Hyderabad,Jaipur,1,1,0,1137,1,3,0.17,2.25
+O1748,Same-Day,BlueDart,Chennai,Hyderabad,0,0,0,1040,1,1,0.15,1.99
+O1749,Same-Day,Delhivery,Delhi,Jaipur,0,0,0,1367,1,3,0.06,1.37
+O1750,Standard,Delhivery,Hyderabad,Hyderabad,5,5,0,535,0,1,0.27,1.7
+O1751,Standard,Delhivery,Kolkata,Jaipur,4,4,0,737,0,3,0.25,1.69
+O1752,Express,Delhivery,Hyderabad,Jaipur,2,3,1,1635,1,2,0.2,2.63
+O1753,Standard,BlueDart,Hyderabad,Jaipur,4,4,0,399,0,2,0.28,2.18
+O1754,Same-Day,BlueDart,Chennai,Mumbai,0,3,3,255,0,1,0.09,2.16
+O1755,Same-Day,Delhivery,Hyderabad,Chennai,0,0,0,1953,1,2,0.15,1.15
+O1756,Standard,BlueDart,Mumbai,Jaipur,3,6,3,791,0,3,0.1,1.9
+O1757,Express,BlueDart,Kolkata,Delhi,1,3,2,1444,1,1,0.23,1.26
+O1758,Same-Day,Delhivery,Bangalore,Bangalore,1,2,1,520,0,3,0.16,1.9
+O1759,Standard,BlueDart,Bangalore,Mumbai,5,8,3,650,0,1,0.09,1.21
+O1760,Standard,Ecom Express,Delhi,Delhi,5,7,2,197,0,1,0.2,1.21
+O1761,Express,BlueDart,Lucknow,Bangalore,3,6,3,949,1,3,0.29,1.75
+O1762,Same-Day,Ecom Express,Kolkata,Chennai,0,1,1,1455,1,3,0.28,2.58
+O1763,Same-Day,BlueDart,Jaipur,Lucknow,1,1,0,1013,1,3,0.1,1.42
+O1764,Express,Delhivery,Delhi,Kolkata,1,1,0,738,0,2,0.17,2.09
+O1765,Express,BlueDart,Hyderabad,Lucknow,3,4,1,1036,1,3,0.19,2.95
+O1766,Express,BlueDart,Jaipur,Lucknow,1,1,0,41,0,2,0.08,2.17
+O1767,Express,Ecom Express,Jaipur,Lucknow,3,6,3,769,0,1,0.19,1.35
+O1768,Same-Day,BlueDart,Lucknow,Hyderabad,1,1,0,349,0,1,0.19,1.38
+O1769,Standard,Delhivery,Chennai,Lucknow,4,4,0,508,0,3,0.19,2.19
+O1770,Standard,BlueDart,Bangalore,Jaipur,6,8,2,86,0,2,0.28,2.78
+O1771,Standard,Delhivery,Bangalore,Lucknow,6,8,2,1717,1,3,0.11,1.15
+O1772,Standard,BlueDart,Mumbai,Kolkata,4,5,1,280,0,1,0.29,1.44
+O1773,Standard,BlueDart,Jaipur,Kolkata,6,7,1,1000,1,2,0.15,2.85
+O1774,Express,Ecom Express,Kolkata,Chennai,2,4,2,452,0,1,0.05,1.65
+O1775,Standard,Delhivery,Hyderabad,Delhi,6,6,0,1696,1,3,0.08,2.97
+O1776,Same-Day,BlueDart,Chennai,Hyderabad,1,2,1,584,0,1,0.28,2.43
+O1777,Same-Day,BlueDart,Jaipur,Delhi,0,0,0,946,1,3,0.14,2.9
+O1778,Express,BlueDart,Jaipur,Bangalore,1,1,0,1282,1,1,0.17,2.72
+O1779,Standard,Delhivery,Delhi,Jaipur,6,6,0,1274,1,2,0.22,1.08
+O1780,Express,BlueDart,Delhi,Hyderabad,2,2,0,1585,1,1,0.12,1.86
+O1781,Express,Delhivery,Delhi,Hyderabad,2,4,2,1172,1,2,0.27,2.55
+O1782,Express,Ecom Express,Lucknow,Delhi,3,5,2,1167,1,1,0.1,1.87
+O1783,Express,Ecom Express,Kolkata,Chennai,1,4,3,1030,1,2,0.24,1.54
+O1784,Express,Delhivery,Hyderabad,Jaipur,3,3,0,1240,1,2,0.18,1.52
+O1785,Standard,Ecom Express,Chennai,Jaipur,5,6,1,459,0,2,0.1,1.1
+O1786,Express,BlueDart,Delhi,Bangalore,2,2,0,530,0,3,0.27,2.51
+O1787,Express,Ecom Express,Bangalore,Mumbai,3,3,0,183,0,1,0.09,1.95
+O1788,Same-Day,BlueDart,Jaipur,Lucknow,1,4,3,690,0,1,0.12,1.47
+O1789,Same-Day,BlueDart,Hyderabad,Lucknow,0,1,1,914,1,1,0.06,1.97
+O1790,Express,Delhivery,Delhi,Lucknow,3,4,1,1625,1,1,0.23,1.84
+O1791,Same-Day,Ecom Express,Jaipur,Hyderabad,0,0,0,1584,1,2,0.1,2.52
+O1792,Standard,Delhivery,Lucknow,Chennai,6,6,0,423,0,2,0.06,2.69
+O1793,Standard,BlueDart,Bangalore,Kolkata,4,6,2,1701,1,2,0.21,2.12
+O1794,Express,Delhivery,Mumbai,Mumbai,2,4,2,426,0,2,0.24,2.16
+O1795,Same-Day,Ecom Express,Delhi,Lucknow,0,0,0,1383,1,2,0.08,1.31
+O1796,Standard,Delhivery,Jaipur,Chennai,6,7,1,1515,1,2,0.2,1.34
+O1797,Same-Day,Ecom Express,Hyderabad,Jaipur,0,0,0,1996,1,2,0.13,2.98
+O1798,Express,BlueDart,Bangalore,Bangalore,3,3,0,1255,1,2,0.2,1.13
+O1799,Express,BlueDart,Hyderabad,Kolkata,2,3,1,1248,1,3,0.28,2.48
+O1800,Standard,Delhivery,Jaipur,Mumbai,3,4,1,959,1,2,0.18,2.85
+O1801,Standard,Ecom Express,Bangalore,Mumbai,3,3,0,708,0,1,0.14,2.7
+O1802,Same-Day,BlueDart,Bangalore,Mumbai,0,0,0,677,0,1,0.17,2.87
+O1803,Express,Ecom Express,Bangalore,Delhi,1,4,3,421,0,3,0.21,2.73
+O1804,Standard,BlueDart,Chennai,Chennai,6,6,0,1131,1,3,0.13,2.89
+O1805,Same-Day,Ecom Express,Lucknow,Lucknow,1,4,3,1953,1,3,0.12,1.15
+O1806,Standard,BlueDart,Jaipur,Bangalore,6,6,0,1763,1,2,0.08,2.11
+O1807,Express,Delhivery,Jaipur,Mumbai,1,1,0,1306,1,1,0.22,2.76
+O1808,Express,BlueDart,Kolkata,Lucknow,3,4,1,1338,1,3,0.22,2.75
+O1809,Same-Day,Ecom Express,Delhi,Hyderabad,1,1,0,1664,1,2,0.09,2.75
+O1810,Standard,BlueDart,Hyderabad,Delhi,4,4,0,1964,1,1,0.1,2.82
+O1811,Same-Day,Delhivery,Delhi,Mumbai,1,1,0,1334,1,2,0.11,1.64
+O1812,Standard,Delhivery,Lucknow,Hyderabad,6,6,0,528,0,2,0.24,1.56
+O1813,Same-Day,Ecom Express,Lucknow,Mumbai,0,1,1,248,0,2,0.11,1.74
+O1814,Standard,BlueDart,Jaipur,Mumbai,6,6,0,83,0,2,0.2,1.26
+O1815,Standard,BlueDart,Delhi,Bangalore,4,6,2,1537,1,3,0.18,1.37
+O1816,Express,Ecom Express,Jaipur,Chennai,2,2,0,153,0,1,0.1,1.69
+O1817,Same-Day,Ecom Express,Lucknow,Mumbai,0,1,1,446,0,2,0.19,1.93
+O1818,Standard,Ecom Express,Delhi,Hyderabad,5,5,0,253,0,1,0.18,2.73
+O1819,Same-Day,Delhivery,Delhi,Chennai,0,0,0,1570,1,2,0.05,1.01
+O1820,Same-Day,Ecom Express,Mumbai,Hyderabad,1,2,1,1909,1,2,0.24,2.32
+O1821,Standard,Ecom Express,Lucknow,Lucknow,5,5,0,247,0,2,0.09,2.27
+O1822,Same-Day,Ecom Express,Jaipur,Bangalore,1,1,0,1324,1,2,0.09,2.57
+O1823,Same-Day,Delhivery,Kolkata,Bangalore,0,1,1,118,0,1,0.06,2.86
+O1824,Express,Delhivery,Bangalore,Jaipur,3,4,1,1859,1,3,0.3,1.74
+O1825,Same-Day,Delhivery,Lucknow,Chennai,1,2,1,508,0,3,0.15,1.2
+O1826,Standard,BlueDart,Hyderabad,Hyderabad,5,6,1,1744,1,2,0.17,1.24
+O1827,Standard,BlueDart,Mumbai,Bangalore,6,7,1,1357,1,1,0.06,1.98
+O1828,Express,Ecom Express,Delhi,Mumbai,1,3,2,467,0,1,0.09,1.67
+O1829,Standard,Delhivery,Lucknow,Kolkata,4,4,0,1061,1,1,0.1,2.46
+O1830,Same-Day,BlueDart,Bangalore,Jaipur,0,3,3,1601,1,2,0.24,2.07
+O1831,Express,Ecom Express,Mumbai,Chennai,2,5,3,663,0,2,0.21,2.95
+O1832,Standard,BlueDart,Hyderabad,Mumbai,5,6,1,165,0,2,0.06,2.63
+O1833,Same-Day,Delhivery,Kolkata,Jaipur,0,0,0,1497,1,2,0.12,2.44
+O1834,Same-Day,Ecom Express,Lucknow,Hyderabad,0,0,0,1892,1,2,0.05,1.57
+O1835,Express,Delhivery,Hyderabad,Jaipur,1,3,2,1110,1,3,0.28,2.42
+O1836,Standard,Ecom Express,Bangalore,Kolkata,6,7,1,811,1,1,0.18,2.83
+O1837,Same-Day,Ecom Express,Bangalore,Mumbai,0,1,1,1356,1,1,0.15,1.31
+O1838,Same-Day,Delhivery,Hyderabad,Lucknow,1,2,1,1457,1,2,0.23,1.26
+O1839,Express,Delhivery,Jaipur,Kolkata,1,1,0,1035,1,2,0.06,2.44
+O1840,Standard,Ecom Express,Mumbai,Kolkata,3,3,0,1396,1,3,0.26,2.64
+O1841,Standard,Delhivery,Mumbai,Kolkata,4,4,0,1665,1,2,0.18,2.11
+O1842,Standard,Ecom Express,Jaipur,Jaipur,4,4,0,1352,1,1,0.12,1.91
+O1843,Express,BlueDart,Kolkata,Kolkata,3,4,1,19,0,3,0.12,1.96
+O1844,Standard,BlueDart,Jaipur,Mumbai,3,3,0,913,1,3,0.07,2.24
+O1845,Express,BlueDart,Delhi,Mumbai,2,2,0,1651,1,2,0.09,1.65
+O1846,Standard,Ecom Express,Chennai,Hyderabad,4,4,0,1539,1,1,0.08,1.97
+O1847,Same-Day,Delhivery,Jaipur,Mumbai,1,1,0,104,0,1,0.06,1.79
+O1848,Same-Day,BlueDart,Bangalore,Kolkata,0,1,1,1330,1,3,0.19,1.24
+O1849,Standard,Ecom Express,Bangalore,Jaipur,3,4,1,1654,1,1,0.14,1.05
+O1850,Express,BlueDart,Hyderabad,Lucknow,3,3,0,962,1,1,0.19,2.65
+O1851,Same-Day,BlueDart,Kolkata,Mumbai,1,4,3,93,0,2,0.28,2.32
+O1852,Express,Ecom Express,Chennai,Chennai,2,2,0,1535,1,3,0.12,1.66
+O1853,Same-Day,BlueDart,Kolkata,Jaipur,0,0,0,1476,1,3,0.14,1.42
+O1854,Same-Day,Delhivery,Kolkata,Mumbai,1,1,0,310,0,3,0.15,1.02
+O1855,Express,BlueDart,Delhi,Mumbai,1,1,0,921,1,2,0.28,1.81
+O1856,Express,Delhivery,Bangalore,Mumbai,1,1,0,150,0,1,0.16,2.36
+O1857,Express,BlueDart,Bangalore,Hyderabad,2,2,0,115,0,2,0.08,1.51
+O1858,Express,BlueDart,Chennai,Bangalore,3,3,0,548,0,3,0.24,1.43
+O1859,Same-Day,Ecom Express,Mumbai,Hyderabad,1,1,0,257,0,3,0.28,2.27
+O1860,Express,BlueDart,Mumbai,Kolkata,3,4,1,444,0,3,0.11,2.76
+O1861,Express,Ecom Express,Lucknow,Kolkata,3,4,1,1960,1,1,0.24,2.94
+O1862,Standard,Ecom Express,Delhi,Jaipur,3,3,0,1655,1,1,0.06,1.72
+O1863,Same-Day,Delhivery,Hyderabad,Kolkata,1,1,0,440,0,3,0.3,1.81
+O1864,Express,BlueDart,Lucknow,Mumbai,1,3,2,1567,1,2,0.2,2.19
+O1865,Same-Day,BlueDart,Delhi,Bangalore,0,0,0,463,0,1,0.08,2.37
+O1866,Standard,Delhivery,Delhi,Hyderabad,3,3,0,871,1,3,0.12,1.28
+O1867,Same-Day,Ecom Express,Lucknow,Hyderabad,0,0,0,1826,1,2,0.25,2.72
+O1868,Express,BlueDart,Jaipur,Bangalore,1,2,1,1878,1,3,0.22,2.24
+O1869,Standard,Delhivery,Hyderabad,Lucknow,6,9,3,1620,1,3,0.09,2.55
+O1870,Express,Delhivery,Jaipur,Jaipur,2,2,0,961,1,3,0.18,2.92
+O1871,Express,Delhivery,Hyderabad,Hyderabad,1,2,1,429,0,2,0.25,1.67
+O1872,Standard,Delhivery,Lucknow,Delhi,5,6,1,178,0,3,0.12,1.11
+O1873,Express,BlueDart,Delhi,Hyderabad,3,3,0,347,0,2,0.19,1.0
+O1874,Same-Day,Ecom Express,Kolkata,Lucknow,1,2,1,395,0,3,0.26,2.62
+O1875,Same-Day,Ecom Express,Hyderabad,Hyderabad,1,2,1,552,0,1,0.18,1.44
+O1876,Same-Day,Delhivery,Chennai,Mumbai,1,1,0,1729,1,3,0.28,2.01
+O1877,Express,Ecom Express,Hyderabad,Bangalore,1,4,3,1780,1,1,0.26,2.55
+O1878,Standard,Delhivery,Mumbai,Chennai,5,5,0,1834,1,1,0.23,2.17
+O1879,Same-Day,Delhivery,Chennai,Jaipur,1,3,2,1156,1,1,0.05,1.15
+O1880,Standard,Delhivery,Delhi,Lucknow,5,6,1,1928,1,2,0.15,1.92
+O1881,Same-Day,Delhivery,Lucknow,Mumbai,0,1,1,1866,1,3,0.21,2.3
+O1882,Standard,Ecom Express,Mumbai,Hyderabad,6,7,1,1074,1,3,0.1,2.45
+O1883,Same-Day,Ecom Express,Kolkata,Chennai,1,1,0,806,1,3,0.16,1.89
+O1884,Standard,Delhivery,Bangalore,Hyderabad,6,7,1,320,0,3,0.06,2.76
+O1885,Standard,BlueDart,Lucknow,Kolkata,3,4,1,862,1,3,0.18,2.9
+O1886,Express,Delhivery,Delhi,Chennai,2,3,1,1824,1,2,0.17,1.55
+O1887,Express,Ecom Express,Delhi,Chennai,3,4,1,1616,1,2,0.22,1.71
+O1888,Standard,BlueDart,Chennai,Bangalore,4,5,1,363,0,1,0.24,2.18
+O1889,Standard,BlueDart,Bangalore,Lucknow,6,7,1,1873,1,3,0.24,2.67
+O1890,Standard,Ecom Express,Chennai,Hyderabad,4,4,0,841,1,2,0.09,1.42
+O1891,Standard,BlueDart,Mumbai,Jaipur,4,4,0,67,0,1,0.12,2.16
+O1892,Express,Ecom Express,Lucknow,Delhi,3,6,3,997,1,1,0.26,1.67
+O1893,Express,Delhivery,Chennai,Chennai,2,2,0,1253,1,2,0.28,1.93
+O1894,Same-Day,Ecom Express,Hyderabad,Lucknow,0,1,1,1178,1,3,0.11,1.04
+O1895,Standard,Ecom Express,Chennai,Lucknow,6,7,1,7,0,2,0.09,2.74
+O1896,Standard,Delhivery,Lucknow,Mumbai,5,6,1,1071,1,1,0.26,1.31
+O1897,Express,BlueDart,Kolkata,Jaipur,2,2,0,590,0,3,0.14,2.9
+O1898,Same-Day,Ecom Express,Delhi,Jaipur,1,3,2,1866,1,1,0.05,2.04
+O1899,Same-Day,Delhivery,Hyderabad,Mumbai,1,1,0,222,0,3,0.24,1.34
+O1900,Same-Day,BlueDart,Delhi,Bangalore,1,2,1,1472,1,2,0.15,1.96
+O1901,Same-Day,Ecom Express,Hyderabad,Jaipur,0,0,0,791,0,3,0.29,2.83
+O1902,Express,Delhivery,Jaipur,Delhi,3,4,1,1030,1,2,0.26,2.13
+O1903,Standard,Delhivery,Hyderabad,Delhi,4,4,0,278,0,3,0.17,1.9
+O1904,Standard,Delhivery,Bangalore,Hyderabad,6,6,0,1396,1,3,0.25,2.53
+O1905,Same-Day,Ecom Express,Chennai,Lucknow,1,1,0,118,0,2,0.3,2.16
+O1906,Express,Ecom Express,Mumbai,Kolkata,2,4,2,647,0,3,0.19,2.37
+O1907,Same-Day,Delhivery,Chennai,Delhi,0,3,3,661,0,2,0.18,2.22
+O1908,Standard,BlueDart,Hyderabad,Mumbai,5,6,1,1132,1,3,0.06,1.31
+O1909,Standard,Delhivery,Delhi,Bangalore,4,4,0,1220,1,1,0.28,2.57
+O1910,Same-Day,Ecom Express,Jaipur,Hyderabad,0,0,0,321,0,3,0.25,1.2
+O1911,Express,Ecom Express,Bangalore,Jaipur,2,3,1,1469,1,1,0.06,2.17
+O1912,Standard,Delhivery,Hyderabad,Jaipur,6,8,2,1138,1,2,0.28,2.02
+O1913,Standard,BlueDart,Lucknow,Lucknow,4,5,1,1466,1,2,0.17,2.23
+O1914,Express,Delhivery,Mumbai,Kolkata,1,4,3,1644,1,1,0.26,2.32
+O1915,Same-Day,BlueDart,Lucknow,Jaipur,0,1,1,1400,1,3,0.28,1.71
+O1916,Same-Day,BlueDart,Chennai,Lucknow,0,2,2,1062,1,1,0.13,2.96
+O1917,Standard,Delhivery,Mumbai,Jaipur,5,7,2,1823,1,1,0.28,2.96
+O1918,Express,BlueDart,Mumbai,Jaipur,1,3,2,669,0,3,0.06,2.28
+O1919,Standard,Ecom Express,Chennai,Kolkata,4,4,0,1313,1,2,0.16,1.58
+O1920,Standard,BlueDart,Bangalore,Lucknow,6,8,2,1491,1,1,0.16,2.88
+O1921,Same-Day,Ecom Express,Lucknow,Mumbai,0,2,2,1783,1,2,0.16,2.83
+O1922,Standard,Ecom Express,Hyderabad,Lucknow,6,6,0,1974,1,3,0.06,2.13
+O1923,Same-Day,Delhivery,Hyderabad,Hyderabad,1,1,0,1320,1,1,0.13,1.75
+O1924,Standard,BlueDart,Hyderabad,Bangalore,6,8,2,1637,1,2,0.12,1.77
+O1925,Same-Day,Ecom Express,Kolkata,Hyderabad,0,1,1,712,0,3,0.12,1.16
+O1926,Express,Delhivery,Delhi,Hyderabad,1,1,0,910,1,1,0.07,2.33
+O1927,Standard,BlueDart,Jaipur,Kolkata,5,7,2,1720,1,3,0.27,2.41
+O1928,Express,Ecom Express,Delhi,Lucknow,1,3,2,1512,1,3,0.15,2.33
+O1929,Same-Day,Delhivery,Jaipur,Chennai,1,2,1,1990,1,3,0.25,1.23
+O1930,Standard,Delhivery,Bangalore,Mumbai,6,8,2,855,1,1,0.3,2.49
+O1931,Standard,Ecom Express,Bangalore,Bangalore,4,5,1,555,0,1,0.27,1.42
+O1932,Express,Delhivery,Lucknow,Chennai,2,5,3,1269,1,2,0.2,1.65
+O1933,Express,Delhivery,Hyderabad,Kolkata,2,2,0,60,0,2,0.07,1.61
+O1934,Express,Delhivery,Lucknow,Bangalore,1,1,0,230,0,1,0.14,1.13
+O1935,Same-Day,Delhivery,Delhi,Hyderabad,1,2,1,734,0,2,0.22,1.75
+O1936,Standard,Ecom Express,Kolkata,Chennai,4,5,1,1904,1,1,0.29,2.49
+O1937,Express,BlueDart,Lucknow,Jaipur,3,4,1,528,0,1,0.1,2.82
+O1938,Standard,BlueDart,Chennai,Mumbai,4,4,0,140,0,2,0.23,2.39
+O1939,Standard,BlueDart,Lucknow,Jaipur,4,5,1,737,0,3,0.18,2.18
+O1940,Standard,BlueDart,Jaipur,Delhi,5,7,2,589,0,2,0.07,1.39
+O1941,Standard,BlueDart,Hyderabad,Bangalore,3,6,3,1485,1,1,0.13,2.16
+O1942,Express,Ecom Express,Mumbai,Kolkata,2,3,1,1100,1,1,0.17,2.1
+O1943,Same-Day,BlueDart,Chennai,Hyderabad,1,1,0,1297,1,1,0.13,1.91
+O1944,Standard,Ecom Express,Hyderabad,Kolkata,4,4,0,1773,1,1,0.28,2.44
+O1945,Express,Delhivery,Delhi,Lucknow,1,2,1,113,0,3,0.16,1.67
+O1946,Standard,BlueDart,Delhi,Jaipur,5,6,1,1522,1,1,0.15,1.96
+O1947,Same-Day,BlueDart,Jaipur,Delhi,0,1,1,44,0,1,0.1,2.48
+O1948,Standard,Ecom Express,Delhi,Lucknow,3,3,0,659,0,1,0.22,1.09
+O1949,Same-Day,Delhivery,Chennai,Kolkata,0,2,2,1746,1,3,0.13,1.45
+O1950,Standard,Delhivery,Delhi,Mumbai,6,7,1,1961,1,1,0.23,1.51
+O1951,Standard,BlueDart,Chennai,Chennai,5,5,0,385,0,3,0.16,2.59
+O1952,Express,Ecom Express,Kolkata,Jaipur,1,1,0,553,0,1,0.16,1.91
+O1953,Same-Day,Delhivery,Kolkata,Jaipur,1,2,1,368,0,2,0.26,1.18
+O1954,Express,BlueDart,Jaipur,Lucknow,3,4,1,1739,1,1,0.14,1.49
+O1955,Standard,BlueDart,Hyderabad,Jaipur,5,8,3,973,1,1,0.15,2.16
+O1956,Express,Delhivery,Kolkata,Lucknow,2,2,0,1478,1,1,0.19,2.4
+O1957,Express,Delhivery,Jaipur,Bangalore,3,3,0,516,0,2,0.28,1.3
+O1958,Express,Delhivery,Hyderabad,Jaipur,3,4,1,1434,1,2,0.12,2.88
+O1959,Same-Day,Delhivery,Jaipur,Lucknow,1,4,3,509,0,1,0.15,2.08
+O1960,Standard,Delhivery,Mumbai,Chennai,3,5,2,855,1,1,0.15,2.56
+O1961,Standard,Delhivery,Jaipur,Mumbai,6,6,0,1656,1,1,0.17,1.33
+O1962,Express,Ecom Express,Delhi,Mumbai,3,5,2,1856,1,2,0.23,2.15
+O1963,Standard,BlueDart,Delhi,Mumbai,5,5,0,1608,1,2,0.21,2.68
+O1964,Express,Delhivery,Mumbai,Chennai,2,5,3,1542,1,2,0.08,2.86
+O1965,Express,Ecom Express,Mumbai,Lucknow,3,5,2,542,0,3,0.08,2.28
+O1966,Express,Ecom Express,Bangalore,Jaipur,1,3,2,1275,1,2,0.22,2.1
+O1967,Standard,Delhivery,Kolkata,Mumbai,3,6,3,1962,1,3,0.06,1.8
+O1968,Standard,BlueDart,Hyderabad,Lucknow,4,6,2,468,0,2,0.28,1.84
+O1969,Standard,Ecom Express,Chennai,Chennai,5,5,0,98,0,1,0.23,2.91
+O1970,Standard,Delhivery,Jaipur,Mumbai,5,6,1,1866,1,1,0.29,2.16
+O1971,Standard,Delhivery,Bangalore,Mumbai,5,7,2,1348,1,1,0.18,2.66
+O1972,Standard,Delhivery,Hyderabad,Chennai,3,4,1,1799,1,2,0.09,2.91
+O1973,Same-Day,Delhivery,Hyderabad,Mumbai,1,1,0,1823,1,2,0.1,1.85
+O1974,Standard,Delhivery,Mumbai,Chennai,4,4,0,1890,1,2,0.25,1.2
+O1975,Standard,Delhivery,Delhi,Hyderabad,3,5,2,1198,1,2,0.28,2.34
+O1976,Standard,Ecom Express,Lucknow,Jaipur,5,6,1,193,0,3,0.12,1.27
+O1977,Express,BlueDart,Jaipur,Jaipur,3,3,0,759,0,1,0.2,1.48
+O1978,Same-Day,Delhivery,Chennai,Bangalore,0,1,1,1351,1,1,0.11,1.3
+O1979,Standard,Delhivery,Jaipur,Hyderabad,3,3,0,1889,1,3,0.22,2.93
+O1980,Express,Delhivery,Lucknow,Jaipur,2,2,0,347,0,3,0.13,1.15
+O1981,Same-Day,Ecom Express,Chennai,Chennai,0,1,1,1918,1,3,0.18,2.82
+O1982,Same-Day,Delhivery,Kolkata,Hyderabad,0,2,2,124,0,2,0.16,2.88
+O1983,Standard,Delhivery,Lucknow,Mumbai,4,4,0,923,1,1,0.15,1.27
+O1984,Express,Delhivery,Bangalore,Chennai,2,2,0,1794,1,1,0.12,3.0
+O1985,Same-Day,Delhivery,Lucknow,Chennai,1,1,0,1768,1,1,0.27,1.01
+O1986,Express,Delhivery,Bangalore,Jaipur,1,2,1,1000,1,2,0.15,1.38
+O1987,Standard,Delhivery,Delhi,Kolkata,4,6,2,1135,1,2,0.05,1.56
+O1988,Same-Day,Delhivery,Bangalore,Bangalore,1,3,2,70,0,3,0.24,1.54
+O1989,Standard,BlueDart,Hyderabad,Hyderabad,4,4,0,715,0,2,0.29,2.89
+O1990,Standard,BlueDart,Mumbai,Hyderabad,3,3,0,1626,1,3,0.23,2.33
+O1991,Same-Day,Ecom Express,Bangalore,Mumbai,0,0,0,64,0,1,0.06,1.6
+O1992,Standard,Ecom Express,Mumbai,Mumbai,5,7,2,1790,1,3,0.12,1.94
+O1993,Standard,Ecom Express,Hyderabad,Jaipur,4,4,0,179,0,1,0.15,2.51
+O1994,Standard,Delhivery,Delhi,Bangalore,6,6,0,1148,1,1,0.11,2.32
+O1995,Same-Day,Ecom Express,Kolkata,Delhi,0,0,0,658,0,2,0.28,2.57
+O1996,Express,Delhivery,Jaipur,Kolkata,1,2,1,1184,1,3,0.29,2.13
+O1997,Same-Day,Ecom Express,Bangalore,Mumbai,1,1,0,35,0,2,0.13,1.92
+O1998,Standard,BlueDart,Jaipur,Kolkata,3,4,1,822,1,1,0.28,1.84
+O1999,Standard,Delhivery,Chennai,Jaipur,4,4,0,737,0,1,0.17,1.8
+O2000,Express,BlueDart,Delhi,Jaipur,2,2,0,946,1,2,0.25,2.62
+O2001,Same-Day,Delhivery,Chennai,Lucknow,0,0,0,1850,1,3,0.05,1.06
+O2002,Same-Day,BlueDart,Mumbai,Jaipur,1,4,3,705,0,2,0.18,1.63
+O2003,Express,Delhivery,Chennai,Bangalore,3,3,0,1661,1,1,0.14,1.12
+O2004,Express,Delhivery,Hyderabad,Bangalore,3,4,1,1233,1,1,0.13,2.08
+O2005,Express,Ecom Express,Jaipur,Bangalore,1,1,0,1872,1,2,0.1,2.76
+O2006,Standard,Ecom Express,Delhi,Chennai,6,6,0,610,0,1,0.06,1.17
+O2007,Same-Day,BlueDart,Jaipur,Lucknow,0,0,0,1214,1,3,0.1,2.72
+O2008,Standard,Ecom Express,Delhi,Hyderabad,4,7,3,253,0,3,0.06,2.06
+O2009,Express,Delhivery,Hyderabad,Chennai,1,1,0,1380,1,3,0.11,1.75
+O2010,Standard,Delhivery,Kolkata,Jaipur,3,4,1,124,0,2,0.07,1.29
+O2011,Express,BlueDart,Chennai,Delhi,1,1,0,1057,1,1,0.23,2.16
+O2012,Express,Delhivery,Hyderabad,Mumbai,3,4,1,1651,1,1,0.29,2.3
+O2013,Express,BlueDart,Hyderabad,Chennai,2,2,0,598,0,2,0.05,2.48
+O2014,Same-Day,BlueDart,Lucknow,Jaipur,0,2,2,1889,1,2,0.29,2.42
+O2015,Express,Ecom Express,Delhi,Delhi,1,2,1,261,0,3,0.07,2.4
+O2016,Same-Day,Delhivery,Delhi,Kolkata,0,1,1,1637,1,1,0.11,2.35
+O2017,Express,BlueDart,Jaipur,Chennai,1,1,0,796,0,1,0.13,1.27
+O2018,Express,Delhivery,Jaipur,Jaipur,3,4,1,323,0,3,0.18,1.57
+O2019,Standard,BlueDart,Hyderabad,Mumbai,5,7,2,1737,1,1,0.06,2.88
+O2020,Same-Day,Ecom Express,Mumbai,Lucknow,0,1,1,1794,1,1,0.09,1.87
+O2021,Express,BlueDart,Chennai,Lucknow,3,5,2,432,0,1,0.17,2.11
+O2022,Standard,BlueDart,Bangalore,Delhi,4,7,3,89,0,2,0.25,1.33
+O2023,Standard,BlueDart,Delhi,Lucknow,5,5,0,135,0,2,0.13,1.69
+O2024,Express,BlueDart,Lucknow,Delhi,3,3,0,966,1,3,0.12,1.85
+O2025,Express,Ecom Express,Delhi,Lucknow,1,4,3,49,0,2,0.05,1.83
+O2026,Express,Delhivery,Jaipur,Mumbai,1,1,0,297,0,1,0.24,2.75
+O2027,Express,Ecom Express,Hyderabad,Bangalore,3,3,0,49,0,2,0.22,1.54
+O2028,Express,BlueDart,Bangalore,Jaipur,2,4,2,1784,1,1,0.09,1.39
+O2029,Express,Delhivery,Kolkata,Bangalore,2,2,0,1485,1,1,0.27,1.58
+O2030,Standard,Ecom Express,Delhi,Jaipur,4,7,3,196,0,1,0.1,2.29
+O2031,Standard,Ecom Express,Lucknow,Mumbai,6,6,0,1004,1,1,0.15,1.81
+O2032,Standard,Delhivery,Bangalore,Lucknow,3,3,0,142,0,1,0.27,2.44
+O2033,Express,Ecom Express,Hyderabad,Hyderabad,2,3,1,1588,1,1,0.3,1.43
+O2034,Same-Day,Ecom Express,Jaipur,Chennai,0,1,1,1927,1,2,0.23,2.28
+O2035,Same-Day,BlueDart,Delhi,Mumbai,1,1,0,1247,1,1,0.19,1.74
+O2036,Standard,Delhivery,Hyderabad,Hyderabad,4,5,1,540,0,2,0.06,2.31
+O2037,Express,Ecom Express,Bangalore,Hyderabad,1,4,3,978,1,3,0.27,1.43
+O2038,Same-Day,Delhivery,Bangalore,Mumbai,0,2,2,590,0,2,0.07,1.48
+O2039,Same-Day,Ecom Express,Mumbai,Mumbai,0,2,2,1712,1,2,0.18,1.43
+O2040,Standard,Delhivery,Jaipur,Mumbai,3,3,0,1283,1,3,0.28,1.76
+O2041,Express,Ecom Express,Bangalore,Lucknow,1,4,3,191,0,1,0.27,2.58
+O2042,Same-Day,BlueDart,Mumbai,Lucknow,0,0,0,995,1,1,0.14,2.86
+O2043,Same-Day,BlueDart,Kolkata,Chennai,1,1,0,1697,1,3,0.23,2.04
+O2044,Express,Delhivery,Kolkata,Jaipur,1,2,1,1478,1,3,0.1,1.38
+O2045,Express,Ecom Express,Kolkata,Hyderabad,2,2,0,905,1,1,0.14,1.48
+O2046,Express,Delhivery,Mumbai,Mumbai,1,2,1,799,0,2,0.28,2.4
+O2047,Express,BlueDart,Jaipur,Lucknow,3,4,1,1672,1,3,0.17,2.74
+O2048,Standard,Delhivery,Lucknow,Delhi,4,5,1,1850,1,2,0.16,2.12
+O2049,Same-Day,Delhivery,Delhi,Delhi,1,4,3,1665,1,2,0.08,2.04
+O2050,Same-Day,Delhivery,Lucknow,Bangalore,1,1,0,1680,1,1,0.27,2.68
+O2051,Standard,BlueDart,Mumbai,Chennai,6,6,0,1629,1,1,0.27,2.0
+O2052,Same-Day,Ecom Express,Bangalore,Kolkata,1,1,0,411,0,1,0.16,1.17
+O2053,Standard,Delhivery,Bangalore,Hyderabad,5,6,1,1387,1,2,0.23,1.97
+O2054,Same-Day,Ecom Express,Lucknow,Hyderabad,1,4,3,1919,1,1,0.14,2.42
+O2055,Express,Ecom Express,Jaipur,Hyderabad,1,1,0,1248,1,3,0.26,1.39
+O2056,Standard,Ecom Express,Jaipur,Delhi,5,5,0,1940,1,3,0.23,1.39
+O2057,Standard,Ecom Express,Bangalore,Lucknow,3,3,0,1561,1,2,0.06,2.39
+O2058,Express,Delhivery,Mumbai,Lucknow,2,2,0,1620,1,2,0.06,2.4
+O2059,Standard,BlueDart,Kolkata,Jaipur,3,4,1,1037,1,3,0.19,1.42
+O2060,Standard,Ecom Express,Hyderabad,Jaipur,4,5,1,657,0,2,0.17,1.18
+O2061,Same-Day,Delhivery,Jaipur,Bangalore,0,3,3,1680,1,3,0.15,1.57
+O2062,Same-Day,BlueDart,Kolkata,Lucknow,0,0,0,1678,1,1,0.24,1.28
+O2063,Standard,Delhivery,Bangalore,Hyderabad,6,6,0,1376,1,1,0.22,2.47
+O2064,Express,Delhivery,Kolkata,Lucknow,3,3,0,1533,1,1,0.2,2.12
+O2065,Standard,Ecom Express,Bangalore,Jaipur,6,7,1,1959,1,3,0.22,1.4
+O2066,Same-Day,Delhivery,Bangalore,Lucknow,0,0,0,1667,1,3,0.06,1.1
+O2067,Same-Day,BlueDart,Bangalore,Jaipur,0,2,2,1494,1,1,0.18,2.96
+O2068,Same-Day,Ecom Express,Hyderabad,Jaipur,0,0,0,1284,1,1,0.28,2.41
+O2069,Standard,Ecom Express,Bangalore,Bangalore,6,6,0,811,1,3,0.25,1.16
+O2070,Express,Ecom Express,Chennai,Lucknow,3,4,1,625,0,2,0.26,2.74
+O2071,Same-Day,Delhivery,Bangalore,Delhi,0,0,0,1386,1,3,0.16,2.86
+O2072,Standard,Delhivery,Chennai,Kolkata,3,3,0,1147,1,1,0.22,2.21
+O2073,Standard,BlueDart,Lucknow,Chennai,3,4,1,835,1,3,0.27,2.02
+O2074,Standard,Ecom Express,Kolkata,Jaipur,6,6,0,1903,1,1,0.07,2.31
+O2075,Same-Day,BlueDart,Lucknow,Lucknow,0,2,2,381,0,3,0.26,2.03
+O2076,Same-Day,BlueDart,Delhi,Hyderabad,1,1,0,180,0,1,0.19,2.28
+O2077,Express,BlueDart,Mumbai,Jaipur,2,5,3,1194,1,1,0.13,2.24
+O2078,Express,Delhivery,Kolkata,Lucknow,2,2,0,611,0,3,0.18,1.63
+O2079,Standard,Ecom Express,Hyderabad,Jaipur,6,7,1,680,0,3,0.07,2.65
+O2080,Same-Day,BlueDart,Jaipur,Lucknow,1,4,3,169,0,1,0.06,2.3
+O2081,Express,Delhivery,Lucknow,Hyderabad,2,3,1,1222,1,3,0.26,1.98
+O2082,Standard,Delhivery,Mumbai,Hyderabad,4,4,0,1212,1,3,0.27,1.68
+O2083,Same-Day,Ecom Express,Bangalore,Jaipur,0,0,0,1015,1,2,0.22,2.2
+O2084,Same-Day,Ecom Express,Bangalore,Jaipur,0,3,3,1686,1,2,0.09,1.08
+O2085,Standard,Delhivery,Chennai,Chennai,6,6,0,1338,1,3,0.25,1.9
+O2086,Same-Day,Ecom Express,Mumbai,Lucknow,1,1,0,1018,1,3,0.24,1.61
+O2087,Express,Ecom Express,Lucknow,Hyderabad,2,4,2,106,0,1,0.14,1.61
+O2088,Standard,Ecom Express,Jaipur,Kolkata,5,5,0,784,0,2,0.28,2.03
+O2089,Express,Ecom Express,Kolkata,Delhi,3,3,0,1523,1,3,0.19,1.86
+O2090,Express,Delhivery,Bangalore,Jaipur,2,4,2,1065,1,3,0.25,1.95
+O2091,Express,Ecom Express,Jaipur,Mumbai,1,4,3,330,0,3,0.19,2.31
+O2092,Express,Ecom Express,Bangalore,Mumbai,3,3,0,1419,1,2,0.06,2.45
+O2093,Standard,BlueDart,Delhi,Lucknow,4,5,1,1094,1,3,0.26,1.1
+O2094,Standard,Ecom Express,Lucknow,Bangalore,6,7,1,920,1,1,0.26,2.18
+O2095,Same-Day,BlueDart,Kolkata,Lucknow,0,0,0,134,0,1,0.14,2.35
+O2096,Express,Ecom Express,Mumbai,Bangalore,1,2,1,1352,1,2,0.1,1.45
+O2097,Same-Day,BlueDart,Kolkata,Delhi,0,3,3,1693,1,1,0.07,2.44
+O2098,Standard,BlueDart,Delhi,Lucknow,5,5,0,1784,1,2,0.25,1.3
+O2099,Express,BlueDart,Lucknow,Lucknow,1,2,1,1422,1,1,0.18,2.11
+O2100,Same-Day,Ecom Express,Mumbai,Mumbai,1,2,1,88,0,3,0.11,1.19
+O2101,Express,Ecom Express,Bangalore,Hyderabad,3,3,0,455,0,2,0.08,1.37
+O2102,Express,Delhivery,Mumbai,Delhi,2,5,3,794,0,3,0.13,1.95
+O2103,Express,Delhivery,Lucknow,Mumbai,1,1,0,1057,1,2,0.09,2.18
+O2104,Same-Day,Delhivery,Kolkata,Lucknow,1,2,1,497,0,1,0.16,1.99
+O2105,Same-Day,Ecom Express,Jaipur,Hyderabad,0,1,1,1884,1,2,0.11,2.61
+O2106,Same-Day,Delhivery,Chennai,Jaipur,0,3,3,636,0,3,0.09,1.29
+O2107,Standard,Ecom Express,Hyderabad,Lucknow,4,5,1,1137,1,1,0.11,1.27
+O2108,Standard,BlueDart,Bangalore,Bangalore,3,4,1,230,0,3,0.12,1.52
+O2109,Express,BlueDart,Hyderabad,Hyderabad,1,3,2,897,1,1,0.27,2.37
+O2110,Standard,Delhivery,Mumbai,Lucknow,3,4,1,661,0,3,0.28,2.21
+O2111,Same-Day,Ecom Express,Mumbai,Bangalore,0,0,0,1729,1,3,0.06,2.01
+O2112,Same-Day,Delhivery,Kolkata,Chennai,0,2,2,818,1,2,0.1,1.92
+O2113,Same-Day,Ecom Express,Chennai,Jaipur,1,1,0,1003,1,2,0.26,2.48
+O2114,Express,Delhivery,Bangalore,Mumbai,1,1,0,26,0,1,0.24,1.75
+O2115,Same-Day,BlueDart,Kolkata,Mumbai,0,0,0,1821,1,1,0.09,1.63
+O2116,Same-Day,Ecom Express,Hyderabad,Hyderabad,0,3,3,562,0,2,0.15,2.38
+O2117,Same-Day,Ecom Express,Mumbai,Jaipur,0,2,2,496,0,1,0.07,1.49
+O2118,Standard,Delhivery,Hyderabad,Bangalore,3,3,0,1789,1,1,0.12,1.12
+O2119,Standard,Delhivery,Kolkata,Jaipur,4,7,3,1101,1,1,0.09,2.54
+O2120,Express,Ecom Express,Jaipur,Bangalore,3,4,1,253,0,1,0.15,1.02
+O2121,Same-Day,Ecom Express,Bangalore,Kolkata,1,2,1,507,0,2,0.24,2.19
+O2122,Standard,Delhivery,Mumbai,Lucknow,3,3,0,92,0,2,0.22,1.2
+O2123,Standard,Delhivery,Kolkata,Mumbai,5,6,1,1153,1,1,0.1,1.92
+O2124,Standard,BlueDart,Chennai,Jaipur,5,6,1,1640,1,2,0.16,1.95
+O2125,Standard,Delhivery,Hyderabad,Mumbai,4,6,2,933,1,2,0.16,2.37
+O2126,Express,Ecom Express,Kolkata,Mumbai,1,2,1,1738,1,2,0.08,2.48
+O2127,Express,Delhivery,Hyderabad,Kolkata,2,2,0,1017,1,3,0.26,2.05
+O2128,Same-Day,Delhivery,Chennai,Chennai,1,4,3,1371,1,2,0.25,2.77
+O2129,Standard,Delhivery,Mumbai,Hyderabad,3,3,0,612,0,2,0.15,1.19
+O2130,Standard,Ecom Express,Jaipur,Bangalore,5,5,0,1052,1,3,0.23,1.41
+O2131,Express,Ecom Express,Jaipur,Lucknow,2,5,3,777,0,3,0.18,1.97
+O2132,Standard,Delhivery,Lucknow,Jaipur,3,3,0,62,0,3,0.2,2.28
+O2133,Standard,Ecom Express,Mumbai,Hyderabad,4,5,1,1601,1,3,0.21,1.97
+O2134,Express,Delhivery,Jaipur,Jaipur,1,2,1,94,0,3,0.28,1.29
+O2135,Standard,Ecom Express,Hyderabad,Mumbai,4,5,1,580,0,1,0.07,1.23
+O2136,Express,Ecom Express,Chennai,Bangalore,3,4,1,922,1,3,0.17,1.57
+O2137,Express,Delhivery,Lucknow,Delhi,1,1,0,1909,1,1,0.08,2.09
+O2138,Same-Day,Ecom Express,Mumbai,Chennai,0,1,1,1137,1,1,0.16,1.99
+O2139,Standard,Delhivery,Delhi,Jaipur,3,4,1,840,1,3,0.17,2.91
+O2140,Express,Delhivery,Lucknow,Delhi,3,3,0,629,0,3,0.18,1.18
+O2141,Same-Day,Delhivery,Bangalore,Jaipur,0,2,2,807,1,1,0.24,2.29
+O2142,Express,Delhivery,Mumbai,Hyderabad,1,1,0,1633,1,2,0.11,2.97
+O2143,Express,BlueDart,Bangalore,Bangalore,3,5,2,1768,1,1,0.13,2.2
+O2144,Express,BlueDart,Hyderabad,Kolkata,3,4,1,610,0,2,0.22,2.81
+O2145,Standard,Ecom Express,Hyderabad,Mumbai,4,4,0,991,1,3,0.21,1.29
+O2146,Standard,Delhivery,Chennai,Hyderabad,4,4,0,665,0,2,0.27,2.8
+O2147,Standard,Delhivery,Chennai,Bangalore,3,3,0,1430,1,2,0.11,2.65
+O2148,Express,Ecom Express,Hyderabad,Bangalore,2,2,0,450,0,1,0.27,2.6
+O2149,Standard,BlueDart,Lucknow,Jaipur,6,6,0,1429,1,1,0.21,2.83
+O2150,Standard,Delhivery,Kolkata,Chennai,3,4,1,948,1,3,0.29,2.85
+O2151,Standard,Delhivery,Jaipur,Lucknow,4,5,1,1977,1,2,0.06,2.38
+O2152,Express,BlueDart,Delhi,Delhi,1,4,3,1451,1,3,0.09,1.34
+O2153,Same-Day,BlueDart,Hyderabad,Hyderabad,0,0,0,1665,1,1,0.23,1.87
+O2154,Same-Day,BlueDart,Chennai,Mumbai,1,4,3,599,0,1,0.22,2.34
+O2155,Same-Day,Ecom Express,Mumbai,Chennai,1,1,0,904,1,1,0.22,2.03
+O2156,Standard,BlueDart,Hyderabad,Hyderabad,5,5,0,216,0,3,0.18,2.41
+O2157,Same-Day,Delhivery,Bangalore,Bangalore,0,0,0,619,0,3,0.28,1.36
+O2158,Standard,BlueDart,Delhi,Bangalore,5,5,0,790,0,3,0.19,2.98
+O2159,Same-Day,BlueDart,Delhi,Jaipur,1,4,3,891,1,1,0.19,1.47
+O2160,Standard,Delhivery,Bangalore,Jaipur,3,3,0,1285,1,3,0.25,2.57
+O2161,Standard,Ecom Express,Hyderabad,Hyderabad,6,8,2,874,1,2,0.15,1.4
+O2162,Standard,BlueDart,Mumbai,Jaipur,4,5,1,532,0,3,0.18,1.87
+O2163,Express,Ecom Express,Delhi,Chennai,2,2,0,364,0,2,0.29,2.89
+O2164,Standard,Ecom Express,Kolkata,Mumbai,5,7,2,1686,1,1,0.29,2.71
+O2165,Express,Delhivery,Hyderabad,Chennai,2,2,0,1732,1,3,0.16,2.81
+O2166,Same-Day,BlueDart,Kolkata,Delhi,0,1,1,1724,1,1,0.11,1.25
+O2167,Same-Day,Ecom Express,Lucknow,Bangalore,1,2,1,566,0,1,0.28,2.97
+O2168,Express,Ecom Express,Chennai,Jaipur,2,4,2,926,1,2,0.05,2.4
+O2169,Same-Day,Ecom Express,Lucknow,Bangalore,0,0,0,179,0,1,0.07,2.93
+O2170,Express,BlueDart,Jaipur,Mumbai,2,2,0,988,1,3,0.13,2.31
+O2171,Standard,BlueDart,Chennai,Lucknow,3,4,1,792,0,3,0.27,2.37
+O2172,Same-Day,Delhivery,Chennai,Jaipur,1,3,2,1183,1,2,0.24,1.03
+O2173,Express,Ecom Express,Chennai,Mumbai,2,2,0,641,0,1,0.25,1.87
+O2174,Express,Delhivery,Kolkata,Kolkata,1,2,1,620,0,1,0.3,2.36
+O2175,Same-Day,BlueDart,Mumbai,Jaipur,0,0,0,1552,1,3,0.15,2.51
+O2176,Same-Day,Delhivery,Jaipur,Chennai,1,2,1,1765,1,1,0.13,1.7
+O2177,Standard,Ecom Express,Kolkata,Lucknow,6,7,1,1129,1,1,0.29,2.22
+O2178,Standard,BlueDart,Lucknow,Lucknow,6,6,0,946,1,1,0.27,1.77
+O2179,Express,BlueDart,Hyderabad,Hyderabad,1,1,0,524,0,3,0.2,1.81
+O2180,Standard,Delhivery,Hyderabad,Jaipur,3,6,3,1385,1,2,0.16,1.84
+O2181,Standard,BlueDart,Kolkata,Hyderabad,3,3,0,1819,1,2,0.17,1.86
+O2182,Express,Delhivery,Lucknow,Lucknow,2,5,3,1107,1,2,0.12,1.99
+O2183,Standard,BlueDart,Delhi,Jaipur,5,6,1,1723,1,3,0.14,1.38
+O2184,Express,BlueDart,Bangalore,Jaipur,2,2,0,864,1,2,0.27,1.05
+O2185,Express,BlueDart,Mumbai,Kolkata,3,6,3,916,1,1,0.13,1.94
+O2186,Standard,Ecom Express,Chennai,Mumbai,3,3,0,1322,1,3,0.06,1.82
+O2187,Standard,Delhivery,Kolkata,Jaipur,5,6,1,1484,1,3,0.21,1.73
+O2188,Express,Ecom Express,Bangalore,Lucknow,1,1,0,1297,1,1,0.12,1.06
+O2189,Same-Day,Ecom Express,Kolkata,Bangalore,0,1,1,1673,1,2,0.07,2.2
+O2190,Express,Delhivery,Kolkata,Lucknow,2,2,0,169,0,3,0.1,2.92
+O2191,Express,Delhivery,Jaipur,Hyderabad,2,2,0,923,1,3,0.17,1.0
+O2192,Same-Day,Ecom Express,Bangalore,Bangalore,1,2,1,1126,1,3,0.14,1.27
+O2193,Standard,Ecom Express,Hyderabad,Bangalore,3,4,1,570,0,3,0.11,2.46
+O2194,Express,BlueDart,Hyderabad,Mumbai,1,1,0,651,0,3,0.18,1.35
+O2195,Standard,BlueDart,Jaipur,Delhi,4,6,2,1798,1,1,0.13,1.62
+O2196,Express,Delhivery,Chennai,Lucknow,3,3,0,1521,1,2,0.12,1.6
+O2197,Express,Ecom Express,Delhi,Jaipur,1,1,0,39,0,3,0.11,2.01
+O2198,Same-Day,BlueDart,Lucknow,Hyderabad,1,4,3,852,1,2,0.07,1.18
+O2199,Standard,BlueDart,Jaipur,Bangalore,5,6,1,1057,1,2,0.18,1.16
+O2200,Standard,BlueDart,Kolkata,Jaipur,3,3,0,1006,1,3,0.25,1.12
+O2201,Same-Day,Ecom Express,Mumbai,Delhi,1,4,3,681,0,2,0.17,2.52
+O2202,Standard,Ecom Express,Mumbai,Mumbai,5,5,0,1095,1,3,0.27,2.53
+O2203,Express,Ecom Express,Delhi,Kolkata,1,1,0,535,0,2,0.28,1.21
+O2204,Same-Day,BlueDart,Delhi,Jaipur,0,3,3,360,0,2,0.28,1.59
+O2205,Standard,BlueDart,Kolkata,Jaipur,3,5,2,685,0,1,0.26,2.9
+O2206,Express,Ecom Express,Mumbai,Delhi,2,4,2,26,0,3,0.23,2.79
+O2207,Same-Day,BlueDart,Lucknow,Hyderabad,1,1,0,1364,1,2,0.24,2.42
+O2208,Standard,Delhivery,Jaipur,Bangalore,4,4,0,1228,1,3,0.26,2.2
+O2209,Same-Day,Ecom Express,Mumbai,Mumbai,0,0,0,1919,1,1,0.15,1.21
+O2210,Same-Day,Ecom Express,Delhi,Jaipur,0,0,0,40,0,1,0.22,1.27
+O2211,Standard,BlueDart,Kolkata,Lucknow,4,6,2,1412,1,3,0.15,2.3
+O2212,Same-Day,Ecom Express,Mumbai,Mumbai,0,2,2,1298,1,3,0.05,1.69
+O2213,Standard,Delhivery,Hyderabad,Mumbai,4,4,0,1133,1,1,0.09,1.09
+O2214,Express,BlueDart,Hyderabad,Jaipur,3,4,1,1015,1,3,0.17,1.24
+O2215,Standard,Ecom Express,Bangalore,Delhi,3,3,0,683,0,3,0.28,2.83
+O2216,Express,Delhivery,Chennai,Jaipur,3,6,3,63,0,1,0.15,1.72
+O2217,Same-Day,Delhivery,Chennai,Jaipur,1,2,1,90,0,1,0.21,2.94
+O2218,Same-Day,BlueDart,Kolkata,Kolkata,1,1,0,423,0,3,0.26,1.86
+O2219,Same-Day,BlueDart,Jaipur,Jaipur,1,2,1,1495,1,3,0.3,2.95
+O2220,Same-Day,Delhivery,Bangalore,Jaipur,0,0,0,858,1,1,0.3,2.6
+O2221,Express,BlueDart,Mumbai,Hyderabad,3,4,1,572,0,3,0.2,1.43
+O2222,Same-Day,Ecom Express,Kolkata,Kolkata,1,3,2,1759,1,3,0.11,1.34
+O2223,Same-Day,Ecom Express,Bangalore,Jaipur,0,2,2,536,0,2,0.11,1.88
+O2224,Same-Day,Delhivery,Kolkata,Mumbai,1,1,0,976,1,3,0.11,2.32
+O2225,Same-Day,Ecom Express,Jaipur,Mumbai,1,1,0,1673,1,2,0.14,2.32
+O2226,Standard,Ecom Express,Bangalore,Kolkata,4,4,0,1081,1,1,0.18,1.31
+O2227,Same-Day,BlueDart,Jaipur,Mumbai,1,2,1,879,1,2,0.28,2.28
+O2228,Same-Day,Ecom Express,Chennai,Bangalore,0,1,1,987,1,3,0.13,2.15
+O2229,Same-Day,BlueDart,Kolkata,Lucknow,0,0,0,171,0,3,0.25,1.66
+O2230,Express,BlueDart,Mumbai,Jaipur,3,3,0,1456,1,3,0.07,2.27
+O2231,Express,Ecom Express,Mumbai,Bangalore,2,2,0,1562,1,3,0.2,1.85
+O2232,Express,Ecom Express,Jaipur,Kolkata,1,1,0,1576,1,2,0.27,2.22
+O2233,Same-Day,Ecom Express,Hyderabad,Jaipur,0,0,0,1875,1,2,0.23,2.64
+O2234,Standard,Ecom Express,Delhi,Chennai,5,5,0,1183,1,1,0.28,1.29
+O2235,Same-Day,Ecom Express,Bangalore,Chennai,0,1,1,987,1,3,0.21,2.53
+O2236,Same-Day,Delhivery,Hyderabad,Mumbai,0,1,1,567,0,2,0.19,1.14
+O2237,Same-Day,BlueDart,Mumbai,Hyderabad,1,1,0,824,1,2,0.13,1.55
+O2238,Express,BlueDart,Chennai,Jaipur,1,4,3,1264,1,3,0.26,1.81
+O2239,Same-Day,Ecom Express,Chennai,Kolkata,1,3,2,1539,1,3,0.19,1.21
+O2240,Same-Day,Ecom Express,Bangalore,Lucknow,0,0,0,1649,1,1,0.3,2.76
+O2241,Standard,BlueDart,Kolkata,Mumbai,3,3,0,1384,1,3,0.08,2.83
+O2242,Same-Day,Ecom Express,Chennai,Delhi,1,3,2,819,1,2,0.24,1.01
+O2243,Standard,BlueDart,Lucknow,Mumbai,3,6,3,1248,1,2,0.14,1.31
+O2244,Express,Delhivery,Mumbai,Bangalore,3,5,2,1603,1,2,0.28,2.24
+O2245,Express,BlueDart,Lucknow,Mumbai,3,3,0,1173,1,2,0.14,2.56
+O2246,Express,Ecom Express,Hyderabad,Mumbai,2,2,0,1490,1,3,0.26,1.45
+O2247,Express,Delhivery,Bangalore,Kolkata,2,5,3,1644,1,3,0.12,2.22
+O2248,Standard,BlueDart,Lucknow,Bangalore,5,5,0,436,0,1,0.3,2.33
+O2249,Express,BlueDart,Hyderabad,Kolkata,1,1,0,1574,1,3,0.07,2.79
+O2250,Standard,Ecom Express,Kolkata,Hyderabad,5,5,0,1935,1,2,0.11,1.45
+O2251,Standard,Ecom Express,Kolkata,Mumbai,6,7,1,1098,1,2,0.1,2.33
+O2252,Express,Ecom Express,Kolkata,Jaipur,3,5,2,41,0,2,0.24,1.6
+O2253,Express,Ecom Express,Chennai,Jaipur,2,5,3,95,0,3,0.21,2.55
+O2254,Standard,BlueDart,Jaipur,Hyderabad,5,7,2,42,0,3,0.3,1.89
+O2255,Same-Day,Ecom Express,Hyderabad,Mumbai,1,1,0,1480,1,2,0.08,1.7
+O2256,Same-Day,BlueDart,Jaipur,Kolkata,0,1,1,1027,1,1,0.08,1.05
+O2257,Express,Ecom Express,Bangalore,Chennai,2,2,0,1266,1,1,0.16,1.07
+O2258,Standard,Ecom Express,Delhi,Bangalore,6,8,2,1117,1,3,0.13,2.36
+O2259,Express,Ecom Express,Jaipur,Delhi,3,3,0,1664,1,2,0.15,1.5
+O2260,Same-Day,BlueDart,Bangalore,Bangalore,1,2,1,1445,1,2,0.06,1.26
+O2261,Standard,Delhivery,Hyderabad,Kolkata,4,4,0,1645,1,3,0.05,1.54
+O2262,Same-Day,BlueDart,Hyderabad,Jaipur,1,1,0,1263,1,2,0.17,2.54
+O2263,Express,Ecom Express,Bangalore,Jaipur,3,4,1,1977,1,3,0.06,1.91
+O2264,Standard,BlueDart,Delhi,Mumbai,6,6,0,1693,1,3,0.15,2.79
+O2265,Same-Day,Delhivery,Mumbai,Lucknow,1,2,1,883,1,1,0.22,2.91
+O2266,Standard,Ecom Express,Lucknow,Lucknow,6,7,1,174,0,3,0.19,2.61
+O2267,Express,Ecom Express,Chennai,Lucknow,2,3,1,1978,1,2,0.28,2.4
+O2268,Express,Ecom Express,Kolkata,Hyderabad,1,1,0,229,0,1,0.1,2.84
+O2269,Standard,Ecom Express,Mumbai,Jaipur,4,6,2,1136,1,3,0.2,1.89
+O2270,Express,BlueDart,Delhi,Kolkata,2,3,1,1928,1,1,0.06,1.15
+O2271,Standard,Delhivery,Hyderabad,Jaipur,3,3,0,232,0,2,0.05,1.0
+O2272,Same-Day,BlueDart,Jaipur,Hyderabad,0,0,0,868,1,1,0.29,1.47
+O2273,Standard,Ecom Express,Mumbai,Lucknow,6,6,0,867,1,3,0.15,2.92
+O2274,Same-Day,BlueDart,Mumbai,Bangalore,1,1,0,1153,1,3,0.15,2.15
+O2275,Same-Day,Ecom Express,Jaipur,Jaipur,1,1,0,1634,1,2,0.12,2.18
+O2276,Same-Day,BlueDart,Chennai,Kolkata,0,3,3,1252,1,3,0.06,2.13
+O2277,Express,Delhivery,Lucknow,Kolkata,1,2,1,693,0,3,0.06,2.1
+O2278,Express,BlueDart,Bangalore,Delhi,3,6,3,296,0,2,0.12,1.24
+O2279,Same-Day,BlueDart,Delhi,Chennai,1,1,0,1497,1,2,0.25,1.28
+O2280,Same-Day,Ecom Express,Bangalore,Kolkata,1,1,0,756,0,1,0.27,2.86
+O2281,Same-Day,Ecom Express,Mumbai,Hyderabad,1,2,1,398,0,1,0.15,1.9
+O2282,Express,Ecom Express,Kolkata,Mumbai,2,3,1,1180,1,1,0.06,1.33
+O2283,Standard,BlueDart,Lucknow,Kolkata,4,5,1,182,0,3,0.19,2.86
+O2284,Express,Delhivery,Hyderabad,Mumbai,1,1,0,1760,1,1,0.14,2.0
+O2285,Express,Delhivery,Jaipur,Chennai,3,3,0,787,0,2,0.19,1.46
+O2286,Express,Ecom Express,Lucknow,Hyderabad,3,3,0,535,0,2,0.16,2.73
+O2287,Standard,Ecom Express,Lucknow,Mumbai,5,6,1,669,0,3,0.21,2.68
+O2288,Standard,BlueDart,Lucknow,Bangalore,4,4,0,367,0,2,0.28,2.97
+O2289,Same-Day,Delhivery,Chennai,Mumbai,1,2,1,1841,1,3,0.27,1.88
+O2290,Express,BlueDart,Delhi,Lucknow,1,1,0,1759,1,2,0.06,2.19
+O2291,Express,BlueDart,Lucknow,Bangalore,1,2,1,220,0,2,0.13,1.9
+O2292,Express,BlueDart,Delhi,Jaipur,1,3,2,1053,1,1,0.15,2.15
+O2293,Standard,Ecom Express,Chennai,Hyderabad,4,4,0,1192,1,3,0.15,2.72
+O2294,Same-Day,Ecom Express,Jaipur,Delhi,0,0,0,1893,1,1,0.1,1.26
+O2295,Express,Ecom Express,Kolkata,Mumbai,2,4,2,1828,1,2,0.06,2.31
+O2296,Standard,Ecom Express,Lucknow,Kolkata,6,6,0,964,1,1,0.22,1.17
+O2297,Same-Day,Delhivery,Jaipur,Delhi,1,2,1,358,0,3,0.29,2.31
+O2298,Same-Day,Delhivery,Hyderabad,Hyderabad,0,0,0,111,0,2,0.12,1.05
+O2299,Express,Delhivery,Jaipur,Kolkata,3,3,0,469,0,3,0.14,1.26
+O2300,Standard,Delhivery,Lucknow,Lucknow,5,5,0,190,0,3,0.26,1.07
+O2301,Express,BlueDart,Hyderabad,Chennai,3,3,0,985,1,1,0.08,2.16
+O2302,Express,Delhivery,Kolkata,Kolkata,2,5,3,1857,1,1,0.29,1.82
+O2303,Same-Day,BlueDart,Jaipur,Chennai,1,1,0,1132,1,1,0.22,1.08
+O2304,Standard,Delhivery,Kolkata,Mumbai,6,9,3,75,0,3,0.15,1.83
+O2305,Express,Delhivery,Lucknow,Jaipur,3,4,1,1079,1,1,0.26,2.4
+O2306,Express,BlueDart,Jaipur,Delhi,1,2,1,1185,1,2,0.13,1.85
+O2307,Same-Day,Delhivery,Bangalore,Bangalore,0,0,0,969,1,1,0.18,1.62
+O2308,Same-Day,BlueDart,Kolkata,Jaipur,0,0,0,173,0,2,0.14,1.54
+O2309,Standard,BlueDart,Jaipur,Mumbai,3,4,1,118,0,2,0.08,1.93
+O2310,Standard,BlueDart,Chennai,Hyderabad,6,7,1,1399,1,2,0.09,1.1
+O2311,Express,Delhivery,Hyderabad,Lucknow,3,6,3,1116,1,1,0.19,1.74
+O2312,Express,BlueDart,Bangalore,Lucknow,3,5,2,1453,1,1,0.27,1.67
+O2313,Express,Ecom Express,Kolkata,Mumbai,1,1,0,553,0,3,0.23,2.24
+O2314,Same-Day,Ecom Express,Lucknow,Delhi,0,1,1,1163,1,3,0.08,2.23
+O2315,Standard,BlueDart,Delhi,Jaipur,4,4,0,1130,1,1,0.11,1.3
+O2316,Same-Day,BlueDart,Delhi,Chennai,0,0,0,1549,1,3,0.28,1.69
+O2317,Express,BlueDart,Mumbai,Chennai,1,1,0,1647,1,2,0.2,2.95
+O2318,Standard,Ecom Express,Lucknow,Bangalore,5,5,0,1878,1,1,0.2,1.32
+O2319,Same-Day,BlueDart,Lucknow,Lucknow,0,1,1,1424,1,3,0.16,2.52
+O2320,Express,Ecom Express,Kolkata,Jaipur,1,1,0,1306,1,2,0.21,1.92
+O2321,Express,Ecom Express,Chennai,Jaipur,1,1,0,696,0,1,0.27,2.73
+O2322,Standard,Ecom Express,Bangalore,Mumbai,4,5,1,558,0,3,0.12,1.59
+O2323,Standard,BlueDart,Kolkata,Jaipur,5,5,0,24,0,2,0.11,1.83
+O2324,Same-Day,Ecom Express,Delhi,Hyderabad,0,2,2,262,0,1,0.11,2.56
+O2325,Standard,BlueDart,Hyderabad,Mumbai,3,6,3,1395,1,1,0.29,1.23
+O2326,Express,BlueDart,Bangalore,Hyderabad,2,3,1,1971,1,1,0.21,2.04
+O2327,Same-Day,Delhivery,Delhi,Hyderabad,1,4,3,923,1,3,0.18,1.48
+O2328,Express,Delhivery,Kolkata,Bangalore,3,3,0,990,1,1,0.27,1.04
+O2329,Express,BlueDart,Kolkata,Jaipur,2,2,0,1497,1,1,0.06,1.41
+O2330,Same-Day,BlueDart,Jaipur,Hyderabad,0,1,1,890,1,1,0.27,2.29
+O2331,Same-Day,Delhivery,Chennai,Delhi,1,3,2,656,0,1,0.21,1.25
+O2332,Express,BlueDart,Hyderabad,Hyderabad,2,2,0,1951,1,3,0.1,2.91
+O2333,Standard,BlueDart,Delhi,Hyderabad,4,4,0,1625,1,3,0.17,2.39
+O2334,Standard,BlueDart,Hyderabad,Hyderabad,4,5,1,509,0,2,0.14,2.26
+O2335,Standard,BlueDart,Chennai,Delhi,4,4,0,317,0,1,0.21,2.08
+O2336,Standard,Delhivery,Jaipur,Hyderabad,4,4,0,715,0,1,0.08,2.64
+O2337,Express,Delhivery,Chennai,Lucknow,2,4,2,1099,1,3,0.3,1.1
+O2338,Express,Ecom Express,Delhi,Jaipur,2,5,3,150,0,2,0.25,2.71
+O2339,Same-Day,Delhivery,Kolkata,Delhi,0,0,0,1205,1,1,0.14,2.49
+O2340,Express,BlueDart,Kolkata,Mumbai,1,1,0,687,0,2,0.29,2.79
+O2341,Same-Day,Delhivery,Jaipur,Lucknow,0,0,0,573,0,1,0.24,1.27
+O2342,Express,Delhivery,Bangalore,Mumbai,3,3,0,890,1,1,0.16,2.88
+O2343,Express,Ecom Express,Kolkata,Mumbai,3,6,3,1156,1,3,0.21,2.19
+O2344,Standard,Ecom Express,Bangalore,Chennai,6,7,1,54,0,3,0.24,1.08
+O2345,Standard,Delhivery,Lucknow,Jaipur,3,3,0,1505,1,3,0.18,2.11
+O2346,Express,Delhivery,Mumbai,Hyderabad,3,3,0,239,0,2,0.29,1.95
+O2347,Same-Day,Ecom Express,Jaipur,Hyderabad,0,0,0,722,0,2,0.3,2.52
+O2348,Same-Day,Delhivery,Lucknow,Lucknow,0,1,1,29,0,1,0.26,2.45
+O2349,Standard,BlueDart,Chennai,Jaipur,4,5,1,943,1,1,0.17,1.45
+O2350,Express,Ecom Express,Kolkata,Jaipur,3,5,2,1561,1,1,0.21,1.69
+O2351,Express,BlueDart,Bangalore,Delhi,1,1,0,537,0,2,0.14,2.03
+O2352,Express,BlueDart,Chennai,Mumbai,2,2,0,1834,1,2,0.16,1.7
+O2353,Standard,BlueDart,Hyderabad,Lucknow,3,3,0,1881,1,3,0.28,1.03
+O2354,Express,Delhivery,Lucknow,Jaipur,2,2,0,1558,1,3,0.17,2.59
+O2355,Express,Ecom Express,Delhi,Kolkata,3,3,0,1146,1,2,0.08,1.57
+O2356,Standard,BlueDart,Chennai,Mumbai,5,8,3,1366,1,2,0.13,2.32
+O2357,Same-Day,Ecom Express,Hyderabad,Jaipur,0,0,0,1368,1,3,0.26,1.8
+O2358,Standard,Delhivery,Bangalore,Jaipur,5,6,1,778,0,1,0.25,2.54
+O2359,Standard,Delhivery,Chennai,Bangalore,3,4,1,601,0,3,0.28,2.97
+O2360,Express,BlueDart,Kolkata,Delhi,3,5,2,1164,1,2,0.15,1.77
+O2361,Standard,Delhivery,Lucknow,Jaipur,6,8,2,326,0,2,0.21,1.11
+O2362,Standard,Ecom Express,Lucknow,Mumbai,5,5,0,84,0,2,0.26,2.95
+O2363,Express,BlueDart,Mumbai,Mumbai,3,5,2,1159,1,3,0.26,1.33
+O2364,Express,Delhivery,Delhi,Bangalore,2,2,0,93,0,1,0.19,1.98
+O2365,Same-Day,Delhivery,Jaipur,Delhi,0,1,1,1200,1,1,0.13,1.95
+O2366,Express,BlueDart,Delhi,Lucknow,1,3,2,35,0,2,0.18,2.67
+O2367,Standard,Delhivery,Hyderabad,Kolkata,6,6,0,162,0,1,0.26,2.74
+O2368,Same-Day,Delhivery,Chennai,Delhi,1,1,0,1297,1,1,0.2,1.5
+O2369,Standard,Delhivery,Mumbai,Chennai,5,6,1,935,1,1,0.25,2.61
+O2370,Same-Day,BlueDart,Jaipur,Chennai,0,0,0,1824,1,3,0.19,2.55
+O2371,Express,Ecom Express,Mumbai,Lucknow,1,1,0,410,0,1,0.29,3.0
+O2372,Express,Delhivery,Kolkata,Jaipur,1,1,0,1433,1,3,0.08,2.75
+O2373,Standard,Ecom Express,Chennai,Jaipur,5,6,1,853,1,1,0.25,2.81
+O2374,Same-Day,Delhivery,Chennai,Delhi,0,2,2,146,0,2,0.24,1.78
+O2375,Same-Day,Delhivery,Lucknow,Bangalore,1,2,1,1233,1,3,0.12,1.44
+O2376,Same-Day,Delhivery,Hyderabad,Mumbai,1,3,2,12,0,3,0.08,1.46
+O2377,Express,BlueDart,Bangalore,Lucknow,2,5,3,150,0,1,0.09,2.52
+O2378,Express,Delhivery,Mumbai,Lucknow,2,2,0,1900,1,3,0.26,1.16
+O2379,Express,BlueDart,Bangalore,Hyderabad,1,1,0,344,0,2,0.28,1.04
+O2380,Express,BlueDart,Chennai,Mumbai,3,4,1,620,0,3,0.11,1.14
+O2381,Standard,BlueDart,Bangalore,Jaipur,3,3,0,1891,1,1,0.16,2.9
+O2382,Express,Delhivery,Lucknow,Jaipur,3,4,1,409,0,3,0.08,2.86
+O2383,Express,Delhivery,Delhi,Kolkata,1,3,2,79,0,1,0.12,1.59
+O2384,Standard,Ecom Express,Chennai,Chennai,4,4,0,482,0,3,0.19,1.81
+O2385,Same-Day,Delhivery,Hyderabad,Mumbai,0,0,0,988,1,3,0.11,1.49
+O2386,Same-Day,BlueDart,Hyderabad,Mumbai,0,1,1,792,0,3,0.15,1.22
+O2387,Standard,BlueDart,Jaipur,Mumbai,6,6,0,448,0,3,0.28,1.55
+O2388,Same-Day,BlueDart,Hyderabad,Kolkata,1,2,1,1737,1,3,0.09,1.96
+O2389,Same-Day,BlueDart,Hyderabad,Jaipur,0,0,0,1900,1,1,0.27,1.96
+O2390,Standard,Delhivery,Lucknow,Delhi,5,6,1,750,0,1,0.26,1.93
+O2391,Standard,Ecom Express,Hyderabad,Hyderabad,5,8,3,55,0,2,0.24,1.79
+O2392,Same-Day,BlueDart,Kolkata,Mumbai,1,3,2,36,0,2,0.17,2.69
+O2393,Standard,Delhivery,Jaipur,Jaipur,6,6,0,1429,1,2,0.29,2.17
+O2394,Same-Day,Delhivery,Jaipur,Chennai,0,0,0,679,0,1,0.05,2.33
+O2395,Express,Ecom Express,Lucknow,Delhi,1,1,0,855,1,1,0.19,2.58
+O2396,Standard,Ecom Express,Delhi,Hyderabad,4,4,0,7,0,3,0.24,2.06
+O2397,Same-Day,Ecom Express,Hyderabad,Jaipur,1,2,1,984,1,1,0.07,2.33
+O2398,Standard,BlueDart,Kolkata,Delhi,6,7,1,1758,1,3,0.15,2.21
+O2399,Standard,Delhivery,Jaipur,Mumbai,3,6,3,846,1,2,0.08,1.77
+O2400,Standard,Ecom Express,Hyderabad,Chennai,6,7,1,1249,1,2,0.28,2.22
+O2401,Standard,Ecom Express,Mumbai,Mumbai,4,4,0,306,0,3,0.19,1.46
+O2402,Same-Day,Delhivery,Delhi,Mumbai,1,1,0,1653,1,2,0.27,1.48
+O2403,Express,Delhivery,Jaipur,Kolkata,1,2,1,1922,1,2,0.11,2.37
+O2404,Same-Day,Delhivery,Chennai,Chennai,1,3,2,1043,1,1,0.11,1.85
+O2405,Same-Day,BlueDart,Kolkata,Hyderabad,1,4,3,985,1,3,0.14,2.35
+O2406,Same-Day,Delhivery,Kolkata,Jaipur,1,1,0,1907,1,3,0.07,1.3
+O2407,Standard,BlueDart,Jaipur,Lucknow,6,7,1,370,0,3,0.06,1.29
+O2408,Standard,Ecom Express,Lucknow,Lucknow,4,4,0,1279,1,2,0.24,2.44
+O2409,Same-Day,Ecom Express,Delhi,Kolkata,1,1,0,1568,1,2,0.23,1.54
+O2410,Standard,Delhivery,Hyderabad,Jaipur,6,7,1,1977,1,3,0.18,1.3
+O2411,Standard,Ecom Express,Chennai,Lucknow,3,4,1,333,0,3,0.26,1.41
+O2412,Standard,Ecom Express,Delhi,Bangalore,3,3,0,1526,1,3,0.29,2.26
+O2413,Standard,BlueDart,Hyderabad,Jaipur,4,4,0,1642,1,1,0.09,1.88
+O2414,Standard,Delhivery,Lucknow,Lucknow,3,3,0,971,1,1,0.19,1.28
+O2415,Same-Day,BlueDart,Hyderabad,Chennai,0,0,0,1008,1,3,0.15,1.13
+O2416,Express,Delhivery,Kolkata,Jaipur,1,2,1,1406,1,1,0.06,1.23
+O2417,Standard,Delhivery,Bangalore,Jaipur,4,4,0,884,1,1,0.1,1.02
+O2418,Standard,Delhivery,Bangalore,Hyderabad,4,4,0,1532,1,3,0.28,2.34
+O2419,Express,Delhivery,Jaipur,Hyderabad,2,5,3,1657,1,3,0.09,2.91
+O2420,Standard,BlueDart,Jaipur,Mumbai,6,9,3,1725,1,3,0.17,2.35
+O2421,Express,Delhivery,Jaipur,Hyderabad,2,4,2,1868,1,1,0.16,1.53
+O2422,Express,Delhivery,Kolkata,Kolkata,3,5,2,683,0,3,0.21,1.98
+O2423,Standard,Delhivery,Mumbai,Delhi,3,4,1,1205,1,2,0.05,2.64
+O2424,Same-Day,Delhivery,Mumbai,Hyderabad,1,4,3,207,0,2,0.26,2.42
+O2425,Standard,Ecom Express,Bangalore,Jaipur,4,4,0,1358,1,2,0.18,2.1
+O2426,Express,Ecom Express,Chennai,Jaipur,2,4,2,1520,1,2,0.3,1.35
+O2427,Standard,Delhivery,Kolkata,Jaipur,3,6,3,242,0,2,0.18,1.87
+O2428,Same-Day,Delhivery,Lucknow,Hyderabad,0,0,0,828,1,2,0.18,1.04
+O2429,Standard,BlueDart,Mumbai,Bangalore,6,6,0,246,0,2,0.26,1.26
+O2430,Express,Delhivery,Bangalore,Kolkata,3,4,1,1501,1,2,0.23,1.71
+O2431,Same-Day,BlueDart,Hyderabad,Bangalore,0,1,1,224,0,1,0.23,2.52
+O2432,Express,BlueDart,Bangalore,Lucknow,3,3,0,218,0,3,0.19,2.78
+O2433,Express,Delhivery,Mumbai,Jaipur,3,4,1,1906,1,1,0.1,2.42
+O2434,Standard,Ecom Express,Mumbai,Bangalore,5,5,0,944,1,1,0.22,2.27
+O2435,Same-Day,Delhivery,Mumbai,Kolkata,1,2,1,580,0,3,0.11,2.67
+O2436,Express,BlueDart,Jaipur,Hyderabad,1,1,0,1302,1,1,0.28,2.71
+O2437,Same-Day,Ecom Express,Kolkata,Mumbai,1,2,1,1812,1,3,0.21,2.89
+O2438,Standard,Ecom Express,Lucknow,Hyderabad,5,6,1,1594,1,2,0.22,1.1
+O2439,Standard,Ecom Express,Chennai,Bangalore,6,7,1,1207,1,2,0.13,2.37
+O2440,Standard,Delhivery,Jaipur,Kolkata,3,3,0,930,1,1,0.15,2.54
+O2441,Express,BlueDart,Bangalore,Bangalore,2,3,1,1168,1,3,0.11,1.68
+O2442,Same-Day,Ecom Express,Jaipur,Jaipur,0,1,1,951,1,2,0.18,1.63
+O2443,Express,BlueDart,Lucknow,Kolkata,3,4,1,1638,1,3,0.13,2.65
+O2444,Standard,Delhivery,Lucknow,Hyderabad,3,4,1,911,1,2,0.29,1.19
+O2445,Standard,Delhivery,Jaipur,Chennai,3,4,1,1012,1,3,0.09,1.38
+O2446,Standard,BlueDart,Delhi,Jaipur,6,6,0,1196,1,3,0.13,2.53
+O2447,Express,Delhivery,Kolkata,Kolkata,2,2,0,405,0,3,0.22,1.66
+O2448,Express,Delhivery,Delhi,Hyderabad,3,6,3,1418,1,1,0.12,1.97
+O2449,Standard,Ecom Express,Lucknow,Delhi,5,5,0,647,0,1,0.28,1.3
+O2450,Standard,BlueDart,Kolkata,Jaipur,4,5,1,861,1,3,0.12,1.94
+O2451,Same-Day,Delhivery,Delhi,Bangalore,0,0,0,1903,1,2,0.22,2.51
+O2452,Same-Day,Delhivery,Delhi,Delhi,1,1,0,216,0,3,0.21,2.31
+O2453,Express,Delhivery,Bangalore,Lucknow,2,2,0,1146,1,2,0.14,1.65
+O2454,Express,Delhivery,Lucknow,Hyderabad,1,4,3,1450,1,2,0.17,2.08
+O2455,Express,Delhivery,Chennai,Lucknow,1,4,3,1185,1,3,0.26,1.07
+O2456,Same-Day,Delhivery,Jaipur,Bangalore,1,4,3,1481,1,3,0.05,2.89
+O2457,Express,Delhivery,Lucknow,Bangalore,2,3,1,1390,1,3,0.06,2.29
+O2458,Standard,Ecom Express,Hyderabad,Lucknow,4,4,0,84,0,2,0.13,1.07
+O2459,Standard,Ecom Express,Hyderabad,Chennai,3,3,0,1133,1,3,0.25,2.18
+O2460,Same-Day,Delhivery,Mumbai,Lucknow,1,1,0,1608,1,1,0.26,1.45
+O2461,Standard,Delhivery,Hyderabad,Kolkata,3,4,1,1843,1,3,0.17,2.5
+O2462,Same-Day,Ecom Express,Lucknow,Mumbai,1,3,2,1010,1,1,0.27,2.87
+O2463,Same-Day,BlueDart,Bangalore,Chennai,0,1,1,1971,1,2,0.11,2.41
+O2464,Express,Ecom Express,Jaipur,Jaipur,2,3,1,841,1,3,0.26,2.29
+O2465,Standard,Ecom Express,Lucknow,Chennai,5,8,3,949,1,3,0.11,1.99
+O2466,Same-Day,BlueDart,Lucknow,Mumbai,1,2,1,858,1,1,0.3,1.17
+O2467,Standard,Delhivery,Delhi,Chennai,5,8,3,322,0,3,0.25,1.29
+O2468,Same-Day,Delhivery,Bangalore,Kolkata,1,1,0,531,0,2,0.1,1.99
+O2469,Express,Ecom Express,Bangalore,Lucknow,3,3,0,1473,1,1,0.07,2.68
+O2470,Same-Day,BlueDart,Hyderabad,Jaipur,1,3,2,1307,1,1,0.27,2.52
+O2471,Express,BlueDart,Bangalore,Hyderabad,3,3,0,1409,1,1,0.19,1.17
+O2472,Same-Day,Delhivery,Lucknow,Lucknow,1,1,0,10,0,1,0.22,2.56
+O2473,Standard,Delhivery,Bangalore,Chennai,3,3,0,987,1,2,0.26,1.12
+O2474,Express,BlueDart,Delhi,Kolkata,3,5,2,911,1,3,0.28,1.82
+O2475,Standard,Delhivery,Mumbai,Mumbai,3,3,0,109,0,2,0.19,1.72
+O2476,Express,Delhivery,Hyderabad,Chennai,3,3,0,596,0,3,0.22,1.35
+O2477,Express,Ecom Express,Lucknow,Mumbai,2,3,1,1857,1,2,0.21,2.35
+O2478,Express,BlueDart,Chennai,Kolkata,2,3,1,1223,1,2,0.26,1.33
+O2479,Express,BlueDart,Mumbai,Chennai,3,6,3,1333,1,2,0.12,1.7
+O2480,Standard,Ecom Express,Hyderabad,Jaipur,4,4,0,944,1,2,0.25,2.59
+O2481,Express,BlueDart,Bangalore,Bangalore,3,6,3,240,0,3,0.13,1.99
+O2482,Standard,Ecom Express,Jaipur,Mumbai,5,5,0,1071,1,3,0.18,1.55
+O2483,Express,Ecom Express,Bangalore,Mumbai,3,3,0,825,1,3,0.14,1.51
+O2484,Same-Day,BlueDart,Hyderabad,Bangalore,1,4,3,433,0,2,0.09,1.88
+O2485,Standard,Delhivery,Chennai,Hyderabad,5,7,2,1644,1,2,0.22,2.79
+O2486,Standard,Ecom Express,Jaipur,Hyderabad,4,4,0,161,0,1,0.18,1.42
+O2487,Express,Delhivery,Bangalore,Bangalore,3,4,1,1923,1,1,0.09,2.72
+O2488,Same-Day,BlueDart,Chennai,Lucknow,0,1,1,22,0,3,0.26,2.65
+O2489,Same-Day,BlueDart,Lucknow,Kolkata,0,1,1,1988,1,3,0.11,2.46
+O2490,Express,BlueDart,Mumbai,Lucknow,1,1,0,1200,1,2,0.23,2.84
+O2491,Express,Delhivery,Chennai,Bangalore,1,1,0,1027,1,2,0.25,2.24
+O2492,Same-Day,Ecom Express,Lucknow,Kolkata,1,3,2,1212,1,2,0.13,1.56
+O2493,Standard,Ecom Express,Delhi,Hyderabad,5,5,0,13,0,3,0.28,2.98
+O2494,Express,Ecom Express,Mumbai,Kolkata,1,1,0,1429,1,3,0.2,1.5
+O2495,Standard,BlueDart,Chennai,Hyderabad,5,6,1,1728,1,2,0.2,1.84
+O2496,Express,Delhivery,Delhi,Delhi,2,2,0,1140,1,3,0.28,2.74
+O2497,Same-Day,BlueDart,Hyderabad,Hyderabad,1,1,0,1066,1,1,0.14,1.26
+O2498,Standard,Ecom Express,Delhi,Mumbai,4,4,0,1719,1,3,0.23,2.82
+O2499,Express,BlueDart,Hyderabad,Mumbai,2,4,2,1791,1,1,0.25,1.21
+O2500,Standard,Ecom Express,Lucknow,Lucknow,6,8,2,1120,1,3,0.24,1.09
+O2501,Express,BlueDart,Jaipur,Mumbai,2,2,0,1280,1,2,0.11,1.87
+O2502,Standard,Delhivery,Jaipur,Hyderabad,4,4,0,698,0,2,0.2,2.82
+O2503,Same-Day,Delhivery,Chennai,Kolkata,1,1,0,364,0,2,0.27,1.66
+O2504,Standard,Delhivery,Hyderabad,Hyderabad,6,6,0,191,0,3,0.09,1.03
+O2505,Standard,BlueDart,Jaipur,Lucknow,6,6,0,1908,1,1,0.16,2.08
+O2506,Same-Day,Delhivery,Hyderabad,Chennai,1,1,0,1518,1,1,0.05,2.99
+O2507,Standard,Ecom Express,Hyderabad,Hyderabad,3,3,0,837,1,1,0.12,2.27
+O2508,Express,Ecom Express,Delhi,Mumbai,2,3,1,360,0,2,0.17,2.43
+O2509,Same-Day,Delhivery,Bangalore,Lucknow,1,3,2,1450,1,1,0.24,1.44
+O2510,Express,BlueDart,Delhi,Jaipur,2,2,0,1894,1,2,0.06,2.45
+O2511,Express,Ecom Express,Hyderabad,Lucknow,3,3,0,1241,1,3,0.25,2.78
+O2512,Standard,Ecom Express,Mumbai,Chennai,6,7,1,981,1,2,0.25,1.84
+O2513,Same-Day,BlueDart,Jaipur,Jaipur,1,2,1,1728,1,3,0.05,2.93
+O2514,Same-Day,Delhivery,Delhi,Chennai,1,2,1,1027,1,3,0.09,2.7
+O2515,Express,Ecom Express,Lucknow,Hyderabad,2,2,0,1099,1,1,0.05,2.7
+O2516,Express,BlueDart,Delhi,Chennai,3,3,0,1725,1,2,0.12,1.98
+O2517,Standard,Ecom Express,Bangalore,Mumbai,3,5,2,179,0,1,0.26,1.49
+O2518,Same-Day,BlueDart,Delhi,Hyderabad,1,1,0,191,0,3,0.11,1.71
+O2519,Standard,Delhivery,Kolkata,Mumbai,3,3,0,1112,1,1,0.1,1.56
+O2520,Standard,BlueDart,Mumbai,Chennai,6,8,2,1010,1,2,0.28,1.73
+O2521,Same-Day,BlueDart,Kolkata,Mumbai,1,1,0,728,0,3,0.19,2.95
+O2522,Same-Day,Ecom Express,Mumbai,Jaipur,1,3,2,279,0,2,0.08,2.03
+O2523,Express,Ecom Express,Kolkata,Hyderabad,1,1,0,1417,1,1,0.25,1.12
+O2524,Standard,Delhivery,Delhi,Jaipur,6,9,3,1336,1,1,0.12,2.82
+O2525,Standard,Ecom Express,Delhi,Mumbai,4,4,0,87,0,2,0.21,2.53
+O2526,Same-Day,Delhivery,Kolkata,Chennai,0,2,2,619,0,3,0.26,1.34
+O2527,Standard,BlueDart,Hyderabad,Hyderabad,4,4,0,1198,1,2,0.21,2.59
+O2528,Standard,Ecom Express,Delhi,Hyderabad,3,4,1,745,0,2,0.17,1.63
+O2529,Express,Delhivery,Hyderabad,Kolkata,3,3,0,1875,1,1,0.13,1.81
+O2530,Express,Delhivery,Chennai,Mumbai,3,4,1,1977,1,3,0.23,1.95
+O2531,Same-Day,Ecom Express,Jaipur,Mumbai,0,3,3,1832,1,1,0.1,1.48
+O2532,Standard,Delhivery,Mumbai,Mumbai,3,4,1,1813,1,1,0.06,1.58
+O2533,Same-Day,Ecom Express,Mumbai,Chennai,0,3,3,1143,1,3,0.14,1.82
+O2534,Same-Day,Ecom Express,Hyderabad,Kolkata,0,0,0,1055,1,1,0.13,2.93
+O2535,Same-Day,BlueDart,Mumbai,Mumbai,1,1,0,1006,1,2,0.07,2.72
+O2536,Standard,Delhivery,Mumbai,Kolkata,6,7,1,600,0,1,0.23,2.56
+O2537,Express,BlueDart,Lucknow,Hyderabad,1,1,0,1967,1,2,0.14,2.65
+O2538,Same-Day,BlueDart,Hyderabad,Lucknow,1,2,1,316,0,1,0.15,2.67
+O2539,Standard,Ecom Express,Bangalore,Jaipur,3,4,1,1340,1,2,0.24,2.38
+O2540,Express,BlueDart,Bangalore,Jaipur,1,1,0,128,0,1,0.14,2.22
+O2541,Same-Day,Delhivery,Hyderabad,Kolkata,0,0,0,1768,1,3,0.17,1.06
+O2542,Standard,Delhivery,Chennai,Mumbai,3,4,1,1192,1,3,0.06,1.84
+O2543,Standard,BlueDart,Chennai,Chennai,6,6,0,696,0,2,0.27,2.08
+O2544,Standard,Ecom Express,Bangalore,Hyderabad,4,4,0,963,1,3,0.17,1.28
+O2545,Express,BlueDart,Kolkata,Kolkata,3,4,1,1941,1,2,0.3,1.23
+O2546,Standard,Delhivery,Jaipur,Chennai,5,5,0,1068,1,2,0.19,2.82
+O2547,Same-Day,Ecom Express,Bangalore,Jaipur,0,3,3,302,0,1,0.11,1.47
+O2548,Express,Ecom Express,Jaipur,Jaipur,2,2,0,1845,1,3,0.17,2.42
+O2549,Standard,BlueDart,Kolkata,Bangalore,3,3,0,824,1,2,0.27,2.15
+O2550,Same-Day,Delhivery,Chennai,Jaipur,1,1,0,14,0,2,0.25,1.74
+O2551,Standard,BlueDart,Jaipur,Hyderabad,6,6,0,1831,1,1,0.08,1.77
+O2552,Same-Day,Delhivery,Kolkata,Jaipur,0,2,2,823,1,2,0.13,2.26
+O2553,Express,Ecom Express,Chennai,Bangalore,3,4,1,1991,1,1,0.17,1.18
+O2554,Express,BlueDart,Kolkata,Kolkata,3,3,0,1409,1,3,0.15,1.85
+O2555,Same-Day,Delhivery,Lucknow,Bangalore,1,2,1,1322,1,1,0.29,2.94
+O2556,Standard,BlueDart,Hyderabad,Mumbai,3,3,0,1339,1,2,0.25,1.46
+O2557,Same-Day,Ecom Express,Hyderabad,Chennai,1,2,1,48,0,2,0.06,2.43
+O2558,Same-Day,Ecom Express,Chennai,Delhi,0,0,0,147,0,1,0.11,2.63
+O2559,Same-Day,Delhivery,Jaipur,Bangalore,1,1,0,1669,1,1,0.25,2.86
+O2560,Same-Day,Ecom Express,Kolkata,Lucknow,0,1,1,629,0,2,0.12,2.5
+O2561,Standard,BlueDart,Jaipur,Mumbai,6,7,1,1730,1,1,0.17,1.34
+O2562,Same-Day,Delhivery,Chennai,Jaipur,0,0,0,1332,1,2,0.17,2.32
+O2563,Standard,BlueDart,Hyderabad,Delhi,5,6,1,1385,1,3,0.11,1.32
+O2564,Same-Day,Delhivery,Lucknow,Jaipur,0,0,0,113,0,3,0.29,1.21
+O2565,Express,Delhivery,Chennai,Jaipur,1,3,2,1515,1,3,0.13,1.56
+O2566,Same-Day,Ecom Express,Hyderabad,Mumbai,1,2,1,1589,1,3,0.1,1.34
+O2567,Express,Delhivery,Bangalore,Chennai,3,4,1,1141,1,1,0.15,1.65
+O2568,Standard,Ecom Express,Mumbai,Hyderabad,5,5,0,1065,1,3,0.27,2.92
+O2569,Standard,Delhivery,Mumbai,Bangalore,3,3,0,1003,1,2,0.08,1.6
+O2570,Same-Day,Ecom Express,Hyderabad,Jaipur,0,1,1,1987,1,1,0.24,1.91
+O2571,Standard,Delhivery,Lucknow,Delhi,5,5,0,1991,1,3,0.22,2.94
+O2572,Standard,Delhivery,Delhi,Jaipur,3,3,0,965,1,2,0.11,1.67
+O2573,Same-Day,Ecom Express,Bangalore,Mumbai,0,2,2,1551,1,3,0.15,1.81
+O2574,Standard,BlueDart,Lucknow,Delhi,4,7,3,1702,1,1,0.15,1.81
+O2575,Standard,Ecom Express,Lucknow,Delhi,3,5,2,391,0,1,0.26,2.5
+O2576,Same-Day,Ecom Express,Jaipur,Hyderabad,0,2,2,1085,1,3,0.23,1.87
+O2577,Same-Day,Ecom Express,Hyderabad,Jaipur,0,1,1,1173,1,2,0.18,2.19
+O2578,Same-Day,BlueDart,Delhi,Chennai,1,1,0,1112,1,3,0.15,1.12
+O2579,Express,BlueDart,Kolkata,Kolkata,2,3,1,277,0,3,0.12,2.55
+O2580,Same-Day,BlueDart,Bangalore,Kolkata,1,2,1,1025,1,1,0.1,1.67
+O2581,Express,Delhivery,Jaipur,Hyderabad,3,5,2,467,0,3,0.29,1.51
+O2582,Same-Day,BlueDart,Bangalore,Hyderabad,0,0,0,950,1,3,0.15,1.67
+O2583,Standard,BlueDart,Kolkata,Jaipur,5,5,0,957,1,1,0.08,2.42
+O2584,Standard,Delhivery,Jaipur,Jaipur,5,7,2,1726,1,3,0.28,1.82
+O2585,Standard,Ecom Express,Kolkata,Chennai,4,4,0,533,0,3,0.15,2.55
+O2586,Express,Ecom Express,Hyderabad,Mumbai,3,3,0,366,0,1,0.06,2.62
+O2587,Same-Day,BlueDart,Bangalore,Delhi,1,1,0,296,0,1,0.24,1.02
+O2588,Standard,BlueDart,Mumbai,Hyderabad,4,4,0,1097,1,1,0.14,1.97
+O2589,Standard,Ecom Express,Kolkata,Hyderabad,6,9,3,211,0,3,0.22,1.96
+O2590,Standard,Ecom Express,Kolkata,Lucknow,6,7,1,610,0,2,0.13,2.66
+O2591,Same-Day,Delhivery,Jaipur,Hyderabad,0,2,2,954,1,2,0.06,1.41
+O2592,Same-Day,Ecom Express,Hyderabad,Lucknow,1,1,0,1074,1,2,0.23,1.27
+O2593,Standard,BlueDart,Hyderabad,Lucknow,6,6,0,1261,1,3,0.1,2.39
+O2594,Same-Day,Ecom Express,Jaipur,Mumbai,1,3,2,1556,1,2,0.25,2.56
+O2595,Express,Ecom Express,Jaipur,Hyderabad,1,1,0,816,1,3,0.22,1.07
+O2596,Standard,Ecom Express,Jaipur,Kolkata,5,5,0,1702,1,1,0.09,2.17
+O2597,Same-Day,BlueDart,Jaipur,Lucknow,1,1,0,384,0,1,0.09,1.65
+O2598,Standard,BlueDart,Kolkata,Jaipur,6,8,2,471,0,3,0.12,1.4
+O2599,Express,BlueDart,Hyderabad,Lucknow,2,2,0,1599,1,1,0.17,2.03
+O2600,Standard,BlueDart,Hyderabad,Lucknow,3,3,0,1361,1,2,0.22,1.44
+O2601,Same-Day,Delhivery,Chennai,Hyderabad,0,0,0,353,0,3,0.16,2.13
+O2602,Standard,BlueDart,Jaipur,Jaipur,3,4,1,73,0,2,0.23,2.45
+O2603,Express,Ecom Express,Hyderabad,Lucknow,2,2,0,1897,1,3,0.17,1.71
+O2604,Express,Ecom Express,Bangalore,Mumbai,1,1,0,1616,1,3,0.1,1.19
+O2605,Same-Day,BlueDart,Hyderabad,Jaipur,0,0,0,34,0,3,0.12,1.87
+O2606,Same-Day,Ecom Express,Bangalore,Hyderabad,0,0,0,1110,1,3,0.24,2.78
+O2607,Same-Day,Delhivery,Hyderabad,Kolkata,1,1,0,801,1,2,0.19,2.79
+O2608,Same-Day,BlueDart,Kolkata,Jaipur,0,0,0,916,1,1,0.2,1.81
+O2609,Express,Delhivery,Hyderabad,Mumbai,1,1,0,1534,1,1,0.18,2.14
+O2610,Same-Day,BlueDart,Hyderabad,Jaipur,0,2,2,548,0,2,0.11,1.81
+O2611,Same-Day,Delhivery,Lucknow,Mumbai,1,1,0,801,1,1,0.05,2.09
+O2612,Express,Ecom Express,Bangalore,Chennai,2,3,1,6,0,1,0.17,1.52
+O2613,Same-Day,Delhivery,Mumbai,Hyderabad,0,3,3,877,1,2,0.06,2.51
+O2614,Same-Day,Ecom Express,Mumbai,Hyderabad,1,2,1,1459,1,3,0.19,2.28
+O2615,Same-Day,Delhivery,Jaipur,Kolkata,0,0,0,445,0,3,0.23,1.8
+O2616,Same-Day,Delhivery,Kolkata,Chennai,0,2,2,1574,1,2,0.1,2.04
+O2617,Express,Delhivery,Kolkata,Bangalore,2,2,0,198,0,3,0.06,2.5
+O2618,Same-Day,Ecom Express,Kolkata,Jaipur,0,3,3,393,0,1,0.27,1.67
+O2619,Same-Day,Ecom Express,Jaipur,Chennai,1,2,1,1095,1,3,0.17,1.97
+O2620,Standard,Ecom Express,Kolkata,Bangalore,4,4,0,1453,1,1,0.17,2.82
+O2621,Standard,Delhivery,Chennai,Lucknow,4,5,1,1669,1,3,0.14,2.92
+O2622,Standard,Delhivery,Lucknow,Chennai,4,4,0,983,1,2,0.14,2.11
+O2623,Same-Day,Delhivery,Delhi,Jaipur,0,0,0,800,0,2,0.25,2.48
+O2624,Same-Day,BlueDart,Mumbai,Chennai,1,1,0,1936,1,1,0.08,2.11
+O2625,Same-Day,Ecom Express,Hyderabad,Delhi,0,0,0,1773,1,3,0.2,2.22
+O2626,Express,BlueDart,Delhi,Mumbai,3,4,1,1796,1,1,0.16,1.3
+O2627,Express,Ecom Express,Mumbai,Chennai,3,3,0,1352,1,1,0.27,2.41
+O2628,Standard,Delhivery,Mumbai,Chennai,5,6,1,740,0,1,0.09,1.1
+O2629,Express,Ecom Express,Bangalore,Jaipur,1,3,2,1933,1,2,0.11,2.59
+O2630,Same-Day,Delhivery,Hyderabad,Kolkata,1,1,0,1862,1,2,0.16,1.65
+O2631,Standard,Ecom Express,Bangalore,Chennai,5,5,0,1702,1,2,0.26,2.38
+O2632,Same-Day,Ecom Express,Kolkata,Jaipur,0,3,3,1406,1,3,0.21,1.97
+O2633,Same-Day,BlueDart,Lucknow,Hyderabad,0,3,3,599,0,2,0.09,2.7
+O2634,Standard,BlueDart,Chennai,Mumbai,5,5,0,404,0,2,0.08,2.96
+O2635,Express,Delhivery,Lucknow,Lucknow,3,5,2,1861,1,2,0.07,2.52
+O2636,Standard,Delhivery,Chennai,Bangalore,4,4,0,636,0,2,0.27,2.19
+O2637,Standard,Delhivery,Lucknow,Jaipur,3,3,0,815,1,3,0.17,2.37
+O2638,Standard,Delhivery,Kolkata,Chennai,4,4,0,182,0,1,0.12,2.92
+O2639,Standard,Ecom Express,Chennai,Hyderabad,5,8,3,1531,1,3,0.15,1.13
+O2640,Standard,Delhivery,Kolkata,Hyderabad,5,5,0,1864,1,1,0.24,1.38
+O2641,Standard,Ecom Express,Hyderabad,Jaipur,5,6,1,1259,1,2,0.22,1.48
+O2642,Same-Day,BlueDart,Hyderabad,Lucknow,0,1,1,1813,1,3,0.08,2.63
+O2643,Standard,Delhivery,Lucknow,Hyderabad,5,6,1,1427,1,2,0.2,2.09
+O2644,Standard,Delhivery,Mumbai,Jaipur,6,7,1,1910,1,1,0.17,2.88
+O2645,Standard,Ecom Express,Jaipur,Jaipur,3,3,0,1971,1,1,0.27,1.33
+O2646,Standard,BlueDart,Chennai,Hyderabad,5,6,1,745,0,2,0.27,1.83
+O2647,Standard,BlueDart,Delhi,Jaipur,4,6,2,1538,1,2,0.13,2.5
+O2648,Standard,Ecom Express,Delhi,Jaipur,3,3,0,1846,1,3,0.06,1.09
+O2649,Same-Day,Delhivery,Bangalore,Mumbai,0,0,0,1051,1,2,0.16,1.95
+O2650,Standard,Ecom Express,Lucknow,Mumbai,6,8,2,617,0,1,0.23,1.26
+O2651,Express,Delhivery,Kolkata,Lucknow,3,6,3,742,0,3,0.08,1.26
+O2652,Same-Day,BlueDart,Hyderabad,Bangalore,0,3,3,531,0,1,0.21,1.24
+O2653,Standard,Ecom Express,Lucknow,Chennai,6,8,2,1912,1,2,0.12,1.41
+O2654,Standard,Delhivery,Chennai,Chennai,5,6,1,469,0,3,0.28,1.33
+O2655,Standard,Delhivery,Chennai,Chennai,4,6,2,1626,1,2,0.2,1.99
+O2656,Express,Ecom Express,Mumbai,Mumbai,3,3,0,145,0,2,0.18,1.11
+O2657,Same-Day,Delhivery,Lucknow,Bangalore,0,0,0,1027,1,2,0.29,1.44
+O2658,Standard,Delhivery,Hyderabad,Jaipur,4,5,1,245,0,3,0.13,2.11
+O2659,Standard,Ecom Express,Hyderabad,Bangalore,5,6,1,1503,1,2,0.19,1.62
+O2660,Express,BlueDart,Kolkata,Delhi,1,3,2,457,0,2,0.05,2.34
+O2661,Same-Day,Delhivery,Delhi,Hyderabad,0,0,0,251,0,1,0.2,2.86
+O2662,Same-Day,BlueDart,Chennai,Bangalore,1,1,0,1566,1,3,0.25,2.2
+O2663,Same-Day,Delhivery,Jaipur,Lucknow,1,1,0,1172,1,2,0.22,1.79
+O2664,Standard,Delhivery,Kolkata,Jaipur,5,7,2,1343,1,3,0.25,1.55
+O2665,Express,BlueDart,Delhi,Chennai,2,5,3,724,0,1,0.06,1.78
+O2666,Same-Day,Ecom Express,Hyderabad,Kolkata,0,0,0,633,0,2,0.11,2.9
+O2667,Express,Ecom Express,Kolkata,Chennai,3,5,2,721,0,3,0.28,1.33
+O2668,Standard,Delhivery,Jaipur,Bangalore,4,4,0,1567,1,2,0.19,1.35
+O2669,Express,BlueDart,Jaipur,Lucknow,2,3,1,754,0,1,0.1,2.55
+O2670,Same-Day,Ecom Express,Bangalore,Chennai,1,1,0,455,0,3,0.21,2.6
+O2671,Standard,BlueDart,Mumbai,Chennai,3,4,1,1396,1,2,0.27,1.07
+O2672,Express,BlueDart,Chennai,Hyderabad,2,2,0,1081,1,1,0.24,1.83
+O2673,Express,Delhivery,Jaipur,Bangalore,3,5,2,1241,1,1,0.25,1.77
+O2674,Same-Day,BlueDart,Hyderabad,Jaipur,0,0,0,706,0,3,0.22,1.05
+O2675,Same-Day,Delhivery,Jaipur,Delhi,0,0,0,797,0,1,0.06,1.36
+O2676,Standard,BlueDart,Lucknow,Delhi,4,4,0,122,0,1,0.27,2.82
+O2677,Same-Day,BlueDart,Lucknow,Jaipur,1,2,1,1270,1,1,0.08,2.36
+O2678,Same-Day,Delhivery,Jaipur,Delhi,1,1,0,426,0,1,0.25,2.17
+O2679,Same-Day,Ecom Express,Kolkata,Bangalore,1,2,1,1549,1,3,0.2,1.4
+O2680,Standard,BlueDart,Lucknow,Hyderabad,4,5,1,1756,1,1,0.09,1.4
+O2681,Same-Day,BlueDart,Kolkata,Hyderabad,1,3,2,1660,1,3,0.16,2.48
+O2682,Express,BlueDart,Hyderabad,Jaipur,2,2,0,1529,1,2,0.26,2.81
+O2683,Standard,Delhivery,Bangalore,Delhi,5,5,0,499,0,3,0.23,2.36
+O2684,Same-Day,Delhivery,Lucknow,Mumbai,1,3,2,686,0,2,0.12,2.73
+O2685,Standard,BlueDart,Jaipur,Delhi,4,4,0,411,0,3,0.1,2.44
+O2686,Express,BlueDart,Bangalore,Jaipur,3,3,0,1079,1,2,0.11,1.42
+O2687,Standard,Delhivery,Bangalore,Kolkata,5,5,0,1722,1,3,0.27,1.82
+O2688,Standard,BlueDart,Lucknow,Chennai,4,6,2,1829,1,2,0.21,1.53
+O2689,Standard,Ecom Express,Lucknow,Lucknow,6,7,1,407,0,2,0.08,2.19
+O2690,Standard,BlueDart,Jaipur,Delhi,3,5,2,48,0,1,0.17,2.07
+O2691,Express,Ecom Express,Lucknow,Chennai,3,4,1,1809,1,1,0.18,2.99
+O2692,Standard,BlueDart,Chennai,Mumbai,5,5,0,920,1,3,0.29,2.06
+O2693,Same-Day,BlueDart,Bangalore,Mumbai,0,0,0,844,1,3,0.15,2.06
+O2694,Same-Day,Delhivery,Hyderabad,Mumbai,0,1,1,1933,1,3,0.15,1.19
+O2695,Express,Ecom Express,Chennai,Hyderabad,2,5,3,750,0,3,0.08,2.47
+O2696,Standard,Delhivery,Lucknow,Jaipur,5,5,0,1882,1,3,0.07,1.09
+O2697,Express,BlueDart,Hyderabad,Delhi,2,5,3,88,0,3,0.22,1.6
+O2698,Standard,BlueDart,Lucknow,Jaipur,4,6,2,525,0,1,0.16,2.73
+O2699,Express,Ecom Express,Bangalore,Lucknow,3,4,1,269,0,3,0.05,1.24
+O2700,Express,Delhivery,Jaipur,Mumbai,2,2,0,508,0,2,0.24,1.65
+O2701,Standard,Delhivery,Hyderabad,Jaipur,5,5,0,1525,1,1,0.29,1.07
+O2702,Express,Delhivery,Mumbai,Hyderabad,1,4,3,871,1,3,0.14,1.41
+O2703,Same-Day,Delhivery,Delhi,Chennai,1,1,0,785,0,1,0.14,2.93
+O2704,Express,BlueDart,Chennai,Bangalore,3,3,0,1321,1,1,0.25,2.37
+O2705,Same-Day,BlueDart,Bangalore,Bangalore,1,1,0,445,0,1,0.12,1.4
+O2706,Standard,Delhivery,Bangalore,Delhi,3,5,2,621,0,3,0.11,2.94
+O2707,Express,BlueDart,Lucknow,Mumbai,1,4,3,1879,1,3,0.16,1.41
+O2708,Same-Day,Delhivery,Kolkata,Hyderabad,1,1,0,489,0,1,0.18,1.97
+O2709,Express,Delhivery,Kolkata,Bangalore,1,1,0,1206,1,1,0.27,1.73
+O2710,Same-Day,Ecom Express,Bangalore,Lucknow,0,1,1,694,0,1,0.06,2.03
+O2711,Express,BlueDart,Mumbai,Chennai,2,2,0,1524,1,3,0.25,1.03
+O2712,Same-Day,BlueDart,Bangalore,Hyderabad,0,1,1,1817,1,3,0.19,2.31
+O2713,Standard,BlueDart,Kolkata,Hyderabad,5,5,0,59,0,2,0.25,2.2
+O2714,Standard,Delhivery,Delhi,Mumbai,3,4,1,1044,1,2,0.16,1.66
+O2715,Express,BlueDart,Chennai,Hyderabad,2,3,1,1181,1,3,0.08,1.43
+O2716,Express,Delhivery,Lucknow,Lucknow,3,6,3,967,1,1,0.23,2.75
+O2717,Same-Day,Ecom Express,Mumbai,Mumbai,1,2,1,950,1,2,0.16,1.39
+O2718,Standard,BlueDart,Bangalore,Chennai,5,5,0,750,0,1,0.24,1.86
+O2719,Express,Delhivery,Lucknow,Delhi,1,3,2,1607,1,1,0.22,1.79
+O2720,Same-Day,Ecom Express,Bangalore,Hyderabad,0,2,2,570,0,1,0.13,2.92
+O2721,Same-Day,BlueDart,Delhi,Mumbai,1,2,1,1823,1,1,0.16,2.12
+O2722,Express,BlueDart,Jaipur,Mumbai,3,5,2,1992,1,3,0.06,2.64
+O2723,Same-Day,Ecom Express,Bangalore,Hyderabad,0,3,3,66,0,2,0.1,1.95
+O2724,Express,Ecom Express,Lucknow,Jaipur,1,1,0,196,0,3,0.11,1.78
+O2725,Same-Day,Ecom Express,Kolkata,Chennai,1,1,0,78,0,3,0.22,2.96
+O2726,Same-Day,Delhivery,Delhi,Delhi,0,1,1,195,0,1,0.09,1.57
+O2727,Standard,Delhivery,Delhi,Hyderabad,6,7,1,502,0,1,0.22,2.78
+O2728,Standard,Delhivery,Chennai,Mumbai,3,5,2,1151,1,2,0.29,1.9
+O2729,Standard,Delhivery,Bangalore,Kolkata,5,5,0,1808,1,3,0.11,2.03
+O2730,Express,Delhivery,Jaipur,Jaipur,2,3,1,603,0,2,0.12,1.06
+O2731,Standard,BlueDart,Hyderabad,Kolkata,6,7,1,1232,1,2,0.2,2.3
+O2732,Express,Delhivery,Chennai,Mumbai,2,2,0,563,0,2,0.18,2.33
+O2733,Same-Day,BlueDart,Kolkata,Hyderabad,1,1,0,515,0,2,0.15,2.31
+O2734,Express,Ecom Express,Jaipur,Hyderabad,3,3,0,1559,1,2,0.24,2.18
+O2735,Same-Day,Delhivery,Hyderabad,Hyderabad,0,0,0,1724,1,3,0.24,2.26
+O2736,Express,Delhivery,Lucknow,Delhi,1,1,0,385,0,1,0.11,2.41
+O2737,Same-Day,Ecom Express,Kolkata,Hyderabad,1,1,0,1012,1,2,0.18,1.1
+O2738,Same-Day,Ecom Express,Jaipur,Jaipur,1,1,0,1388,1,3,0.25,2.83
+O2739,Same-Day,BlueDart,Mumbai,Lucknow,0,0,0,115,0,3,0.08,1.79
+O2740,Express,BlueDart,Hyderabad,Bangalore,3,6,3,545,0,1,0.17,1.74
+O2741,Express,Delhivery,Jaipur,Jaipur,1,3,2,91,0,2,0.11,2.43
+O2742,Same-Day,BlueDart,Bangalore,Mumbai,0,1,1,1175,1,2,0.15,2.25
+O2743,Standard,Delhivery,Delhi,Delhi,3,3,0,1286,1,1,0.23,2.0
+O2744,Express,Delhivery,Chennai,Hyderabad,3,4,1,1215,1,1,0.1,2.1
+O2745,Standard,Delhivery,Delhi,Hyderabad,6,9,3,93,0,3,0.07,1.53
+O2746,Same-Day,BlueDart,Bangalore,Kolkata,0,1,1,688,0,3,0.1,2.23
+O2747,Express,BlueDart,Bangalore,Kolkata,3,3,0,1687,1,3,0.17,2.46
+O2748,Standard,Delhivery,Mumbai,Mumbai,4,5,1,1842,1,2,0.19,1.91
+O2749,Express,Delhivery,Chennai,Hyderabad,1,1,0,1984,1,1,0.07,1.25
+O2750,Express,Delhivery,Delhi,Chennai,2,2,0,724,0,1,0.1,1.17
+O2751,Express,BlueDart,Kolkata,Mumbai,1,2,1,518,0,1,0.16,2.88
+O2752,Express,Ecom Express,Kolkata,Bangalore,3,6,3,122,0,1,0.05,2.78
+O2753,Express,Delhivery,Mumbai,Kolkata,3,5,2,10,0,1,0.07,2.05
+O2754,Standard,Delhivery,Hyderabad,Mumbai,4,5,1,752,0,3,0.28,1.03
+O2755,Same-Day,BlueDart,Kolkata,Jaipur,1,1,0,1988,1,2,0.25,2.79
+O2756,Same-Day,Delhivery,Jaipur,Delhi,0,3,3,70,0,3,0.12,2.5
+O2757,Standard,Delhivery,Mumbai,Jaipur,4,4,0,1481,1,2,0.23,2.09
+O2758,Standard,Ecom Express,Hyderabad,Lucknow,5,5,0,806,1,1,0.3,1.41
+O2759,Express,Ecom Express,Bangalore,Hyderabad,3,4,1,624,0,1,0.19,2.08
+O2760,Express,Delhivery,Lucknow,Mumbai,1,3,2,1315,1,1,0.26,2.49
+O2761,Same-Day,Delhivery,Hyderabad,Mumbai,0,3,3,1135,1,3,0.25,2.49
+O2762,Express,Ecom Express,Lucknow,Delhi,3,5,2,227,0,2,0.06,2.21
+O2763,Standard,Ecom Express,Kolkata,Bangalore,3,3,0,122,0,3,0.07,1.76
+O2764,Same-Day,Ecom Express,Lucknow,Kolkata,0,0,0,1826,1,1,0.18,2.43
+O2765,Express,BlueDart,Kolkata,Bangalore,3,6,3,1474,1,1,0.29,1.67
+O2766,Express,Ecom Express,Chennai,Mumbai,2,2,0,1776,1,2,0.09,1.02
+O2767,Same-Day,Ecom Express,Delhi,Jaipur,0,0,0,926,1,2,0.06,1.26
+O2768,Standard,Delhivery,Jaipur,Jaipur,3,3,0,59,0,1,0.2,1.14
+O2769,Same-Day,Delhivery,Delhi,Mumbai,1,2,1,105,0,2,0.22,2.33
+O2770,Express,Delhivery,Mumbai,Hyderabad,2,2,0,1748,1,2,0.22,1.93
+O2771,Standard,Ecom Express,Jaipur,Hyderabad,5,6,1,879,1,2,0.16,2.93
+O2772,Express,Ecom Express,Mumbai,Mumbai,2,2,0,1429,1,3,0.25,1.3
+O2773,Standard,BlueDart,Bangalore,Bangalore,6,7,1,1637,1,1,0.17,1.21
+O2774,Express,Ecom Express,Delhi,Lucknow,1,1,0,748,0,3,0.08,2.45
+O2775,Express,Ecom Express,Kolkata,Chennai,3,5,2,493,0,3,0.19,1.43
+O2776,Same-Day,BlueDart,Delhi,Hyderabad,1,1,0,1544,1,1,0.26,2.22
+O2777,Same-Day,BlueDart,Mumbai,Jaipur,0,0,0,309,0,3,0.07,1.84
+O2778,Standard,Delhivery,Lucknow,Chennai,3,3,0,440,0,3,0.1,1.64
+O2779,Same-Day,BlueDart,Kolkata,Kolkata,1,1,0,770,0,1,0.16,1.34
+O2780,Express,Delhivery,Delhi,Lucknow,2,3,1,1037,1,2,0.2,2.33
+O2781,Standard,Ecom Express,Hyderabad,Jaipur,4,5,1,1644,1,1,0.16,1.92
+O2782,Express,BlueDart,Kolkata,Bangalore,3,3,0,1482,1,3,0.21,1.63
+O2783,Express,Delhivery,Mumbai,Lucknow,3,4,1,166,0,1,0.22,1.42
+O2784,Standard,BlueDart,Bangalore,Kolkata,3,4,1,1417,1,3,0.09,2.94
+O2785,Standard,BlueDart,Lucknow,Hyderabad,4,5,1,784,0,3,0.14,1.84
+O2786,Standard,BlueDart,Bangalore,Lucknow,6,6,0,1102,1,3,0.18,1.65
+O2787,Same-Day,Delhivery,Mumbai,Mumbai,1,4,3,549,0,1,0.12,2.72
+O2788,Express,Delhivery,Bangalore,Jaipur,2,3,1,1728,1,1,0.26,2.6
+O2789,Same-Day,Ecom Express,Hyderabad,Lucknow,0,0,0,443,0,2,0.16,2.91
+O2790,Standard,BlueDart,Bangalore,Hyderabad,3,4,1,187,0,1,0.12,1.74
+O2791,Same-Day,BlueDart,Kolkata,Jaipur,0,1,1,792,0,2,0.15,1.33
+O2792,Same-Day,Ecom Express,Chennai,Jaipur,0,3,3,300,0,1,0.17,2.72
+O2793,Express,Ecom Express,Kolkata,Lucknow,2,2,0,1874,1,2,0.17,1.1
+O2794,Standard,BlueDart,Mumbai,Lucknow,3,6,3,909,1,2,0.1,1.27
+O2795,Standard,BlueDart,Kolkata,Jaipur,4,7,3,601,0,2,0.07,2.03
+O2796,Same-Day,Delhivery,Hyderabad,Jaipur,1,4,3,557,0,2,0.15,2.46
+O2797,Express,BlueDart,Mumbai,Hyderabad,2,2,0,1431,1,2,0.21,1.2
+O2798,Same-Day,Ecom Express,Chennai,Kolkata,0,2,2,1446,1,3,0.09,1.17
+O2799,Express,Ecom Express,Chennai,Jaipur,1,1,0,1173,1,3,0.08,1.22
+O2800,Same-Day,Delhivery,Mumbai,Mumbai,1,1,0,1850,1,2,0.26,1.82
+O2801,Standard,Delhivery,Delhi,Hyderabad,3,3,0,927,1,1,0.2,2.01
+O2802,Same-Day,BlueDart,Mumbai,Hyderabad,1,2,1,830,1,3,0.19,1.93
+O2803,Same-Day,Delhivery,Jaipur,Mumbai,1,4,3,1949,1,2,0.29,2.39
+O2804,Same-Day,Delhivery,Mumbai,Hyderabad,0,0,0,1151,1,1,0.07,1.63
+O2805,Same-Day,BlueDart,Delhi,Mumbai,0,1,1,1822,1,3,0.11,2.43
+O2806,Same-Day,BlueDart,Lucknow,Kolkata,1,2,1,813,1,1,0.21,3.0
+O2807,Express,BlueDart,Bangalore,Jaipur,1,1,0,500,0,2,0.17,1.06
+O2808,Same-Day,BlueDart,Jaipur,Bangalore,1,3,2,1315,1,2,0.13,2.94
+O2809,Standard,BlueDart,Bangalore,Hyderabad,6,6,0,1336,1,1,0.11,1.44
+O2810,Same-Day,BlueDart,Lucknow,Delhi,1,1,0,1984,1,1,0.14,1.37
+O2811,Same-Day,BlueDart,Hyderabad,Bangalore,0,0,0,1220,1,3,0.19,2.4
+O2812,Same-Day,Delhivery,Delhi,Delhi,0,2,2,1864,1,2,0.19,1.85
+O2813,Standard,BlueDart,Hyderabad,Kolkata,4,6,2,726,0,1,0.18,2.2
+O2814,Express,Ecom Express,Mumbai,Lucknow,3,6,3,1189,1,3,0.1,1.5
+O2815,Standard,Delhivery,Lucknow,Mumbai,6,6,0,1755,1,2,0.14,2.45
+O2816,Same-Day,BlueDart,Jaipur,Delhi,1,1,0,410,0,3,0.15,2.92
+O2817,Express,Ecom Express,Chennai,Chennai,3,3,0,739,0,3,0.14,2.5
+O2818,Standard,BlueDart,Mumbai,Mumbai,4,4,0,1454,1,2,0.12,2.16
+O2819,Same-Day,BlueDart,Chennai,Jaipur,0,2,2,58,0,2,0.08,1.46
+O2820,Same-Day,Ecom Express,Bangalore,Bangalore,0,0,0,1935,1,2,0.07,1.47
+O2821,Express,BlueDart,Bangalore,Jaipur,3,4,1,1002,1,3,0.1,2.91
+O2822,Standard,Ecom Express,Hyderabad,Kolkata,3,6,3,908,1,2,0.29,1.61
+O2823,Standard,Ecom Express,Jaipur,Bangalore,4,6,2,908,1,1,0.24,2.0
+O2824,Standard,Ecom Express,Jaipur,Chennai,4,4,0,220,0,1,0.29,1.11
+O2825,Same-Day,Ecom Express,Mumbai,Chennai,0,2,2,59,0,3,0.25,1.49
+O2826,Standard,Delhivery,Delhi,Chennai,3,3,0,1884,1,2,0.07,1.51
+O2827,Express,Ecom Express,Lucknow,Chennai,2,3,1,133,0,3,0.16,2.59
+O2828,Same-Day,Delhivery,Hyderabad,Lucknow,1,3,2,1770,1,3,0.08,1.04
+O2829,Standard,Delhivery,Bangalore,Lucknow,4,4,0,633,0,2,0.14,2.74
+O2830,Same-Day,Delhivery,Kolkata,Mumbai,1,4,3,231,0,2,0.13,2.49
+O2831,Same-Day,BlueDart,Jaipur,Lucknow,0,0,0,1395,1,3,0.17,2.31
+O2832,Same-Day,BlueDart,Lucknow,Hyderabad,1,1,0,1469,1,2,0.17,1.88
+O2833,Express,Delhivery,Mumbai,Delhi,3,3,0,161,0,3,0.29,1.45
+O2834,Same-Day,BlueDart,Mumbai,Jaipur,1,3,2,465,0,3,0.11,1.68
+O2835,Standard,Ecom Express,Bangalore,Jaipur,5,8,3,237,0,2,0.29,2.16
+O2836,Same-Day,BlueDart,Kolkata,Jaipur,0,0,0,717,0,3,0.1,2.14
+O2837,Express,BlueDart,Chennai,Lucknow,3,6,3,292,0,3,0.1,1.47
+O2838,Express,Ecom Express,Kolkata,Jaipur,1,4,3,1936,1,2,0.27,1.02
+O2839,Express,Delhivery,Kolkata,Mumbai,3,4,1,1349,1,2,0.22,1.7
+O2840,Express,Ecom Express,Jaipur,Mumbai,1,3,2,926,1,2,0.17,2.94
+O2841,Same-Day,Delhivery,Bangalore,Delhi,0,1,1,1998,1,2,0.24,2.36
+O2842,Express,BlueDart,Jaipur,Chennai,1,1,0,260,0,1,0.22,1.73
+O2843,Standard,BlueDart,Jaipur,Kolkata,3,3,0,1955,1,2,0.17,2.04
+O2844,Express,BlueDart,Bangalore,Kolkata,2,4,2,1691,1,3,0.11,2.1
+O2845,Same-Day,Delhivery,Hyderabad,Delhi,1,3,2,959,1,1,0.13,2.55
+O2846,Standard,BlueDart,Jaipur,Kolkata,6,6,0,505,0,3,0.19,2.23
+O2847,Same-Day,Delhivery,Mumbai,Jaipur,0,1,1,539,0,2,0.16,2.19
+O2848,Express,Delhivery,Chennai,Jaipur,3,4,1,334,0,3,0.08,2.86
+O2849,Express,Delhivery,Chennai,Delhi,2,4,2,506,0,2,0.22,2.63
+O2850,Express,BlueDart,Bangalore,Lucknow,3,5,2,170,0,1,0.11,1.48
+O2851,Express,Ecom Express,Kolkata,Chennai,3,4,1,965,1,1,0.14,1.63
+O2852,Standard,Delhivery,Mumbai,Bangalore,5,6,1,533,0,3,0.26,2.8
+O2853,Standard,Delhivery,Bangalore,Hyderabad,6,9,3,1335,1,2,0.27,1.35
+O2854,Express,Delhivery,Kolkata,Chennai,2,2,0,1344,1,1,0.19,2.34
+O2855,Standard,Ecom Express,Chennai,Delhi,5,5,0,1373,1,2,0.23,1.83
+O2856,Express,BlueDart,Delhi,Jaipur,1,2,1,903,1,2,0.18,2.44
+O2857,Express,Ecom Express,Chennai,Kolkata,3,4,1,1193,1,1,0.1,1.38
+O2858,Standard,Delhivery,Kolkata,Delhi,5,5,0,1051,1,3,0.09,2.04
+O2859,Same-Day,Ecom Express,Lucknow,Bangalore,0,0,0,1204,1,1,0.14,2.58
+O2860,Same-Day,BlueDart,Chennai,Lucknow,1,4,3,1013,1,2,0.19,1.53
+O2861,Express,BlueDart,Delhi,Mumbai,1,4,3,104,0,2,0.12,1.87
+O2862,Express,Ecom Express,Kolkata,Jaipur,2,4,2,1220,1,3,0.27,2.31
+O2863,Standard,BlueDart,Chennai,Lucknow,5,5,0,54,0,2,0.23,2.21
+O2864,Standard,BlueDart,Lucknow,Chennai,4,4,0,1730,1,1,0.16,1.29
+O2865,Express,BlueDart,Bangalore,Hyderabad,2,3,1,417,0,1,0.08,1.12
+O2866,Same-Day,Delhivery,Lucknow,Mumbai,1,1,0,1945,1,3,0.19,1.31
+O2867,Same-Day,BlueDart,Kolkata,Lucknow,1,3,2,1491,1,3,0.21,2.69
+O2868,Standard,BlueDart,Delhi,Mumbai,3,3,0,1014,1,2,0.23,2.06
+O2869,Standard,BlueDart,Delhi,Mumbai,4,4,0,1233,1,2,0.15,1.92
+O2870,Express,Ecom Express,Kolkata,Jaipur,3,4,1,1895,1,1,0.07,2.1
+O2871,Standard,Delhivery,Delhi,Lucknow,4,4,0,1453,1,1,0.17,2.3
+O2872,Standard,BlueDart,Lucknow,Hyderabad,4,4,0,910,1,2,0.25,1.37
+O2873,Standard,Delhivery,Lucknow,Lucknow,6,6,0,401,0,3,0.29,2.22
+O2874,Standard,BlueDart,Lucknow,Lucknow,3,5,2,287,0,1,0.07,1.39
+O2875,Express,Delhivery,Kolkata,Chennai,2,2,0,448,0,2,0.17,1.22
+O2876,Same-Day,Delhivery,Bangalore,Hyderabad,0,0,0,139,0,3,0.25,2.98
+O2877,Express,Delhivery,Mumbai,Mumbai,2,2,0,1745,1,1,0.2,2.98
+O2878,Express,Delhivery,Lucknow,Bangalore,1,2,1,1835,1,3,0.28,1.75
+O2879,Express,BlueDart,Delhi,Bangalore,3,4,1,1471,1,1,0.06,2.31
+O2880,Express,Ecom Express,Kolkata,Kolkata,2,5,3,373,0,3,0.15,1.08
+O2881,Same-Day,BlueDart,Kolkata,Mumbai,1,1,0,1942,1,2,0.25,1.06
+O2882,Same-Day,Delhivery,Chennai,Lucknow,0,0,0,1631,1,1,0.17,1.02
+O2883,Same-Day,Ecom Express,Lucknow,Mumbai,1,1,0,1015,1,2,0.14,2.08
+O2884,Express,BlueDart,Delhi,Mumbai,2,3,1,93,0,1,0.15,2.24
+O2885,Express,BlueDart,Delhi,Lucknow,1,2,1,1111,1,1,0.13,2.94
+O2886,Express,BlueDart,Jaipur,Hyderabad,1,2,1,1401,1,1,0.08,2.75
+O2887,Standard,Ecom Express,Jaipur,Lucknow,5,5,0,223,0,2,0.11,1.07
+O2888,Same-Day,BlueDart,Mumbai,Chennai,1,2,1,1096,1,1,0.06,2.29
+O2889,Express,Delhivery,Lucknow,Chennai,1,4,3,1037,1,3,0.2,1.63
+O2890,Same-Day,BlueDart,Chennai,Jaipur,0,0,0,1804,1,2,0.22,2.2
+O2891,Standard,BlueDart,Hyderabad,Jaipur,5,5,0,906,1,2,0.14,2.6
+O2892,Same-Day,Delhivery,Delhi,Jaipur,0,1,1,1555,1,2,0.29,2.93
+O2893,Standard,Delhivery,Bangalore,Hyderabad,3,5,2,321,0,3,0.25,1.92
+O2894,Express,Delhivery,Kolkata,Jaipur,1,2,1,295,0,2,0.15,1.01
+O2895,Same-Day,Delhivery,Hyderabad,Mumbai,0,1,1,839,1,1,0.1,2.82
+O2896,Same-Day,BlueDart,Jaipur,Kolkata,0,0,0,261,0,3,0.28,1.53
+O2897,Same-Day,Delhivery,Bangalore,Lucknow,1,3,2,1645,1,2,0.12,1.75
+O2898,Express,BlueDart,Chennai,Chennai,3,3,0,1215,1,1,0.15,1.88
+O2899,Standard,BlueDart,Lucknow,Mumbai,3,3,0,1861,1,2,0.26,2.48
+O2900,Standard,Ecom Express,Lucknow,Bangalore,4,5,1,599,0,2,0.07,1.34
+O2901,Standard,Ecom Express,Chennai,Delhi,6,6,0,359,0,3,0.19,1.16
+O2902,Same-Day,Delhivery,Lucknow,Hyderabad,0,0,0,256,0,3,0.26,1.42
+O2903,Express,BlueDart,Jaipur,Lucknow,3,3,0,534,0,2,0.28,1.97
+O2904,Express,Delhivery,Chennai,Hyderabad,3,5,2,1429,1,2,0.15,2.18
+O2905,Same-Day,BlueDart,Lucknow,Jaipur,1,2,1,763,0,3,0.29,2.5
+O2906,Express,Delhivery,Kolkata,Mumbai,2,4,2,989,1,1,0.05,2.34
+O2907,Express,Delhivery,Mumbai,Hyderabad,2,2,0,1808,1,2,0.14,1.58
+O2908,Standard,BlueDart,Chennai,Jaipur,6,7,1,299,0,1,0.09,1.86
+O2909,Standard,Ecom Express,Lucknow,Lucknow,6,7,1,1828,1,3,0.11,2.05
+O2910,Express,BlueDart,Hyderabad,Hyderabad,1,3,2,630,0,3,0.06,1.32
+O2911,Standard,Delhivery,Hyderabad,Hyderabad,4,4,0,1165,1,1,0.27,1.22
+O2912,Express,BlueDart,Lucknow,Delhi,2,4,2,1032,1,2,0.14,2.39
+O2913,Express,BlueDart,Kolkata,Bangalore,1,1,0,571,0,2,0.23,2.05
+O2914,Same-Day,Ecom Express,Hyderabad,Hyderabad,1,2,1,1464,1,2,0.14,1.79
+O2915,Standard,Ecom Express,Jaipur,Mumbai,5,6,1,1460,1,3,0.11,1.93
+O2916,Same-Day,Ecom Express,Mumbai,Mumbai,0,0,0,1233,1,3,0.16,1.53
+O2917,Same-Day,Ecom Express,Chennai,Chennai,0,0,0,1217,1,1,0.16,2.72
+O2918,Express,Delhivery,Mumbai,Bangalore,3,4,1,1493,1,1,0.08,2.98
+O2919,Same-Day,Ecom Express,Delhi,Chennai,1,2,1,1758,1,1,0.1,2.91
+O2920,Express,Ecom Express,Chennai,Lucknow,3,3,0,159,0,2,0.23,1.77
+O2921,Standard,BlueDart,Jaipur,Bangalore,4,4,0,78,0,2,0.1,2.58
+O2922,Standard,BlueDart,Delhi,Hyderabad,5,8,3,391,0,2,0.11,2.08
+O2923,Express,Ecom Express,Chennai,Mumbai,2,2,0,646,0,1,0.22,2.79
+O2924,Standard,BlueDart,Bangalore,Mumbai,5,7,2,105,0,3,0.2,2.48
+O2925,Same-Day,BlueDart,Bangalore,Mumbai,1,4,3,55,0,2,0.28,1.4
+O2926,Same-Day,Ecom Express,Hyderabad,Delhi,0,0,0,487,0,1,0.24,1.98
+O2927,Express,Delhivery,Lucknow,Mumbai,2,4,2,531,0,1,0.16,1.95
+O2928,Standard,Delhivery,Jaipur,Jaipur,5,5,0,963,1,2,0.16,1.68
+O2929,Same-Day,BlueDart,Bangalore,Mumbai,0,1,1,1248,1,1,0.29,1.69
+O2930,Standard,Ecom Express,Kolkata,Mumbai,6,7,1,327,0,3,0.1,1.58
+O2931,Same-Day,Ecom Express,Bangalore,Bangalore,0,0,0,1707,1,1,0.16,1.22
+O2932,Standard,Delhivery,Chennai,Lucknow,5,8,3,650,0,1,0.07,2.48
+O2933,Same-Day,Ecom Express,Kolkata,Hyderabad,1,1,0,1758,1,3,0.07,1.01
+O2934,Standard,Delhivery,Delhi,Kolkata,6,6,0,551,0,3,0.24,2.62
+O2935,Standard,Delhivery,Lucknow,Mumbai,3,3,0,1298,1,2,0.23,1.48
+O2936,Same-Day,Delhivery,Hyderabad,Mumbai,1,1,0,1374,1,1,0.19,1.74
+O2937,Standard,Delhivery,Kolkata,Hyderabad,6,7,1,438,0,3,0.23,1.85
+O2938,Express,Delhivery,Chennai,Hyderabad,3,4,1,851,1,2,0.21,1.48
+O2939,Standard,Ecom Express,Jaipur,Delhi,5,5,0,1684,1,3,0.12,2.64
+O2940,Standard,BlueDart,Hyderabad,Mumbai,5,6,1,252,0,2,0.29,2.51
+O2941,Same-Day,Ecom Express,Kolkata,Hyderabad,1,1,0,740,0,3,0.15,2.58
+O2942,Standard,Delhivery,Jaipur,Hyderabad,6,9,3,1528,1,3,0.12,1.51
+O2943,Standard,BlueDart,Kolkata,Lucknow,4,4,0,672,0,2,0.17,2.18
+O2944,Express,Delhivery,Chennai,Mumbai,2,2,0,851,1,1,0.28,1.61
+O2945,Standard,Delhivery,Delhi,Hyderabad,4,4,0,1623,1,1,0.05,2.56
+O2946,Standard,BlueDart,Bangalore,Mumbai,4,5,1,345,0,1,0.23,2.35
+O2947,Express,Ecom Express,Kolkata,Jaipur,1,2,1,948,1,1,0.2,2.84
+O2948,Express,Delhivery,Lucknow,Kolkata,2,3,1,1412,1,3,0.09,1.61
+O2949,Same-Day,Delhivery,Chennai,Jaipur,0,1,1,888,1,1,0.18,2.01
+O2950,Express,Ecom Express,Jaipur,Kolkata,2,3,1,1191,1,1,0.19,2.59
+O2951,Standard,Delhivery,Lucknow,Kolkata,5,5,0,922,1,1,0.21,1.61
+O2952,Standard,Ecom Express,Chennai,Lucknow,6,7,1,1973,1,2,0.09,2.56
+O2953,Express,BlueDart,Jaipur,Lucknow,1,1,0,99,0,1,0.19,2.96
+O2954,Same-Day,Delhivery,Chennai,Kolkata,1,1,0,1935,1,2,0.2,2.97
+O2955,Standard,BlueDart,Mumbai,Lucknow,6,6,0,1278,1,1,0.22,1.55
+O2956,Same-Day,BlueDart,Hyderabad,Mumbai,0,1,1,1120,1,2,0.17,2.17
+O2957,Standard,Delhivery,Delhi,Kolkata,3,4,1,191,0,1,0.07,1.43
+O2958,Same-Day,BlueDart,Delhi,Kolkata,0,0,0,497,0,1,0.07,1.39
+O2959,Standard,Ecom Express,Delhi,Hyderabad,5,6,1,1577,1,1,0.09,1.09
+O2960,Standard,Ecom Express,Kolkata,Delhi,3,3,0,1712,1,3,0.05,2.7
+O2961,Same-Day,Ecom Express,Bangalore,Hyderabad,1,2,1,821,1,1,0.22,2.38
+O2962,Express,Delhivery,Delhi,Jaipur,2,4,2,1731,1,2,0.26,2.06
+O2963,Express,BlueDart,Chennai,Kolkata,1,4,3,645,0,2,0.2,1.23
+O2964,Express,Delhivery,Chennai,Mumbai,1,1,0,1096,1,1,0.06,1.47
+O2965,Same-Day,Delhivery,Mumbai,Mumbai,0,0,0,371,0,2,0.22,1.03
+O2966,Express,Delhivery,Kolkata,Lucknow,3,5,2,160,0,1,0.23,1.77
+O2967,Standard,BlueDart,Kolkata,Bangalore,4,4,0,233,0,3,0.12,2.06
+O2968,Same-Day,Delhivery,Mumbai,Bangalore,0,0,0,826,1,2,0.3,1.94
+O2969,Standard,Delhivery,Jaipur,Kolkata,4,4,0,660,0,2,0.24,1.86
+O2970,Same-Day,BlueDart,Hyderabad,Mumbai,1,4,3,176,0,3,0.26,1.57
+O2971,Same-Day,Ecom Express,Kolkata,Hyderabad,1,1,0,1601,1,1,0.16,2.59
+O2972,Same-Day,BlueDart,Bangalore,Hyderabad,1,1,0,850,1,1,0.25,2.01
+O2973,Same-Day,Delhivery,Bangalore,Jaipur,0,3,3,1150,1,3,0.16,1.55
+O2974,Express,Delhivery,Lucknow,Kolkata,2,2,0,1475,1,1,0.16,1.91
+O2975,Standard,Ecom Express,Hyderabad,Delhi,3,3,0,246,0,1,0.05,1.22
+O2976,Express,Delhivery,Mumbai,Delhi,1,1,0,1745,1,3,0.2,1.73
+O2977,Standard,Ecom Express,Chennai,Mumbai,3,5,2,1386,1,2,0.25,2.44
+O2978,Express,Ecom Express,Jaipur,Delhi,2,2,0,1165,1,1,0.21,1.18
+O2979,Express,Delhivery,Hyderabad,Hyderabad,3,6,3,614,0,3,0.3,2.04
+O2980,Same-Day,BlueDart,Lucknow,Mumbai,1,4,3,1028,1,2,0.15,1.14
+O2981,Same-Day,Ecom Express,Delhi,Jaipur,0,0,0,202,0,1,0.16,1.61
+O2982,Standard,Ecom Express,Kolkata,Hyderabad,4,4,0,1141,1,1,0.13,2.01
+O2983,Standard,BlueDart,Delhi,Chennai,4,4,0,126,0,3,0.12,2.13
+O2984,Standard,Ecom Express,Hyderabad,Delhi,6,6,0,1965,1,1,0.21,1.68
+O2985,Same-Day,Ecom Express,Hyderabad,Delhi,1,1,0,66,0,3,0.18,2.33
+O2986,Express,Ecom Express,Lucknow,Jaipur,2,2,0,1098,1,1,0.2,1.47
+O2987,Standard,Delhivery,Delhi,Hyderabad,6,6,0,1359,1,2,0.11,2.95
+O2988,Same-Day,BlueDart,Jaipur,Bangalore,0,0,0,120,0,1,0.11,2.56
+O2989,Express,Ecom Express,Kolkata,Lucknow,2,5,3,1417,1,1,0.29,1.83
+O2990,Standard,BlueDart,Chennai,Lucknow,4,4,0,751,0,2,0.14,2.6
+O2991,Standard,BlueDart,Chennai,Hyderabad,3,3,0,163,0,3,0.12,2.98
+O2992,Same-Day,BlueDart,Jaipur,Kolkata,1,3,2,372,0,1,0.18,2.8
+O2993,Express,Ecom Express,Delhi,Chennai,2,2,0,1545,1,2,0.22,1.58
+O2994,Express,Delhivery,Lucknow,Chennai,2,2,0,1496,1,2,0.24,2.14
+O2995,Express,Ecom Express,Mumbai,Chennai,1,1,0,539,0,3,0.11,1.56
+O2996,Express,Delhivery,Chennai,Delhi,2,3,1,1669,1,2,0.24,3.0
+O2997,Express,Delhivery,Lucknow,Lucknow,2,2,0,619,0,3,0.21,2.65
+O2998,Standard,BlueDart,Bangalore,Chennai,3,3,0,1891,1,2,0.16,2.49
+O2999,Same-Day,BlueDart,Mumbai,Hyderabad,1,2,1,501,0,1,0.25,2.59
+O3000,Express,BlueDart,Lucknow,Mumbai,1,2,1,874,1,1,0.14,1.02

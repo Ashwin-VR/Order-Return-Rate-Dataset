@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReturnIQ ERP — {% block page_title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-icon">📦</div>
+            <div class="logo-text">
+                <span class="logo-brand">ReturnIQ</span>
+                <span class="logo-sub">ERP</span>
+            </div>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="sidebar-nav">
+            <a href="/dashboard" class="nav-item {% block active_dashboard %}{% endblock %}">
+                <span class="nav-icon">📊</span>
+                <span class="nav-label">Dashboard</span>
+            </a>
+            <a href="/simulate" class="nav-item {% block active_simulate %}{% endblock %}">
+                <span class="nav-icon">🛒</span>
+                <span class="nav-label">Order Simulation</span>
+            </a>
+            <a href="/orders" class="nav-item {% block active_orders %}{% endblock %}">
+                <span class="nav-icon">📋</span>
+                <span class="nav-label">Orders Table</span>
+            </a>
+            <a href="/customers" class="nav-item {% block active_customers %}{% endblock %}">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Customer Profiles</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-user">
+                <div class="user-avatar">{{ username[0].upper() if username else 'A' }}</div>
+                <div class="user-info">
+                    <span class="user-name">{{ username }}</span>
+                    <a href="/logout" class="logout-link">Logout</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <h1 class="topbar-title">{% block topbar_title %}{% endblock %}</h1>
+        </div>
+        <div class="topbar-right">
+            <nav class="breadcrumb">{% block breadcrumb %}{% endblock %}</nav>
+            <div class="user-badge">
+                <span class="user-dot"></span>
+                {{ username }}
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>

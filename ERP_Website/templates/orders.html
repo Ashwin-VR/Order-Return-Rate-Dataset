@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block page_title %}Orders Table{% endblock %}
+{% block active_orders %}active{% endblock %}
+{% block topbar_title %}Orders Table{% endblock %}
+{% block breadcrumb %}Home / <strong>Orders</strong>{% endblock %}
+
+{% block content %}
+<!-- Filters Bar -->
+<div class="filters-bar">
+    <div class="filter-group" style="flex:1;min-width:160px;">
+        <label class="filter-label">Search Order ID</label>
+        <input type="text" class="filter-control" id="filterSearch" placeholder="e.g. O1234">
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">Payment</label>
+        <select class="filter-control" id="filterPayment">
+            <option value="">All</option>
+            <option value="COD">COD</option>
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">Category</label>
+        <select class="filter-control" id="filterCategory">
+            <option value="">All</option>
+            <option value="Footwear">Footwear</option>
+            <option value="Apparel">Apparel</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Home Appliances">Home Appliances</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">City</label>
+        <select class="filter-control" id="filterCity">
+            <option value="">All Cities</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">Return Status</label>
+        <select class="filter-control" id="filterReturned">
+            <option value="">All</option>
+            <option value="1">Returned</option>
+            <option value="0">Not Returned</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">From</label>
+        <input type="date" class="filter-control" id="filterDateFrom">
+    </div>
+    <div class="filter-group">
+        <label class="filter-label">To</label>
+        <input type="date" class="filter-control" id="filterDateTo">
+    </div>
+    <div class="filter-group" style="align-self:flex-end; display: flex; gap: 4px;">
+        <button class="btn btn-secondary btn-sm" id="resetFilters">Reset</button>
+        <button class="btn btn-secondary btn-sm" id="exportFilteredCsvBtn" style="margin-top:4px;">Export Filtered</button>
+        <a class="btn btn-primary btn-sm" id="exportAllCsvBtn" style="margin-top:4px;" href="/api/orders/export">Export All</a>
+    </div>
+</div>
+
+<!-- Summary Strip -->
+<div class="summary-strip">
+    <div class="stat-chip">Total Shown: <strong id="statTotal">—</strong></div>
+    <div class="stat-chip">High Risk: <strong id="statHighRisk" style="color:var(--danger)">—</strong></div>
+    <div class="stat-chip">Returned: <strong id="statReturned" style="color:var(--danger)">—</strong></div>
+    <div class="stat-chip">Avg Risk %: <strong id="statAvgRisk">—</strong></div>
+</div>
+
+<!-- Table -->
+<div class="card" style="padding:0;overflow:hidden;">
+    <div class="table-wrap" style="max-height:calc(100vh - 320px);overflow-y:auto;">
+        <table id="ordersTable">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Qty</th>
+                    <th>Disc%</th>
+                    <th>Payment</th>
+                    <th>Courier</th>
+                    <th>City</th>
+                    <th>Pred Risk%</th>
+                    
+                    <th>Returned</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody id="ordersBody">
+                <tr>
+                    <td colspan="14" style="text-align:center;padding:40px;color:var(--text-muted);">Loading orders...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="paginationContainer"></div>
+    <div style="text-align:center;font-size:12px;color:var(--text-muted);padding:0 16px 16px;" id="paginationInfo">
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/orders.js') }}"></script>
+{% endblock %}
