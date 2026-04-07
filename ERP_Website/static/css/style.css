@@ -1,20 +1,32 @@
 /* ─── CSS Variables ──────────────────────────────────────────────────────────── */
 :root {
-    --sidebar-bg: #0F172A;
-    --canvas-bg: #F8FAFC;
-    --card-bg: #FFFFFF;
-    --primary: #3B82F6;
-    --primary-dark: #2563EB;
+    --sidebar-bg: #030816; /* Deepest Navy */
+    --corpus-bg: #0B0E14;  /* Very Dark Charcoal */
+    --canvas-bg: #0F172A;  /* Dark Blue-Gray */
+    --card-bg: #1E293B;    /* Lighter Charcoal */
+    --card-hover: #334155;
+    --sidebar-active: rgba(212, 175, 55, 0.15);
+    
+    --primary: #D4AF37; /* Premium Gold */
+    --primary-dark: #B8860B;
+    --primary-light: rgba(212, 175, 55, 0.1);
+    
     --success: #10B981;
     --warning: #F59E0B;
     --danger: #EF4444;
-    --text-primary: #1E293B;
-    --text-muted: #64748B;
-    --border: #E2E8F0;
-    --sidebar-width: 240px;
-    --topbar-height: 56px;
-    --radius: 12px;
-    --radius-sm: 8px;
+    --text-primary: #F8FAFC; /* Off-white */
+    --text-muted: #94A3B8;    /* Slate Gray */
+    --border: rgba(255, 255, 255, 0.1);
+    
+    --sidebar-width: 260px;
+    --topbar-height: 64px;
+    --radius: 16px;
+    --radius-sm: 10px;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
 }
 
 /* ─── Reset ───────────────────────────────────────────────────────────────────── */
@@ -31,10 +43,16 @@ html {
 }
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-body);
     background: var(--canvas-bg);
     color: var(--text-primary);
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
 }
 
 /* ─── Sidebar ─────────────────────────────────────────────────────────────────── */
@@ -54,32 +72,28 @@ body {
 .sidebar-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 18px 20px;
+    gap: 12px;
+    padding: 24px 20px;
 }
 
 .logo-icon {
-    font-size: 24px;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
+    font-size: 28px;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
 }
 
 .logo-brand {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     color: #FFFFFF;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.5px;
+    font-family: var(--font-heading);
 }
 
 .logo-sub {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 600;
     color: var(--primary);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -98,27 +112,26 @@ body {
 .nav-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px 20px;
+    gap: 12px;
+    padding: 12px 24px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    border-left: 3px solid transparent;
-    transition: all 0.15s ease;
+    border-left: 4px solid transparent;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    margin: 2px 0;
 }
 
 .nav-item:hover {
-    color: rgba(255, 255, 255, 0.9);
-    background: rgba(255, 255, 255, 0.05);
+    color: var(--primary);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .nav-item.active {
     color: #FFFFFF;
-    background: #1E3A5F;
+    background: var(--sidebar-active);
     border-left-color: var(--primary);
 }
 
@@ -137,22 +150,23 @@ body {
 .sidebar-user {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 14px 20px;
+    gap: 12px;
+    padding: 20px;
 }
 
 .user-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
     background: var(--primary);
-    color: white;
+    color: var(--sidebar-bg);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     flex-shrink: 0;
+    font-family: var(--font-heading);
 }
 
 .user-info {
@@ -185,19 +199,20 @@ body {
     left: var(--sidebar-width);
     right: 0;
     height: var(--topbar-height);
-    background: var(--card-bg);
+    background: var(--canvas-bg);
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
-    z-index: 90;
+    z-index: 100;
 }
 
 .topbar-title {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text-primary);
+    font-family: var(--font-heading);
 }
 
 .topbar-right {
@@ -245,20 +260,23 @@ body {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 24px;
-    transition: box-shadow 0.2s ease;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
+    border-color: rgba(212, 175, 55, 0.2);
 }
 
 .card-title {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
 }
 
 /* ─── KPI Cards ───────────────────────────────────────────────────────────────── */
@@ -272,48 +290,54 @@ body {
 .kpi-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px 24px;
-    border-left: 4px solid var(--primary);
-    transition: box-shadow 0.2s;
+    border-radius: var(--radius-sm);
+    padding: 24px;
+    border-top: 4px solid var(--primary);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
 }
 
 .kpi-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .kpi-card.kpi-danger {
-    border-left-color: var(--danger);
+    border-top-color: var(--danger);
 }
 
 .kpi-card.kpi-success {
-    border-left-color: var(--success);
+    border-top-color: var(--success);
 }
 
 .kpi-card.kpi-warning {
-    border-left-color: var(--warning);
+    border-top-color: var(--warning);
 }
 
 .kpi-label {
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.6px;
-    margin-bottom: 8px;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
 }
 
 .kpi-value {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     color: var(--text-primary);
     line-height: 1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
 }
 
 .kpi-sub {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 /* ─── Charts Grid ─────────────────────────────────────────────────────────────── */
@@ -360,38 +384,35 @@ table {
     font-size: 13px;
 }
 
-thead th {
-    background: var(--canvas-bg);
-    padding: 10px 14px;
-    text-align: left;
+table thead th {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 14px 16px;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-muted);
+    text-align: left;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    letter-spacing: 0.6px;
+    border-bottom: 2px solid var(--border);
 }
 
-tbody tr {
+table tbody td {
+    padding: 14px 16px;
     border-bottom: 1px solid var(--border);
-    transition: background 0.1s;
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+table tbody tr.active {
+    background: rgba(59, 130, 246, 0.05);
 }
 
 tbody tr:nth-child(even) {
-    background: #F8FAFC;
-}
-
-tbody tr:hover {
-    background: #EFF6FF;
-}
-
-tbody td {
-    padding: 10px 14px;
-    height: 40px;
-    font-size: 13px;
+    background: rgba(255, 255, 255, 0.01);
 }
 
 td code,
@@ -405,11 +426,11 @@ th code {
 
 /* Prediction alert rows */
 tr.false-alarm {
-    background: #FFFBEB !important;
+    background: rgba(245, 158, 11, 0.1) !important;
 }
 
 tr.missed {
-    background: #FEF2F2 !important;
+    background: rgba(239, 68, 68, 0.1) !important;
 }
 
 /* ─── Badges / Pills ──────────────────────────────────────────────────────────── */
@@ -426,23 +447,23 @@ tr.missed {
 }
 
 .badge-low {
-    background: #ECFDF5;
-    color: #065F46;
+    background: rgba(16, 185, 129, 0.1);
+    color: #34D399;
 }
 
 .badge-medium {
-    background: #FFFBEB;
-    color: #92400E;
+    background: rgba(245, 158, 11, 0.1);
+    color: #FBBF24;
 }
 
 .badge-high {
-    background: #FEF2F2;
-    color: #991B1B;
+    background: rgba(239, 68, 68, 0.1);
+    color: #F87171;
 }
 
 .badge-blue {
-    background: #EFF6FF;
-    color: #1D4ED8;
+    background: var(--primary-light);
+    color: var(--primary);
 }
 
 .badge-gray {
@@ -477,21 +498,22 @@ tr.missed {
 
 .btn-primary {
     background: var(--primary);
-    color: white;
+    color: #030816;
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
 }
 
 .btn-secondary {
-    background: white;
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
 }
 
 .btn-secondary:hover {
-    background: #EFF6FF;
+    background: var(--canvas-bg);
 }
 
 .btn-danger {
@@ -532,14 +554,14 @@ tr.missed {
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     color: var(--text-primary);
-    background: white;
+    background: var(--canvas-bg);
     transition: all 0.15s;
     outline: none;
 }
 
 .form-control:focus {
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
 }
 
 select.form-control {
@@ -559,7 +581,7 @@ select.form-control {
     font-size: 12px;
     font-weight: 500;
     border: 1px solid var(--border);
-    background: white;
+    background: var(--card-bg);
     cursor: pointer;
     transition: all 0.15s;
     color: var(--text-muted);
@@ -573,7 +595,7 @@ select.form-control {
 .pill.active {
     background: var(--primary);
     border-color: var(--primary);
-    color: white;
+    color: #030816;
 }
 
 .pill.active-low {
@@ -606,7 +628,7 @@ select.form-control {
 }
 
 .skeleton {
-    background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+    background: linear-gradient(90deg, #1E293B 25%, #334155 50%, #1E293B 75%);
     background-size: 1000px 100%;
     animation: shimmer 1.5s infinite;
     border-radius: 6px;
@@ -889,8 +911,9 @@ select.form-control {
 }
 
 .customer-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    border-color: var(--primary);
 }
 
 .customer-card-header {

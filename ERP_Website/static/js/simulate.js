@@ -73,7 +73,7 @@ async function loadDropdowns() {
     products.forEach(p => {
         const opt = document.createElement('option');
         opt.value = p.product_id;
-        opt.textContent = `${p.product_id} — ${p.product_name} (${p.category}, ₹${Number(p.price).toLocaleString('en-IN')})`;
+        opt.textContent = `${p.product_id} - ${p.product_name} (${p.category}, ₹${Number(p.price).toLocaleString('en-IN')})`;
         pSel.appendChild(opt);
     });
 }
@@ -172,29 +172,47 @@ function renderResult(data, form) {
 
     const panel = document.getElementById('resultPanel');
 
-    // Section A — Risk Summary
+    // Section A - Risk Summary
     const prob = pred.predicted_prob;
-    const tierColor = prob > 0.50 ? '#EF4444' : prob > 0.20 ? '#F59E0B' : '#10B981';
-    const driverHtml = pred.top_drivers.map(d => `
-        <div class="driver-card">
-            <div class="driver-name">${d.feature}</div>
-            <div class="driver-bar-wrap"><div class="driver-bar" style="width:${Math.min(d.importance * 100, 100)}%;"></div></div>
-            <div class="driver-explanation">${d.explanation}</div>
-        </div>
-    `).join('');
+    const tierColor = prob > 0.50 ? 'var(--danger)' : prob > 0.20 ? 'var(--warning)' : 'var(--success)';
+    
+    // Qualitative Driver Rendering
+    const driverHtml = pred.top_drivers.map(d => {
+        let labelHtml = '';
+        if (d.courier_label) {
+            const labelCls = d.courier_label.includes('Low') ? 'badge-low' : d.courier_label.includes('Moderate') ? 'badge-medium' : 'badge-high';
+            labelHtml = `<span class="badge ${labelCls}" style="margin-left:8px;font-size:10px;">${d.courier_label}</span>`;
+        }
+        if (d.is_long_distance) {
+            labelHtml = `<span class="badge badge-high" style="margin-left:8px;font-size:10px;">Long Distance</span>`;
+        }
 
-    // Section B — History
+        return `
+            <div class="driver-card" style="border-left:3px solid var(--primary);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                    <div class="driver-name" style="margin-bottom:0;">${d.feature}</div>
+                    ${labelHtml}
+                </div>
+                <div class="driver-bar-wrap">
+                    <div class="driver-bar" style="width:${Math.min(d.importance * 100, 100)}%;"></div>
+                </div>
+                <div class="driver-explanation">${d.explanation}</div>
+            </div>
+        `;
+    }).join('');
+
+    // Section B - History
     let historyHtml = '';
     if (history && history.length > 0) {
         const rows = history.map(h => `
             <tr>
                 <td><code>${h.order_id}</code></td>
-                <td>${h.order_date ? String(h.order_date).slice(0, 10) : '—'}</td>
+                <td>${h.order_date ? String(h.order_date).slice(0, 10) : '-'}</td>
                 <td>${h.quantity}</td>
                 <td>${pct(h.discount_percentage)}</td>
                 <td>${h.payment_method}</td>
                 <td>${h.is_returned ? '<span class="returned-yes">Yes</span>' : '<span class="returned-no">No</span>'}</td>
-                <td>${h.return_reason || '—'}</td>
+                <td>${h.return_reason || '-'}</td>
             </tr>
         `).join('');
         historyHtml = `
@@ -206,11 +224,11 @@ function renderResult(data, form) {
             </div>`;
     } else {
         historyHtml = `<div style="padding:16px;color:var(--text-muted);font-size:13px;background:var(--canvas-bg);border-radius:8px;">
-            No prior orders for this customer–product combination — using category-level patterns.
+            No prior orders for this customer–product combination - using category-level patterns.
         </div>`;
     }
 
-    // Section C — Actions
+    // Section C - Actions
     const actionHtml = actions.map(a => `
         <div class="action-card">
             <div class="action-header">
@@ -237,7 +255,7 @@ function renderResult(data, form) {
         <div class="risk-report">
             <!-- Section A -->
             <div class="card">
-                <div class="risk-section-title">A — Risk Summary</div>
+                <div class="risk-section-title">A - Risk Summary</div>
                 <div style="display:flex;align-items:center;gap:20px;margin-bottom:16px;flex-wrap:wrap;">
                     <div style="font-size:48px;font-weight:700;color:${tierColor};line-height:1;">${pct(pred.predicted_pct)}</div>
                     ${riskBadge(pred.risk_tier, true)}
@@ -248,19 +266,19 @@ function renderResult(data, form) {
 
             <!-- Section B -->
             <div class="card">
-                <div class="risk-section-title">B — Customer × Product History</div>
+                <div class="risk-section-title">B - Customer × Product History</div>
                 ${historyHtml}
             </div>
 
             <!-- Section C -->
             <div class="card">
-                <div class="risk-section-title">C — ERP Action Recommendations</div>
+                <div class="risk-section-title">C - ERP Action Recommendations</div>
                 ${actionHtml}
             </div>
 
             <!-- Section D -->
             <div class="card">
-                <div class="risk-section-title">D — Log Prediction to Oracle</div>
+                <div class="risk-section-title">D - Log Prediction to Oracle</div>
                 <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
                     <div style="font-size:12px;color:var(--text-muted);">
                         Save this prediction to <code>order_predictions</code> table with ID <code>${orderId}</code>

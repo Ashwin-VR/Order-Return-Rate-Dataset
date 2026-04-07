@@ -528,17 +528,17 @@ def get_erp_actions(dominant_reason, form, prediction, customer_row, product_row
                         'trigger': f'Triggered by: COD payment + {round(predicted_prob*100,1)}% predicted return risk'})
 
     if courier_delay_rate > 0.20:
-        actions.append({'icon': '', 'title': 'High courier delay rate — consider switching to BlueDart',
+        actions.append({'icon': '', 'title': 'High courier delay rate - consider switching to BlueDart',
                         'rationale': 'Selected courier has elevated delay rates.',
                         'trigger': f'Triggered by: courier_delay_rate = {courier_delay_rate}'})
 
     if predicted_prob > 0.80:
-        actions.append({'icon': '', 'title': 'Risk exceeds 80% — hold for manual manager review',
+        actions.append({'icon': '', 'title': 'Risk exceeds 80% - hold for manual manager review',
                         'rationale': 'Extreme return probability warrants human review before dispatch.',
                         'trigger': f'Triggered by: predicted_prob = {round(predicted_prob*100,1)}%'})
 
     if discount_pct >= 30 and category in ['Apparel', 'Footwear']:
-        actions.append({'icon': '', 'title': 'High discount on size-sensitive product — add size confirmation',
+        actions.append({'icon': '', 'title': 'High discount on size-sensitive product - add size confirmation',
                         'rationale': 'Discounted size-sensitive items have elevated return rates.',
                         'trigger': f'Triggered by: {discount_pct}% discount on {category}'})
 
@@ -601,32 +601,75 @@ def api_simulate():
         order_dict = build_order_dict(form, customer_row, product_row)
         result = predict_single(order_dict)
 
-        # Top drivers
+        # Compute actual distance from the order dict (already calculated by pgeocode in build_order_dict)
+        dist_km = float(order_dict.get('distance_km', 0))
+        final_price = float(order_dict.get('final_price', 0))
+        selected_courier = form.get('courier_partner', 'Delhivery')
+
+        # Courier qualitative impact ratings (based on real courier delay data in logistics table)
+        courier_impact_map = {
+            'BlueDart':    {'bar': 0.22, 'label': 'Low Delay Risk',      'desc': 'BlueDart consistently delivers on time with low delay rates across all corridors.'},
+            'Delhivery':   {'bar': 0.55, 'label': 'Moderate Delay Risk', 'desc': 'Delhivery shows moderate delays, especially on long-distance routes above 400km.'},
+            'Ecom Express':{'bar': 0.78, 'label': 'High Delay Risk',     'desc': 'Ecom Express has elevated delay rates and directly increases return risk probability.'}
+        }
+        courier_info = courier_impact_map.get(selected_courier, courier_impact_map['Delhivery'])
+
+        # Top drivers - contextual and qualitative, not static feature importance
         top_drivers = []
-        for item in sorted(feature_importance, key=lambda x: -x['importance'])[:3]:
+
+        # Always: Discount % driver (dynamically changes with form)
+        disc = float(form.get('discount_percentage', 0))
+        for item in sorted(feature_importance, key=lambda x: -x['importance']):
             feat = item['feature']
-            clean_feat = feat.replace('category_', 'Category: ').replace('payment_method_', 'Payment: ').replace('_', ' ').title()
-            imp = item['importance']
-            
-            explanations = {
-                'overall_return_rate': f"This customer returned {round(float(customer_row.get('overall_return_rate', 0))*100, 1)}% of past orders",
-                'frequent_return_flag': "Customer is flagged as a frequent returner",
-                'is_cod': "Cash on delivery orders carry higher risk",
-                'discount_percentage': f"Order has a {form.get('discount_percentage', 0)}% discount",
-                'product_return_rate': f"Product historic return rate is {round(float(product_row.get('product_return_rate', 0))*100, 1)}%",
-                'courier_delay_rate': f"Courier has a mathematically significant delay risk",
-                'distance_km': f"Delivery distance of {form.get('distance_km', 'N/A')} km heavily impacts timeline",
-                'high_value_delayed': "High value orders combined with shipping delays trigger severe risk escalations"
-            }
-            
-            expl = explanations.get(feat, f"The Decision Engine identified {clean_feat} as a historically proven return driver.")
-            
+            if feat == 'discount_percentage':
+                top_drivers.append({
+                    'feature': 'Discount Percentage',
+                    'importance': float(item['importance']) * 1.5,
+                    'explanation': f"Order carries a {int(disc)}% discount - higher discounts statistically correlate with elevated return rates."
+                })
+                break
+
+        # Always: Customer return rate (changes per customer)
+        for item in sorted(feature_importance, key=lambda x: -x['importance']):
+            feat = item['feature']
+            if feat == 'overall_return_rate':
+                cust_rate = round(float(customer_row.get('overall_return_rate', 0)) * 100, 1)
+                top_drivers.append({
+                    'feature': 'Customer Return History',
+                    'importance': float(item['importance']) * 1.5,
+                    'explanation': f"This customer has historically returned {cust_rate}% of their past orders."
+                })
+                break
+
+        # Conditional: Distance driver - only if long distance (>400 km)
+        if dist_km > 400:
+            # Qualitative bar: scale 400=30%, 800=60%, 1500+=100%
+            dist_bar = min((dist_km - 400) / 1100, 1.0) * 0.70 + 0.30
             top_drivers.append({
-                'feature': clean_feat,
-                # Multiply importance purely strictly for a visual frontend boost on the bar as per user request
-                'importance': float(imp) * 1.5, 
-                'explanation': expl
+                'feature': 'Delivery Distance (Long Route)',
+                'importance': dist_bar,
+                'explanation': f"Long-distance delivery of {int(dist_km)} km significantly increases delay probability and return risk.",
+                'is_long_distance': True
             })
+
+        # Conditional: High Value Delayed - only if order value > INR 5000
+        if final_price > 5000:
+            for item in sorted(feature_importance, key=lambda x: -x['importance']):
+                if item['feature'] == 'high_value_delayed':
+                    top_drivers.append({
+                        'feature': 'High Value Order Risk',
+                        'importance': float(item['importance']) * 1.5,
+                        'explanation': f"Order value of \u20b9{int(final_price):,} exceeds \u20b95,000 - high-value orders combined with shipping delays sharply escalate return risk."
+                    })
+                    break
+
+        # Courier impact driver - always present, changes with courier partner selection
+        top_drivers.append({
+            'feature': f'Courier Impact: {selected_courier}',
+            'importance': courier_info['bar'],
+            'explanation': courier_info['desc'],
+            'courier_label': courier_info['label']
+        })
 
         # Dominant reason
         reasons = [h['return_reason'] for h in history if h.get('is_returned') and h.get('return_reason')]
@@ -635,18 +678,12 @@ def api_simulate():
         # Generate Actions
         erp_actions = get_erp_actions(dominant_reason, form, result, customer_row, product_row, history)
         
-        # Action Agent: Long distances buffer
-        dist = form.get('distance_km', 0)
-        try:
-            dist_f = float(dist)
-        except:
-            dist_f = 0
-            
-        if dist_f > 1000:
+        # Action Agent: Long distances buffer - triggers for any long-distance delivery (>400km)
+        if dist_km > 400:
             erp_actions.append({
                 'icon': '', 'title': 'Add 2-day delivery buffer to ETA',
-                'rationale': 'Very large distances between the warehouse and customer location strictly require extra buffering to prevent delay-related return risk.',
-                'trigger': f'Distance naturally exceeds 1000km range ({int(dist_f)}km)'
+                'rationale': 'Long-distance delivery exceeds 400km. A 2-day buffer in the promised delivery date prevents delay-driven return risk.',
+                'trigger': f'Triggered by: delivery distance = {int(dist_km)} km (long distance threshold: 400km)'
             })
 
         return jsonify({
@@ -654,7 +691,10 @@ def api_simulate():
                 'predicted_prob': result['predicted_prob'],
                 'predicted_pct': round(result['predicted_prob'] * 100, 1),
                 'risk_tier': result['risk_tier'],
-                'top_drivers': top_drivers
+                'top_drivers': top_drivers,
+                'distance_km': dist_km,
+                'final_price': final_price,
+                'is_long_distance': dist_km > 400
             },
             'customer_history': history,
             'erp_actions': erp_actions,
@@ -760,9 +800,16 @@ def api_orders_export():
         payment = request.args.get('payment_method', '')
         category = request.args.get('category', '')
         city = request.args.get('city', '')
+        search = request.args.get('search', '')
+        returned = request.args.get('returned', '')
+        date_from = request.args.get('date_from', '')
+        date_to = request.args.get('date_to', '')
 
         where_clauses = []
         params = {}
+        if search:
+            where_clauses.append("o.order_id LIKE :search")
+            params['search'] = f'%{search}%'
         if payment:
             where_clauses.append("o.payment_method = :payment")
             params['payment'] = payment
@@ -772,9 +819,19 @@ def api_orders_export():
         if city:
             where_clauses.append("l.delivery_city = :city")
             params['city'] = city
+        if returned == '1':
+            where_clauses.append("r.is_returned = 1")
+        elif returned == '0':
+            where_clauses.append("r.is_returned = 0")
         if risk_tier:
             where_clauses.append("op.risk_tier = :risk_tier")
             params['risk_tier'] = risk_tier
+        if date_from:
+            where_clauses.append("o.order_date >= TO_DATE(:date_from, 'YYYY-MM-DD')")
+            params['date_from'] = date_from
+        if date_to:
+            where_clauses.append("o.order_date <= TO_DATE(:date_to, 'YYYY-MM-DD')")
+            params['date_to'] = date_to
 
         where_sql = ('WHERE ' + ' AND '.join(where_clauses)) if where_clauses else ''
 
@@ -790,7 +847,7 @@ def api_orders_export():
                 JOIN returns r ON o.order_id = r.order_id
                 LEFT JOIN order_predictions op ON o.order_id = op.order_id
                 {where_sql}
-                ORDER BY o.order_id
+                ORDER BY TO_NUMBER(SUBSTR(o.order_id, 2)) ASC
             """), params)
             rows = rows_to_dicts(result)
 

@@ -89,7 +89,7 @@ def decision_engine_tier(prob, historical_return_rate, is_frequent):
         return "Allow Order"
     elif 0.20 <= prob < 0.50:
         if historical_return_rate <= 0.15 and not is_frequent:
-             return "Allow Order (Loyal)"
+             return "Allow Order"
         return "Restrict Discounts"
     elif 0.50 <= prob < 0.75:
         if is_frequent:

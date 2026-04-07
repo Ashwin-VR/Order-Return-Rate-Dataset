@@ -3,15 +3,15 @@ const inr = n => '₹' + Number(n).toLocaleString('en-IN');
 const pct = n => Number(n).toFixed(1) + '%';
 
 const RISK_COLORS = {
-    LOW: '#10B981',
-    MEDIUM: '#F59E0B',
-    HIGH: '#EF4444'
+    LOW: '#059669',
+    MEDIUM: '#D97706',
+    HIGH: '#DC2626'
 };
 
 function riskColor(rate) {
-    if (rate > 30) return '#EF4444';
-    if (rate > 20) return '#F59E0B';
-    return '#10B981';
+    if (rate > 30) return '#DC2626';
+    if (rate > 20) return '#D97706';
+    return '#059669';
 }
 
 function riskBadge(tier) {
@@ -56,7 +56,7 @@ async function loadHeatmap() {
         document.getElementById(`seg-${seg}`).textContent = d.total + ' customers';
         const aov = d.rows.length > 0
             ? inr(Math.round(d.rows.reduce((a, c) => a + Number(c.avg_order_value || 0), 0) / d.rows.length))
-            : '—';
+            : '-';
         document.getElementById(`seg-${seg}-aov`).textContent = 'Avg OV: ' + aov;
     }
 }
@@ -65,9 +65,9 @@ async function loadHeatmap() {
 async function loadModelReport() {
     const res = await fetch('/api/model-report');
     const d = await res.json();
-    document.getElementById('roi-auc').textContent = d['ROC-AUC'] || '—';
-    document.getElementById('roi-recall').textContent = d['Recall'] || '—';
-    document.getElementById('roi-precision').textContent = d['Precision'] || '—';
+    document.getElementById('roi-auc').textContent = d['ROC-AUC'] || '-';
+    document.getElementById('roi-recall').textContent = d['Recall'] || '-';
+    document.getElementById('roi-precision').textContent = d['Precision'] || '-';
 }
 
 // ─── Chart Helpers ──────────────────────────────────────────────────────────────
@@ -75,12 +75,21 @@ const chartDefaults = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } },
-        tooltip: { bodyFont: { size: 12 }, titleFont: { size: 12 } }
+        legend: { labels: { color: '#94A3B8', font: { family: 'Inter', size: 11, weight: 500 } } }
+    },
+    scales: {
+        x: {
+            grid: { color: 'rgba(255, 255, 255, 0.05)', drawBorder: false },
+            ticks: { color: '#94A3B8', font: { family: 'Inter', size: 10 } }
+        },
+        y: {
+            grid: { color: 'rgba(255, 255, 255, 0.05)', drawBorder: false },
+            ticks: { color: '#94A3B8', font: { family: 'Inter', size: 10 } }
+        }
     }
 };
 
-// Chart 1 — Return Overview (Donut)
+// Chart 1 - Return Overview (Donut)
 async function loadChartReturnOverview() {
     const res = await fetch('/api/charts/return-overview');
     const d = await res.json();
@@ -89,7 +98,7 @@ async function loadChartReturnOverview() {
         type: 'doughnut',
         data: {
             labels: ['Returned', 'Not Returned'],
-            datasets: [{ data: [d.returned, d.not_returned], backgroundColor: ['#EF4444', '#10B981'], borderWidth: 2 }]
+            datasets: [{ data: [d.returned, d.not_returned], backgroundColor: ['#DC2626', '#059669'], borderWidth: 0 }]
         },
         options: {
             ...chartDefaults,
@@ -112,10 +121,10 @@ async function loadChartReturnOverview() {
                 ctx.textBaseline = 'middle';
                 const cx = (left + right) / 2;
                 const cy = (top + bottom) / 2;
-                ctx.font = 'bold 20px Inter, system-ui';
-                ctx.fillStyle = '#1E293B';
+                ctx.font = 'bold 22px Outfit, sans-serif';
+                ctx.fillStyle = '#0F172A';
                 ctx.fillText(total.toLocaleString('en-IN'), cx, cy - 8);
-                ctx.font = '11px Inter, system-ui';
+                ctx.font = '600 11px Inter, sans-serif';
                 ctx.fillStyle = '#64748B';
                 ctx.fillText('Total Orders', cx, cy + 12);
                 ctx.restore();
@@ -124,7 +133,7 @@ async function loadChartReturnOverview() {
     });
 }
 
-// Chart 2 — Return by Payment (Vertical Bar)
+// Chart 2 - Return by Payment (Vertical Bar)
 async function loadChartReturnByPayment() {
     const res = await fetch('/api/charts/return-by-payment');
     const data = await res.json();
@@ -149,7 +158,7 @@ async function loadChartReturnByPayment() {
     });
 }
 
-// Chart 3 — Return by Delay (Grouped Bar)
+// Chart 3 - Return by Delay (Grouped Bar)
 async function loadChartReturnByDelay() {
     const res = await fetch('/api/charts/return-by-delay');
     const data = await res.json();
@@ -158,8 +167,8 @@ async function loadChartReturnByDelay() {
         data: {
             labels: data.map(d => `Delay: ${d.delivery_delay}d`),
             datasets: [
-                { label: 'Returned', data: data.map(d => d.returned), backgroundColor: '#EF4444', borderRadius: 4 },
-                { label: 'Not Returned', data: data.map(d => d.not_returned), backgroundColor: '#10B981', borderRadius: 4 }
+                { label: 'Returned', data: data.map(d => d.returned), backgroundColor: '#DC2626', borderRadius: 4 },
+                { label: 'Not Returned', data: data.map(d => d.not_returned), backgroundColor: '#059669', borderRadius: 4 }
             ]
         },
         options: {
@@ -169,7 +178,7 @@ async function loadChartReturnByDelay() {
     });
 }
 
-// Chart 4 — Return by Category (Horizontal Bar)
+// Chart 4 - Return by Category (Horizontal Bar)
 async function loadChartReturnByCategory() {
     const res = await fetch('/api/charts/return-by-category');
     const data = await res.json();
@@ -195,7 +204,7 @@ async function loadChartReturnByCategory() {
     });
 }
 
-// Chart 5 — Orders by City (Vertical Bar)
+// Chart 5 - Orders by City (Vertical Bar)
 async function loadChartOrdersByCity() {
     const res = await fetch('/api/charts/orders-by-city');
     const data = await res.json();
@@ -206,8 +215,8 @@ async function loadChartOrdersByCity() {
             datasets: [{
                 label: 'Order Count',
                 data: data.map(d => d.total),
-                backgroundColor: '#3B82F6',
-                borderRadius: 6
+                backgroundColor: '#0F172A',
+                borderRadius: 8
             }]
         },
         options: {
@@ -217,7 +226,7 @@ async function loadChartOrdersByCity() {
     });
 }
 
-// Chart 6 — City Stacked
+// Chart 6 - City Stacked
 async function loadChartCityStacked() {
     const res = await fetch('/api/charts/city-stacked');
     const data = await res.json();
@@ -226,8 +235,8 @@ async function loadChartCityStacked() {
         data: {
             labels: data.map(d => d.delivery_city),
             datasets: [
-                { label: 'Not Returned', data: data.map(d => d.not_returned), backgroundColor: '#10B981', borderRadius: 0 },
-                { label: 'Returned', data: data.map(d => d.returned), backgroundColor: '#EF4444', borderRadius: 0 }
+                { label: 'Not Returned', data: data.map(d => d.not_returned), backgroundColor: '#059669', borderRadius: 0 },
+                { label: 'Returned', data: data.map(d => d.returned), backgroundColor: '#DC2626', borderRadius: 0 }
             ]
         },
         options: {
@@ -240,7 +249,7 @@ async function loadChartCityStacked() {
     });
 }
 
-// Chart 7 — Product Return Rate
+// Chart 7 - Product Return Rate
 async function loadChartProductReturnRate() {
     const res = await fetch('/api/charts/product-return-rate');
     const data = await res.json();
@@ -273,11 +282,11 @@ async function loadChartProductReturnRate() {
     });
 }
 
-// Chart 8 — Return Reasons (Pie)
+// Chart 8 - Return Reasons (Pie)
 async function loadChartReturnReasons() {
     const res = await fetch('/api/charts/return-reasons');
     const data = await res.json();
-    const palette = ['#EF4444', '#F59E0B', '#3B82F6', '#8B5CF6', '#10B981', '#F97316'];
+    const palette = ['#DC2626', '#D97706', '#0F172A', '#D4AF37', '#059669', '#6366F1'];
     const total = data.reduce((a, d) => a + d.cnt, 0);
     new Chart(document.getElementById('chartReturnReasons'), {
         type: 'pie',

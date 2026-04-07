@@ -1,6 +1,6 @@
-"""
+﻿"""
 ERP Return Prediction System
-import_data.py — Run ONCE after db_setup.sql to load all CSVs into Oracle
+import_data.py - Run ONCE after db_setup.sql to load all CSVs into Oracle
 
 Requirements:
     pip install oracledb pandas bcrypt
@@ -20,7 +20,7 @@ import sys
 from datetime import datetime
 
 # ============================================================
-# CONFIG — update password if different
+# CONFIG - update password if different
 # ============================================================
 DB_CONFIG = {
     "user":     "SYSTEM",
@@ -240,7 +240,7 @@ def create_admin_user(conn):
     with conn.cursor() as cur:
         cur.execute(sql, (hash_un_str, hash_pw_str, "ERP Administrator", "admin"))
     conn.commit()
-    print(f"  ✅ Admin user created — login: {ADMIN_USERNAME} / {ADMIN_PASSWORD}")
+    print(f"  ✅ Admin user created - login: {ADMIN_USERNAME} / {ADMIN_PASSWORD}")
 
 # ============================================================
 # 7. VERIFY COUNTS
@@ -275,7 +275,7 @@ def verify_counts(conn):
 # ============================================================
 if __name__ == "__main__":
     print("=" * 55)
-    print("  ERP Return Prediction — Oracle DB Import")
+    print("  ERP Return Prediction - Oracle DB Import")
     print("=" * 55)
 
     conn = get_connection()
@@ -295,3 +295,4 @@ if __name__ == "__main__":
     finally:
         conn.close()
         print("\n🔌 Connection closed.")
+

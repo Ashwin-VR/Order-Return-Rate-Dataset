@@ -12,7 +12,7 @@ const state = {
     expandedRow: null
 };
 
-const pct = n => (n !== null && n !== undefined) ? Number(n).toFixed(1) + '%' : '—';
+const pct = n => (n !== null && n !== undefined) ? Number(n).toFixed(1) + '%' : '-';
 
 function riskBadge(tier) {
     if (!tier) return '<span class="badge badge-gray">N/A</span>';
@@ -64,13 +64,13 @@ function renderTable(data) {
         else if (!predicted && actualRet && row.risk_tier) rowClass = 'missed';
 
         const retCell = row.is_returned
-            ? '<span class="returned-yes">✓</span>'
-            : '<span class="returned-no">✗</span>';
+            ? '<span class="returned-yes" style="color:var(--success);font-weight:700;">✓</span>'
+            : '<span class="returned-no" style="color:var(--danger);font-weight:700;">✗</span>';
 
         return `
             <tr class="${rowClass}" data-idx="${idx}" style="cursor:pointer;" onclick="toggleExpand(${idx}, this)">
                 <td><code>${row.order_id}</code></td>
-                <td>${row.order_date || '—'}</td>
+                <td>${row.order_date || '-'}</td>
                 <td><code>${row.customer_id}</code></td>
                 <td style="max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${row.product_name}">${row.product_name}</td>
                 <td>${row.category}</td>
@@ -79,9 +79,9 @@ function renderTable(data) {
                 <td>${row.payment_method}</td>
                 <td>${row.courier_partner}</td>
                 <td>${row.delivery_city}</td>
-                <td>${row.predicted_pct !== null ? pct(row.predicted_pct) : '—'}</td>
+                <td>${row.predicted_pct !== null ? pct(row.predicted_pct) : '-'}</td>
                                 <td>${retCell}</td>
-                <td style="font-size:11px;color:var(--text-muted);">${row.return_reason || '—'}</td>
+                <td style="font-size:11px;color:var(--text-muted);">${row.return_reason || '-'}</td>
             </tr>
             <tr class="row-expand" id="expand-${idx}" style="display:none;">
                 <td colspan="14">
@@ -100,14 +100,14 @@ function renderTable(data) {
                             <h4>Logistics</h4>
                             <div class="expand-row"><span class="expand-row-label">Courier</span><span class="expand-row-value">${row.courier_partner}</span></div>
                             <div class="expand-row"><span class="expand-row-label">City</span><span class="expand-row-value">${row.delivery_city}</span></div>
-                            <div class="expand-row"><span class="expand-row-label">Date</span><span class="expand-row-value">${row.order_date || '—'}</span></div>
+                            <div class="expand-row"><span class="expand-row-label">Date</span><span class="expand-row-value">${row.order_date || '-'}</span></div>
                         </div>
                         <div class="expand-section">
                             <h4>ML Prediction</h4>
                             <div class="expand-row"><span class="expand-row-label">Predicted Risk</span><span class="expand-row-value">${pct(row.predicted_pct)}</span></div>
                             
                             <div class="expand-row"><span class="expand-row-label">Actual Returned</span><span class="expand-row-value">${row.is_returned ? '✓ Yes' : '✗ No'}</span></div>
-                            <div class="expand-row"><span class="expand-row-label">Return Reason</span><span class="expand-row-value">${row.return_reason || '—'}</span></div>
+                            <div class="expand-row"><span class="expand-row-label">Return Reason</span><span class="expand-row-value">${row.return_reason || '-'}</span></div>
                             ${rowClass === 'false-alarm' ? '<div style="color:var(--warning);font-size:11px;margin-top:6px;">False Alarm: Predicted HIGH but not returned</div>' : ''}
                             ${rowClass === 'missed' ? '<div style="color:var(--danger);font-size:11px;margin-top:6px;">Missed: Predicted LOW but returned</div>' : ''}
                         </div>
@@ -161,12 +161,12 @@ function renderSummary(data) {
     const highRisk = rows.filter(r => r.risk_tier === 'HIGH').length;
     const returned = rows.filter(r => r.is_returned).length;
     const risks = rows.filter(r => r.predicted_pct !== null).map(r => r.predicted_pct);
-    const avgRisk = risks.length ? (risks.reduce((a, b) => a + b, 0) / risks.length).toFixed(1) : '—';
+    const avgRisk = risks.length ? (risks.reduce((a, b) => a + b, 0) / risks.length).toFixed(1) : '-';
 
     document.getElementById('statTotal').textContent = data.total.toLocaleString('en-IN');
     document.getElementById('statHighRisk').textContent = highRisk;
     document.getElementById('statReturned').textContent = returned;
-    document.getElementById('statAvgRisk').textContent = avgRisk !== '—' ? avgRisk + '%' : '—';
+    document.getElementById('statAvgRisk').textContent = avgRisk !== '-' ? avgRisk + '%' : '-';
 }
 
 function goPage(p) {
@@ -239,6 +239,8 @@ document.getElementById('exportFilteredCsvBtn').addEventListener('click', e => {
         payment_method: state.payment_method,
         category: state.category,
         city: state.city,
+        search: state.search,
+        returned: state.returned,
         date_from: state.date_from,
         date_to: state.date_to
     });

@@ -44,16 +44,20 @@ async function fetchCustomers() {
     grid.innerHTML = data.rows.map(c => {
         const rate = parseFloat(c.overall_return_rate || 0);
         const ratePct = (rate * 100).toFixed(1);
-        const color = rateColor(rate);
-        const fillWidth = Math.min(rate * 100, 100);
-        const fillColor = rate > 0.25 ? '#EF4444' : rate > 0.10 ? '#F59E0B' : '#10B981';
+        const fillColor = rate > 0.25 ? '#DC2626' : rate > 0.10 ? '#D97706' : '#059669';
+        
+        // Dynamic Card Background Tint
+        let cardBg = 'rgba(148, 163, 184, 0.05)'; // Neutral/Zero
+        if (rate > 0.25) cardBg = 'rgba(220, 38, 38, 0.08)'; // High
+        else if (rate > 0.10) cardBg = 'rgba(212, 175, 55, 0.1)';   // Medium (Gold)
+        else if (rate > 0.0) cardBg = 'rgba(16, 185, 129, 0.08)';  // Low
 
         return `
-        <div class="customer-card" onclick="openModal('${c.customer_id}')">
+        <div class="customer-card" onclick="openModal('${c.customer_id}')" style="background:${cardBg};">
             <div class="customer-card-header">
                 <div class="customer-id">${c.customer_id}</div>
                 <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;">
-                    <span class="badge badge-blue">${c.city || '—'}</span>
+                    <span class="badge badge-blue">${c.city || '-'}</span>
                     ${segmentBadge(c.segment)}
                 </div>
             </div>
@@ -75,9 +79,9 @@ async function fetchCustomers() {
                 <div class="return-rate-fill" style="width:${fillWidth}%;background:${fillColor};"></div>
             </div>
             <div class="customer-card-footer">
-                <span>AOV: <strong>${inr(Math.round(c.avg_order_value || 0))}</strong></span>
+                <span>AOV: <strong style="color:var(--primary)">${inr(Math.round(c.avg_order_value || 0))}</strong></span>
                 <span>Tenure: <strong>${c.customer_tenure_days}d</strong></span>
-                <span>Last: <strong>${c.last_order_days_ago}d ago</strong></span>
+                <span>Last Order: <strong>${c.last_order_days_ago}d ago</strong></span>
             </div>
         </div>`;
     }).join('');
@@ -129,7 +133,7 @@ let modalCharts = [];
 
 async function openModal(customerId) {
     document.getElementById('customerModal').style.display = 'flex';
-    document.getElementById('modalTitle').textContent = `Customer Profile — ${customerId}`;
+    document.getElementById('modalTitle').textContent = `Customer Profile - ${customerId}`;
     document.body.style.overflow = 'hidden';
 
     // Reset tabs
@@ -213,7 +217,7 @@ function renderOverviewTab(data) {
                     <text x="100" y="104" text-anchor="middle" font-size="10" fill="#94A3B8">Return Rate</text>
                 </svg>
                 <div style="margin-top:8px;">${c.preferred_category ? `<span class="badge badge-blue">${c.preferred_category}</span>` : ''}</div>
-                ${c.frequent_return_flag ? '<div class="badge badge-high" style="margin-top:8px;">Frequent Returner</div>' : ''}
+                ${c.frequent_return_flag ? '<div class="badge badge-high" style="margin-top:8px;">High Frequency Returner</div>' : ''}
             </div>
         </div>`;
 }
@@ -228,14 +232,14 @@ function renderOrdersTab(data) {
     const rows = orders.map(o => `
         <tr>
             <td><code>${o.order_id}</code></td>
-            <td>${o.order_date || '—'}</td>
+            <td>${o.order_date || '-'}</td>
             <td>${o.quantity}</td>
             <td>${pct(o.discount_percentage)}</td>
             <td>${o.payment_method}</td>
             <td>${o.product_name}</td>
             <td>${o.category}</td>
             <td>${o.is_returned ? '<span class="returned-yes">✓</span>' : '<span class="returned-no">✗</span>'}</td>
-            <td style="font-size:11px;color:var(--text-muted);">${o.return_reason || '—'}</td>
+            <td style="font-size:11px;color:var(--text-muted);">${o.return_reason || '-'}</td>
         </tr>`).join('');
 
     document.getElementById('ordersContent').innerHTML = `
@@ -259,9 +263,8 @@ function renderAnalysisTab(data, customerId) {
     if (totalReturns === 0 || catReturns.length === 0) {
         document.getElementById('analysisContent').innerHTML = `
             <div style="padding:40px;text-align:center;color:var(--text-muted);">
-                <div style="font-size:32px;margin-bottom:12px;">🎉</div>
-                <div style="font-size:16px;font-weight:600;color:var(--text-main);">No Returns on Record</div>
-                <div style="margin-top:6px;font-size:13px;">This customer has not returned any of their ${totalOrders} orders!</div>
+                <div style="font-size:16px;font-weight:600;color:var(--text-primary);letter-spacing:0.5px;">NO RETURNS RECORED</div>
+                <div style="margin-top:8px;font-size:13px;line-height:1.6;">This profile has maintained a 100% success rate across all ${totalOrders} historical orders.</div>
             </div>`;
         return;
     }
@@ -292,7 +295,7 @@ function renderAnalysisTab(data, customerId) {
                 datasets: [{
                     label: 'Items Returned',
                     data: catReturns.map(r => r.returns),
-                    backgroundColor: catReturns.map(r => r.returns >= 3 ? '#EF4444' : r.returns === 2 ? '#F59E0B' : '#10B981'),
+                    backgroundColor: catReturns.map(r => r.returns >= 3 ? '#DC2626' : r.returns === 2 ? '#D97706' : '#059669'),
                     borderRadius: 6
                 }]
             },
@@ -337,11 +340,11 @@ function renderPredictionsTab(data) {
 
     const realPreds = preds.filter(p => p.correct !== 'N/A');
     const correct = realPreds.filter(p => p.correct === true).length;
-    const accuracy = realPreds.length > 0 ? ((correct / realPreds.length) * 100).toFixed(1) : '—';
+    const accuracy = realPreds.length > 0 ? ((correct / realPreds.length) * 100).toFixed(1) : '-';
 
     const rows = preds.map(p => {
         const correctBadge = p.correct === 'N/A' 
-            ? '<span class="badge badge-gray">—</span>'
+            ? '<span class="badge badge-gray">-</span>'
             : (p.correct ? '<span class="badge badge-low">✓ Correct</span>' : '<span class="badge badge-high">✗ Wrong</span>');
             
         const isRetBadge = p.actual_shipped === 'Simulation Log'
@@ -358,8 +361,8 @@ function renderPredictionsTab(data) {
         return `<tr>
             <td><code>${p.order_id}</code></td>
             <td>${p.product_name}</td>
-            <td>${p.predicted_pct !== null ? p.predicted_pct + '%' : '—'}</td>
-            <td>${t ? `<span class="badge ${tierClass}">${t}</span>` : '—'}</td>
+            <td>${p.predicted_pct !== null ? p.predicted_pct + '%' : '-'}</td>
+            <td>${t ? `<span class="badge ${tierClass}">${t}</span>` : '-'}</td>
             <td>${isRetBadge}</td>
             <td>${correctBadge}</td>
         </tr>`;
@@ -367,7 +370,7 @@ function renderPredictionsTab(data) {
 
     document.getElementById('predictionsContent').innerHTML = `
         <div style="padding:12px 16px;background:var(--canvas-bg);border-radius:8px;margin-bottom:16px;font-size:13px;color:var(--text-muted);">
-            Real Order Historical Accuracy: <strong>${correct}</strong> correct of <strong>${realPreds.length}</strong> real predictions — <strong style="color:var(--primary)">${accuracy}% accuracy</strong>.
+            Real Order Historical Accuracy: <strong>${correct}</strong> correct of <strong>${realPreds.length}</strong> real predictions - <strong style="color:var(--primary)">${accuracy}% accuracy</strong>.
             <br><span style="color:var(--text-muted);font-size:11px;margin-top:4px;display:inline-block;">Showing ${preds.length - realPreds.length} Simulated logs.</span>
         </div>
         <div class="table-wrap">
