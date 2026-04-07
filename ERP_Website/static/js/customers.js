@@ -71,12 +71,12 @@ async function fetchCustomers() {
                     <span class="customer-stat-lbl">Returns</span>
                 </div>
                 <div class="customer-stat">
-                    <span class="customer-stat-val" style="color:${color};font-size:18px;">${ratePct}%</span>
+                    <span class="customer-stat-val" style="color:${fillColor};font-size:18px;">${ratePct}%</span>
                     <span class="customer-stat-lbl">Return Rate</span>
                 </div>
             </div>
             <div class="return-rate-bar">
-                <div class="return-rate-fill" style="width:${fillWidth}%;background:${fillColor};"></div>
+                <div class="return-rate-fill" style="width:${ratePct}%;background:${fillColor};"></div>
             </div>
             <div class="customer-card-footer">
                 <span>AOV: <strong style="color:var(--primary)">${inr(Math.round(c.avg_order_value || 0))}</strong></span>
@@ -239,7 +239,7 @@ function renderOrdersTab(data) {
             <td>${o.product_name}</td>
             <td>${o.category}</td>
             <td>${o.is_returned ? '<span class="returned-yes">✓</span>' : '<span class="returned-no">✗</span>'}</td>
-            <td style="font-size:11px;color:var(--text-muted);">${o.return_reason || '-'}</td>
+            <td style="font-size:11px;color:#FFF;">${o.return_reason || '-'}</td>
         </tr>`).join('');
 
     document.getElementById('ordersContent').innerHTML = `
@@ -279,79 +279,64 @@ function renderAnalysisTab(data, customerId) {
             Highest-frequency returned category: <strong class="badge badge-high">${topCat}</strong>.
         </div>
         <div>
-            <div style="font-size:12px;font-weight:600;color:var(--text-muted);margin-bottom:8px;text-transform:uppercase;">Volume of Returns by Category</div>
-            <div style="position:relative;height:300px;">
-                <canvas id="modalCatChart"></canvas>
-            </div>
+            <div style="font-size:12px;font-weight:600;color:var(--text-muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Volume of Returns by Category</div>
+            <div id="modalCatChart" style="height:300px;"></div>
         </div>`;
 
-    // Category volume bar with custom tooltip parsing
-    const ctx = document.getElementById('modalCatChart');
-    if (ctx) {
-        modalCharts.push(new Chart(ctx, {
+    const options = {
+        chart: {
             type: 'bar',
-            data: {
-                labels: catReturns.map(r => r.category),
-                datasets: [{
-                    label: 'Items Returned',
-                    data: catReturns.map(r => r.returns),
-                    backgroundColor: catReturns.map(r => r.returns >= 3 ? '#DC2626' : r.returns === 2 ? '#D97706' : '#059669'),
-                    borderRadius: 6
-                }]
-            },
-            options: {
-                responsive: true, 
-                maintainAspectRatio: false,
-                scales: { 
-                    y: { 
-                        beginAtZero: true, 
-                        ticks: { stepSize: 1 }, 
-                        grid: { color: '#F1F5F9' } 
-                    } 
-                },
-                plugins: { 
-                    legend: { display: false }, 
-                    tooltip: { 
-                        callbacks: { 
-                            afterBody: (context) => {
-                                const idx = context[0].dataIndex;
-                                const items = catReturns[idx].products;
-                                let lines = ['\nProducts Returned:'];
-                                for (const [product, count] of Object.entries(items)) {
-                                    lines.push(`• ${product} (x${count})`);
-                                }
-                                return lines;
-                            }
-                        } 
-                    } 
+            height: 300,
+            fontFamily: 'Inter, sans-serif',
+            toolbar: { show: false }
+        },
+        series: [{
+            name: 'Items Returned',
+            data: catReturns.map(r => r.returns)
+        }],
+        xaxis: {
+            categories: catReturns.map(r => r.category),
+        },
+        plotOptions: {
+            bar: {
+                borderRadius: 4,
+                distributed: true,
+                columnWidth: '50%'
+            }
+        },
+        colors: catReturns.map(r => r.returns >= 3 ? '#EF4444' : r.returns === 2 ? '#F59E0B' : '#10B981'),
+        legend: { show: false },
+        tooltip: {
+            y: {
+                formatter: (val, { dataPointIndex }) => {
+                    const items = catReturns[dataPointIndex].products;
+                    let out = `<strong>${val} Returns</strong><br/>`;
+                    for (const [product, count] of Object.entries(items)) {
+                        out += `• ${product} (x${count})<br/>`;
+                    }
+                    return out;
                 }
             }
-        }));
-    }
+        }
+    };
+
+    const chart = new ApexCharts(document.querySelector("#modalCatChart"), options);
+    chart.render();
+    modalCharts.push(chart);
 }
 
 // ─── Tab 4: Predictions ────────────────────────────────────────────────────────
 function renderPredictionsTab(data) {
-    const preds = data.predictions || [];
-    if (preds.length === 0) {
-        document.getElementById('predictionsContent').innerHTML = '<div style="padding:20px;color:var(--text-muted);">No predictions saved for this customer.</div>';
+    const allPreds = data.predictions || [];
+    const simulatedPreds = allPreds.filter(p => p.actual_shipped === 'Simulation Log');
+
+    if (simulatedPreds.length === 0) {
+        document.getElementById('predictionsContent').innerHTML = '<div style="padding:20px;color:var(--text-muted);">No simulation records saved for this customer.</div>';
         return;
     }
 
-    const realPreds = preds.filter(p => p.correct !== 'N/A');
-    const correct = realPreds.filter(p => p.correct === true).length;
-    const accuracy = realPreds.length > 0 ? ((correct / realPreds.length) * 100).toFixed(1) : '-';
-
-    const rows = preds.map(p => {
-        const correctBadge = p.correct === 'N/A' 
-            ? '<span class="badge badge-gray">-</span>'
-            : (p.correct ? '<span class="badge badge-low">✓ Correct</span>' : '<span class="badge badge-high">✗ Wrong</span>');
-            
-        const isRetBadge = p.actual_shipped === 'Simulation Log'
-            ? '<span class="badge badge-gray" style="font-size:11px;">Simulated</span>'
-            : (p.actual_shipped === 'Yes' ? '<span class="returned-yes">✓</span>' : '<span class="returned-no">✗</span>');
-            
-        // Risk tier badge parsing mapped dynamically based on new english names
+    const rows = simulatedPreds.map(p => {
+        // Risk tier badge parsing
         let tierClass = 'badge-gray';
         const t = p.risk_tier || '';
         if (t.includes('Allow')) tierClass = 'badge-low';
@@ -363,19 +348,14 @@ function renderPredictionsTab(data) {
             <td>${p.product_name}</td>
             <td>${p.predicted_pct !== null ? p.predicted_pct + '%' : '-'}</td>
             <td>${t ? `<span class="badge ${tierClass}">${t}</span>` : '-'}</td>
-            <td>${isRetBadge}</td>
-            <td>${correctBadge}</td>
+            <td><span class="badge badge-gray" style="font-size:11px;">Simulated</span></td>
         </tr>`;
     }).join('');
 
     document.getElementById('predictionsContent').innerHTML = `
-        <div style="padding:12px 16px;background:var(--canvas-bg);border-radius:8px;margin-bottom:16px;font-size:13px;color:var(--text-muted);">
-            Real Order Historical Accuracy: <strong>${correct}</strong> correct of <strong>${realPreds.length}</strong> real predictions - <strong style="color:var(--primary)">${accuracy}% accuracy</strong>.
-            <br><span style="color:var(--text-muted);font-size:11px;margin-top:4px;display:inline-block;">Showing ${preds.length - realPreds.length} Simulated logs.</span>
-        </div>
         <div class="table-wrap">
             <table>
-                <thead><tr><th>Order ID</th><th>Product</th><th>Predicted %</th><th>Risk Tier</th><th>Returned</th><th>Prediction</th></tr></thead>
+                <thead><tr><th>Order ID</th><th>Product</th><th>Predicted %</th><th>Risk Tier</th><th>Simulation Status</th></tr></thead>
                 <tbody>${rows}</tbody>
             </table>
         </div>`;

@@ -248,7 +248,8 @@ function renderResult(data, form) {
         order_id: orderId,
         predicted_prob: pred.predicted_prob,
         risk_tier: pred.risk_tier,
-        top_drivers: pred.top_drivers
+        top_drivers: pred.top_drivers,
+        action_flags: actions.map(a => a.title).join(', ')
     });
 
     panel.innerHTML = `

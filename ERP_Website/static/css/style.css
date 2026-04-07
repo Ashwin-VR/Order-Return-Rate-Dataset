@@ -1,32 +1,32 @@
 /* ─── CSS Variables ──────────────────────────────────────────────────────────── */
 :root {
-    --sidebar-bg: #030816; /* Deepest Navy */
-    --corpus-bg: #0B0E14;  /* Very Dark Charcoal */
-    --canvas-bg: #0F172A;  /* Dark Blue-Gray */
-    --card-bg: #1E293B;    /* Lighter Charcoal */
+    --sidebar-bg: #0F172A; /* Slate 900 */
+    --canvas-bg: #020617;  /* Slate 950 */
+    --card-bg: #1E293B;    /* Slate 800 */
     --card-hover: #334155;
-    --sidebar-active: rgba(212, 175, 55, 0.15);
+    --sidebar-active: rgba(59, 130, 246, 0.15);
     
-    --primary: #D4AF37; /* Premium Gold */
-    --primary-dark: #B8860B;
-    --primary-light: rgba(212, 175, 55, 0.1);
+    --primary: #3B82F6; /* Vibrant Blue */
+    --primary-dark: #2563EB;
+    --primary-light: rgba(59, 130, 246, 0.1);
     
-    --success: #10B981;
-    --warning: #F59E0B;
-    --danger: #EF4444;
-    --text-primary: #F8FAFC; /* Off-white */
-    --text-muted: #94A3B8;    /* Slate Gray */
-    --border: rgba(255, 255, 255, 0.1);
+    --success: #10B981; /* Emerald */
+    --warning: #F59E0B; /* Amber */
+    --danger: #EF4444;  /* Red */
+    
+    --text-primary: #F8FAFC;
+    --text-muted: #94A3B8;
+    --border: rgba(255, 255, 255, 0.08);
     
     --sidebar-width: 260px;
-    --topbar-height: 64px;
-    --radius: 16px;
-    --radius-sm: 10px;
+    --topbar-height: 70px;
+    --radius: 12px;
+    --radius-sm: 8px;
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 /* ─── Reset ───────────────────────────────────────────────────────────────────── */
@@ -141,10 +141,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-label {
     flex: 1;
+    font-size: 13px;
+    letter-spacing: 0.2px;
 }
 
 .sidebar-footer {
-    padding-bottom: 8px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-user {
@@ -229,21 +232,23 @@ h1, h2, h3, h4, h5, h6 {
 .user-badge {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-primary);
-    background: var(--canvas-bg);
-    padding: 4px 12px;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 16px;
+    border-radius: 30px;
     border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
 }
 
 .user-dot {
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--success);
+    box-shadow: 0 0 10px var(--success);
 }
 
 /* ─── Main Content ────────────────────────────────────────────────────────────── */
@@ -349,20 +354,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .chart-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: var(--radius);
-    padding: 20px;
-    min-height: 300px;
+    padding: 24px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s;
+}
+
+.chart-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .chart-title {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .chart-wrap {
@@ -816,19 +830,20 @@ select.form-control {
 }
 
 .filter-control {
-    padding: 7px 10px;
-    font-size: 12px;
+    padding: 8px 12px;
+    font-size: 13px;
     font-family: inherit;
-    border: 1px solid var(--border);
+    border: 1px solid #CBD5E1;
     border-radius: 6px;
-    color: var(--text-primary);
-    background: white;
+    color: #1E293B; /* Dark Text */
+    background: #FFFFFF;
     outline: none;
-    transition: border-color 0.15s;
+    transition: all 0.15s;
 }
 
 .filter-control:focus {
     border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
 }
 
 /* ─── Summary Strip ───────────────────────────────────────────────────────────── */

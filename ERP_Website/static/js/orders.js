@@ -103,13 +103,9 @@ function renderTable(data) {
                             <div class="expand-row"><span class="expand-row-label">Date</span><span class="expand-row-value">${row.order_date || '-'}</span></div>
                         </div>
                         <div class="expand-section">
-                            <h4>ML Prediction</h4>
-                            <div class="expand-row"><span class="expand-row-label">Predicted Risk</span><span class="expand-row-value">${pct(row.predicted_pct)}</span></div>
-                            
+                            <h4>Status</h4>
                             <div class="expand-row"><span class="expand-row-label">Actual Returned</span><span class="expand-row-value">${row.is_returned ? '✓ Yes' : '✗ No'}</span></div>
                             <div class="expand-row"><span class="expand-row-label">Return Reason</span><span class="expand-row-value">${row.return_reason || '-'}</span></div>
-                            ${rowClass === 'false-alarm' ? '<div style="color:var(--warning);font-size:11px;margin-top:6px;">False Alarm: Predicted HIGH but not returned</div>' : ''}
-                            ${rowClass === 'missed' ? '<div style="color:var(--danger);font-size:11px;margin-top:6px;">Missed: Predicted LOW but returned</div>' : ''}
                         </div>
                     </div>
                 </td>
@@ -160,13 +156,9 @@ function renderSummary(data) {
     const rows = data.rows || [];
     const highRisk = rows.filter(r => r.risk_tier === 'HIGH').length;
     const returned = rows.filter(r => r.is_returned).length;
-    const risks = rows.filter(r => r.predicted_pct !== null).map(r => r.predicted_pct);
-    const avgRisk = risks.length ? (risks.reduce((a, b) => a + b, 0) / risks.length).toFixed(1) : '-';
-
     document.getElementById('statTotal').textContent = data.total.toLocaleString('en-IN');
     document.getElementById('statHighRisk').textContent = highRisk;
     document.getElementById('statReturned').textContent = returned;
-    document.getElementById('statAvgRisk').textContent = avgRisk !== '-' ? avgRisk + '%' : '-';
 }
 
 function goPage(p) {

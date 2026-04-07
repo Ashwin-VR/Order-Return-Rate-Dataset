@@ -1,4 +1,4 @@
-﻿{% extends "base.html" %}
+{% extends "base.html" %}
 {% block page_title %}Dashboard{% endblock %}
 {% block active_dashboard %}active{% endblock %}
 {% block topbar_title %}Analytics Dashboard{% endblock %}
@@ -57,35 +57,35 @@
 <div class="charts-grid">
     <div class="chart-card">
         <div class="chart-title">Return Overview</div>
-        <div class="chart-wrap"><canvas id="chartReturnOverview"></canvas></div>
+        <div class="chart-wrap"><div id="chartReturnOverview"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Return Rate by Payment Method</div>
-        <div class="chart-wrap"><canvas id="chartReturnByPayment"></canvas></div>
+        <div class="chart-wrap"><div id="chartReturnByPayment"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Return Rate vs Delivery Delay</div>
-        <div class="chart-wrap"><canvas id="chartReturnByDelay"></canvas></div>
+        <div class="chart-wrap"><div id="chartReturnByDelay"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Return Rate by Product Category</div>
-        <div class="chart-wrap"><canvas id="chartReturnByCategory"></canvas></div>
+        <div class="chart-wrap"><div id="chartReturnByCategory"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Order Volume by Delivery City</div>
-        <div class="chart-wrap"><canvas id="chartOrdersByCity"></canvas></div>
+        <div class="chart-wrap"><div id="chartOrdersByCity"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Orders vs Returns per City</div>
-        <div class="chart-wrap"><canvas id="chartCityStacked"></canvas></div>
+        <div class="chart-wrap"><div id="chartCityStacked"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Product-wise Return Rate</div>
-        <div class="chart-wrap"><canvas id="chartProductReturnRate"></canvas></div>
+        <div class="chart-wrap"><div id="chartProductReturnRate"></div></div>
     </div>
     <div class="chart-card">
         <div class="chart-title">Returns by Reason</div>
-        <div class="chart-wrap"><canvas id="chartReturnReasons"></canvas></div>
+        <div class="chart-wrap"><div id="chartReturnReasons"></div></div>
     </div>
 </div>
 

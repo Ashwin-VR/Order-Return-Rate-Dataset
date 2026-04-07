@@ -652,15 +652,21 @@ def api_simulate():
                 'is_long_distance': True
             })
 
-        # Conditional: High Value Delayed - only if order value > INR 5000
-        if final_price > 5000:
+        # Conditional: High Value Delayed - only if discounted order value > INR 5000
+        # Formula: (price * qty) * (1 - disc/100)
+        disc_val = float(form.get('discount_percentage', 0))
+        qty_val = int(form.get('quantity', 1))
+        true_total = (float(product_row.get('price', 0)) * qty_val) * (1 - disc_val / 100)
+        
+        if true_total > 5000:
             for item in sorted(feature_importance, key=lambda x: -x['importance']):
                 if item['feature'] == 'high_value_delayed':
                     top_drivers.append({
                         'feature': 'High Value Order Risk',
                         'importance': float(item['importance']) * 1.5,
-                        'explanation': f"Order value of \u20b9{int(final_price):,} exceeds \u20b95,000 - high-value orders combined with shipping delays sharply escalate return risk."
+                        'explanation': f"True order value of \u20b9{int(true_total):,} (after {int(disc_val)}% discount) exceeds \u20b95,000 - high-value orders are hyper-sensitive to shipping delays."
                     })
+                    break
                     break
 
         # Courier impact driver - always present, changes with courier partner selection
@@ -678,12 +684,18 @@ def api_simulate():
         # Generate Actions
         erp_actions = get_erp_actions(dominant_reason, form, result, customer_row, product_row, history)
         
-        # Action Agent: Long distances buffer - triggers for any long-distance delivery (>400km)
-        if dist_km > 400:
+        # Action Agent: Tiered distance buffers
+        if dist_km > 600:
             erp_actions.append({
-                'icon': '', 'title': 'Add 2-day delivery buffer to ETA',
-                'rationale': 'Long-distance delivery exceeds 400km. A 2-day buffer in the promised delivery date prevents delay-driven return risk.',
-                'trigger': f'Triggered by: delivery distance = {int(dist_km)} km (long distance threshold: 400km)'
+                'icon': '🚚', 'title': 'Add 2-day delivery buffer to ETA',
+                'rationale': f'Distance ({int(dist_km)}km) exceeds 600km. A 2-day buffer prevents delay-driven return risk.',
+                'trigger': f'Triggered by: delivery distance = {int(dist_km)} km (> 600km)'
+            })
+        elif dist_km > 400:
+            erp_actions.append({
+                'icon': '🚚', 'title': 'Add 1-day delivery buffer to ETA',
+                'rationale': f'Distance ({int(dist_km)}km) is between 400-600km. A 1-day buffer helps maintain reliability.',
+                'trigger': f'Triggered by: delivery distance = {int(dist_km)} km (400-600km)'
             })
 
         return jsonify({
@@ -989,6 +1001,25 @@ def api_customer_detail(customer_id):
             cats = [x['category'] for x in order_history]
             customer['preferred_category'] = Counter(cats).most_common(1)[0][0] if cats else 'N/A'
             
+            # Accurate dynamic stats computation
+            from datetime import datetime
+            now = datetime.now()
+            
+            # Sort order history by date for difference calculation
+            order_dates = sorted([x['order_date'] for x in order_history if x.get('order_date')])
+            
+            if len(order_dates) < 2:
+                customer['avg_days_between_orders'] = 'N/A'
+            else:
+                diffs = [(order_dates[i+1] - order_dates[i]).days for i in range(len(order_dates)-1)]
+                customer['avg_days_between_orders'] = round(sum(diffs) / len(diffs), 1)
+
+            if order_dates:
+                last_date = order_dates[-1]
+                customer['last_order_days_ago'] = (now - last_date).days
+            else:
+                customer['last_order_days_ago'] = 'N/A'
+
             for row in order_history:
                 if row.get('order_date'):
                     d = str(row['order_date'])[:10]
@@ -1066,10 +1097,10 @@ def api_save_prediction():
         predicted_prob = data.get('predicted_prob')
         risk_tier = data.get('risk_tier')
         top_drivers = data.get('top_drivers', [])
-
         d1 = top_drivers[0]['feature'] if len(top_drivers) > 0 else None
         d2 = top_drivers[1]['feature'] if len(top_drivers) > 1 else None
         d3 = top_drivers[2]['feature'] if len(top_drivers) > 2 else None
+        action_flags = data.get('action_flags', '')
 
         with get_db() as conn:
             conn.execute(text("""
@@ -1079,15 +1110,17 @@ def api_save_prediction():
                     UPDATE SET predicted_return_prob = :prob, risk_tier = :tier,
                                predicted_at = SYSDATE,
                                top_driver_1 = :d1, top_driver_2 = :d2, top_driver_3 = :d3,
-                               customer_id = :customer_id, product_id = :product_id
+                               customer_id = :customer_id, product_id = :product_id,
+                               action_flags = :actions
                 WHEN NOT MATCHED THEN
                     INSERT (order_id, customer_id, product_id, predicted_return_prob, risk_tier, predicted_at,
-                            top_driver_1, top_driver_2, top_driver_3)
-                    VALUES (:order_id, :customer_id, :product_id, :prob, :tier, SYSDATE, :d1, :d2, :d3)
+                            top_driver_1, top_driver_2, top_driver_3, action_flags)
+                    VALUES (:order_id, :customer_id, :product_id, :prob, :tier, SYSDATE, :d1, :d2, :d3, :actions)
             """), {
                 'order_id': order_id, 'customer_id': customer_id, 'product_id': product_id,
                 'prob': predicted_prob, 'tier': risk_tier,
-                'd1': d1, 'd2': d2, 'd3': d3
+                'd1': d1, 'd2': d2, 'd3': d3,
+                'actions': action_flags
             })
             conn.commit()
 
